@@ -1,14 +1,22 @@
 {
-  "version": "4.19",
+  "version": "4.20",
   "date": "2026-10-17",
   "notes": [
-    "Programın yeni adı: Tefsir & Hadis Kütüphanesi",
-    "Yeni simge: açık kitap ve rub'ül-hizb yıldızı"
+    "Güncellemeden sonra pencerenin eski sürümün sayfasını göstermesi düzeltildi",
+    "Yeni ad ve simge artık program içinde de görünüyor"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "a2a7f41420b7d113be02965f8fa95b241eea422abed730e5778d37bb3e66783c",
-  "size": 87839232,
+  "sha256": "9376178375e78c38dc19cc6188d6d560f61c48cd0b71ddf762ca878540b3d917",
+  "size": 87843840,
   "history": [
+    {
+      "version": "4.19",
+      "date": "2026-10-17",
+      "notes": [
+        "Programın yeni adı: Tefsir & Hadis Kütüphanesi",
+        "Yeni simge: açık kitap ve rub'ül-hizb yıldızı"
+      ]
+    },
     {
       "version": "4.18",
       "date": "2026-10-17",
