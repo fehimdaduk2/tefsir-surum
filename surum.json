@@ -1,14 +1,22 @@
 {
-  "version": "4.20",
+  "version": "4.21",
   "date": "2026-10-17",
   "notes": [
-    "Güncellemeden sonra pencerenin eski sürümün sayfasını göstermesi düzeltildi",
-    "Yeni ad ve simge artık program içinde de görünüyor"
+    "Güncellemenin son adımında «program açık görünüyor» hatası düzeltildi: kurulum eski programın kapanmasını bekliyor",
+    "Kurulum klasörüne yazma izni yoksa «Yönetici olarak devam et» düğmesi çıkıyor"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "9376178375e78c38dc19cc6188d6d560f61c48cd0b71ddf762ca878540b3d917",
-  "size": 87843840,
+  "sha256": "ebdb2babaecaf4bee13bd1fe005fbad434e052eee8062c3b0bec5363a83e1392",
+  "size": 87860736,
   "history": [
+    {
+      "version": "4.20",
+      "date": "2026-10-17",
+      "notes": [
+        "Güncellemeden sonra pencerenin eski sürümün sayfasını göstermesi düzeltildi",
+        "Yeni ad ve simge artık program içinde de görünüyor"
+      ]
+    },
     {
       "version": "4.19",
       "date": "2026-10-17",
