@@ -1,9 +1,37 @@
 {
-  "version": "4.16",
+  "version": "4.17",
   "date": "2026-10-17",
   "notes": [
-    "İsnad şeceresinde dört görünüm: bu hadis, aynı kitapta aynı lafız («مثله»), aynı kitapta yakın lafız («نحوه»), bütün kitaplar (i'tibâr: mütâbaat ve şâhid)",
-    "Şecerede açılan hadisin senedi renkli; altında ağaçtaki rivâyetlerin listesi",
-    "Programın içinden güncelleme (Şimdi güncelle)"
+    "Güncellemeler üst çubukta kendi düğmesinde; yeni sürüm varsa düğmede nokta çıkar",
+    "Gelişmiş güncelleme paneli: durum, son denetim, yenilikler, adım adım güncelleme, sürüm atlama ve sürüm geçmişi"
+  ],
+  "history": [
+    {
+      "version": "4.16",
+      "date": "2026-10-17",
+      "notes": [
+        "İsnad şeceresinde dört görünüm: bu hadis, aynı kitapta aynı lafız («مثله»), aynı kitapta yakın lafız («نحوه»), bütün kitaplar (i'tibâr)",
+        "Programın içinden güncelleme"
+      ]
+    },
+    {
+      "version": "4.15",
+      "date": "2026-10-17",
+      "notes": [
+        "İsnad şeceresi yalnız açılan hadisin senedini gösteriyor",
+        "Karşılaştır'da aynı konudaki başka hadisler artık karışmıyor"
+      ]
+    },
+    {
+      "version": "4.14",
+      "date": "2026-10-17",
+      "notes": [
+        "Râvi sayfasında el-Kâşif, Tehzîbü't-Tehzîb ve Mîzânü'l-İ'tidâl maddeleri",
+        "Hadislerde köke göre arama",
+        "Kitap içi fihrist, hadis notları, görünüm ayarları, rivâyet karşılaştırma",
+        "Meşâriku'l-Envâr ve garîb kelime işaretleri",
+        "Şerhler ve sözlükler isteğe bağlı paketler"
+      ]
+    }
   ]
 }
