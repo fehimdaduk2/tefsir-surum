@@ -1,13 +1,8 @@
 {
-  "version": "4.14",
+  "version": "4.15",
   "date": "2026-10-17",
   "notes": [
-    "Râvi sayfasında el-Kâşif, Tehzîbü't-Tehzîb ve Mîzânü'l-İ'tidâl maddeleri",
-    "Hadislerde köke göre arama",
-    "Kitap içi fihrist, hadis notları, yer imleri ve renkli vurgular",
-    "Görünüm ayarları (hareke, yazı tipi, okuma modu) ve rivâyet karşılaştırma",
-    "Meşâriku'l-Envâr sözlüğü ve garîb kelime işaretleri",
-    "Daha küçük kurulum: şerhler ve sözlükler isteğe bağlı paketler",
-    "Güncelleme bildirimi"
+    "İsnad şeceresi artık yalnız açılan hadisin kendi senet zincirini gösteriyor; aynı hadisin diğer rivâyetleri Karşılaştır'da",
+    "Karşılaştır ve «Aynı hadisin diğer rivâyetleri» listesinde aynı konudaki başka hadisler artık karışmıyor"
   ]
 }
