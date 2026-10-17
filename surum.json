@@ -1,14 +1,21 @@
 {
-  "version": "4.22",
+  "version": "4.23",
   "date": "2026-10-17",
   "notes": [
-    "Otomatik güncelleme: yeni sürüm arka planda indirilip kısa bir geri sayımdan sonra kuruluyor (Ertele ile sonraya bırakılabilir)",
-    "Güncellemeler panelinde yalnız önceki sürüm gösteriliyor; sürüm atlama kaldırıldı"
+    "Mealler sadeleştirildi: Diyanet İşleri (eski meal), Diyanet Vakfı, Kral Fahd Kur'an Kompleksi baskısı ve Elmalılı Hamdi Yazır (aslı ve sadeleştirilmiş)"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "c31a19e03be412869aaeefbc3381c888632038a147fd0cd8114431f6acf61f56",
-  "size": 87861248,
+  "sha256": "8b97cc08ac14c1e66270472e8692066730ef524cdd75fc1a607764c63e2d2ce5",
+  "size": 87861760,
   "history": [
+    {
+      "version": "4.22",
+      "date": "2026-10-17",
+      "notes": [
+        "Otomatik güncelleme: yeni sürüm arka planda indirilip kısa bir geri sayımdan sonra kuruluyor (Ertele ile sonraya bırakılabilir)",
+        "Güncellemeler panelinde yalnız önceki sürüm gösteriliyor; sürüm atlama kaldırıldı"
+      ]
+    },
     {
       "version": "4.21",
       "date": "2026-10-17",
