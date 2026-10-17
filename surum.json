@@ -1,14 +1,22 @@
 {
-  "version": "4.21",
+  "version": "4.22",
   "date": "2026-10-17",
   "notes": [
-    "Güncellemenin son adımında «program açık görünüyor» hatası düzeltildi: kurulum eski programın kapanmasını bekliyor",
-    "Kurulum klasörüne yazma izni yoksa «Yönetici olarak devam et» düğmesi çıkıyor"
+    "Otomatik güncelleme: yeni sürüm arka planda indirilip kısa bir geri sayımdan sonra kuruluyor (Ertele ile sonraya bırakılabilir)",
+    "Güncellemeler panelinde yalnız önceki sürüm gösteriliyor; sürüm atlama kaldırıldı"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "ebdb2babaecaf4bee13bd1fe005fbad434e052eee8062c3b0bec5363a83e1392",
-  "size": 87860736,
+  "sha256": "c31a19e03be412869aaeefbc3381c888632038a147fd0cd8114431f6acf61f56",
+  "size": 87861248,
   "history": [
+    {
+      "version": "4.21",
+      "date": "2026-10-17",
+      "notes": [
+        "Güncellemenin son adımında «program açık görünüyor» hatası düzeltildi: kurulum eski programın kapanmasını bekliyor",
+        "Kurulum klasörüne yazma izni yoksa «Yönetici olarak devam et» düğmesi çıkıyor"
+      ]
+    },
     {
       "version": "4.20",
       "date": "2026-10-17",
