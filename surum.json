@@ -1,11 +1,22 @@
 {
-  "version": "4.17",
+  "version": "4.18",
   "date": "2026-10-17",
   "notes": [
-    "Güncellemeler üst çubukta kendi düğmesinde; yeni sürüm varsa düğmede nokta çıkar",
-    "Gelişmiş güncelleme paneli: durum, son denetim, yenilikler, adım adım güncelleme, sürüm atlama ve sürüm geçmişi"
+    "Programın kodları korunuyor: arayüz exe'nin içinde şifreli ve küçültülmüş duruyor; program yalnız kendi penceresine cevap veriyor",
+    "Şimdi güncelle düğmesi artık çalışıyor: yeni sürümler programın içinden indirilip kuruluyor"
   ],
+  "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
+  "sha256": "ae1fe207150c0b6a9e4ad230166f3962b2a3f1653f6151b345de2f15e9405009",
+  "size": 87817728,
   "history": [
+    {
+      "version": "4.17",
+      "date": "2026-10-17",
+      "notes": [
+        "Güncellemeler üst çubukta kendi düğmesinde; yeni sürüm varsa düğmede nokta çıkar",
+        "Gelişmiş güncelleme paneli: durum, son denetim, yenilikler, adım adım güncelleme, sürüm atlama ve sürüm geçmişi"
+      ]
+    },
     {
       "version": "4.16",
       "date": "2026-10-17",
