@@ -1,14 +1,24 @@
 {
-  "version": "4.28",
+  "version": "4.29",
   "date": "2026-10-18",
   "notes": [
-    "Resmî iletişim adresi: tefsirhadiskutuphanesi@gmail.com — Hata Bildir ve Telif Bildir bu adrese yazar; adres Hakkında ve Telif Hakları sayfalarında da görünür",
-    "Program tek bağlantıyla kurulabiliyor: kurulum, gereken veri dosyalarını kendisi indirir"
+    "Yeni eserler artık program içinden kendiliğinden iniyor; ilk olarak Süfyân es-Sevrî, Nesâî ve İbn Arafe'nin tefsirleri",
+    "Notlar, vurgular, yer imleri, hadis notları ve eklenen kitaplar tek bir yedek dosyasına alınıp başka bilgisayarda geri yüklenebiliyor",
+    "Aramada «Bütün kelimeler» kipi (kelimeler aynı bölümde, herhangi bir sırada) ve «Yalnız bu sûrede» seçeneği",
+    "Elmalılı: boş kalan 495 âyetin meâli tamamlandı; Ahkâf ve Hâkka'daki âyet alıntılarına eksik üstünler kondu; tefsiri nüshada bulunmayan âyetlerde not gösteriliyor"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "b2cac0d7926444400a7b23f0d21a730585a1c34a2756ec13d6f437fefde895ff",
-  "size": 92639744,
+  "sha256": "fd9ef0cc2e21b6f107f25c54b7f472c5e2a1b2cd0642f49a1495a9575b94b547",
+  "size": 92689920,
   "history": [
+    {
+      "version": "4.28",
+      "date": "2026-10-18",
+      "notes": [
+        "Resmî iletişim adresi: tefsirhadiskutuphanesi@gmail.com — Hata Bildir ve Telif Bildir bu adrese yazar; adres Hakkında ve Telif Hakları sayfalarında da görünür",
+        "Program tek bağlantıyla kurulabiliyor: kurulum, gereken veri dosyalarını kendisi indirir"
+      ]
+    },
     {
       "version": "4.27",
       "date": "2026-10-18",
@@ -191,5 +201,13 @@
         "kind": "lugat"
       }
     ]
-  }
+  },
+  "ekler": [
+    {
+      "name": "Tefsir-Ek-klasik.zip",
+      "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-klasik.zip",
+      "sha256": "ba0f8aec06be2d74ceb94fdd032628344f89fb598c9dcb31eb5273e28db4dff0",
+      "size": 406558
+    }
+  ]
 }
