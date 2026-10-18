@@ -1,13 +1,22 @@
 {
-  "version": "4.32",
+  "version": "4.33",
   "date": "2026-10-18",
   "notes": [
-    "Telif notunda geliştiricilerin adı: © 2026 Fehim Dadük & Kerem Uzuner"
+    "Mushaf, Kral Fahd Kompleksi'nin Hafs yazı tipiyle: rub' işareti (۞) artık kelimenin üstüne binmiyor; Duhân 33 ve Bakara 72 düzeltildi; «كَلَّا» Kompleksin yazdığı gibi çiziliyor",
+    "Tecvidli metinde üç yer düzeltildi: Neml 20, Yâsîn 22 ve Tûr 37",
+    "Kur'an metni, Kompleksin Hafs metniyle her âyette harf harf ve piksel piksel denetlendi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Kurulum.exe",
-  "sha256": "4e3b207ddc4862a851bb54cb85bcc8602a9d7633137fe58c53b5f3740edc783b",
-  "size": 92712960,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Kurulum.exe",
+  "sha256": "7362805c54efc5fdc40952b4f815d3b69164f4a90e6d1e097868e6c8992d7a15",
+  "size": 92713472,
   "history": [
+    {
+      "version": "4.32",
+      "date": "2026-10-18",
+      "notes": [
+        "Telif notunda geliştiricilerin adı: © 2026 Fehim Dadük & Kerem Uzuner"
+      ]
+    },
     {
       "version": "4.31",
       "date": "2026-10-18",
@@ -241,8 +250,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
