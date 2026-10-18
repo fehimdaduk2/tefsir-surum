@@ -1,14 +1,22 @@
 {
-  "version": "4.27",
+  "version": "4.28",
   "date": "2026-10-18",
   "notes": [
-    "Telif hakkı koruması altındaki mealler de kilitlendi; listede adıyla görünür, açılmaz",
-    "Yeni meal: Elmalılı Hamdi Yazır'ın kendi meâli, ilk baskıdaki (1935–1939) orijinal hâliyle"
+    "Resmî iletişim adresi: tefsirhadiskutuphanesi@gmail.com — Hata Bildir ve Telif Bildir bu adrese yazar; adres Hakkında ve Telif Hakları sayfalarında da görünür",
+    "Program tek bağlantıyla kurulabiliyor: kurulum, gereken veri dosyalarını kendisi indirir"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "e449804328960055eeb644c7664827bd850e02b6e4427befc6e1f65daef64b3b",
-  "size": 92639232,
+  "sha256": "b2cac0d7926444400a7b23f0d21a730585a1c34a2756ec13d6f437fefde895ff",
+  "size": 92639744,
   "history": [
+    {
+      "version": "4.27",
+      "date": "2026-10-18",
+      "notes": [
+        "Telif hakkı koruması altındaki mealler de kilitlendi; listede adıyla görünür, açılmaz",
+        "Yeni meal: Elmalılı Hamdi Yazır'ın kendi meâli, ilk baskıdaki (1935–1939) orijinal hâliyle"
+      ]
+    },
     {
       "version": "4.26",
       "date": "2026-10-18",
