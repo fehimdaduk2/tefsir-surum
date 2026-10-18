@@ -1,13 +1,25 @@
 {
-  "version": "4.23",
-  "date": "2026-10-17",
+  "version": "4.24",
+  "date": "2026-10-18",
   "notes": [
-    "Mealler sadeleştirildi: Diyanet İşleri (eski meal), Diyanet Vakfı, Kral Fahd Kur'an Kompleksi baskısı ve Elmalılı Hamdi Yazır (aslı ve sadeleştirilmiş)"
+    "Tahrîc raporu: bir hadisin bütün kitaplardaki yerleri, senetleri ve hükümleri tek Word belgesinde",
+    "İki râvi arasındaki bağlantı: doğrudan rivâyet, senet yolları, ortak hoca ve talebeler",
+    "Râvi kartında karşılaştırmalı cerh-ta'dîl tablosu",
+    "Kur'an tilâveti: âyet âyet dinleme, altı kâri, tekrar ve ardışık okuma",
+    "Notlarda etiketler ve konu dosyaları (âyet, tefsir ve hadis notları bir arada)",
+    "İlk açılışta tanıtım turu; hata olursa tek tıkla bildirim"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "8b97cc08ac14c1e66270472e8692066730ef524cdd75fc1a607764c63e2d2ce5",
-  "size": 87861760,
+  "sha256": "35ff6121997d94cb0fb3c760079092fb912ddf0288ce6f8ae8fde32168a969cb",
+  "size": 89200640,
   "history": [
+    {
+      "version": "4.23",
+      "date": "2026-10-17",
+      "notes": [
+        "Mealler sadeleştirildi: Diyanet İşleri (eski meal), Diyanet Vakfı, Kral Fahd Kur'an Kompleksi baskısı ve Elmalılı Hamdi Yazır (aslı ve sadeleştirilmiş)"
+      ]
+    },
     {
       "version": "4.22",
       "date": "2026-10-17",
