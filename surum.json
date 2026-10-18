@@ -121,5 +121,67 @@
         "Şerhler ve sözlükler isteğe bağlı paketler"
       ]
     }
-  ]
+  ],
+  "veri": {
+    "version": 3,
+    "packs": 6,
+    "files": [
+      {
+        "name": "Tefsir-Veri-1.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-1.zip",
+        "sha256": "bcb9ee84ff50c89454bd5556093691cbf928b383c0acded6a5f4662892041172",
+        "size": 13895892,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-2.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-2.zip",
+        "sha256": "57f973080b6eab6e387840dea1374dc3c984b8d29abef9b481430523787c1b92",
+        "size": 23780664,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-3.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-3.zip",
+        "sha256": "1a1ae5abb9e00cd49ffc9f7766fdf34432f213cfc1964e2a9a544aaa7fe64c12",
+        "size": 23503254,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-4.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-4.zip",
+        "sha256": "809d998f401f287c932fe28974a83a03c4adf83de8be07809cd05b6ba2458625",
+        "size": 30231376,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-5.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-5.zip",
+        "sha256": "2fa4c4201f3baf3ae5405d578d0d3dc528a83033f1c1b57d01e41991f9c61167",
+        "size": 22914532,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-6.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-6.zip",
+        "sha256": "ad6cd5876a6faa40882189dd9e3127eaff4325a95587f63b3769f67a0f1fa17e",
+        "size": 9302194,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Paket-Serh.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Serh.zip",
+        "sha256": "bcef042df9e2eacba11887abbde466fd53ee34fdd99fcb051df4afc9ea654581",
+        "size": 42013477,
+        "kind": "serh"
+      },
+      {
+        "name": "Tefsir-Paket-Lugat.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Lugat.zip",
+        "sha256": "2869cf8fac2d08396a045f21bbbac06766a9454c7d28a6caa28632782a633b12",
+        "size": 16105561,
+        "kind": "lugat"
+      }
+    ]
+  }
 }
