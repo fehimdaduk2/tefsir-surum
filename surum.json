@@ -1,16 +1,25 @@
 {
-  "version": "4.29",
+  "version": "4.30",
   "date": "2026-10-18",
   "notes": [
-    "Yeni eserler artık program içinden kendiliğinden iniyor; ilk olarak Süfyân es-Sevrî, Nesâî ve İbn Arafe'nin tefsirleri",
-    "Notlar, vurgular, yer imleri, hadis notları ve eklenen kitaplar tek bir yedek dosyasına alınıp başka bilgisayarda geri yüklenebiliyor",
-    "Aramada «Bütün kelimeler» kipi (kelimeler aynı bölümde, herhangi bir sırada) ve «Yalnız bu sûrede» seçeneği",
-    "Elmalılı: boş kalan 495 âyetin meâli tamamlandı; Ahkâf ve Hâkka'daki âyet alıntılarına eksik üstünler kondu; tefsiri nüshada bulunmayan âyetlerde not gösteriliyor"
+    "İki yeni sözlük: Fîrûzâbâdî'nin el-Kāmûsü'l-Muhît'i ve Zebîdî'nin Tâcü'l-Arûs'u (sözlük paketi olanlara kendiliğinden iner)",
+    "Güncellemeler ve yeni eserler yayımlandıkları anda görünüyor (beş dakikalık gecikme kalktı)",
+    "Mac ve Linux için hazırlık: program bu sistemlerde kendi penceresinde açılıyor ve verileri kendisi indiriyor"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "fd9ef0cc2e21b6f107f25c54b7f472c5e2a1b2cd0642f49a1495a9575b94b547",
-  "size": 92689920,
+  "sha256": "b9dc814eb0b2a173bbd2ace49d66c3a56430b9b6719f728d015abe3d3896cbaf",
+  "size": 92711936,
   "history": [
+    {
+      "version": "4.29",
+      "date": "2026-10-18",
+      "notes": [
+        "Yeni eserler artık program içinden kendiliğinden iniyor; ilk olarak Süfyân es-Sevrî, Nesâî ve İbn Arafe'nin tefsirleri",
+        "Notlar, vurgular, yer imleri, hadis notları ve eklenen kitaplar tek bir yedek dosyasına alınıp başka bilgisayarda geri yüklenebiliyor",
+        "Aramada «Bütün kelimeler» kipi (kelimeler aynı bölümde, herhangi bir sırada) ve «Yalnız bu sûrede» seçeneği",
+        "Elmalılı: boş kalan 495 âyetin meâli tamamlandı; Ahkâf ve Hâkka'daki âyet alıntılarına eksik üstünler kondu; tefsiri nüshada bulunmayan âyetlerde not gösteriliyor"
+      ]
+    },
     {
       "version": "4.28",
       "date": "2026-10-18",
@@ -196,8 +205,8 @@
       {
         "name": "Tefsir-Paket-Lugat.zip",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Lugat.zip",
-        "sha256": "2869cf8fac2d08396a045f21bbbac06766a9454c7d28a6caa28632782a633b12",
-        "size": 16105561,
+        "sha256": "5e9ff506e00760cc9783a8f6c78d26edccb3efafe23cdb233950e9fb2547d65a",
+        "size": 27471513,
         "kind": "lugat"
       }
     ]
@@ -208,6 +217,13 @@
       "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-klasik.zip",
       "sha256": "ba0f8aec06be2d74ceb94fdd032628344f89fb598c9dcb31eb5273e28db4dff0",
       "size": 406558
+    },
+    {
+      "name": "Tefsir-Ek-sozluk.zip",
+      "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-sozluk.zip",
+      "sha256": "6de8413ccd593955cfb4c02a993bab7a114ff3929306d11f3355270a5173ecd2",
+      "size": 12122672,
+      "need": "lugat"
     }
   ]
 }
