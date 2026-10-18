@@ -1,14 +1,21 @@
 {
-  "version": "4.34",
+  "version": "4.35",
   "date": "2026-10-18",
   "notes": [
-    "İsimsiz kullanım sayıları: yalnız hangi bölümün kullanıldığı, ne kadar açık kalındığı, sürüm ve işletim sistemi; okunan ya da yazılan hiçbir şey gönderilmez. Görünüm ayarlarından kapatılabilir.",
-    "Kullanım şartlarının Gizlilik maddesi buna göre güncellendi"
+    "Yeni simge: rahle üzerinde açık mushaf, yanında altın hilal ve yıldız"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Kurulum.exe",
-  "sha256": "8e1c9990632ec8e256032c65bca6cea35b7d144aee5685cada1b0e1b672dba85",
-  "size": 92722688,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.35/Kurulum.exe",
+  "sha256": "e9544b545af042e0a2ec8dfbd7d187d8747f550fe51e957aaa554e79fab7b121",
+  "size": 92788736,
   "history": [
+    {
+      "version": "4.34",
+      "date": "2026-10-18",
+      "notes": [
+        "İsimsiz kullanım sayıları: yalnız hangi bölümün kullanıldığı, ne kadar açık kalındığı, sürüm ve işletim sistemi; okunan ya da yazılan hiçbir şey gönderilmez. Görünüm ayarlarından kapatılabilir.",
+        "Kullanım şartlarının Gizlilik maddesi buna göre güncellendi"
+      ]
+    },
     {
       "version": "4.33",
       "date": "2026-10-18",
@@ -258,8 +265,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.35/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.35/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.35/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
