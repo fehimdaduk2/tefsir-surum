@@ -1,15 +1,23 @@
 {
-  "version": "4.33",
+  "version": "4.34",
   "date": "2026-10-18",
   "notes": [
-    "Mushaf, Kral Fahd Kompleksi'nin Hafs yazı tipiyle: rub' işareti (۞) artık kelimenin üstüne binmiyor; Duhân 33 ve Bakara 72 düzeltildi; «كَلَّا» Kompleksin yazdığı gibi çiziliyor",
-    "Tecvidli metinde üç yer düzeltildi: Neml 20, Yâsîn 22 ve Tûr 37",
-    "Kur'an metni, Kompleksin Hafs metniyle her âyette harf harf ve piksel piksel denetlendi"
+    "İsimsiz kullanım sayıları: yalnız hangi bölümün kullanıldığı, ne kadar açık kalındığı, sürüm ve işletim sistemi; okunan ya da yazılan hiçbir şey gönderilmez. Görünüm ayarlarından kapatılabilir.",
+    "Kullanım şartlarının Gizlilik maddesi buna göre güncellendi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Kurulum.exe",
-  "sha256": "7362805c54efc5fdc40952b4f815d3b69164f4a90e6d1e097868e6c8992d7a15",
-  "size": 92713472,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Kurulum.exe",
+  "sha256": "8e1c9990632ec8e256032c65bca6cea35b7d144aee5685cada1b0e1b672dba85",
+  "size": 92722688,
   "history": [
+    {
+      "version": "4.33",
+      "date": "2026-10-18",
+      "notes": [
+        "Mushaf, Kral Fahd Kompleksi'nin Hafs yazı tipiyle: rub' işareti (۞) artık kelimenin üstüne binmiyor; Duhân 33 ve Bakara 72 düzeltildi; «كَلَّا» Kompleksin yazdığı gibi çiziliyor",
+        "Tecvidli metinde üç yer düzeltildi: Neml 20, Yâsîn 22 ve Tûr 37",
+        "Kur'an metni, Kompleksin Hafs metniyle her âyette harf harf ve piksel piksel denetlendi"
+      ]
+    },
     {
       "version": "4.32",
       "date": "2026-10-18",
@@ -250,8 +258,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.33/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.34/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
