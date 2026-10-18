@@ -1,13 +1,20 @@
 {
-  "version": "4.31",
+  "version": "4.32",
   "date": "2026-10-18",
   "notes": [
-    "Kullanım şartları: Hakkında sayfasında «Kullanım Şartları» bağlantısı ve telif notu"
+    "Telif notunda geliştiricilerin adı: © 2026 Fehim Dadük & Kerem Uzuner"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.31/Kurulum.exe",
-  "sha256": "239f27561c5e77fe4c0a4ccb214845ec56246eca92053cc5ed8f45c030ce7d3f",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Kurulum.exe",
+  "sha256": "4e3b207ddc4862a851bb54cb85bcc8602a9d7633137fe58c53b5f3740edc783b",
   "size": 92712960,
   "history": [
+    {
+      "version": "4.31",
+      "date": "2026-10-18",
+      "notes": [
+        "Kullanım şartları: Hakkında sayfasında «Kullanım Şartları» bağlantısı ve telif notu"
+      ]
+    },
     {
       "version": "4.30",
       "date": "2026-10-18",
@@ -234,8 +241,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.31/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.31/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.31/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.32/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
