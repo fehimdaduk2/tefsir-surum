@@ -1,0 +1,30 @@
+# Yayın: "yayin" dalına gönderilen dosyalardan GitHub Releases'ta bir sürüm oluşturur, sonra dalı siler.
+# Dalda yayin.json ({"tag": "v4.30", "title": "...", "notes": "..."}) ve yayımlanacak dosyalar bulunur.
+# Etiket main'e bağlanır; böylece kurulum dosyaları deponun geçmişine girmez.
+name: Yayın
+on:
+  push:
+    branches: [yayin]
+permissions:
+  contents: write
+jobs:
+  yayin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: yayin
+      - name: Sürümü oluştur
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          TAG=$(jq -r .tag yayin.json)
+          jq -r .title yayin.json > /tmp/baslik
+          jq -r .notes yayin.json > /tmp/notlar
+          gh release delete "$TAG" --cleanup-tag -y || true
+          FILES=$(find . -maxdepth 1 -type f ! -name yayin.json ! -name '.*' | sort)
+          gh release create "$TAG" $FILES --target main --title "$(cat /tmp/baslik)" --notes-file /tmp/notlar --latest
+      - name: Dalı sil
+        if: always()
+        run: git push origin --delete yayin
