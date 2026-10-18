@@ -6,7 +6,7 @@
     "Güncellemeler ve yeni eserler yayımlandıkları anda görünüyor (beş dakikalık gecikme kalktı)",
     "Mac ve Linux için hazırlık: program bu sistemlerde kendi penceresinde açılıyor ve verileri kendisi indiriyor"
   ],
-  "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.30/Kurulum.exe",
   "sha256": "b9dc814eb0b2a173bbd2ace49d66c3a56430b9b6719f728d015abe3d3896cbaf",
   "size": 92711936,
   "history": [
@@ -225,5 +225,10 @@
       "size": 12122672,
       "need": "lugat"
     }
-  ]
+  ],
+  "diger": {
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.30/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.30/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.30/Tefsir-Hadis-Linux-amd64.tar.gz"
+  }
 }
