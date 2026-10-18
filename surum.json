@@ -1,15 +1,24 @@
 {
-  "version": "4.25",
+  "version": "4.26",
   "date": "2026-10-18",
   "notes": [
-    "Telif hakkı koruması altındaki tefsirler kütüphanede kilitli olarak listelenir; açılmaz ve aramalara dahil edilmez",
-    "Kilitli bir esere tıklayınca telif açıklaması gösterilir; Telif Hakları sayfasında kapalı eserlerin listesi",
-    "Sa'dî'nin Teysîr'i ve el-Cedvel, telif süresi dolunca (1 Ocak 2027) kendiliğinden açılır"
+    "Yeni Türkçe tefsir: Elmalılı Hamdi Yazır'ın Hak Dîni Kur'ân Dili'si, sadeleştirilmemiş orijinal metniyle (âyetler, meâl ve tefsir; matbu nüshanın cilt ve sayfasıyla)",
+    "Kral Fahd Kompleksi'nin Hafs yazı tipi artık programla birlikte geliyor; ayrıca yüklemeye gerek yok",
+    "Türkçe tefsirlerdeki Arapça âyet ve alıntılar sağdan sola ve Kur'an yazı tipiyle gösteriliyor"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "3484d533ef79ae845a6c6c0851c68174c3f58a99a0cd2d0843c38d49ba8f290b",
-  "size": 89207808,
+  "sha256": "a472d87349368ddb2ad5cf07fcedf5ff4cadac2f1ec0f7669682dce46208cf50",
+  "size": 92424704,
   "history": [
+    {
+      "version": "4.25",
+      "date": "2026-10-18",
+      "notes": [
+        "Telif hakkı koruması altındaki tefsirler kütüphanede kilitli olarak listelenir; açılmaz ve aramalara dahil edilmez",
+        "Kilitli bir esere tıklayınca telif açıklaması gösterilir; Telif Hakları sayfasında kapalı eserlerin listesi",
+        "Sa'dî'nin Teysîr'i ve el-Cedvel, telif süresi dolunca (1 Ocak 2027) kendiliğinden açılır"
+      ]
+    },
     {
       "version": "4.24",
       "date": "2026-10-18",
