@@ -1,18 +1,27 @@
 {
-  "version": "4.24",
+  "version": "4.25",
   "date": "2026-10-18",
   "notes": [
-    "Tahrîc raporu: bir hadisin bütün kitaplardaki yerleri, senetleri ve hükümleri tek Word belgesinde",
-    "İki râvi arasındaki bağlantı: doğrudan rivâyet, senet yolları, ortak hoca ve talebeler",
-    "Râvi kartında karşılaştırmalı cerh-ta'dîl tablosu",
-    "Kur'an tilâveti: âyet âyet dinleme, altı kâri, tekrar ve ardışık okuma",
-    "Notlarda etiketler ve konu dosyaları (âyet, tefsir ve hadis notları bir arada)",
-    "İlk açılışta tanıtım turu; hata olursa tek tıkla bildirim"
+    "Telif hakkı koruması altındaki tefsirler kütüphanede kilitli olarak listelenir; açılmaz ve aramalara dahil edilmez",
+    "Kilitli bir esere tıklayınca telif açıklaması gösterilir; Telif Hakları sayfasında kapalı eserlerin listesi",
+    "Sa'dî'nin Teysîr'i ve el-Cedvel, telif süresi dolunca (1 Ocak 2027) kendiliğinden açılır"
   ],
   "kurulum": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/Kurulum.exe",
-  "sha256": "35ff6121997d94cb0fb3c760079092fb912ddf0288ce6f8ae8fde32168a969cb",
-  "size": 89200640,
+  "sha256": "3484d533ef79ae845a6c6c0851c68174c3f58a99a0cd2d0843c38d49ba8f290b",
+  "size": 89207808,
   "history": [
+    {
+      "version": "4.24",
+      "date": "2026-10-18",
+      "notes": [
+        "Tahrîc raporu: bir hadisin bütün kitaplardaki yerleri, senetleri ve hükümleri tek Word belgesinde",
+        "İki râvi arasındaki bağlantı: doğrudan rivâyet, senet yolları, ortak hoca ve talebeler",
+        "Râvi kartında karşılaştırmalı cerh-ta'dîl tablosu",
+        "Kur'an tilâveti: âyet âyet dinleme, altı kâri, tekrar ve ardışık okuma",
+        "Notlarda etiketler ve konu dosyaları (âyet, tefsir ve hadis notları bir arada)",
+        "İlk açılışta tanıtım turu; hata olursa tek tıkla bildirim"
+      ]
+    },
     {
       "version": "4.23",
       "date": "2026-10-17",
