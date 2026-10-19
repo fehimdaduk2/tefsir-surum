@@ -1,13 +1,21 @@
 {
-  "version": "4.38",
+  "version": "4.39",
   "date": "2026-10-19",
   "notes": [
-    "Mushaf: Medine mushafının 15 satırlık sayfa düzeni (matbu satır sonları, tezhipli sûre başlıkları, tecvid renkleriyle)"
+    "Metin kalite denetimi: beş hadiste kaybolmuş harfler düzeltildi",
+    "Şerhlerde muhakkik eklemeleri soluk renkte gösteriliyor"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Kurulum.exe",
-  "sha256": "707b36ea8a8fc6484c7a7f23d1fe47eabebda01a06a8b242274b11644c637e48",
-  "size": 92844544,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Kurulum.exe",
+  "sha256": "e223bf9f76a0fe18e0a137e335118562487f714ad24c8e194337d2cf1c21a696",
+  "size": 92816384,
   "history": [
+    {
+      "version": "4.38",
+      "date": "2026-10-19",
+      "notes": [
+        "Mushaf: Medine mushafının 15 satırlık sayfa düzeni (matbu satır sonları, tezhipli sûre başlıkları, tecvid renkleriyle)"
+      ]
+    },
     {
       "version": "4.37",
       "date": "2026-10-19",
@@ -288,8 +296,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
