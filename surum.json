@@ -1,14 +1,22 @@
 {
-  "version": "4.39",
+  "version": "4.40",
   "date": "2026-10-19",
   "notes": [
-    "Metin kalite denetimi: beş hadiste kaybolmuş harfler düzeltildi",
-    "Şerhlerde muhakkik eklemeleri soluk renkte gösteriliyor"
+    "İki yeni hadis kitabı: Beyhakî'nin es-Sünenü'l-Kübrâ'sı (21.691 hadis) ve Heysemî'nin Mecmaʿu'z-Zevâid'i (18.676 hadis)",
+    "Hadisin altında matbu cilt ve sayfa"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Kurulum.exe",
-  "sha256": "e223bf9f76a0fe18e0a137e335118562487f714ad24c8e194337d2cf1c21a696",
-  "size": 92816384,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Kurulum.exe",
+  "sha256": "3f56eedf24762112bce21f1c0b3249ba9d87dcaf680cd39e183bc3f844b58947",
+  "size": 97507840,
   "history": [
+    {
+      "version": "4.39",
+      "date": "2026-10-19",
+      "notes": [
+        "Metin kalite denetimi: beş hadiste kaybolmuş harfler düzeltildi",
+        "Şerhlerde muhakkik eklemeleri soluk renkte gösteriliyor"
+      ]
+    },
     {
       "version": "4.38",
       "date": "2026-10-19",
@@ -296,8 +304,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.39/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
