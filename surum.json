@@ -1,15 +1,22 @@
 {
-  "version": "4.37",
+  "version": "4.38",
   "date": "2026-10-19",
   "notes": [
-    "«Bugün» sayfası: günün âyeti ve hadisi, kaldığın yerler, son notlar",
-    "Klavye kısayolları (? ile liste): M Mushaf, H hadis, B Bugün, N not, D dinle…",
-    "Erişilebilirlik iyileştirmeleri"
+    "Mushaf: Medine mushafının 15 satırlık sayfa düzeni (matbu satır sonları, tezhipli sûre başlıkları, tecvid renkleriyle)"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Kurulum.exe",
-  "sha256": "c1d88819f9ffca6fe9dbdd10d1597c0be893c56413d70b1bf31a49c94da46603",
-  "size": 92794368,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Kurulum.exe",
+  "sha256": "707b36ea8a8fc6484c7a7f23d1fe47eabebda01a06a8b242274b11644c637e48",
+  "size": 92844544,
   "history": [
+    {
+      "version": "4.37",
+      "date": "2026-10-19",
+      "notes": [
+        "«Bugün» sayfası: günün âyeti ve hadisi, kaldığın yerler, son notlar",
+        "Klavye kısayolları (? ile liste): M Mushaf, H hadis, B Bugün, N not, D dinle…",
+        "Erişilebilirlik iyileştirmeleri"
+      ]
+    },
     {
       "version": "4.36",
       "date": "2026-10-18",
@@ -281,8 +288,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.38/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
