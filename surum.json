@@ -1,14 +1,23 @@
 {
-  "version": "4.40",
+  "version": "4.41",
   "date": "2026-10-19",
   "notes": [
-    "İki yeni hadis kitabı: Beyhakî'nin es-Sünenü'l-Kübrâ'sı (21.691 hadis) ve Heysemî'nin Mecmaʿu'z-Zevâid'i (18.676 hadis)",
-    "Hadisin altında matbu cilt ve sayfa"
+    "Android uygulaması: telefon ve tabletler için (Android 8.0 ve üstü)",
+    "Veri indirme kopan bağlantıda kaldığı yerden sürer",
+    "Dar ekranlarda üst düğme satırı düzeltildi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Kurulum.exe",
-  "sha256": "3f56eedf24762112bce21f1c0b3249ba9d87dcaf680cd39e183bc3f844b58947",
-  "size": 97507840,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.41/Kurulum.exe",
+  "sha256": "fdfdf40169b6968598766b266cfd65f54aedb2af5027b2a167cbe280db06e20d",
+  "size": 97511424,
   "history": [
+    {
+      "version": "4.40",
+      "date": "2026-10-19",
+      "notes": [
+        "İki yeni hadis kitabı: Beyhakî'nin es-Sünenü'l-Kübrâ'sı (21.691 hadis) ve Heysemî'nin Mecmaʿu'z-Zevâid'i (18.676 hadis)",
+        "Hadisin altında matbu cilt ve sayfa"
+      ]
+    },
     {
       "version": "4.39",
       "date": "2026-10-19",
@@ -304,8 +313,9 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.40/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.41/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.41/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.41/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.41/Tefsir-Hadis-Android.apk"
   }
 }
