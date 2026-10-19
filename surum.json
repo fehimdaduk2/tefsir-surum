@@ -1,13 +1,22 @@
 {
-  "version": "4.36",
-  "date": "2026-10-18",
+  "version": "4.37",
+  "date": "2026-10-19",
   "notes": [
-    "Hadis bölümü yeni tasarımla: geometrik desenli başlık, cilt sırtlı kitap kartları, altın rozetli hadis numaraları, çerçeveli metin sayfası, kartlı arama sonuçları"
+    "«Bugün» sayfası: günün âyeti ve hadisi, kaldığın yerler, son notlar",
+    "Klavye kısayolları (? ile liste): M Mushaf, H hadis, B Bugün, N not, D dinle…",
+    "Erişilebilirlik iyileştirmeleri"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.36/Kurulum.exe",
-  "sha256": "05b10b8559bbce950876cb7ca6db2eedb8fb7ec82ba292807e77863ef89812bb",
-  "size": 92791296,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Kurulum.exe",
+  "sha256": "c1d88819f9ffca6fe9dbdd10d1597c0be893c56413d70b1bf31a49c94da46603",
+  "size": 92794368,
   "history": [
+    {
+      "version": "4.36",
+      "date": "2026-10-18",
+      "notes": [
+        "Hadis bölümü yeni tasarımla: geometrik desenli başlık, cilt sırtlı kitap kartları, altın rozetli hadis numaraları, çerçeveli metin sayfası, kartlı arama sonuçları"
+      ]
+    },
     {
       "version": "4.35",
       "date": "2026-10-18",
@@ -272,8 +281,8 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.36/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.36/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.36/Tefsir-Hadis-Linux-amd64.tar.gz"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.37/Tefsir-Hadis-Linux-amd64.tar.gz"
   }
 }
