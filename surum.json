@@ -1,14 +1,21 @@
 {
-  "version": "4.44",
+  "version": "4.45",
   "date": "2026-10-23",
   "notes": [
-    "Kur'an'da Türkiye mushafı hareke işaretleri: yuvarlak sükûn, alışılmış tenvîn (Görünüm'den Medine yazımı da seçilebilir)",
-    "Açılışta ara ekran kaldırıldı"
+    "Yeni meal: Ravvâd (Rowad) Tercüme Merkezi (QuranEnc, sürüm 1.0.4), dipnotlarıyla"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Kurulum.exe",
-  "sha256": "5038233f4f630835deecde1722471892642260fb888bd5b1a20f597b67a2d8a0",
-  "size": 97765888,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.45/Kurulum.exe",
+  "sha256": "3ae8191b9e762bf2de9da3966722b2fb3527376c1f3d8f1157ab7f1bf1efcd22",
+  "size": 97993216,
   "history": [
+    {
+      "version": "4.44",
+      "date": "2026-10-23",
+      "notes": [
+        "Kur'an'da Türkiye mushafı hareke işaretleri: yuvarlak sükûn, alışılmış tenvîn (Görünüm'den Medine yazımı da seçilebilir)",
+        "Açılışta ara ekran kaldırıldı"
+      ]
+    },
     {
       "version": "4.43",
       "date": "2026-10-23",
@@ -338,14 +345,14 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.45/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.45/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.45/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.45/Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-Android.apk",
-    "sha256": "50085a0a0d2b00212f98644eaa5f8a96431f3e51fc48e7f7a90e113f23418301",
-    "size": 71574498
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.45/Tefsir-Hadis-Android.apk",
+    "sha256": "d44f1d8f09d1fa5ea213d7a77e9d8da4a140682ea320ab1b9630d661a64b9144",
+    "size": 71803874
   }
 }
