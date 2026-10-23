@@ -1,15 +1,23 @@
 {
-  "version": "4.43",
+  "version": "4.44",
   "date": "2026-10-23",
   "notes": [
-    "Yeni meal: Kral Fahd Kompleksi – Ali Özek vd. (QuranEnc)",
-    "Daha hızlı açılış; tefsirlerde yalnız açık sûre yükleniyor",
-    "Android: açılış ekranı hemen görünür"
+    "Kur'an'da Türkiye mushafı hareke işaretleri: yuvarlak sükûn, alışılmış tenvîn (Görünüm'den Medine yazımı da seçilebilir)",
+    "Açılışta ara ekran kaldırıldı"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.43/Kurulum.exe",
-  "sha256": "7685ab7862c12e54d7a1278d6007600bf2b6a84ca4b2500be56fe64660ea295a",
-  "size": 97765376,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Kurulum.exe",
+  "sha256": "5038233f4f630835deecde1722471892642260fb888bd5b1a20f597b67a2d8a0",
+  "size": 97765888,
   "history": [
+    {
+      "version": "4.43",
+      "date": "2026-10-23",
+      "notes": [
+        "Yeni meal: Kral Fahd Kompleksi – Ali Özek vd. (QuranEnc)",
+        "Daha hızlı açılış; tefsirlerde yalnız açık sûre yükleniyor",
+        "Android: açılış ekranı hemen görünür"
+      ]
+    },
     {
       "version": "4.42",
       "date": "2026-10-19",
@@ -330,14 +338,14 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.43/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.43/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.43/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.43/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.43/Tefsir-Hadis-Android.apk",
-    "sha256": "555e8c5abebbcf190f72d752bb196133f0aead50a5bd25b75eea89c233e6b215",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.44/Tefsir-Hadis-Android.apk",
+    "sha256": "50085a0a0d2b00212f98644eaa5f8a96431f3e51fc48e7f7a90e113f23418301",
     "size": 71574498
   }
 }
