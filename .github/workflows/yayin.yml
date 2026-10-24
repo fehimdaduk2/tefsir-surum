@@ -1,5 +1,6 @@
 # Yayın: "yayin" dalına gönderilen dosyalardan GitHub Releases'ta bir sürüm oluşturur, sonra dalı siler.
-# Dalda yayin.json ({"tag": "v4.30", "title": "...", "notes": "..."}) ve yayımlanacak dosyalar bulunur.
+# Dalda yayin.json ({"tag": "v4.30", "title": "...", "notes": "..."}) ve yayımlanacak dosyalar bulunur;
+# 100 MB'tan büyük dosyalar parçalar hâlinde gelir (ad.part-aa, ad.part-ab …) ve burada birleştirilir.
 # Etiket main'e bağlanır; böylece kurulum dosyaları deponun geçmişine girmez.
 name: Yayın
 on:
@@ -22,6 +23,9 @@ jobs:
           TAG=$(jq -r .tag yayin.json)
           jq -r .title yayin.json > /tmp/baslik
           jq -r .notes yayin.json > /tmp/notlar
+          # git takes no file over 100 MB: a larger one comes in parts (name.part-aa, -ab …) and is put together here
+          shopt -s nullglob
+          for f in *.part-aa; do b="${f%.part-aa}"; cat "$b".part-* > "$b"; rm -f "$b".part-*; done
           gh release delete "$TAG" --cleanup-tag -y || true
           FILES=$(find . -maxdepth 1 -type f ! -name yayin.json ! -name '.*' | sort)
           gh release create "$TAG" $FILES --target main --title "$(cat /tmp/baslik)" --notes-file /tmp/notlar --latest
