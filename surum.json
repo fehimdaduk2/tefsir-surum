@@ -1,14 +1,23 @@
 {
-  "version": "4.46",
-  "date": "2026-10-24",
+  "version": "4.47",
+  "date": "2026-10-27",
   "notes": [
-    "Senetler ve râvi bağlantıları çok daha fazla hadiste: İmam Muhammed'in Muvatta'sı %97, Beyhakî %94, Musannef'ler %91–95",
-    "53 bin hadiste râvi adları işaretlendi, 1.763 râvi eklendi"
+    "Daha küçük güncellemeler: hadis kitapları ayrı bir paket olarak bir kez iner",
+    "Râvinin bütün rivâyetleri ve içinde kelime araması",
+    "Senette yanlış râviyi bildirme düğmesi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.46/Kurulum.exe",
-  "sha256": "6c12c771ec9e29a81991384cffa4147a8d71bf2c41d727471bfbf4304eb3bb44",
-  "size": 107760128,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.47/Kurulum.exe",
+  "sha256": "964d029fc86ccccb5c47171858ce3893ab2924e37c5fb75147354cf6b8bbe3e4",
+  "size": 36489216,
   "history": [
+    {
+      "version": "4.46",
+      "date": "2026-10-24",
+      "notes": [
+        "Senetler ve râvi bağlantıları çok daha fazla hadiste: İmam Muhammed'in Muvatta'sı %97, Beyhakî %94, Musannef'ler %91–95",
+        "53 bin hadiste râvi adları işaretlendi, 1.763 râvi eklendi"
+      ]
+    },
     {
       "version": "4.45",
       "date": "2026-10-23",
@@ -322,6 +331,13 @@
         "kind": "veri"
       },
       {
+        "name": "Tefsir-Paket-Hadis.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Hadis.zip",
+        "sha256": "6a19236a9091a6286b337dba17ff3172c0ab417c05c23922c5396b9599676b27",
+        "size": 71301675,
+        "kind": "hadis"
+      },
+      {
         "name": "Tefsir-Paket-Serh.zip",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Serh.zip",
         "sha256": "bcef042df9e2eacba11887abbde466fd53ee34fdd99fcb051df4afc9ea654581",
@@ -353,14 +369,14 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.46/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.46/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.46/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.46/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.47/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.47/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.47/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.47/Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.46/Tefsir-Hadis-Android.apk",
-    "sha256": "2d676f16733c71aeef87d3d398b0592d6cce87a5ea193e78552f9bc8e47eea87",
-    "size": 81564642
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.47/Tefsir-Hadis-Android.apk",
+    "sha256": "a6c3151689af0a4ef76062098db7d56135cb528b7eb1864bde56bca3f2de2a84",
+    "size": 10339298
   }
 }
