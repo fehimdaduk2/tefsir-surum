@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tefsir &amp; Hadis Kütüphanesi</title>
-<meta name="description" content="Kur'an-ı Kerîm'i klasik tefsirlerle, hadisleri senet, şerh ve râvi bilgileriyle birlikte okumak için ücretsiz, internetsiz çalışan bir Windows programı.">
+<meta name="description" content="Kur'an-ı Kerîm'i 60 tefsirle, hadisleri senet, şerh ve râvi bilgileriyle okumak; dinlemek, ezberlemek ve paylaşmak için ücretsiz, internetsiz çalışan program. Windows, Mac, Linux ve Android.">
 <meta property="og:title" content="Tefsir & Hadis Kütüphanesi">
-<meta property="og:description" content="60 tefsir, 17 hadis kitabı, 17 şerh ve 8 kadim sözlük tek programda. Ücretsiz, internetsiz.">
-<meta property="og:image" content="img/okuma.webp">
+<meta property="og:description" content="60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek programda. Ücretsiz, internetsiz.">
+<meta property="og:image" content="img/tanitim.jpg">
 <link rel="icon" href="img/icon32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,68 +98,124 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: 
 ol.terms { padding-left: 1.3em; line-height: 1.6; }
 ol.terms li { margin-bottom: 10px; }
 footer a { color: inherit; }
+.feat { display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; align-items: center; margin: 0 0 56px; }
+.feat.rev { grid-template-columns: 1fr 1.15fr; }
+.feat.rev .shot { order: 2; }
+.feat .shot { margin: 0; }
+.feat h3 { font-size: clamp(21px, 2.6vw, 26px); margin: 0 0 10px; letter-spacing: -.01em; }
+.feat .kick { display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.feat ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.feat li { position: relative; padding-left: 26px; color: var(--muted); }
+.feat li::before { content: ""; position: absolute; left: 4px; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--brand); }
+.feat li b { color: var(--text); font-weight: 600; }
+.phones { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 8px; }
+.phones figure { margin: 0; text-align: center; }
+.phones img { width: 100%; height: auto; border-radius: 22px; box-shadow: var(--shadow); background: #0e1315; }
+.phones figcaption { font-size: 13.5px; color: var(--muted); margin-top: 8px; line-height: 1.35; }
+.phones figcaption b { display: block; color: var(--text); font-size: 14.5px; }
+.dl { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 14px; }
+.dl a { font-size: 14px; color: var(--muted); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; background: var(--surface); }
+.dl a:hover { color: var(--text); border-color: var(--brand); }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq details p { color: var(--muted); margin: 10px 0 2px; }
+.band { background: var(--surface-2); border-block: 1px solid var(--line); }
+@media (max-width: 860px) {
+  .feat, .feat.rev { grid-template-columns: 1fr; gap: 18px; }
+  .feat.rev .shot { order: 0; }
+  .phones { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) { .phones { grid-template-columns: repeat(2, 1fr); } }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="975be105-d1e2-4cb4-9ba5-085a0252ed89"></script>
 </head>
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a>
-  <nav><a href="#video">Video</a><a href="#ozellikler">Özellikler</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">Kurulum</a><a href="#telif">Telif</a><a href="#sartlar">Şartlar</a></nav>
+  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#hadis">Hadis</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>Kur'an'ı tefsirleriyle,<br>hadisi senediyle okuyun</h1>
-  <p class="lead">Klasik tefsirleri, hadis kitaplarını, şerhleri ve kadim sözlükleri bir arada sunan Windows, Mac, Linux ve Android için ücretsiz bir program. Kurulduktan sonra internet gerektirmez.</p>
+  <p class="lead">60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda. Okuyun, dinleyin, ezberleyin, araştırın ve paylaşın. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
-    Ücretsiz indir
+    <span id="indirT">Windows için ücretsiz indir</span>
   </a>
   <div class="meta" id="surum">Windows 10 ve 11 · 64 bit</div>
+  <div class="dl"><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Windows</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Android</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Mac (Apple Silicon)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Mac (Intel)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a></div>
   <div class="stats">
     <div class="stat"><b>60</b><span>tefsir</span></div>
     <div class="stat"><b>17</b><span>hadis kitabı</span></div>
     <div class="stat"><b>17</b><span>hadis şerhi</span></div>
     <div class="stat"><b>8</b><span>kadim sözlük</span></div>
-    <div class="stat"><b>6236</b><span>âyet</span></div>
+    <div class="stat"><b>29</b><span>kâri</span></div>
   </div>
-  <div class="shot"><img src="img/okuma.webp" width="1440" height="900" alt="Program: Bakara 255. âyet, Elmalılı tefsiri ve tefsir listesi"></div>
+  <div class="shot vid" style="margin-top:40px" id="video"><video controls preload="none" playsinline poster="img/tanitim.jpg" width="1920" height="1080"><source src="tanitim.mp4" type="video/mp4">Tarayıcınız videoyu oynatamıyor; <a href="tanitim.mp4">videoyu indirin</a>.</video></div>
+  <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">Tanıtım videosu (3 dk) · Seslendirme: Microsoft Türkçe sinir ağı sesi · Tilâvet: Mahmûd Halîl el-Husarî (EveryAyah)</p>
 </div></div>
 
-<section id="video" style="padding-top:8px"><div class="wrap">
-  <h2>Tanıtım videosu</h2>
-  <p class="sub">Programı bir buçuk dakikada tanıyın: tefsirler, Mushaf, hadis, şerh, sözlük, isnad şeceresi ve arama.</p>
-  <div class="shot vid"><video controls preload="none" playsinline poster="img/tanitim.jpg" width="1920" height="1080"><source src="tanitim.mp4" type="video/mp4">Tarayıcınız videoyu oynatamıyor; <a href="tanitim.mp4">buradan indirebilirsiniz</a>.</video></div>
-  <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">Seslendirme: Piper ses motoru, DFKI Türkçe sesi (<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.tr">CC BY-NC-SA 4.0</a>).</p>
+<section id="kuran" class="band"><div class="wrap">
+  <h2>Kur'an</h2>
+  <p class="sub">Bir âyeti açtığınızda Arapça metni, meali ve seçtiğiniz tefsirler aynı ekranda gelir.</p>
+  <div class="feat"><div class="shot"><img src="img/ayet.webp" width="1440" height="810" loading="lazy" alt="60 tefsir, tek tıkla"></div><div><span class="kick">Tefsir</span><h3>60 tefsir, tek tıkla</h3><p class="sub" style="margin:0">Taberî'den Elmalılı'ya; rivâyet, dirâyet ve işârî tefsirler, her biri âyetin yanında.</p><ul><li><b>Sekmelerle geçiş:</b> Taberî, Kurtubî, Râzî, İbn Kesîr, Elmalılı…</li><li><b>Üç Türkçe meal:</b> Elmalılı (1935), Kral Fahd Kompleksi, Ravvâd Merkezi</li><li><b>Sunum modu:</b> cami dersi ve projeksiyon için büyük yazılı tam ekran</li><li><b>Not, vurgu, yer imi</b>; Word ve PDF olarak dışa aktarma</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/mushaf.webp" width="1440" height="810" loading="lazy" alt="Medine mushafının sayfa düzeni"></div><div><span class="kick">Mushaf</span><h3>Medine mushafının sayfa düzeni</h3><p class="sub" style="margin:0">604 sayfa, matbu satır sonları ve tezhipli sûre başlıklarıyla; tecvid renkleri isteğe bağlı.</p><ul><li><b>Türkiye mushafı işaretleri:</b> yuvarlak sükûn, alışılmış tenvîn (istenirse Medine yazımı)</li><li>Kral Fahd Kompleksi'nin <b>Hafs yazı tipi</b></li><li><b>Okuma planı ve hatim:</b> günlük hedef, seri ve ilerleme</li></ul></div></div>
 </div></section>
 
-<section id="ozellikler"><div class="wrap">
-  <h2>Neler yapabilirsiniz?</h2>
-  <p class="sub">Bir âyeti açtığınızda seçtiğiniz bütün tefsirler yan yana gelir; bir hadisi açtığınızda senedi, şerhi ve râvileri bir tık uzaktadır.</p>
+<section id="ezber"><div class="wrap">
+  <h2>Dinleyin, ezberleyin</h2>
+  <p class="sub">29 kâri, telefonda tam ekran okuma ve ezberi kalıcı kılan bir tekrar takvimi.</p>
+  <div class="phones">
+    <figure><img src="img/tamekran.webp" width="460" height="924" loading="lazy" alt="Tam ekran okuma"><figcaption><b>Tam ekran okuma</b>Ekran seçtiğiniz hızda kendiliğinden kayar</figcaption></figure>
+    <figure><img src="img/tilavet.webp" width="460" height="924" loading="lazy" alt="Tilâvet"><figcaption><b>Tilâvet</b>Okunan âyet renklenir, metin kâriyi takip eder</figcaption></figure>
+    <figure><img src="img/ezber.webp" width="460" height="924" loading="lazy" alt="Ezber modu"><figcaption><b>Ezber modu</b>Âyetler gizli; kendi okuyuşunu kaydet</figcaption></figure>
+    <figure><img src="img/tekrar.webp" width="460" height="924" loading="lazy" alt="Tekrar takvimi"><figcaption><b>Tekrar takvimi</b>1, 3, 7, 14, 30… gün sonra tekrar</figcaption></figure>
+    <figure><img src="img/kok.webp" width="460" height="924" loading="lazy" alt="Kelime kökü"><figcaption><b>Kelime kökü</b>Uzun bas: kök ve Kur'an'da geçtiği yerler</figcaption></figure>
+    <figure><img src="img/widget.webp" width="460" height="924" loading="lazy" alt="Ana ekran bileşeni"><figcaption><b>Ana ekran</b>Günün âyeti telefonun ana ekranında</figcaption></figure>
+  </div>
+  <div class="grid" style="margin-top:28px">
+    <div class="card"><h3>29 kâri</h3><p>Afâsî, Husarî, Abdülbâsıt, Minşâvî, Sudeys, Şüreym, Şâtırî, Gāmidî ve diğerleri; mücevved ve muallim okuyuşlar dahil. Her âyet istenen kadar tekrarlanır.</p></div>
+    <div class="card"><h3>İnternetsiz dinleme</h3><p>Bulunduğunuz sûreyi, cüzü ya da bütün Kur'an'ı seçtiğiniz kâriden indirin; yolda da dinleyin.</p></div>
+    <div class="card"><h3>Kendi sesinizle</h3><p>Ezber ekranında okuyuşunuzu kaydedin, kâriyle arka arkaya dinleyip karşılaştırın. Kayıtlar yalnız cihazınızda kalır.</p></div>
+  </div>
+</div></section>
+
+<section id="hadis" class="band"><div class="wrap">
+  <h2>Hadis</h2>
+  <p class="sub">17 kitap, 183.373 hadis; senedi, şerhi, râvileri ve âlimlerin hükümleriyle.</p>
+  <div class="feat"><div class="shot"><img src="img/hadis.webp" width="1440" height="810" loading="lazy" alt="Her râvi işaretli"></div><div><span class="kick">Senet</span><h3>Her râvi işaretli</h3><p class="sub" style="margin:0">Senetteki râvilere dokunun; kadim münekkitlerin hükümleri hadisin hemen altında.</p><ul><li><b>Kütüb-i Sitte</b>, Muvatta, Müsned, Dârimî, Müstedrek, İbn Hibbân, İbn Huzeyme, Musannefler, Beyhakî, Mecmaʿu'z-Zevâid</li><li><b>Rivâyet karşılaştırma:</b> aynı hadisin farklı lafızları</li><li><b>Tahrîc raporu</b> (Word) ve hadis notları</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/serh.webp" width="1440" height="810" loading="lazy" alt="17 şerh, hadisin altında"></div><div><span class="kick">Şerh</span><h3>17 şerh, hadisin altında</h3><p class="sub" style="margin:0">Fethu'l-Bârî, Umdetü'l-Kārî, el-Minhâc, Avnü'l-Ma'bûd, Tuhfetü'l-Ahvezî…</p><ul><li><b>Şerhlerde arama</b></li><li>Cilt ve sayfa bilgisiyle; kaynak olarak gösterilebilir</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="img/secere.webp" width="1440" height="810" loading="lazy" alt="İsnad şeceresi"></div><div><span class="kick">İsnad</span><h3>İsnad şeceresi</h3><p class="sub" style="margin:0">Bir hadisin bütün kitaplardaki senetleri tek ağaçta; ortak râvi (medâr) işaretli.</p><ul><li><b>İki râvi arasındaki bağlantı</b></li><li><b>Konu fihristi:</b> hadisler konulara göre</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/ravi.webp" width="1440" height="810" loading="lazy" alt="Râvi bilgileri"></div><div><span class="kick">Râvi</span><h3>Râvi bilgileri</h3><p class="sub" style="margin:0">Hocaları, talebeleri, tabakası, vefatı ve cerh-ta'dîl sözleri; Takrîb, Tehzîb, Kâşif ve Mîzân kayıtları.</p><ul><li><b>Râvinin bütün rivâyetleri</b> ve içinde arama</li><li>Senette yanlış eşleşen râviyi tek tıkla bildirme</li></ul></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Sözlük, arama, paylaşma</h2>
+  <p class="sub">Merak ettiğiniz kelime, aradığınız ifade, sevdiklerinize göndermek istediğiniz âyet.</p>
+  <div class="feat"><div class="shot"><img src="img/lugat.webp" width="1440" height="810" loading="lazy" alt="Kelimeye dokunun"></div><div><span class="kick">Sözlük</span><h3>Kelimeye dokunun</h3><p class="sub" style="margin:0">en-Nihâye, Lisânü'l-Arab, Tâcü'l-Arûs, el-Kāmûs… sekiz kadim sözlük; garîb kelimeler işaretli.</p><ul><li><b>Meşâriku'l-Envâr</b> ve <b>el-Fâik</b> ile garîbü'l-hadîs</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/arama.webp" width="1440" height="810" loading="lazy" alt="Tefsirlerde ve meallerde arama"></div><div><span class="kick">Arama</span><h3>Tefsirlerde ve meallerde arama</h3><p class="sub" style="margin:0">Arapça ya da Türkçe bir kelime, bütün tefsirlerde ve meallerde saniyeler içinde.</p><ul><li><b>Tam ifade</b> ya da bütün kelimeler; esere göre süzme</li><li>Meallerde harf farkı gözetilmez: «sabir» «sabır»ı da bulur</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="img/kart.webp" width="720" height="720" loading="lazy" alt="Âyet ve hadis kartı"></div><div><span class="kick">Paylaş</span><h3>Âyet ve hadis kartı</h3><p class="sub" style="margin:0">Bir âyeti mealiyle, bir hadisi kitabı ve numarasıyla şık bir görsel hâline getirin.</p><ul><li><b>Kare, dikey, hikâye</b> biçimleri; dört renk</li><li>Telefonda WhatsApp ve Instagram'a; bilgisayarda kaydet ya da kopyala</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/bugun.webp" width="1440" height="810" loading="lazy" alt="Her gün bir âyet, bir hadis"></div><div><span class="kick">Bugün</span><h3>Her gün bir âyet, bir hadis</h3><p class="sub" style="margin:0">Program sizi günün âyeti ve hadisiyle karşılar; kaldığınız yeri ve son notlarınızı hatırlatır.</p><ul><li>Telefonun ana ekranında da günün âyeti</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="img/esitle.webp" width="1440" height="810" loading="lazy" alt="Telefon ve bilgisayar birlikte"></div><div><span class="kick">Eşitleme</span><h3>Telefon ve bilgisayar birlikte</h3><p class="sub" style="margin:0">Aynı Wi-Fi'de 6 haneli bir kodla notlar, yer imleri, vurgular, hatim ve ezber eşitlenir.</p><ul><li>İnternete ve hiçbir sunucuya bir şey gönderilmez</li><li>Tek dosyalık <b>yedek</b> ve geri yükleme</li></ul></div></div>
+</div></section>
+
+<section id="telefon" class="band"><div class="wrap">
+  <h2>Her cihazda</h2>
+  <p class="sub">Windows, Mac, Linux ve Android. Telefon uygulaması bilgisayardaki programın aynısıdır; bütün kitaplar ve özellikler telefonda da var.</p>
   <div class="grid">
-    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg></div><h3>Âyet âyet tefsir</h3><p>Rivâyet, dirâyet ve işârî tefsirler; Elmalılı'nın Hak Dîni Kur'ân Dili'si sadeleştirilmemiş aslıyla, cilt ve sayfasıyla.</p></div>
-    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M12 7v5m0 0-6 5m6-5 6 5"/></svg></div><h3>İsnad şeceresi</h3><p>Bir hadisin senedi ağaç olarak; aynı ve yakın lafızlı rivâyetler, bütün kitaplardaki tarikleri (i'tibâr).</p></div>
-    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div><h3>Râvi bilgileri</h3><p>Takrîb, el-Kâşif, Tehzîbü't-Tehzîb ve Mîzân maddeleri; cerh-ta'dîl tablosu, iki râvi arasındaki bağlantı.</p></div>
-    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Arama ve kök</h3><p>Bütün tefsirlerde, hadislerde ve şerhlerde arama; Arapça kelimeleri köküne göre bulma.</p></div>
-    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div><h3>Tahrîc raporu</h3><p>Bir hadisin bütün kitaplardaki yerleri, senetleri ve kadim âlimlerin hükümleri tek Word belgesinde.</p></div>
-    <div class="card"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></div><h3>Notlar ve konu dosyaları</h3><p>Âyet, tefsir ve hadis notları; etiketler, yer imleri ve vurgular, hepsi kendi bilgisayarınızda.</p></div>
+    <div class="card"><h3>Windows</h3><p>Windows 10 ve 11, 64 bit. Kurulum veri paketlerini kendisi indirir; güncellemeler program içinden gelir.</p></div>
+    <div class="card"><h3>Android</h3><p>Android 8.0 ve üstü telefon ve tabletler. Güncellemeler uygulamanın içinden kurulur; ana ekranda günün âyeti.</p></div>
+    <div class="card"><h3>Mac ve Linux</h3><p>Apple Silicon (M1–M4) ve Intel Mac'ler; 64 bit Linux. Veriler ilk açılışta iner.</p></div>
   </div>
-</div></section>
-
-<section style="padding-top:0"><div class="wrap">
-  <div class="pair">
-    <figure><div class="shot"><img src="img/hadis.webp" width="1440" height="900" loading="lazy" alt="Hadis okuma: senet, şerh ve hükümler"></div><figcaption>Hadis: senet, hükümler, şerh ve sözlük</figcaption></figure>
-    <figure><div class="shot"><img src="img/isnad.webp" width="1440" height="900" loading="lazy" alt="İsnad şeceresi"></div><figcaption>İsnad şeceresi</figcaption></figure>
-  </div>
-  <div class="shot" style="margin-top:20px"><img src="img/gece.webp" width="1440" height="900" loading="lazy" alt="Gece teması"></div>
 </div></section>
 
 <section id="kutuphane" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
   <h2>Kütüphane</h2>
   <p class="sub">Bütün metinler matbu nüshalara dayanır; şerh ve sözlüklerde cilt ve sayfa verilir, kaynak olarak gösterilebilir.</p>
   <div class="lib">
-    <div><h4>Türkçe</h4><p>Elmalılı Muhammed Hamdi Yazır, Hak Dîni Kur'ân Dili (ilk baskı, 1935–1939) ve kendi meâli</p></div>
+    <div><h4>Türkçe</h4><p>Elmalılı Muhammed Hamdi Yazır, Hak Dîni Kur'ân Dili (ilk baskı, 1935–1939). Mealler: Elmalılı, Kral Fahd Kompleksi, Ravvâd Tercüme Merkezi</p></div>
     <div><h4>Rivâyet tefsirleri · 11</h4><p>Taberî, İbn Ebî Hâtim, İbn Kesîr, Suyûtî (ed-Dürrü'l-Mensûr), Begavî, Sa'lebî, Mukātil…</p></div>
     <div><h4>Dirâyet tefsirleri · 26</h4><p>Mâtürîdî, Zemahşerî, Râzî, Kurtubî, Beyzâvî, Nesefî, Ebû Hayyân, Ebüssuûd, Âlûsî, Şevkânî…</p></div>
     <div><h4>İşârî tefsirler · 9</h4><p>Tüsterî, Sülemî, Kuşeyrî, Baklî, Necmeddîn-i Kübrâ, Kâşânî, Rûhu'l-Beyân, İbn Acîbe…</p></div>
@@ -167,27 +223,37 @@ footer a { color: inherit; }
     <div><h4>Hadis · 17 kitap</h4><p>Kütüb-i Sitte, Muvatta, Müsned, Dârimî, Müstedrek, İbn Hibbân, İbn Huzeyme, Musannefler, Beyhakî'nin es-Sünenü'l-Kübrâ'sı, Mecmaʿu'z-Zevâid</p></div>
     <div><h4>Şerhler · 17</h4><p>Fethu'l-Bârî, Umdetü'l-Kārî, İrşâdü's-Sârî, el-Minhâc, Avnü'l-Ma'bûd, Tuhfetü'l-Ahvezî…</p></div>
     <div><h4>Sözlükler · 8</h4><p>en-Nihâye, Lisânü'l-Arab, Tâcü'l-Arûs, el-Kāmûsü'l-Muhît, es-Sıhâh, Mekāyîsü'l-Luga, el-Misbâhu'l-Münîr, Meşâriku'l-Envâr</p></div>
+    <div><h4>Tilâvet · 29 kâri</h4><p>EveryAyah kayıtları: Afâsî, Husarî (murattal, mücevved, muallim), Abdülbâsıt, Minşâvî, Sudeys, Şüreym, Şâtırî…</p></div>
   </div>
 </div></section>
 
 <section id="kurulum"><div class="wrap">
-  <h2>Kurulum</h2>
-  <p class="sub">Tek dosya indirmeniz yeter; gereken veriler kurulum sırasında kendiliğinden iner.</p>
+  <h2>İndirin ve kurun</h2>
+  <p class="sub">Tek dosya indirmeniz yeter; gereken veriler kendiliğinden iner ve her dosyanın doğruluğu denetlenir.</p>
   <ol class="steps">
-    <li><b>Kurulum.exe</b>'yi indirip çalıştırın (yaklaşık 90 MB).</li>
-    <li>Kurulum, tefsir verilerini (yaklaşık 120 MB) ve seçerseniz şerh ve sözlük paketlerini (66 MB) internetten indirir; her dosyanın doğruluğunu denetler.</li>
-    <li>Program masaüstüne ve Başlat menüsüne eklenir. Yeni sürümler ve yeni eserler program içinden kendiliğinden gelir.</li>
+    <li><b>Windows:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Kurulum.exe</a>'yi indirip çalıştırın. Kurulum tefsir verilerini, hadis kitaplarını ve seçerseniz şerh ve sözlük paketlerini internetten indirir.</li>
+    <li><b>Android:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Tefsir-Hadis-Android.apk</a> dosyasını telefonda açıp kurun (bilinmeyen kaynaklara bir kez izin vermeniz istenebilir). Veriler ilk açılışta bir kez iner.</li>
+    <li><b>Mac ve Linux:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Apple Silicon</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Intel</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a>. Paketi açıp programı çalıştırın; veriler ilk açılışta iner.</li>
   </ol>
-  <p class="note" style="margin-top:16px"><b>Mac ve Linux:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">macOS Apple Silicon (M1–M4)</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">macOS Intel</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux 64 bit</a>. Paketin içindeki BENİOKU.txt kurulumu anlatır; veriler ilk açılışta program içinden iner.</p>
-  <p class="note"><b>Android:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Tefsir-Hadis-Android.apk</a> (Android 8.0 ve üstü). Dosyayı telefonda açıp kur; Android sorarsa bu kaynaktan uygulama yüklemeye izin ver. Veriler ilk açılışta bir kez iner, sonra internet gerekmez.</p>
-  <p class="note">Bütün sürümler: <a href="https://github.com/fehimdaduk2/tefsir-surum/releases">Releases</a>.</p>
-  <p class="note" style="margin-top:16px"><b>Windows uyarı verirse:</b> Program henüz bir yayıncı sertifikasıyla imzalanmadığı için Windows "bilgisayarınızı korudu" diyebilir. <b>Ek bilgi › Yine de çalıştır</b>'a basarak kurabilirsiniz. Kurulum dosyasının SHA-256 sağlama toplamı <a href="https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.json">surum.json</a>'da yayımlanır.</p>
+  <p class="note" style="margin-top:16px"><b>Windows uyarı verirse:</b> Program henüz bir yayıncı sertifikasıyla imzalanmadığı için Windows "bilgisayarınızı korudu" diyebilir. <b>Ek bilgi › Yine de çalıştır</b> ile devam edebilirsiniz.</p>
+  <p class="note">Bütün sürümler ve yenilikler: <a href="https://github.com/fehimdaduk2/tefsir-surum/releases">Sürüm notları</a>.</p>
 </div></section>
 
-<section id="telif" style="padding-top:0"><div class="wrap">
+<section id="sss" class="band"><div class="wrap faq">
+  <h2>Sık sorulan sorular</h2>
+  <details><summary>Ücretli mi?</summary><p>Hayır. Program ve bütün kitaplar ücretsizdir; reklam yoktur.</p></details>
+  <details><summary>İnternet gerekiyor mu?</summary><p>Yalnız kurulumda ve ilk açılışta veriler bir kez iner; sonra program internetsiz çalışır. Tilâvet bir âyeti ilk dinleyişte internetten alır; dilerseniz sûreyi, cüzü ya da bütün Kur'an'ı önceden indirebilirsiniz.</p></details>
+  <details><summary>Bilgilerim bir yere gönderiliyor mu?</summary><p>Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Görünüm ayarlarından kapatılabilir. Eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.</p></details>
+  <details><summary>Telefonla bilgisayarı nasıl eşitlerim?</summary><p>İki cihaz aynı Wi-Fi'deyken Notlar › Eşitle. Telefonda «Kodu göster» deyin; bilgisayara telefonun adresini ve 6 haneli kodu girin.</p></details>
+  <details><summary>iPhone'da çalışır mı?</summary><p>Şimdilik hayır; Windows, Mac, Linux ve Android sürümleri var.</p></details>
+  <details><summary>Neden bazı çağdaş tefsir ve mealler kapalı?</summary><p>Telif hakkı süren eserler hak sahiplerinden izin alınmadan konmaz; adları listede görünür, izin alındıkça açılır.</p></details>
+  <details><summary>Hata bulursam ne yapayım?</summary><p>Program içindeki «Hata bildir» ya da senetteki «yanlış râvi» düğmesiyle, ya da <span class="mail">tefsirhadiskutuphanesi@gmail.com</span> adresine yazarak bildirebilirsiniz.</p></details>
+</div></section>
+
+<section id="telif"><div class="wrap">
   <h2>Telif hakları</h2>
   <p class="sub">Klasik eserlerin müellifleri yüzyıllar önce vefat etmiştir; muhakkik dipnotları, mukaddimeler ve ekler alınmamıştır.</p>
-  <p class="note">Telif hakkı koruması süren çağdaş tefsir ve mealler programda adıyla listelenir, ancak metinleri programa konmamıştır ve açılmaz. Hak sahiplerinden izin alındıkça açılacaktır. Hak sahibiyseniz ya da bir eserin yer almasına izin vermek isterseniz bize yazın: <span class="mail">tefsirhadiskutuphanesi@gmail.com</span></p>
+  <p class="note">Telif hakkı koruması süren çağdaş tefsir ve mealler programda adıyla listelenir, ancak metinleri programa konmamıştır ve açılmaz. Hak sahiplerinden izin alındıkça açılacaktır. Hak sahibiyseniz <span class="mail">tefsirhadiskutuphanesi@gmail.com</span> adresine yazın.</p>
 </div></section>
 </main>
 
@@ -205,12 +271,19 @@ footer a { color: inherit; }
 
 <script>
 document.getElementById("yil").textContent = new Date().getFullYear();
+// the main button offers the visitor's own system
+const UA = navigator.userAgent, DL = "https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/";
+const OS = /Android/i.test(UA) ? "android" : /iPhone|iPad/i.test(UA) ? "ios" : /Mac/i.test(UA) ? "mac" : /Linux/i.test(UA) ? "linux" : "win";
+const OSNAME = { win: "Windows 10 ve 11 · 64 bit", android: "Android 8.0 ve üstü", mac: "macOS · Apple Silicon (Intel için aşağıdaki bağlantı)", linux: "Linux · 64 bit", ios: "iPhone ve iPad için henüz yok · Windows, Mac, Linux, Android" };
+const FILE = { win: "Kurulum.exe", android: "Tefsir-Hadis-Android.apk", mac: "Tefsir-Hadis-macOS-arm64.zip", linux: "Tefsir-Hadis-Linux-amd64.tar.gz", ios: "Kurulum.exe" };
+const LBL = { win: "Windows için ücretsiz indir", android: "Android için ücretsiz indir", mac: "Mac için ücretsiz indir", linux: "Linux için ücretsiz indir", ios: "Ücretsiz indir" };
+document.getElementById("indir").href = DL + FILE[OS]; document.getElementById("indirT").textContent = LBL[OS]; document.getElementById("surum").textContent = OSNAME[OS];
 // the current version and the installer's size, from the same list the program reads
 fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.json", { cache: "no-store" })
   .then(r => r.json())
   .then(d => {
-    const mb = d.size ? " · " + Math.round(d.size / 1048576) + " MB" : "";
-    document.getElementById("surum").textContent = "Sürüm " + d.version + " · Windows 10 ve 11 · 64 bit" + mb;
+    const mb = d.size && OS === "win" ? " · " + Math.round(d.size / 1048576) + " MB" : "";
+    document.getElementById("surum").textContent = "Sürüm " + d.version + " · " + OSNAME[OS] + mb;
   })
   .catch(() => {});
 </script>
