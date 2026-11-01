@@ -24,16 +24,19 @@ p, li { color: var(--text); }
 ul { padding-left: 22px; }
 li { margin: 4px 0; }
 table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 15px; background: var(--surface); }
-th, td { text-align: left; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+th, td { text-align: start; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
 th { font-weight: 600; }
 .box { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin: 18px 0; }
 .mail { font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+.langsw { display: inline-flex; gap: 2px; padding: 2px; border: 1px solid var(--line); border-radius: 999px; }
+.langsw a { padding: 3px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 700; }
+.langsw a[aria-current] { background: var(--brand); color: #fff; }
 footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
 @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border-top: 0; } tr { border-top: 1px solid var(--line); margin-bottom: 8px; } td:first-child { font-weight: 600; } }
 </style>
 </head>
 <body>
-<header><div class="wrap"><a href="./">← Tefsir &amp; Hadis Kütüphanesi</a></div></header>
+<header><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><a href="./">← Tefsir &amp; Hadis Kütüphanesi</a><span class="langsw"><a href="gizlilik.html" aria-current="page">TR</a><a href="en/gizlilik.html">EN</a><a href="ar/gizlilik.html" lang="ar">عربي</a></span></div></header>
 <main class="wrap">
 <h1>Gizlilik Politikası</h1>
 <p class="muted">Yürürlük tarihi: 30 Ekim 2026 · Bu metin Windows, Mac, Linux ve Android (Google Play dahil) sürümleri ile bu site için geçerlidir.</p>

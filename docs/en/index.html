@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tafsir &amp; Hadith Library</title>
+<meta name="description" content="A free program to read the Qur&#x27;an with 60 tafsirs and the hadiths with their chains, commentaries and narrators; to listen, memorize and share. Works offline. Windows, Mac, Linux and Android.">
+<meta property="og:title" content="Tafsir &amp; Hadith Library">
+<meta property="og:description" content="60 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in one program. Free and offline.">
+<meta property="og:image" content="../img/tanitim.jpg">
+<link rel="icon" href="../img/icon32.png">
+<link rel="alternate" hreflang="tr" href="https://fehimdaduk2.github.io/tefsir-surum/">
+<link rel="alternate" hreflang="en" href="https://fehimdaduk2.github.io/tefsir-surum/en/">
+<link rel="alternate" hreflang="ar" href="https://fehimdaduk2.github.io/tefsir-surum/ar/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf6; --surface: #ffffff; --surface-2: #f3f1ea; --line: #e4e0d4;
+  --text: #1c2421; --muted: #5d6762; --brand: #14735a; --brand-2: #0b3f3a; --gold: #c9962f; --gold-soft: #f6e7c1;
+  --shadow: 0 1px 2px rgba(20, 30, 25, .06), 0 12px 32px rgba(20, 30, 25, .08);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1513; --surface: #161e1b; --surface-2: #1c2622; --line: #2a3631;
+    --text: #e8ece9; --muted: #9aa6a0; --brand: #3fb58f; --brand-2: #8fd8bd; --gold: #e2b85a; --gold-soft: #3a3020;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 12px 32px rgba(0, 0, 0, .35);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1513; --surface: #161e1b; --surface-2: #1c2622; --line: #2a3631;
+  --text: #e8ece9; --muted: #9aa6a0; --brand: #3fb58f; --brand-2: #8fd8bd; --gold: #e2b85a; --gold-soft: #3a3020;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 12px 32px rgba(0, 0, 0, .35);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--brand); }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+header.top { position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+header.top .wrap { display: flex; align-items: center; gap: 12px; height: 60px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; color: var(--text); text-decoration: none; }
+.brand img { width: 30px; height: 30px; border-radius: 7px; }
+nav { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a:hover { color: var(--text); }
+.hero { padding: 64px 0 32px; text-align: center; }
+.hero .ayah { font-family: Amiri, serif; font-size: clamp(26px, 4vw, 38px); color: var(--gold); direction: rtl; margin: 0 0 8px; }
+.hero h1 { font-size: clamp(32px, 5.4vw, 54px); line-height: 1.12; margin: 0 0 16px; letter-spacing: -.02em; }
+.hero p.lead { font-size: clamp(17px, 2vw, 20px); color: var(--muted); max-width: 720px; margin: 0 auto 28px; }
+.cta { display: inline-flex; align-items: center; gap: 10px; background: var(--brand); color: #fff; text-decoration: none; font-weight: 600; font-size: 17px; padding: 14px 26px; border-radius: 12px; box-shadow: var(--shadow); }
+.cta:hover { filter: brightness(1.08); }
+:root[data-theme="dark"] .cta, .cta { color: #fff; }
+.cta svg { width: 20px; height: 20px; }
+.meta { margin-top: 12px; color: var(--muted); font-size: 14px; }
+.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 40px auto 0; max-width: 960px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 8px; }
+.stat b { display: block; font-size: 28px; color: var(--brand-2); line-height: 1.1; }
+.stat span { font-size: 13px; color: var(--muted); }
+.shot { margin: 40px auto 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: var(--surface); }
+.shot img { display: block; width: 100%; height: auto; }
+section { padding: 56px 0; }
+.shot.vid video { display: block; width: 100%; height: auto; background: #062f27; }
+section h2 { font-size: clamp(24px, 3.2vw, 32px); margin: 0 0 8px; letter-spacing: -.01em; }
+section .sub { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+.card h3 { margin: 0 0 6px; font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.card .ico { width: 36px; height: 36px; border-radius: 10px; background: var(--gold-soft); color: var(--gold); display: grid; place-items: center; margin-bottom: 12px; }
+.card .ico svg { width: 20px; height: 20px; }
+[dir="rtl"] nav { margin-left: 0; margin-right: auto; }
+@media (max-width: 600px) { .langsw { margin-inline-start: auto; } }
+.langsw { display: inline-flex; flex: none; gap: 2px; margin-inline-start: 14px; padding: 2px; border: 1px solid var(--line); border-radius: 999px; }
+.langsw a { padding: 3px 9px !important; border-radius: 999px; font-size: 12.5px !important; font-weight: 700; text-decoration: none; }
+.langsw a[aria-current] { background: var(--brand); color: #fff !important; }
+[dir="rtl"] .feat li { padding-left: 0; padding-right: 26px; } [dir="rtl"] .feat li::before { left: auto; right: 4px; }
+.langs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }
+.langs figure { margin: 0; }
+.langs .shot { margin: 0; }
+.langs figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.langs figcaption b { color: var(--text); }
+@media (max-width: 860px) { .langs { grid-template-columns: 1fr; } }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.pair figure { margin: 0; }
+.pair figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
+.pair .shot { margin: 0; }
+.lib { columns: 3; column-gap: 24px; }
+.lib div { break-inside: avoid; margin-bottom: 18px; }
+.lib h4 { margin: 0 0 4px; font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: var(--brand); }
+.lib p { margin: 0; color: var(--muted); font-size: 15px; }
+.steps { counter-reset: s; display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
+.steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 16px 60px; position: relative; }
+.steps li::before { content: counter(s); position: absolute; left: 18px; top: 15px; width: 28px; height: 28px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 14px; }
+.note { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: var(--muted); font-size: 15px; }
+.note b { color: var(--text); }
+footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; }
+.mail { font-weight: 600; color: var(--text); user-select: all; }
+@media (max-width: 860px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .lib { columns: 2; }
+  .stats { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  nav { display: none; }
+  .grid, .pair { grid-template-columns: 1fr; }
+  .lib { columns: 1; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .hero { padding-top: 40px; }
+}
+ol.terms { padding-left: 1.3em; line-height: 1.6; }
+ol.terms li { margin-bottom: 10px; }
+footer a { color: inherit; }
+.feat { display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; align-items: center; margin: 0 0 56px; }
+.feat.rev { grid-template-columns: 1fr 1.15fr; }
+.feat.rev .shot { order: 2; }
+.feat .shot { margin: 0; }
+.feat h3 { font-size: clamp(21px, 2.6vw, 26px); margin: 0 0 10px; letter-spacing: -.01em; }
+.feat .kick { display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+.feat ul { margin: 12px 0 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.feat li { position: relative; padding-left: 26px; color: var(--muted); }
+.feat li::before { content: ""; position: absolute; left: 4px; top: .55em; width: 9px; height: 9px; border-radius: 50%; background: var(--brand); }
+.feat li b { color: var(--text); font-weight: 600; }
+.phones { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 8px; }
+.phones figure { margin: 0; text-align: center; }
+.phones img { width: 100%; height: auto; border-radius: 22px; box-shadow: var(--shadow); background: #0e1315; }
+.phones figcaption { font-size: 13.5px; color: var(--muted); margin-top: 8px; line-height: 1.35; }
+.phones figcaption b { display: block; color: var(--text); font-size: 14.5px; }
+.dl { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 14px; }
+.dl a { font-size: 14px; color: var(--muted); text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; background: var(--surface); }
+.dl a:hover { color: var(--text); border-color: var(--brand); }
+.faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
+.faq summary { cursor: pointer; font-weight: 600; }
+.faq details p { color: var(--muted); margin: 10px 0 2px; }
+.band { background: var(--surface-2); border-block: 1px solid var(--line); }
+@media (max-width: 860px) {
+  .feat, .feat.rev { grid-template-columns: 1fr; gap: 18px; }
+  .feat.rev .shot { order: 0; }
+  .phones { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) { .phones { grid-template-columns: repeat(2, 1fr); } }
+</style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="975be105-d1e2-4cb4-9ba5-085a0252ed89"></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#"><img src="../img/icon256.png" alt="">Tafsir &amp; Hadith Library</a>
+  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#hadis">Hadith</a><a href="#diller">Languages</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
+  <h1>Read the Qur'an with its tafsirs,<br>the hadith with its chain</h1>
+  <p class="lead">60 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in a single program. Read, listen, memorize, research and share. Interface in English, Arabic and Turkish. Free; no internet needed once installed.</p>
+  <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+    <span id="indirT">Free download for Windows</span>
+  </a>
+  <div class="meta" id="surum">Windows 10 and 11 · 64-bit</div>
+  <div class="dl"><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Windows</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Android</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Mac (Apple Silicon)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Mac (Intel)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a></div>
+  <div class="stats">
+    <div class="stat"><b>60</b><span>tafsirs</span></div>
+    <div class="stat"><b>17</b><span>hadith books</span></div>
+    <div class="stat"><b>17</b><span>hadith commentaries</span></div>
+    <div class="stat"><b>8</b><span>classical dictionaries</span></div>
+    <div class="stat"><b>29</b><span>reciters</span></div>
+    <div class="stat"><b>3</b><span>languages</span></div>
+  </div>
+  <div class="shot vid" style="margin-top:40px" id="video"><video controls preload="none" playsinline poster="../img/tanitim.jpg" width="1920" height="1080"><source src="../tanitim.mp4" type="video/mp4">Your browser cannot play the video; <a href="../tanitim.mp4">download the video</a>.</video></div>
+  <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">Introduction video (3 min, narrated in Turkish) · Recitation: Maḥmūd Khalīl al-Ḥuṣarī (EveryAyah)</p>
+</div></div>
+
+<section id="kuran" class="band"><div class="wrap">
+  <h2>Qur'an</h2>
+  <p class="sub">Open a verse and its Arabic text, translation and the tafsirs you chose come up on the same screen.</p>
+  <div class="feat"><div class="shot"><img src="../img/en/ayet.webp" width="1440" height="810" loading="lazy" alt="60 tafsirs, one click away"></div><div><span class="kick">Tafsir</span><h3>60 tafsirs, one click away</h3><p class="sub" style="margin:0">From Ṭabarī to Elmalılı; tafsirs by narration, by reasoning and ishārī, each beside the verse.</p><ul><li><b>Switch with tabs:</b> Ṭabarī, Qurṭubī, Rāzī, Ibn Kathīr, Elmalılı…</li><li><b>Translations:</b> English (Saheeh International) and three Turkish: Elmalılı (1935), King Fahd Complex, Rowwad Centre</li><li><b>Presentation mode:</b> full screen in large type for mosque lessons and projectors</li><li><b>Notes, highlights, bookmarks</b>; export to Word and PDF</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/mushaf.webp" width="1440" height="810" loading="lazy" alt="The page layout of the Medina mushaf"></div><div><span class="kick">Mushaf</span><h3>The page layout of the Medina mushaf</h3><p class="sub" style="margin:0">604 pages, with the printed line breaks and illuminated surah headings; tajweed colours optional.</p><ul><li><b>Turkish mushaf marks:</b> round sukūn and the familiar tanwīn (Medina spelling if you prefer)</li><li>The King Fahd Complex's <b>Ḥafṣ font</b></li><li><b>Reading plan and khatm:</b> daily goal, streak and progress</li></ul></div></div>
+</div></section>
+
+<section id="ezber"><div class="wrap">
+  <h2>Listen and memorize</h2>
+  <p class="sub">29 reciters, full-screen reading on the phone, and a review schedule that makes memorization last.</p>
+  <div class="phones">
+    <figure><img src="../img/tamekran.webp" width="460" height="924" loading="lazy" alt="Full-screen reading"><figcaption><b>Full-screen reading</b>The screen scrolls by itself at the speed you choose</figcaption></figure>
+    <figure><img src="../img/tilavet.webp" width="460" height="924" loading="lazy" alt="Recitation"><figcaption><b>Recitation</b>The recited verse is highlighted and the text follows the reciter</figcaption></figure>
+    <figure><img src="../img/ezber.webp" width="460" height="924" loading="lazy" alt="Memorization mode"><figcaption><b>Memorization mode</b>Verses hidden; record your own recitation</figcaption></figure>
+    <figure><img src="../img/tekrar.webp" width="460" height="924" loading="lazy" alt="Review schedule"><figcaption><b>Review schedule</b>Review after 1, 3, 7, 14, 30… days</figcaption></figure>
+    <figure><img src="../img/kok.webp" width="460" height="924" loading="lazy" alt="Word root"><figcaption><b>Word root</b>Long press: the root and where it occurs in the Qur'an</figcaption></figure>
+    <figure><img src="../img/widget.webp" width="460" height="924" loading="lazy" alt="Home-screen widget"><figcaption><b>Home screen</b>The verse of the day on the phone's home screen</figcaption></figure>
+  </div>
+  <div class="grid" style="margin-top:28px">
+    <div class="card"><h3>29 reciters</h3><p>Alafasy, Ḥuṣarī, ‘Abd al-Bāsiṭ, Minshāwī, Sudays, Shuraym, Shāṭirī, Ghāmidī and others; mujawwad and teaching recitations included. Each verse can be repeated as often as you like.</p></div>
+    <div class="card"><h3>Offline listening</h3><p>Download the surah, the juz or the whole Qur'an from the reciter you choose; listen on the road too.</p></div>
+    <div class="card"><h3>With your own voice</h3><p>Record your recitation on the memorization screen, then listen to it after the reciter and compare. Recordings stay on your device only.</p></div>
+  </div>
+</div></section>
+
+<section id="hadis" class="band"><div class="wrap">
+  <h2>Hadith</h2>
+  <p class="sub">17 books, 183,373 hadiths; with their chains, commentaries, narrators and the scholars' verdicts.</p>
+  <div class="feat"><div class="shot"><img src="../img/en/hadis.webp" width="1440" height="810" loading="lazy" alt="Every narrator marked"></div><div><span class="kick">Chain</span><h3>Every narrator marked</h3><p class="sub" style="margin:0">Tap the narrators in the chain; the verdicts of the early critics are right under the hadith.</p><ul><li><b>The Six Books</b>, Muwaṭṭa’, Musnad, Dārimī, Mustadrak, Ibn Ḥibbān, Ibn Khuzayma, the Muṣannafs, Bayhaqī, Majma‘ al-Zawā’id</li><li><b>Compare narrations:</b> the different wordings of the same hadith</li><li><b>Takhrīj report</b> (Word) and hadith notes</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/serh.webp" width="1440" height="810" loading="lazy" alt="17 commentaries, under the hadith"></div><div><span class="kick">Commentary</span><h3>17 commentaries, under the hadith</h3><p class="sub" style="margin:0">Fatḥ al-Bārī, ‘Umdat al-Qārī, al-Minhāj, ‘Awn al-Ma‘būd, Tuḥfat al-Aḥwadhī…</p><ul><li><b>Search the commentaries</b></li><li>With volume and page; can be cited as a source</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="../img/en/secere.webp" width="1440" height="810" loading="lazy" alt="Isnad tree"></div><div><span class="kick">Isnad</span><h3>Isnad tree</h3><p class="sub" style="margin:0">All chains of a hadith across all books in a single tree; the common narrator (madār) marked.</p><ul><li><b>Link between two narrators</b></li><li><b>Topic index:</b> hadiths by subject</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/ravi.webp" width="1440" height="810" loading="lazy" alt="Narrator information"></div><div><span class="kick">Narrator</span><h3>Narrator information</h3><p class="sub" style="margin:0">Teachers, students, generation, death and the jarḥ–ta‘dīl statements; entries from the Taqrīb, Tahdhīb, Kāshif and Mīzān.</p><ul><li><b>All narrations of a narrator</b> and search within them</li><li>Report a wrongly matched narrator in a chain with one click</li></ul></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Dictionary, search, sharing</h2>
+  <p class="sub">The word you wonder about, the phrase you are looking for, the verse you want to send to those you love.</p>
+  <div class="feat"><div class="shot"><img src="../img/en/lugat.webp" width="1440" height="810" loading="lazy" alt="Tap a word"></div><div><span class="kick">Dictionary</span><h3>Tap a word</h3><p class="sub" style="margin:0">an-Nihāya, Lisān al-‘Arab, Tāj al-‘Arūs, al-Qāmūs… eight classical dictionaries; rare words marked.</p><ul><li><b>Mashāriq al-Anwār</b> and <b>al-Fā’iq</b> for the rare words of hadith</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/arama.webp" width="1440" height="810" loading="lazy" alt="Search the tafsirs and translations"></div><div><span class="kick">Search</span><h3>Search the tafsirs and translations</h3><p class="sub" style="margin:0">An Arabic, English or Turkish word, across all tafsirs and translations in seconds.</p><ul><li><b>Exact phrase</b> or all words; filter by work</li><li>Vowel marks and diacritics are ignored in the search</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="../img/kart.webp" width="720" height="720" loading="lazy" alt="Verse and hadith card"></div><div><span class="kick">Share</span><h3>Verse and hadith card</h3><p class="sub" style="margin:0">Turn a verse with its translation, or a hadith with its book and number, into an elegant image.</p><ul><li><b>Square, portrait, story</b> formats; four colours</li><li>On the phone to WhatsApp and Instagram; on the computer save or copy</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/bugun.webp" width="1440" height="810" loading="lazy" alt="A verse and a hadith every day"></div><div><span class="kick">Today</span><h3>A verse and a hadith every day</h3><p class="sub" style="margin:0">The program greets you with the verse and hadith of the day; it reminds you where you left off and of your latest notes.</p><ul><li>The verse of the day on the phone's home screen too</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="../img/esitle.webp" width="1440" height="810" loading="lazy" alt="Phone and computer together"></div><div><span class="kick">Sync</span><h3>Phone and computer together</h3><p class="sub" style="margin:0">On the same Wi-Fi, a 6-digit code syncs notes, bookmarks, highlights, khatm and memorization.</p><ul><li>Nothing is sent to the internet or to any server</li><li>Single-file <b>backup</b> and restore</li></ul></div></div>
+</div></section>
+
+<section id="diller" class="band"><div class="wrap">
+  <h2>In three languages: Türkçe · English · العربية</h2>
+  <p class="sub">All the program's menus, buttons, guide and tour are available in Turkish, English and Arabic. The language changes with one tap in the Display window; on first start the program follows your device's language. The texts of the books themselves (tafsir, hadith, commentary, dictionary) stay as they are in their sources.</p>
+  <div class="langs">
+    <figure><div class="shot"><img src="../img/dil-tr.webp" width="1440" height="810" loading="lazy" alt="Turkish interface"></div><figcaption><b>Türkçe</b> · Elmalılı's original translation, the King Fahd Complex and Rowwad translations</figcaption></figure>
+    <figure><div class="shot"><img src="../img/dil-en.webp" width="1440" height="810" loading="lazy" alt="English interface"></div><figcaption lang="en"><b>English</b> · with the Saheeh International translation of the meanings of the Qur'an</figcaption></figure>
+    <figure><div class="shot"><img src="../img/dil-ar.webp" width="1440" height="810" loading="lazy" alt="الواجهة العربية"></div><figcaption lang="ar" dir="rtl"><b>العربية</b> · الواجهة من اليمين إلى اليسار، مع التفاسير والشروح والمعاجم العربية</figcaption></figure>
+  </div>
+  <div class="grid" style="margin-top:28px">
+    <div class="card" lang="en"><h3>In English</h3><p>Read the Qur'an with 60 tafsirs, 17 hadith books with their chains and commentaries, 8 classical dictionaries and 29 reciters. Free, ad-free and offline once installed — for Windows, Mac, Linux and Android.</p></div>
+    <div class="card" lang="ar" dir="rtl"><h3>بالعربية</h3><p>اقرأ القرآن مع 60 تفسيرًا، و17 كتابًا في الحديث بأسانيدها وشروحها، و8 معاجم قديمة، و29 قارئًا. مجاني وبلا إعلانات ويعمل دون اتصال بعد التثبيت، على Windows وMac وLinux وAndroid.</p></div>
+    <div class="card"><h3>How do I change the language?</h3><p>Display (Aa) › Language. On the phone, from the <b>⋯</b> menu at the top: «Display and language». Choosing English opens the English translation; choosing Arabic shows the Arabic text only.</p></div>
+  </div>
+</div></section>
+
+<section id="dualar"><div class="wrap">
+  <h2>Prayers and the Beautiful Names</h2>
+  <p class="sub">The prayers of the Qur'an, prayers of the Sunna whose sources were checked in the hadith books, and the ninety-nine names of Allah in a single section.</p>
+  <div class="feat"><div class="shot"><img src="../img/en/dualar.webp" width="1440" height="810" loading="lazy" alt="The Beautiful Names"></div><div><span class="kick">Prayers</span><h3>Prayers with their sources</h3><ul><li><b>35 prayers from the Qur'an</b>: the mushaf text and your chosen translation; go to the verse with one tap</li><li><b>20 prayers from the Sunna</b>: the master supplication for forgiveness, travel, the sick, distress, sleep… Tap the source to open the whole hadith</li><li><b>The Beautiful Names</b>: the 99 names according to Tirmidhī's narration, with reading and meaning; search by name or meaning</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/tablet.webp" width="1280" height="800" loading="lazy" alt="Side by side on a tablet"></div><div><span class="kick">Tablet</span><h3>Side by side when held sideways</h3><ul><li>When a tablet or phone is held sideways: <b>the verse on one side, the tafsir on the other</b></li><li>Each side scrolls on its own; side by side can always be chosen in Display</li><li>When the window shrinks, the Mushaf page shrinks to fit too</li></ul></div></div>
+</div></section>
+
+<section id="telefon" class="band"><div class="wrap">
+  <h2>On every device</h2>
+  <p class="sub">Windows, Mac, Linux and Android. The phone app is the same program as on the computer; all books and features are on the phone too.</p>
+  <div class="grid">
+    <div class="card"><h3>Windows</h3><p>Windows 10 and 11, 64-bit. The installer downloads the data packs itself; updates come from within the program.</p></div>
+    <div class="card"><h3>Android</h3><p>Android 8.0 or later, phones and tablets. Updates are installed from within the app; the verse of the day on the home screen.</p></div>
+    <div class="card"><h3>Mac and Linux</h3><p>Apple Silicon (M1–M4) and Intel Macs; 64-bit Linux. The data is downloaded on first start.</p></div>
+  </div>
+</div></section>
+
+<section id="kutuphane" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
+  <h2>Library</h2>
+  <p class="sub">All texts are based on printed editions; volume and page are given in the commentaries and dictionaries and can be cited.</p>
+  <div class="lib">
+    <div><h4>Türkçe</h4><p>Elmalılı Muhammed Hamdi Yazır, Hak Dîni Kur'ân Dili (first edition, 1935–1939). Translations: Saheeh International (English), Elmalılı, King Fahd Complex, Rowwad Translation Centre</p></div>
+    <div><h4>Tafsirs by narration · 11</h4><p>Ṭabarī, Ibn Abī Ḥātim, Ibn Kathīr, Suyūṭī (al-Durr al-Manthūr), Baghawī, Tha‘labī, Muqātil…</p></div>
+    <div><h4>Tafsirs by reasoning · 26</h4><p>Māturīdī, Zamakhsharī, Rāzī, Qurṭubī, Bayḍāwī, Nasafī, Abū Ḥayyān, Abū al-Su‘ūd, Ālūsī, Shawkānī…</p></div>
+    <div><h4>Ishārī tafsirs · 9</h4><p>Tustarī, Sulamī, Qushayrī, Baqlī, Najm al-Dīn Kubrā, Kāshānī, Rūḥ al-Bayān, Ibn ‘Ajība…</p></div>
+    <div><h4>Concise and others · 13</h4><p>Jalālayn, Wāḥidī, Ibn Juzayy, al-Manār, Sufyān al-Thawrī, Nasā’ī, Ibn ‘Arafa, al-Durr al-Maṣūn…</p></div>
+    <div><h4>Hadith · 17 books</h4><p>The Six Books, Muwaṭṭa’, Musnad, Dārimī, Mustadrak, Ibn Ḥibbān, Ibn Khuzayma, the Muṣannafs, Bayhaqī's al-Sunan al-Kubrā, Majma‘ al-Zawā’id</p></div>
+    <div><h4>Commentaries · 17</h4><p>Fatḥ al-Bārī, ‘Umdat al-Qārī, Irshād al-Sārī, al-Minhāj, ‘Awn al-Ma‘būd, Tuḥfat al-Aḥwadhī…</p></div>
+    <div><h4>Dictionaries · 8</h4><p>an-Nihāya, Lisān al-‘Arab, Tāj al-‘Arūs, al-Qāmūs al-Muḥīṭ, al-Ṣiḥāḥ, Maqāyīs al-Lugha, al-Miṣbāḥ al-Munīr, Mashāriq al-Anwār</p></div>
+    <div><h4>Recitation · 29 reciters</h4><p>EveryAyah recordings: Alafasy, Ḥuṣarī (murattal, mujawwad, teaching), ‘Abd al-Bāsiṭ, Minshāwī, Sudays, Shuraym, Shāṭirī…</p></div>
+  </div>
+</div></section>
+
+<section id="kurulum"><div class="wrap">
+  <h2>Download and install</h2>
+  <p class="sub">Downloading a single file is enough; the data needed is downloaded by itself and every file is checked.</p>
+  <ol class="steps">
+    <li><b>Windows:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Kurulum.exe</a>— download and run it. The installer downloads the tafsir data, the hadith books and, if you choose, the commentary and dictionary packs.</li>
+    <li><b>Android:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Tefsir-Hadis-Android.apk</a> — open the file on the phone and install it (you may be asked once to allow unknown sources). The data is downloaded once on first start.</li>
+    <li><b>Mac and Linux:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Apple Silicon</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Intel</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a>. Unpack and run the program; the data is downloaded on first start.</li>
+  </ol>
+  <p class="note" style="margin-top:16px"><b>If Windows warns you:</b> As the program is not yet signed with a publisher certificate, Windows may say it "protected your PC". <b>More info › Run anyway</b> lets you continue.</p>
+  <p class="note">All versions and what's new: <a href="https://github.com/fehimdaduk2/tefsir-surum/releases">Release notes</a>.</p>
+</div></section>
+
+<section id="sss" class="band"><div class="wrap faq">
+  <h2>Frequently asked questions</h2>
+  <details><summary>Is it paid?</summary><p>No. The program and all the books are free; there are no ads.</p></details>
+  <details><summary>Do I need the internet?</summary><p>Only at installation and first start is the data downloaded once; after that the program works offline. Recitation is fetched from the internet the first time a verse is played; you can download a surah, a juz or the whole Qur'an in advance.</p></details>
+  <details><summary>Is my information sent anywhere?</summary><p>No. Your notes, memorization and recordings stay on your device only. The program only counts, anonymously, which part is used; this can be turned off in Display. Sync, too, happens only between two devices on the same Wi-Fi network.</p></details>
+  <details><summary>How do I sync my phone and computer?</summary><p>With both devices on the same Wi-Fi: Notes › Sync. On the phone choose «Show code»; on the computer enter the phone's address and the 6-digit code.</p></details>
+  <details><summary>Is it available in other languages?</summary><p>Yes. The interface is in Turkish, English and Arabic; change it in Display › Language. The English interface comes with the Saheeh International translation; in Arabic the page flows from right to left. <span lang="en"></span></p></details>
+  <details><summary>Does it work on iPhone?</summary><p>Not for now; there are Windows, Mac, Linux and Android versions.</p></details>
+  <details><summary>Why are some contemporary tafsirs and translations closed?</summary><p>Works still under copyright are not included without the rights holders' permission; their names appear in the list, and they are opened as permission is obtained.</p></details>
+  <details><summary>What if I find an error?</summary><p>Report it with the «Report an error» or, in a chain, the «wrong narrator» button in the program, or by writing to <span class="mail">tefsirhadiskutuphanesi@gmail.com</span> .</p></details>
+</div></section>
+
+<section id="telif"><div class="wrap">
+  <h2>Copyright</h2>
+  <p class="sub">The authors of the classical works died centuries ago; the editors' footnotes, introductions and appendices are not included.</p>
+  <p class="note">Contemporary tafsirs and translations still under copyright are listed by name in the program, but their texts are not included and cannot be opened. They will be opened as permission is obtained from the rights holders. If you are a rights holder, write to <span class="mail">tefsirhadiskutuphanesi@gmail.com</span> .</p>
+</div></section>
+</main>
+
+<section id="sartlar" style="padding-top:0"><div class="wrap">
+  <h2>Terms of use</h2>
+  <p class="sub">© 2026 Fehim Dadük &amp; Kerem Uzuner. All rights reserved. Last updated: 18 October 2026.</p>
+  <p class="note">This is a translation; in case of any difference the Turkish text prevails.</p><ol class="terms"><li><b>Ownership.</b> The Tafsir &amp; Hadith Library software — the program's code, interface and design, the installer, the arrangement of the texts for the program, their division into verses, sections and hadiths, the indexes, root and narrator links and the structure of the data files — belongs to the program's developers Fehim Dadük and Kerem Uzuner and is protected by intellectual property law. All rights reserved.</li><li><b>Permission to use.</b> The program is free. It may be installed and used on as many computers as you like for personal, scholarly and educational purposes. The texts may be quoted; in scholarly work the original source of the quotation (work, volume, page) should be given.</li><li><b>Not allowed without permission.</b> Without written permission: distributing the program or its data files modified or under another name, selling them or offering them for a fee; reverse-engineering the program or trying to reach its source code or encrypted interface (except where the law expressly allows it); extracting the data files in bulk for use in another program, website or dataset; trying to open the works kept closed for copyright.</li><li><b>Sharing.</b> You are free to recommend the program and share the link to the official download page. For your safety, download the program only from the official page.</li><li><b>Classical works and other sources.</b> The texts of classical works whose authors died centuries ago are open to all; these terms claim no right over those texts. The openly licensed datasets, fonts and recordings used in the program are subject to their own licences; they are listed on the About page. Contemporary works under copyright are opened only with the rights holders' permission.</li><li><b>Liability.</b> The program is provided as is. Care has been taken over the accuracy of the texts, but digital copies may contain errors; for scholarly citations, consulting the printed edition is recommended. The developers cannot be held liable for any damage arising from the use of the program.</li><li><b>Privacy.</b> Your notes and settings are stored only on your computer (or in a cloud folder of your choice). The program connects to the internet only to check for updates, download data files, play recitations and send anonymous usage counts; it collects and sends no personal information. The anonymous counts contain only that the program was opened, how long it stayed open, which part of it was used, its version and the operating system; nothing read or written, no notes and nothing identifying is sent. They can be turned off in Display. Visits to this page are also counted with a counter (Umami) that uses no cookies and stores no personal information. Error and copyright reports reach us only if you send them from your own e-mail.</li><li><b>Changes.</b> These terms may be updated with new versions; the current text is published in the program and on this page.</li></ol>
+  <p class="note">Permission requests and questions: <span class="mail">tefsirhadiskutuphanesi@gmail.com</span></p>
+</div></section>
+
+<footer><div class="wrap">
+  <span>© <span id="yil">2026</span> Fehim Dadük &amp; Kerem Uzuner. All rights reserved. <a href="#sartlar">Terms of use</a> · <a href="gizlilik.html">Privacy policy</a></span>
+  <span>Contact: <span class="mail">tefsirhadiskutuphanesi@gmail.com</span></span>
+</div></footer>
+
+<script>
+// the language of the page: a visitor whose browser is not in Turkish is taken once to the English or Arabic page;
+// the choice made with the switch is remembered (and search engines, reading every page, are left where they are)
+document.querySelectorAll(".langsw a").forEach(a => a.addEventListener("click", () => { try { localStorage.setItem("siteDil", a.textContent === "عربي" ? "ar" : a.textContent.toLowerCase()); } catch (e) {} }));
+(() => {
+  if (document.documentElement.lang !== "tr" || /bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)) return;
+  let k = null; try { k = localStorage.getItem("siteDil"); } catch (e) {}
+  const n = (navigator.language || "tr").slice(0, 2).toLowerCase(), want = k || (n === "tr" ? "tr" : n === "ar" ? "ar" : "en");
+  if (want !== "tr") location.replace(want + "/" + location.hash);
+})();
+document.getElementById("yil").textContent = new Date().getFullYear();
+// the main button offers the visitor's own system
+const UA = navigator.userAgent, DL = "https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/";
+const OS = /Android/i.test(UA) ? "android" : /iPhone|iPad/i.test(UA) ? "ios" : /Mac/i.test(UA) ? "mac" : /Linux/i.test(UA) ? "linux" : "win";
+const OSNAME = { win: "Windows 10 and 11 · 64-bit", android: "Android 8.0 or later", mac: "macOS · Apple Silicon (Intel: link below)", linux: "Linux · 64-bit", ios: "iPhone ve iPad için henüz yok · Windows, Mac, Linux, Android" };
+const FILE = { win: "Kurulum.exe", android: "Tefsir-Hadis-Android.apk", mac: "Tefsir-Hadis-macOS-arm64.zip", linux: "Tefsir-Hadis-Linux-amd64.tar.gz", ios: "Kurulum.exe" };
+const LBL = { win: "Free download for Windows", android: "Free download for Android", mac: "Free download for Mac", linux: "Free download for Linux", ios: "Free download" };
+document.getElementById("indir").href = DL + FILE[OS]; document.getElementById("indirT").textContent = LBL[OS]; document.getElementById("surum").textContent = OSNAME[OS];
+// the current version and the installer's size, from the same list the program reads
+fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.json", { cache: "no-store" })
+  .then(r => r.json())
+  .then(d => {
+    const mb = d.size && OS === "win" ? " · " + Math.round(d.size / 1048576) + " MB" : "";
+    document.getElementById("surum").textContent = "Version " + d.version + " · " + OSNAME[OS] + mb;
+  })
+  .catch(() => {});
+</script>
+</body>
+</html>

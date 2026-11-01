@@ -9,6 +9,9 @@
 <meta property="og:description" content="60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek programda. Ücretsiz, internetsiz.">
 <meta property="og:image" content="img/tanitim.jpg">
 <link rel="icon" href="img/icon32.png">
+<link rel="alternate" hreflang="tr" href="https://fehimdaduk2.github.io/tefsir-surum/">
+<link rel="alternate" hreflang="en" href="https://fehimdaduk2.github.io/tefsir-surum/en/">
+<link rel="alternate" hreflang="ar" href="https://fehimdaduk2.github.io/tefsir-surum/ar/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -51,7 +54,7 @@ nav a:hover { color: var(--text); }
 :root[data-theme="dark"] .cta, .cta { color: #fff; }
 .cta svg { width: 20px; height: 20px; }
 .meta { margin-top: 12px; color: var(--muted); font-size: 14px; }
-.stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 40px auto 0; max-width: 820px; }
+.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 40px auto 0; max-width: 960px; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 8px; }
 .stat b { display: block; font-size: 28px; color: var(--brand-2); line-height: 1.1; }
 .stat span { font-size: 13px; color: var(--muted); }
@@ -67,6 +70,12 @@ section .sub { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
 .card .ico { width: 36px; height: 36px; border-radius: 10px; background: var(--gold-soft); color: var(--gold); display: grid; place-items: center; margin-bottom: 12px; }
 .card .ico svg { width: 20px; height: 20px; }
+[dir="rtl"] nav { margin-left: 0; margin-right: auto; }
+@media (max-width: 600px) { .langsw { margin-inline-start: auto; } }
+.langsw { display: inline-flex; flex: none; gap: 2px; margin-inline-start: 14px; padding: 2px; border: 1px solid var(--line); border-radius: 999px; }
+.langsw a { padding: 3px 9px !important; border-radius: 999px; font-size: 12.5px !important; font-weight: 700; text-decoration: none; }
+.langsw a[aria-current] { background: var(--brand); color: #fff !important; }
+[dir="rtl"] .feat li { padding-left: 0; padding-right: 26px; } [dir="rtl"] .feat li::before { left: auto; right: 4px; }
 .langs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }
 .langs figure { margin: 0; }
 .langs .shot { margin: 0; }
@@ -138,7 +147,7 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#hadis">Hadis</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav>
+  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#hadis">Hadis</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
 </div></header>
 
 <main>
@@ -300,6 +309,15 @@ footer a { color: inherit; }
 </div></footer>
 
 <script>
+// the language of the page: a visitor whose browser is not in Turkish is taken once to the English or Arabic page;
+// the choice made with the switch is remembered (and search engines, reading every page, are left where they are)
+document.querySelectorAll(".langsw a").forEach(a => a.addEventListener("click", () => { try { localStorage.setItem("siteDil", a.textContent === "عربي" ? "ar" : a.textContent.toLowerCase()); } catch (e) {} }));
+(() => {
+  if (document.documentElement.lang !== "tr" || /bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)) return;
+  let k = null; try { k = localStorage.getItem("siteDil"); } catch (e) {}
+  const n = (navigator.language || "tr").slice(0, 2).toLowerCase(), want = k || (n === "tr" ? "tr" : n === "ar" ? "ar" : "en");
+  if (want !== "tr") location.replace(want + "/" + location.hash);
+})();
 document.getElementById("yil").textContent = new Date().getFullYear();
 // the main button offers the visitor's own system
 const UA = navigator.userAgent, DL = "https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/";
