@@ -67,6 +67,12 @@ section .sub { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
 .card .ico { width: 36px; height: 36px; border-radius: 10px; background: var(--gold-soft); color: var(--gold); display: grid; place-items: center; margin-bottom: 12px; }
 .card .ico svg { width: 20px; height: 20px; }
+.langs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 8px; }
+.langs figure { margin: 0; }
+.langs .shot { margin: 0; }
+.langs figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.langs figcaption b { color: var(--text); }
+@media (max-width: 860px) { .langs { grid-template-columns: 1fr; } }
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .pair figure { margin: 0; }
 .pair figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
@@ -132,14 +138,14 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#hadis">Hadis</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav>
+  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#hadis">Hadis</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>Kur'an'ı tefsirleriyle,<br>hadisi senediyle okuyun</h1>
-  <p class="lead">60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda. Okuyun, dinleyin, ezberleyin, araştırın ve paylaşın. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
+  <p class="lead">60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda. Okuyun, dinleyin, ezberleyin, araştırın ve paylaşın. Türkçe, İngilizce ve Arapça arayüz. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
     <span id="indirT">Windows için ücretsiz indir</span>
@@ -152,6 +158,7 @@ footer a { color: inherit; }
     <div class="stat"><b>17</b><span>hadis şerhi</span></div>
     <div class="stat"><b>8</b><span>kadim sözlük</span></div>
     <div class="stat"><b>29</b><span>kâri</span></div>
+    <div class="stat"><b>3</b><span>dil</span></div>
   </div>
   <div class="shot vid" style="margin-top:40px" id="video"><video controls preload="none" playsinline poster="img/tanitim.jpg" width="1920" height="1080"><source src="tanitim.mp4" type="video/mp4">Tarayıcınız videoyu oynatamıyor; <a href="tanitim.mp4">videoyu indirin</a>.</video></div>
   <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">Tanıtım videosu (3 dk) · Seslendirme: Microsoft Türkçe sinir ağı sesi · Tilâvet: Mahmûd Halîl el-Husarî (EveryAyah)</p>
@@ -201,6 +208,28 @@ footer a { color: inherit; }
   <div class="feat"><div class="shot"><img src="img/esitle.webp" width="1440" height="810" loading="lazy" alt="Telefon ve bilgisayar birlikte"></div><div><span class="kick">Eşitleme</span><h3>Telefon ve bilgisayar birlikte</h3><p class="sub" style="margin:0">Aynı Wi-Fi'de 6 haneli bir kodla notlar, yer imleri, vurgular, hatim ve ezber eşitlenir.</p><ul><li>İnternete ve hiçbir sunucuya bir şey gönderilmez</li><li>Tek dosyalık <b>yedek</b> ve geri yükleme</li></ul></div></div>
 </div></section>
 
+<section id="diller" class="band"><div class="wrap">
+  <h2>Üç dilde: Türkçe · English · العربية</h2>
+  <p class="sub">Programın bütün menüleri, düğmeleri, kılavuzu ve tanıtım turu Türkçe, İngilizce ve Arapça kullanılabilir. Dil, Görünüm penceresinden tek dokunuşla değişir; program ilk açılışta cihazın dilini seçer. Kitapların kendi metinleri (tefsir, hadis, şerh, sözlük) kaynaklarındaki hâliyle kalır.</p>
+  <div class="langs">
+    <figure><div class="shot"><img src="img/dil-tr.webp" width="1440" height="810" loading="lazy" alt="Türkçe arayüz"></div><figcaption><b>Türkçe</b> · Elmalılı'nın orijinal meali, Kral Fahd Kompleksi ve Ravvâd mealleri</figcaption></figure>
+    <figure><div class="shot"><img src="img/dil-en.webp" width="1440" height="810" loading="lazy" alt="English interface"></div><figcaption lang="en"><b>English</b> · with the Saheeh International translation of the meanings of the Qur'an</figcaption></figure>
+    <figure><div class="shot"><img src="img/dil-ar.webp" width="1440" height="810" loading="lazy" alt="الواجهة العربية"></div><figcaption lang="ar" dir="rtl"><b>العربية</b> · الواجهة من اليمين إلى اليسار، مع التفاسير والشروح والمعاجم العربية</figcaption></figure>
+  </div>
+  <div class="grid" style="margin-top:28px">
+    <div class="card" lang="en"><h3>In English</h3><p>Read the Qur'an with 60 tafsirs, 17 hadith books with their chains and commentaries, 8 classical dictionaries and 29 reciters. Free, ad-free and offline once installed — for Windows, Mac, Linux and Android.</p></div>
+    <div class="card" lang="ar" dir="rtl"><h3>بالعربية</h3><p>اقرأ القرآن مع 60 تفسيرًا، و17 كتابًا في الحديث بأسانيدها وشروحها، و8 معاجم قديمة، و29 قارئًا. مجاني وبلا إعلانات ويعمل دون اتصال بعد التثبيت، على Windows وMac وLinux وAndroid.</p></div>
+    <div class="card"><h3>Dil nasıl değişir?</h3><p>Görünüm (Aa) › Dil. Telefonda üstteki <b>⋯</b> menüsünden «Görünüm ve dil». İngilizce seçilince İngilizce meal, Arapça seçilince yalnız Arapça metin açılır.</p></div>
+  </div>
+</div></section>
+
+<section id="dualar"><div class="wrap">
+  <h2>Dualar ve Esmâ-ül Hüsnâ</h2>
+  <p class="sub">Kur'an'daki dualar, kaynakları hadis kitaplarında doğrulanmış sünnet duaları ve Allah'ın doksan dokuz ismi tek bir bölümde.</p>
+  <div class="feat"><div class="shot"><img src="img/dualar.webp" width="1440" height="810" loading="lazy" alt="Esmâ-ül Hüsnâ"></div><div><span class="kick">Dualar</span><h3>Kaynağıyla dua</h3><ul><li><b>35 Kur'an duası</b>: mushaf metni ve seçtiğiniz meal; tek dokunuşla âyete gidin</li><li><b>20 sünnet duası</b>: Seyyidü'l-istiğfâr, yolculuk, hasta, sıkıntı, uyku… Kaynağa dokununca hadisin tamamı açılır</li><li><b>Esmâ-ül Hüsnâ</b>: Tirmizî'nin rivâyetine göre 99 isim, okunuşu ve manasıyla; isim ya da manayla arama</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/tablet.webp" width="1280" height="800" loading="lazy" alt="Tablette yan yana"></div><div><span class="kick">Tablet</span><h3>Yatayda yan yana</h3><ul><li>Tablet ya da telefon yatay tutulunca <b>âyet solda, tefsir sağda</b></li><li>İki taraf ayrı ayrı kayar; Görünüm'den her zaman yan yana da seçilebilir</li><li>Pencere küçülünce Mushaf sayfası da küçülerek sığar</li></ul></div></div>
+</div></section>
+
 <section id="telefon" class="band"><div class="wrap">
   <h2>Her cihazda</h2>
   <p class="sub">Windows, Mac, Linux ve Android. Telefon uygulaması bilgisayardaki programın aynısıdır; bütün kitaplar ve özellikler telefonda da var.</p>
@@ -245,6 +274,7 @@ footer a { color: inherit; }
   <details><summary>İnternet gerekiyor mu?</summary><p>Yalnız kurulumda ve ilk açılışta veriler bir kez iner; sonra program internetsiz çalışır. Tilâvet bir âyeti ilk dinleyişte internetten alır; dilerseniz sûreyi, cüzü ya da bütün Kur'an'ı önceden indirebilirsiniz.</p></details>
   <details><summary>Bilgilerim bir yere gönderiliyor mu?</summary><p>Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Görünüm ayarlarından kapatılabilir. Eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.</p></details>
   <details><summary>Telefonla bilgisayarı nasıl eşitlerim?</summary><p>İki cihaz aynı Wi-Fi'deyken Notlar › Eşitle. Telefonda «Kodu göster» deyin; bilgisayara telefonun adresini ve 6 haneli kodu girin.</p></details>
+  <details><summary>Başka dillerde kullanılabilir mi?</summary><p>Evet. Arayüz Türkçe, İngilizce ve Arapça; Görünüm › Dil'den değişir. İngilizce arayüzde Saheeh International meali gelir; Arapçada sayfa sağdan sola akar. / <span lang="en">Yes: the interface is available in Turkish, English and Arabic (Display › Language).</span></p></details>
   <details><summary>iPhone'da çalışır mı?</summary><p>Şimdilik hayır; Windows, Mac, Linux ve Android sürümleri var.</p></details>
   <details><summary>Neden bazı çağdaş tefsir ve mealler kapalı?</summary><p>Telif hakkı süren eserler hak sahiplerinden izin alınmadan konmaz; adları listede görünür, izin alındıkça açılır.</p></details>
   <details><summary>Hata bulursam ne yapayım?</summary><p>Program içindeki «Hata bildir» ya da senetteki «yanlış râvi» düğmesiyle, ya da <span class="mail">tefsirhadiskutuphanesi@gmail.com</span> adresine yazarak bildirebilirsiniz.</p></details>
