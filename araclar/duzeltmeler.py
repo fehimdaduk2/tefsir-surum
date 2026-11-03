@@ -18,7 +18,7 @@ SCRIPT = {
 NOTE = {'en': '<p class="note">This is a translation; in case of any difference the Turkish text prevails.</p>',
         'ar': '<p class="note">هذا نص مترجم؛ وعند أي اختلاف يُعتمد النص التركي.</p>'}
 
-LOCAL_SHOTS = ['ayet', 'mushaf', 'arama', 'hadis', 'serh', 'lugat', 'secere', 'ravi', 'dualar']
+LOCAL_SHOTS = ['ayet', 'mushaf', 'arama', 'hadis', 'serh', 'lugat', 'secere', 'ravi', 'dualar', 'takip']
 
 def FIX(L):
     def f(page):

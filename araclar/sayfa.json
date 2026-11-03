@@ -1046,5 +1046,65 @@
 "Destek sayfasını aç": [
 "Open the support page",
 "افتح صفحة الدعم"
+],
+"Okuyuş takibi": [
+"Recitation follower",
+"متابعة التلاوة"
+],
+"Yeni · Okuyuş takibi": [
+"New · Recitation follower",
+"جديد · متابعة التلاوة"
+],
+"Okurken sizi dinler": [
+"It listens as you recite",
+"يستمع إليك وأنت تقرأ"
+],
+"Mikrofona okuyun: metin sizinle akar; atladığınız ya da yanlış okuduğunuz kelimede uyarı sesi çıkar ve kelime kırmızıyla işaretlenir. Hafızlık ve ezber kontrolü için.": [
+"Recite to the microphone: the text flows with you, and a word you skip or misread sounds a warning tone and is marked in red. For hifz and checking what you have memorized.",
+"اقرأ أمام الميكروفون: يسير النص معك، وإذا تركت كلمة أو أخطأت فيها صدر صوت تنبيه ولُوّنت الكلمة بالأحمر. للحفظ ومراجعة المحفوظ."
+],
+"Kur'an tilavetiyle eğitilmiş": [
+"Trained on Qur'an recitation:",
+"مدرَّب على تلاوة القرآن:"
+],
+"Atlanan kelime, cümle ve âyet": [
+"Skipped words, sentences and verses",
+"الكلمات والجمل والآيات المتروكة"
+],
+"Sesiniz cihazdan çıkmaz:": [
+"Your voice never leaves the device:",
+"صوتك لا يغادر جهازك:"
+],
+"Kelimeleri denetler, hareke ve tecvid inceliklerini denetlemez; en az 2,5 GB boş bellek gerekir": [
+"It checks the words, not vowel marks or the finer points of tajweed; at least 2.5 GB of free memory is needed",
+"تراقب الكلمات لا الحركات ولا دقائق التجويد؛ ويلزم 2.5 غ.ب على الأقل من الذاكرة الحرة"
+],
+"29 kâri, telefonda tam ekran okuma, ezberi kalıcı kılan bir tekrar takvimi ve okurken sizi dinleyen okuyuş takibi.": [
+"29 reciters, full-screen reading on the phone, a review calendar that makes memorization last, and a recitation follower that listens as you read.",
+"29 قارئًا، وقراءة بملء الشاشة على الهاتف، وجدول مراجعة يثبّت الحفظ، ومتابعة للتلاوة تستمع إليك وأنت تقرأ."
+],
+"Takip": [
+"Follow",
+"المتابعة"
+],
+"ses tanıma (Tarteel); ezber ekranında gizli âyetler siz okudukça açılır": [
+"speech recognition (Tarteel); in memorization the hidden verses open as you recite",
+"التعرف على الكلام (Tarteel)؛ وفي الحفظ تنكشف الآيات المخفية كلما قرأتها"
+],
+"yakalanır; nereden başlayacağınızı bir âyete dokunarak seçersiniz": [
+"are caught; tap a verse to choose where you begin",
+"تُكتشف؛ وتختار موضع البدء بالنقر على آية"
+],
+"tanıma cihazın üzerinde yapılır; model bir kez iner (yaklaşık 120 MB)": [
+"recognition runs on the device; the model is downloaded once (about 120 MB)",
+"يجري التعرف على الجهاز نفسه؛ ويُنزَّل النموذج مرة واحدة (نحو 120 م.ب)"
+],
+"60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda. Okuyun, dinleyin, ezberleyin; okurken program sizi dinlesin, atladığınız kelimeyi söylesin. Araştırın ve paylaşın. Türkçe, İngilizce ve Arapça arayüz. Ücretsiz; kurulduktan sonra internet gerektirmez.": [
+"60 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in a single program. Read, listen and memorize; as you recite, the program listens and tells you the word you skipped. Research and share. Interface in English, Arabic and Turkish. Free; no internet needed once installed.",
+"60 تفسيرًا و17 كتابًا في الحديث و17 شرحًا و8 معاجم قديمة و29 قارئًا في برنامج واحد. اقرأ واستمع واحفظ؛ وحين تتلو يستمع إليك البرنامج وينبّهك إلى الكلمة التي تركتها. ابحث وشارك. الواجهة بالعربية والإنجليزية والتركية. مجاني، ولا يحتاج إلى الإنترنت بعد التثبيت."
+],
+"Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur; okuyuş takibinde mikrofonun sesi de cihazda tanınır, hiçbir yere gönderilmez. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Görünüm ayarlarından kapatılabilir. Eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.": [
+"No. Your notes, memorization and recordings stay on your device only; in the recitation follower the microphone's sound, too, is recognized on the device and sent nowhere. The program only counts, anonymously, which part is used; this can be turned off in Display. Sync, too, happens only between two devices on the same Wi-Fi network.",
+"لا. تعليقاتك وحفظك وتسجيلاتك تبقى في جهازك فقط؛ وفي متابعة التلاوة يُتعرَّف على صوت الميكروفون في الجهاز نفسه ولا يُرسل إلى أي مكان. يحصي البرنامج فقط، دون تحديد الهوية، أي قسم يُستعمل، ويمكن إيقاف ذلك من العرض. والمزامنة أيضًا لا تكون إلا بين جهازين على شبكة Wi-Fi نفسها."
 ]
 }
