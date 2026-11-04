@@ -1106,5 +1106,37 @@
 "Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur; okuyuş takibinde mikrofonun sesi de cihazda tanınır, hiçbir yere gönderilmez. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Görünüm ayarlarından kapatılabilir. Eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.": [
 "No. Your notes, memorization and recordings stay on your device only; in the recitation follower the microphone's sound, too, is recognized on the device and sent nowhere. The program only counts, anonymously, which part is used; this can be turned off in Display. Sync, too, happens only between two devices on the same Wi-Fi network.",
 "لا. تعليقاتك وحفظك وتسجيلاتك تبقى في جهازك فقط؛ وفي متابعة التلاوة يُتعرَّف على صوت الميكروفون في الجهاز نفسه ولا يُرسل إلى أي مكان. يحصي البرنامج فقط، دون تحديد الهوية، أي قسم يُستعمل، ويمكن إيقاف ذلك من العرض. والمزامنة أيضًا لا تكون إلا بين جهازين على شبكة Wi-Fi نفسها."
+],
+"Android (Google Play)": [
+"Android (Google Play)",
+"Android (Google Play)"
+],
+"Android 8.0 ve üstü telefon ve tabletler, Google Play'den. Güncellemeleri Google Play yapar; ana ekranda günün âyeti.": [
+"Phones and tablets with Android 8.0 or later, from Google Play. Google Play installs the updates; the verse of the day on the home screen.",
+"الهواتف والأجهزة اللوحية بنظام Android 8.0 فما فوق، من Google Play. يتولى Google Play التحديثات؛ وآية اليوم على الشاشة الرئيسية."
+],
+"Android (Google Play):": [
+"Android (Google Play):",
+"Android (Google Play):"
+],
+"Uygulama şu an Google Play'de test aşamasında; birkaç adımda siz de kurabilirsiniz. Önce": [
+"The app is currently in testing on Google Play; you can install it in a few steps. First",
+"التطبيق الآن في مرحلة الاختبار على Google Play، ويمكنك تثبيته بخطوات قليلة. أولًا"
+],
+"test grubuna katılın": [
+"join the test group",
+"انضم إلى مجموعة الاختبار"
+],
+", sonra aynı Google hesabıyla": [
+", then, with the same Google account,",
+"، ثم بحساب Google نفسه"
+],
+"test bağlantısını açıp": [
+"open the test link",
+"افتح رابط الاختبار"
+],
+"«Test kullanıcısı ol» deyin ve uygulamayı Google Play'den yükleyin. Veriler ilk açılışta bir kez iner.": [
+"tap “Become a tester” and install the app from Google Play. The data is downloaded once, on first launch.",
+"واضغط «كن مختبِرًا» وثبّت التطبيق من Google Play. تُنزَّل البيانات مرة واحدة عند أول تشغيل."
 ]
 }

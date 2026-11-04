@@ -160,7 +160,7 @@ footer a { color: inherit; }
     <span id="indirT">Windows için ücretsiz indir</span>
   </a>
   <div class="meta" id="surum">Windows 10 ve 11 · 64 bit</div>
-  <div class="dl"><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Windows</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Android</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Mac (Apple Silicon)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Mac (Intel)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a></div>
+  <div class="dl"><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Windows</a><a href="#android">Android (Google Play)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Mac (Apple Silicon)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Mac (Intel)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a></div>
   <div class="stats">
     <div class="stat"><b>60</b><span>tefsir</span></div>
     <div class="stat"><b>17</b><span>hadis kitabı</span></div>
@@ -245,7 +245,7 @@ footer a { color: inherit; }
   <p class="sub">Windows, Mac, Linux ve Android. Telefon uygulaması bilgisayardaki programın aynısıdır; bütün kitaplar ve özellikler telefonda da var.</p>
   <div class="grid">
     <div class="card"><h3>Windows</h3><p>Windows 10 ve 11, 64 bit. Kurulum veri paketlerini kendisi indirir; güncellemeler program içinden gelir.</p></div>
-    <div class="card"><h3>Android</h3><p>Android 8.0 ve üstü telefon ve tabletler. Güncellemeler uygulamanın içinden kurulur; ana ekranda günün âyeti.</p></div>
+    <div class="card"><h3>Android</h3><p>Android 8.0 ve üstü telefon ve tabletler, Google Play'den. Güncellemeleri Google Play yapar; ana ekranda günün âyeti.</p></div>
     <div class="card"><h3>Mac ve Linux</h3><p>Apple Silicon (M1–M4) ve Intel Mac'ler; 64 bit Linux. Veriler ilk açılışta iner.</p></div>
   </div>
 </div></section>
@@ -271,7 +271,7 @@ footer a { color: inherit; }
   <p class="sub">Tek dosya indirmeniz yeter; gereken veriler kendiliğinden iner ve her dosyanın doğruluğu denetlenir.</p>
   <ol class="steps">
     <li><b>Windows:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Kurulum.exe</a>'yi indirip çalıştırın. Kurulum tefsir verilerini, hadis kitaplarını ve seçerseniz şerh ve sözlük paketlerini internetten indirir.</li>
-    <li><b>Android:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Tefsir-Hadis-Android.apk</a> dosyasını telefonda açıp kurun (bilinmeyen kaynaklara bir kez izin vermeniz istenebilir). Veriler ilk açılışta bir kez iner.</li>
+    <li id="android" style="scroll-margin-top:90px"><b>Android (Google Play):</b> Uygulama şu an Google Play'de test aşamasında; birkaç adımda siz de kurabilirsiniz. Önce <a href="https://groups.google.com/g/tefsir-hadis-test">test grubuna katılın</a>, sonra aynı Google hesabıyla <a href="https://play.google.com/apps/testing/com.tefsirhadis.kutuphane">test bağlantısını açıp</a> «Test kullanıcısı ol» deyin ve uygulamayı Google Play'den yükleyin. Veriler ilk açılışta bir kez iner.</li>
     <li><b>Mac ve Linux:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Apple Silicon</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Intel</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a>. Paketi açıp programı çalıştırın; veriler ilk açılışta iner.</li>
   </ol>
   <p class="note" style="margin-top:16px"><b>Windows uyarı verirse:</b> Program henüz bir yayıncı sertifikasıyla imzalanmadığı için Windows "bilgisayarınızı korudu" diyebilir. <b>Ek bilgi › Yine de çalıştır</b> ile devam edebilirsiniz.</p>
@@ -335,9 +335,10 @@ document.getElementById("yil").textContent = new Date().getFullYear();
 const UA = navigator.userAgent, DL = "https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/";
 const OS = /Android/i.test(UA) ? "android" : /iPhone|iPad/i.test(UA) ? "ios" : /Mac/i.test(UA) ? "mac" : /Linux/i.test(UA) ? "linux" : "win";
 const OSNAME = { win: "Windows 10 ve 11 · 64 bit", android: "Android 8.0 ve üstü", mac: "macOS · Apple Silicon (Intel için aşağıdaki bağlantı)", linux: "Linux · 64 bit", ios: "iPhone ve iPad için henüz yok · Windows, Mac, Linux, Android" };
-const FILE = { win: "Kurulum.exe", android: "Tefsir-Hadis-Android.apk", mac: "Tefsir-Hadis-macOS-arm64.zip", linux: "Tefsir-Hadis-Linux-amd64.tar.gz", ios: "Kurulum.exe" };
-const LBL = { win: "Windows için ücretsiz indir", android: "Android için ücretsiz indir", mac: "Mac için ücretsiz indir", linux: "Linux için ücretsiz indir", ios: "Ücretsiz indir" };
-document.getElementById("indir").href = DL + FILE[OS]; document.getElementById("indirT").textContent = LBL[OS]; document.getElementById("surum").textContent = OSNAME[OS];
+const FILE = { win: "Kurulum.exe", android: "", mac: "Tefsir-Hadis-macOS-arm64.zip", linux: "Tefsir-Hadis-Linux-amd64.tar.gz", ios: "Kurulum.exe" };
+const LBL = { win: "Windows için ücretsiz indir", android: "Google Play'den indir", mac: "Mac için ücretsiz indir", linux: "Linux için ücretsiz indir", ios: "Ücretsiz indir" };
+// Android: from Google Play only (the steps to it are in the install section)
+document.getElementById("indir").href = OS === "android" ? "#android" : DL + FILE[OS]; document.getElementById("indirT").textContent = LBL[OS]; document.getElementById("surum").textContent = OSNAME[OS];
 // the current version and the installer's size, from the same list the program reads
 fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.json", { cache: "no-store" })
   .then(r => r.json())

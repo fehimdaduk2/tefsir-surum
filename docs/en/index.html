@@ -160,7 +160,7 @@ footer a { color: inherit; }
     <span id="indirT">Free download for Windows</span>
   </a>
   <div class="meta" id="surum">Windows 10 and 11 · 64-bit</div>
-  <div class="dl"><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Windows</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Android</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Mac (Apple Silicon)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Mac (Intel)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a></div>
+  <div class="dl"><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Windows</a><a href="#android">Android (Google Play)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Mac (Apple Silicon)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Mac (Intel)</a><a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a></div>
   <div class="stats">
     <div class="stat"><b>60</b><span>tafsirs</span></div>
     <div class="stat"><b>17</b><span>hadith books</span></div>
@@ -245,7 +245,7 @@ footer a { color: inherit; }
   <p class="sub">Windows, Mac, Linux and Android. The phone app is the same program as on the computer; all books and features are on the phone too.</p>
   <div class="grid">
     <div class="card"><h3>Windows</h3><p>Windows 10 and 11, 64-bit. The installer downloads the data packs itself; updates come from within the program.</p></div>
-    <div class="card"><h3>Android</h3><p>Android 8.0 or later, phones and tablets. Updates are installed from within the app; the verse of the day on the home screen.</p></div>
+    <div class="card"><h3>Android</h3><p>Phones and tablets with Android 8.0 or later, from Google Play. Google Play installs the updates; the verse of the day on the home screen.</p></div>
     <div class="card"><h3>Mac and Linux</h3><p>Apple Silicon (M1–M4) and Intel Macs; 64-bit Linux. The data is downloaded on first start.</p></div>
   </div>
 </div></section>
@@ -271,7 +271,7 @@ footer a { color: inherit; }
   <p class="sub">Downloading a single file is enough; the data needed is downloaded by itself and every file is checked.</p>
   <ol class="steps">
     <li><b>Windows:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">Kurulum.exe</a>— download and run it. The installer downloads the tafsir data, the hadith books and, if you choose, the commentary and dictionary packs.</li>
-    <li><b>Android:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Android.apk">Tefsir-Hadis-Android.apk</a> — open the file on the phone and install it (you may be asked once to allow unknown sources). The data is downloaded once on first start.</li>
+    <li id="android" style="scroll-margin-top:90px"><b>Android (Google Play):</b> The app is currently in testing on Google Play; you can install it in a few steps. First <a href="https://groups.google.com/g/tefsir-hadis-test">join the test group</a>, then, with the same Google account, <a href="https://play.google.com/apps/testing/com.tefsirhadis.kutuphane">open the test link</a> tap “Become a tester” and install the app from Google Play. The data is downloaded once, on first launch.</li>
     <li><b>Mac and Linux:</b> <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-arm64.zip">Apple Silicon</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-macOS-amd64.zip">Intel</a> · <a href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Tefsir-Hadis-Linux-amd64.tar.gz">Linux</a>. Unpack and run the program; the data is downloaded on first start.</li>
   </ol>
   <p class="note" style="margin-top:16px"><b>If Windows warns you:</b> As the program is not yet signed with a publisher certificate, Windows may say it "protected your PC". <b>More info › Run anyway</b> lets you continue.</p>
@@ -335,9 +335,10 @@ document.getElementById("yil").textContent = new Date().getFullYear();
 const UA = navigator.userAgent, DL = "https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/";
 const OS = /Android/i.test(UA) ? "android" : /iPhone|iPad/i.test(UA) ? "ios" : /Mac/i.test(UA) ? "mac" : /Linux/i.test(UA) ? "linux" : "win";
 const OSNAME = { win: "Windows 10 and 11 · 64-bit", android: "Android 8.0 or later", mac: "macOS · Apple Silicon (Intel: link below)", linux: "Linux · 64-bit", ios: "iPhone ve iPad için henüz yok · Windows, Mac, Linux, Android" };
-const FILE = { win: "Kurulum.exe", android: "Tefsir-Hadis-Android.apk", mac: "Tefsir-Hadis-macOS-arm64.zip", linux: "Tefsir-Hadis-Linux-amd64.tar.gz", ios: "Kurulum.exe" };
-const LBL = { win: "Free download for Windows", android: "Free download for Android", mac: "Free download for Mac", linux: "Free download for Linux", ios: "Free download" };
-document.getElementById("indir").href = DL + FILE[OS]; document.getElementById("indirT").textContent = LBL[OS]; document.getElementById("surum").textContent = OSNAME[OS];
+const FILE = { win: "Kurulum.exe", android: "", mac: "Tefsir-Hadis-macOS-arm64.zip", linux: "Tefsir-Hadis-Linux-amd64.tar.gz", ios: "Kurulum.exe" };
+const LBL = { win: "Free download for Windows", android: "Get it on Google Play", mac: "Free download for Mac", linux: "Free download for Linux", ios: "Free download" };
+// Android: from Google Play only (the steps to it are in the install section)
+document.getElementById("indir").href = OS === "android" ? "#android" : DL + FILE[OS]; document.getElementById("indirT").textContent = LBL[OS]; document.getElementById("surum").textContent = OSNAME[OS];
 // the current version and the installer's size, from the same list the program reads
 fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.json", { cache: "no-store" })
   .then(r => r.json())

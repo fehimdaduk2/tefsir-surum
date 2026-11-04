@@ -6,12 +6,12 @@ SW = {'en': '<span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./"
 SCRIPT = {
  'en': [('"Windows 10 ve 11 · 64 bit"', '"Windows 10 and 11 · 64-bit"'), ('"Android 8.0 ve üstü"', '"Android 8.0 or later"'),
         ('"macOS · Apple Silicon (Intel için aşağıdaki bağlantı)"', '"macOS · Apple Silicon (Intel: link below)"'), ('"Linux · 64 bit"', '"Linux · 64-bit"'),
-        ('"Windows için ücretsiz indir"', '"Free download for Windows"'), ('"Android için ücretsiz indir"', '"Free download for Android"'),
+        ('"Windows için ücretsiz indir"', '"Free download for Windows"'), ('"Google Play\'den indir"', '"Get it on Google Play"'),
         ('"Mac için ücretsiz indir"', '"Free download for Mac"'), ('"Linux için ücretsiz indir"', '"Free download for Linux"'),
         ('"Ücretsiz indir"', '"Free download"'), ('"Sürüm "', '"Version "')],
  'ar': [('"Windows 10 ve 11 · 64 bit"', '"Windows 10 و11 · 64 بت"'), ('"Android 8.0 ve üstü"', '"Android 8.0 فما فوق"'),
         ('"macOS · Apple Silicon (Intel için aşağıdaki bağlantı)"', '"macOS · Apple Silicon (لـ Intel: الرابط أدناه)"'), ('"Linux · 64 bit"', '"Linux · 64 بت"'),
-        ('"Windows için ücretsiz indir"', '"تنزيل مجاني لـ Windows"'), ('"Android için ücretsiz indir"', '"تنزيل مجاني لـ Android"'),
+        ('"Windows için ücretsiz indir"', '"تنزيل مجاني لـ Windows"'), ('"Google Play\'den indir"', '"احصل عليه من Google Play"'),
         ('"Mac için ücretsiz indir"', '"تنزيل مجاني لـ Mac"'), ('"Linux için ücretsiz indir"', '"تنزيل مجاني لـ Linux"'),
         ('"Ücretsiz indir"', '"تنزيل مجاني"'), ('"Sürüm "', '"الإصدار "')],
 }
