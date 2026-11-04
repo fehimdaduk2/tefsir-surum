@@ -1,13 +1,28 @@
 {
-  "version": "4.75",
+  "version": "4.76",
   "date": "2026-11-04",
   "notes": [
-    "32 bit telefonlarda ve BlueStacks gibi öykünücülerde veri indirme düzeltildi"
+    "Android: güvenlik açığı kapatıldı (Google Play uyarısı)"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Kurulum.exe",
-  "sha256": "b8b938993790dcbb4b9bc42c77c86730b743a27b36fa17377623c290796ecbd4",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Kurulum.exe",
+  "sha256": "52a3d94a53c116e168f484439b40af3fc901a34222c25d62871bc230ace00f46",
   "size": 36963328,
   "history": [
+    {
+      "version": "4.75",
+      "date": "2026-11-04",
+      "notes": [
+        "32 bit telefonlarda ve BlueStacks gibi öykünücülerde veri indirme düzeltildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Data download fixed on 32-bit phones and emulators such as BlueStacks"
+        ],
+        "ar": [
+          "إصلاح تنزيل البيانات على هواتف 32 بت والمحاكيات مثل BlueStacks"
+        ]
+      }
+    },
     {
       "version": "4.74",
       "date": "2026-11-04",
@@ -625,23 +640,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-Android.apk",
-    "sha256": "b3c0a8fd2af3a4dbad68206cd997550e5af6d37e8f081d8d1f45c7eb7ef7e89c",
-    "size": 10773696
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-Android.apk",
+    "sha256": "106dae7ef8e56814f50b549e8159850e917c458f3dd54bbd29412a62f3e632ae",
+    "size": 10777792
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Data download fixed on 32-bit phones and emulators such as BlueStacks"
+      "Android: a security vulnerability was fixed (Google Play warning)"
     ],
     "ar": [
-      "إصلاح تنزيل البيانات على هواتف 32 بت والمحاكيات مثل BlueStacks"
+      "Android: إغلاق ثغرة أمنية (تنبيه Google Play)"
     ]
   }
 }
