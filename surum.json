@@ -1,13 +1,28 @@
 {
-  "version": "4.76",
+  "version": "4.77",
   "date": "2026-11-04",
   "notes": [
-    "Android: güvenlik açığı kapatıldı (Google Play uyarısı)"
+    "Android: 16 KB bellek sayfalı cihazlara uyum (Google Play uyarısı)"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Kurulum.exe",
-  "sha256": "52a3d94a53c116e168f484439b40af3fc901a34222c25d62871bc230ace00f46",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Kurulum.exe",
+  "sha256": "cbcc8179fd8e64cd58d33b75d6318407f52105a1a282cf470b895bb72e2c871e",
   "size": 36963328,
   "history": [
+    {
+      "version": "4.76",
+      "date": "2026-11-04",
+      "notes": [
+        "Android: güvenlik açığı kapatıldı (Google Play uyarısı)"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Android: a security vulnerability was fixed (Google Play warning)"
+        ],
+        "ar": [
+          "Android: إغلاق ثغرة أمنية (تنبيه Google Play)"
+        ]
+      }
+    },
     {
       "version": "4.75",
       "date": "2026-11-04",
@@ -640,23 +655,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.76/Tefsir-Hadis-Android.apk",
-    "sha256": "106dae7ef8e56814f50b549e8159850e917c458f3dd54bbd29412a62f3e632ae",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-Android.apk",
+    "sha256": "e7736423c6382e97303e35f4b3a11e8b0100879b23e4df42a3e373d1d2c51dd4",
     "size": 10777792
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Android: a security vulnerability was fixed (Google Play warning)"
+      "Android: compatibility with 16 KB memory page devices (Google Play warning)"
     ],
     "ar": [
-      "Android: إغلاق ثغرة أمنية (تنبيه Google Play)"
+      "Android: التوافق مع الأجهزة ذات صفحات الذاكرة 16 KB (تنبيه Google Play)"
     ]
   }
 }
