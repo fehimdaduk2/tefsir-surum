@@ -1,15 +1,34 @@
 {
-  "version": "4.74",
+  "version": "4.75",
   "date": "2026-11-04",
   "notes": [
-    "İlk açılıştaki veri sayfası üç dilde; boyut doğru gösterilir",
-    "Sürüm notları arayüz dilinde",
-    "Çevrilmemiş düğmeler düzeltildi"
+    "32 bit telefonlarda ve BlueStacks gibi öykünücülerde veri indirme düzeltildi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.74/Kurulum.exe",
-  "sha256": "b3be28b55f28519650b0b83f95ab5fef8549977360d127b3fd6fc853593c7bfa",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Kurulum.exe",
+  "sha256": "b8b938993790dcbb4b9bc42c77c86730b743a27b36fa17377623c290796ecbd4",
   "size": 36963328,
   "history": [
+    {
+      "version": "4.74",
+      "date": "2026-11-04",
+      "notes": [
+        "İlk açılıştaki veri sayfası üç dilde; boyut doğru gösterilir",
+        "Sürüm notları arayüz dilinde",
+        "Çevrilmemiş düğmeler düzeltildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "The data page on first launch is in three languages, with the correct size",
+          "Release notes in the interface language",
+          "Untranslated buttons fixed"
+        ],
+        "ar": [
+          "صفحة البيانات عند أول تشغيل بثلاث لغات، مع الحجم الصحيح",
+          "ملاحظات الإصدار بلغة الواجهة",
+          "إصلاح أزرار لم تكن مترجمة"
+        ]
+      }
+    },
     {
       "version": "4.73",
       "date": "2026-11-04",
@@ -606,27 +625,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.74/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.74/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.74/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.74/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.74/Tefsir-Hadis-Android.apk",
-    "sha256": "595284796fa2c8e4262a8002a1f7d6a5ed633dfa34588e1b1e687720960e40be",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.75/Tefsir-Hadis-Android.apk",
+    "sha256": "b3c0a8fd2af3a4dbad68206cd997550e5af6d37e8f081d8d1f45c7eb7ef7e89c",
     "size": 10773696
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "The data page on first launch is in three languages, with the correct size",
-      "Release notes in the interface language",
-      "Untranslated buttons fixed"
+      "Data download fixed on 32-bit phones and emulators such as BlueStacks"
     ],
     "ar": [
-      "صفحة البيانات عند أول تشغيل بثلاث لغات، مع الحجم الصحيح",
-      "ملاحظات الإصدار بلغة الواجهة",
-      "إصلاح أزرار لم تكن مترجمة"
+      "إصلاح تنزيل البيانات على هواتف 32 بت والمحاكيات مثل BlueStacks"
     ]
   }
 }
