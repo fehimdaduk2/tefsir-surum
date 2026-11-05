@@ -1,13 +1,30 @@
 {
-  "version": "4.77",
-  "date": "2026-11-04",
+  "version": "4.78",
+  "date": "2026-11-05",
   "notes": [
-    "Android: 16 KB bellek sayfalı cihazlara uyum (Google Play uyarısı)"
+    "Âyet ile tefsir arasında sürüklenebilir bölücü; tefsiri tam ekran yapma düğmesi",
+    "Hakkında: gerçek indirme sayıları tablosu",
+    "Mac: \"hasar görmüş\" uyarısı için çözüm adımları"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Kurulum.exe",
-  "sha256": "cbcc8179fd8e64cd58d33b75d6318407f52105a1a282cf470b895bb72e2c871e",
-  "size": 36963328,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Kurulum.exe",
+  "sha256": "104f301aee5dc6925e752c0658b8880a09c181a679807a1341b2a323bf0e490f",
+  "size": 36967424,
   "history": [
+    {
+      "version": "4.77",
+      "date": "2026-11-04",
+      "notes": [
+        "Android: 16 KB bellek sayfalı cihazlara uyum (Google Play uyarısı)"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Android: compatibility with 16 KB memory page devices (Google Play warning)"
+        ],
+        "ar": [
+          "Android: التوافق مع الأجهزة ذات صفحات الذاكرة 16 KB (تنبيه Google Play)"
+        ]
+      }
+    },
     {
       "version": "4.76",
       "date": "2026-11-04",
@@ -655,23 +672,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.77/Tefsir-Hadis-Android.apk",
-    "sha256": "e7736423c6382e97303e35f4b3a11e8b0100879b23e4df42a3e373d1d2c51dd4",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "3d7ac78614b2776b0641d598e30a412f8e198950b8f13832b8339b9e74f95110",
     "size": 10777792
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Android: compatibility with 16 KB memory page devices (Google Play warning)"
+      "Draggable divider between verse and tafsir; button to show the tafsir full screen",
+      "About: table of real download counts",
+      "Mac: steps to fix the \"is damaged\" warning"
     ],
     "ar": [
-      "Android: التوافق مع الأجهزة ذات صفحات الذاكرة 16 KB (تنبيه Google Play)"
+      "فاصل قابل للسحب بين الآية والتفسير؛ وزر لعرض التفسير بملء الشاشة",
+      "حول: جدول بأعداد التنزيل الحقيقية",
+      "Mac: خطوات حل تحذير «التطبيق تالف»"
     ]
   }
 }
