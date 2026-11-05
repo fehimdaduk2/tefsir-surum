@@ -1,0 +1,24 @@
+# İndirme sayıları: her gün sürümlerin indirilme sayılarını toplayıp indirme.json'a yazar (program «Hakkında»da gösterir).
+# Yöntem araclar/indirme.py'de: güncellemeler ve yayın kontrolleri sayılmaz.
+name: İndirme sayıları
+on:
+  schedule:
+    - cron: "37 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  say:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Say
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 araclar/indirme.py
+      - name: Kaydet
+        run: |
+          git add indirme.json
+          git diff --cached --quiet && exit 0
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -q -m "İndirme sayıları"
+          git push
