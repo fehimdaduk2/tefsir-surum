@@ -1,14 +1,31 @@
 {
-  "version": "4.80",
+  "version": "4.81",
   "date": "2026-11-05",
   "notes": [
-    "Mac: program kendi penceresinde açılır (Dock simgesi, menüler)",
-    "Mac: \"yanıt vermiyor\" uyarısı giderildi; paketler imzalı"
+    "Android (Google Play): güncellemeleri Play yaptığı için Güncellemeler düğmesi gizlendi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.80/Guncelleme-Kurulum.exe",
-  "sha256": "56d33bc77948174571e800f9799fd9a4edbd4783ae220d5c2316b14bb9baf3e4",
-  "size": 36967424,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.81/Guncelleme-Kurulum.exe",
+  "sha256": "bffa7919982764e9888c031b7953665512bca518a3b6cb9ad2606609dd0b1ef9",
+  "size": 36967936,
   "history": [
+    {
+      "version": "4.80",
+      "date": "2026-11-05",
+      "notes": [
+        "Mac: program kendi penceresinde açılır (Dock simgesi, menüler)",
+        "Mac: \"yanıt vermiyor\" uyarısı giderildi; paketler imzalı"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Mac: the program opens in its own window (Dock icon, menus)",
+          "Mac: fixed the \"not responding\" warning; packages are signed"
+        ],
+        "ar": [
+          "Mac: يفتح البرنامج في نافذته الخاصة (أيقونة في Dock وقوائم)",
+          "Mac: إصلاح تحذير «لا يستجيب»؛ والحزم موقّعة"
+        ]
+      }
+    },
     {
       "version": "4.79",
       "date": "2026-11-05",
@@ -707,25 +724,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.80/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.80/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.80/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.80/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.81/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.81/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.81/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.81/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.80/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "e5d73e17e6c051b04bdf9094af727e6ab784834d2f7b22555e27555498dd3281",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.81/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "26878fe38dfd97a3d9aeaa958fef72bc2298b24b59f6efb2d8cad611ff4f48a1",
     "size": 10777792
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Mac: the program opens in its own window (Dock icon, menus)",
-      "Mac: fixed the \"not responding\" warning; packages are signed"
+      "Android (Google Play): the Updates button is hidden, as Play updates the app"
     ],
     "ar": [
-      "Mac: يفتح البرنامج في نافذته الخاصة (أيقونة في Dock وقوائم)",
-      "Mac: إصلاح تحذير «لا يستجيب»؛ والحزم موقّعة"
+      "Android (Google Play): أُخفي زر التحديثات لأن Google Play يحدّث التطبيق"
     ]
   }
 }
