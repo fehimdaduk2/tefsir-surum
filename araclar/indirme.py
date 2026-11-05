@@ -4,8 +4,10 @@ Run every day by .github/workflows/indirme.yml (and by hand: python3 araclar/ind
 
 Counted: the files people download to install (Kurulum.exe, the macOS and Linux packages, the APK). Not counted:
 - the copies the program updates itself from (Guncelleme-*, from 4.78 on): an update is not a new user;
-- the checks made when a version is published: until 4.77 each file was downloaded once to check it (twice for 4.61
-  and 4.74, whose check was run again); from 4.78 on the check reads GitHub's checksum and downloads nothing.
+- automatic downloads: crawlers, link checkers and security scanners fetch every file of a new release, and until
+  4.77 each file was also downloaded once to check it. They take all files alike, so of each release the smallest
+  count among its files is taken away from every file: what is left is the people who chose a file (one of a kind
+  hardly ever takes all five). This leaves the counts low rather than high.
 Before 4.78 the program's own updates fetched the same files, so the counts up to then include some updates.
 Google Play's installs are not in GitHub: araclar/play.json ({"yukleme": n, "tarih": "YYYY-MM-DD"}), written by
 hand from the Play Console, is added when present."""
@@ -13,7 +15,6 @@ import json, os, re, urllib.request, datetime
 
 API = "https://api.github.com/repos/fehimdaduk2/tefsir-surum/releases?per_page=100&page=%d"
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.join(HERE, "..")
-EXTRA_CHECKS = {"v4.61": 1, "v4.74": 1}   # versions whose files were checked a second time
 
 
 def kind(name):
@@ -52,12 +53,14 @@ def main():
     c = {"windows": 0, "mac": 0, "linux": 0, "android": 0}
     u = {"windows": 0, "mac": 0, "linux": 0, "android": 0}
     for r in releases():
-        checks = (1 + EXTRA_CHECKS.get(r["tag_name"], 0)) if ver(r["tag_name"]) <= (4, 77) else 0
-        for a in r["assets"]:
-            k = kind(a["name"])
-            if k: c[k] += max(0, a["download_count"] - checks)
-            k = upd_kind(a["name"])
-            if k: u[k] += a["download_count"]
+        main_ = [(kind(a["name"]), a["download_count"]) for a in r["assets"] if kind(a["name"])]
+        floor = min((n for _, n in main_), default=0)   # what the automatic downloads took of every file
+        for k, n in main_:
+            c[k] += n - floor
+        upd = [(upd_kind(a["name"]), a["download_count"]) for a in r["assets"] if upd_kind(a["name"])]
+        floor = min((n for _, n in upd), default=0)
+        for k, n in upd:
+            u[k] += n - floor
     out = {"tarih": datetime.date.today().isoformat(), "indirme": c, "guncelleme": u}
     pf = os.path.join(HERE, "play.json")
     if os.path.exists(pf):
