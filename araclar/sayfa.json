@@ -1139,32 +1139,36 @@
 "tap “Become a tester” and install the app from Google Play. The data is downloaded once, on first launch.",
 "واضغط «كن مختبِرًا» وثبّت التطبيق من Google Play. تُنزَّل البيانات مرة واحدة عند أول تشغيل."
 ],
-"Mac \"hasar görmüş\" derse:": [
-"If the Mac says the app \"is damaged\":",
-"إذا قال Mac إن التطبيق «تالف»:"
-],
-"Program henüz Apple tarafından imzalanmadığı için macOS uygulamanın hasarlı olduğunu söyleyip Çöp Sepeti'ne taşımanızı önerebilir; uygulama bozuk değildir.": [
-"As the program is not yet signed by Apple, macOS may say the app is damaged and suggest moving it to the Trash; the app is not broken. Press",
-"لأن البرنامج لم يُوقَّع بعد من Apple، قد يقول macOS إن التطبيق تالف ويقترح نقله إلى سلة المهملات؛ والتطبيق ليس معطوبًا. اضغط"
-],
 "İptal": [
 "Cancel",
 "إلغاء"
-],
-"'e basın, uygulamayı Uygulamalar klasörüne sürükleyin, Terminal'i açıp şu satırı çalıştırın:": [
-", drag the app into the Applications folder, open Terminal and run this line:",
-"، واسحب التطبيق إلى مجلد التطبيقات (Applications)، ثم افتح Terminal وشغّل هذا السطر:"
 ],
 "xattr -cr \"/Applications/Tefsir ve Hadis Kütüphanesi.app\"": [
 "xattr -cr \"/Applications/Tefsir ve Hadis Kütüphanesi.app\"",
 "xattr -cr \"/Applications/Tefsir ve Hadis Kütüphanesi.app\""
 ],
-"Sonra uygulamayı açın; yine uyarı çıkarsa": [
-"Then open the app; if it still warns you, use",
-"ثم افتح التطبيق؛ وإذا ظهر التحذير مرة أخرى فاستخدم"
-],
 "Sistem Ayarları › Gizlilik ve Güvenlik › Yine de Aç": [
 "System Settings › Privacy & Security › Open Anyway",
 "إعدادات النظام › الخصوصية والأمان › فتح على أي حال"
+],
+"Mac ilk açılışta uyarı verirse:": [
+"If the Mac warns you on first start:",
+"إذا ظهر تحذير في Mac عند التشغيل الأول:"
+],
+"Program henüz Apple tarafından imzalanmadığı için macOS uygulamayı doğrulayamadığını söyleyebilir.": [
+"As the program is not yet signed by Apple, macOS may say it could not verify the app. Press",
+"لأن البرنامج لم يُوقَّع بعد من Apple، قد يقول macOS إنه تعذّر التحقق من التطبيق. اضغط"
+],
+"Bitti": [
+"Done",
+"تم"
+],
+"'ye basın, sonra": [
+", then open it with",
+" ثم افتحه عبر"
+],
+"ile açın; bu yalnızca bir kez yapılır. \"Hasar görmüş\" derse Terminal'de şu satırı çalıştırıp uygulamayı yeniden açın:": [
+"; this is done only once. If it says the app \"is damaged\", run this line in Terminal and open the app again:",
+"؛ ويكفي ذلك مرة واحدة. وإذا قال إن التطبيق «تالف» فشغّل هذا السطر في Terminal ثم افتح التطبيق مرة أخرى:"
 ]
 }
