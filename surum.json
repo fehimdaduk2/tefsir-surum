@@ -1,15 +1,34 @@
 {
-  "version": "4.78",
+  "version": "4.79",
   "date": "2026-11-05",
   "notes": [
-    "Âyet ile tefsir arasında sürüklenebilir bölücü; tefsiri tam ekran yapma düğmesi",
-    "Hakkında: gerçek indirme sayıları tablosu",
-    "Mac: \"hasar görmüş\" uyarısı için çözüm adımları"
+    "Mac: \"uygulama yanıt vermiyor\" uyarısı giderildi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Kurulum.exe",
-  "sha256": "104f301aee5dc6925e752c0658b8880a09c181a679807a1341b2a323bf0e490f",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.79/Guncelleme-Kurulum.exe",
+  "sha256": "28881bacd75fcd6e76c220e66a9359e9ad5cc69d6e5ae6fd4494e51e67c57825",
   "size": 36967424,
   "history": [
+    {
+      "version": "4.78",
+      "date": "2026-11-05",
+      "notes": [
+        "Âyet ile tefsir arasında sürüklenebilir bölücü; tefsiri tam ekran yapma düğmesi",
+        "Hakkında: gerçek indirme sayıları tablosu",
+        "Mac: \"hasar görmüş\" uyarısı için çözüm adımları"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Draggable divider between verse and tafsir; button to show the tafsir full screen",
+          "About: table of real download counts",
+          "Mac: steps to fix the \"is damaged\" warning"
+        ],
+        "ar": [
+          "فاصل قابل للسحب بين الآية والتفسير؛ وزر لعرض التفسير بملء الشاشة",
+          "حول: جدول بأعداد التنزيل الحقيقية",
+          "Mac: خطوات حل تحذير «التطبيق تالف»"
+        ]
+      }
+    },
     {
       "version": "4.77",
       "date": "2026-11-04",
@@ -672,27 +691,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.79/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.79/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.79/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.79/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.78/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "3d7ac78614b2776b0641d598e30a412f8e198950b8f13832b8339b9e74f95110",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.79/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "4b2673fd260bec95813f155af9efd49e2780fe09a478167d35ccb4fb262a857e",
     "size": 10777792
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Draggable divider between verse and tafsir; button to show the tafsir full screen",
-      "About: table of real download counts",
-      "Mac: steps to fix the \"is damaged\" warning"
+      "Mac: fixed the \"application is not responding\" warning"
     ],
     "ar": [
-      "فاصل قابل للسحب بين الآية والتفسير؛ وزر لعرض التفسير بملء الشاشة",
-      "حول: جدول بأعداد التنزيل الحقيقية",
-      "Mac: خطوات حل تحذير «التطبيق تالف»"
+      "Mac: إصلاح تحذير «التطبيق لا يستجيب»"
     ]
   }
 }
