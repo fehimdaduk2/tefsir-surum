@@ -93,6 +93,11 @@ section .sub { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
 .steps { counter-reset: s; display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
 .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 16px 60px; position: relative; }
 .steps li::before { content: counter(s); position: absolute; left: 18px; top: 15px; width: 28px; height: 28px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 14px; }
+.notlar { display: grid; gap: 12px; }
+.nt { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+.nt h4 { margin: 0 0 6px; font-size: 16px; } .nt h4 span { color: var(--muted); font-weight: 400; font-size: 14px; margin-inline-start: 8px; }
+.nt ul { margin: 0; padding-inline-start: 20px; color: var(--muted); font-size: 15px; line-height: 1.55; }
+.nt-more { font: inherit; background: none; border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; color: inherit; cursor: pointer; }
 .note { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: var(--muted); font-size: 15px; }
 .note b { color: var(--text); }
 footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
@@ -276,7 +281,14 @@ footer a { color: inherit; }
   </ol>
   <p class="note" style="margin-top:16px"><b>If Windows warns you:</b> As the program is not yet signed with a publisher certificate, Windows may say it "protected your PC". <b>More info › Run anyway</b> lets you continue.</p>
   <p class="note"><b>If the Mac warns you on first start:</b> As the program is not yet signed by Apple, macOS may say it could not verify the app. Press <b>Done</b>, then open it with <b>System Settings › Privacy &amp; Security › Open Anyway</b> ; this is done only once. If it says the app "is damaged", run this line in Terminal and open the app again: <code dir="ltr">xattr -cr "/Applications/Tefsir ve Hadis Kütüphanesi.app"</code></p>
-  <p class="note">All versions and what's new: <a href="https://github.com/fehimdaduk2/tefsir-surum/releases">Release notes</a>.</p>
+  <p class="note">All versions and what's new: <a href="#yenilikler">Release notes</a>.</p>
+</div></section>
+
+<section id="yenilikler"><div class="wrap">
+  <h2>Release notes</h2>
+  <p class="sub">What is new and fixed in each version of the program. The program itself tells you when a new version is out.</p>
+  <div id="notlar" class="notlar"></div>
+  <p style="margin-top:14px"><button type="button" class="nt-more" id="notlarDaha" hidden>Older versions</button></p>
 </div></section>
 
 <section id="destek" hidden><div class="wrap">
@@ -348,6 +360,23 @@ fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.jso
     if (/^https:\/\/(github\.com\/sponsors|ko-fi\.com|(www\.)?buymeacoffee\.com)\/./.test(d.destek || "")) { document.getElementById("destekGit").href = d.destek; document.getElementById("destek").hidden = false; }
     const mb = d.size && OS === "win" ? " · " + Math.round(d.size / 1048576) + " MB" : "";
     document.getElementById("surum").textContent = "Version " + d.version + " · " + OSNAME[OS] + mb;
+    // the release notes: the same notes the program shows in its update card, in the page's language when written
+    const lang = document.documentElement.lang || "tr", box = document.getElementById("notlar"), more = document.getElementById("notlarDaha");
+    // English and Arabic pages list the versions whose notes were written in their language (4.74 on)
+    const all = [{ version: d.version, date: d.date, notes: d.notes, notes_i18n: d.notes_i18n }].concat(d.history || [])
+      .filter(h => lang === "tr" || (h.notes_i18n && h.notes_i18n[lang]));
+    const card = h => {
+      const el = document.createElement("div"); el.className = "nt";
+      const t = document.createElement("h4"); t.textContent = h.version;
+      const dt = document.createElement("span");
+      try { dt.textContent = new Date(h.date + "T12:00:00").toLocaleDateString(lang, { day: "numeric", month: "long", year: "numeric" }); } catch (e) { dt.textContent = h.date || ""; }
+      t.appendChild(dt); el.appendChild(t);
+      const ul = document.createElement("ul");
+      ((h.notes_i18n && h.notes_i18n[lang]) || h.notes || []).forEach(n => { const li = document.createElement("li"); li.textContent = n; ul.appendChild(li); });
+      el.appendChild(ul); return el;
+    };
+    all.slice(0, 8).forEach(h => box.appendChild(card(h)));
+    if (all.length > 8) { more.hidden = false; more.onclick = () => { all.slice(8).forEach(h => box.appendChild(card(h))); more.hidden = true; }; }
   })
   .catch(() => {});
 </script>

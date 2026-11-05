@@ -1170,5 +1170,13 @@
 "ile açın; bu yalnızca bir kez yapılır. \"Hasar görmüş\" derse Terminal'de şu satırı çalıştırıp uygulamayı yeniden açın:": [
 "; this is done only once. If it says the app \"is damaged\", run this line in Terminal and open the app again:",
 "؛ ويكفي ذلك مرة واحدة. وإذا قال إن التطبيق «تالف» فشغّل هذا السطر في Terminal ثم افتح التطبيق مرة أخرى:"
+],
+"Programın her sürümünde gelen yenilikler ve düzeltmeler. Program yeni sürümü kendisi haber verir.": [
+"What is new and fixed in each version of the program. The program itself tells you when a new version is out.",
+"الجديد والإصلاحات في كل إصدار من البرنامج. ويُعلمك البرنامج نفسه بصدور إصدار جديد."
+],
+"Daha eski sürümler": [
+"Older versions",
+"إصدارات أقدم"
 ]
 }
