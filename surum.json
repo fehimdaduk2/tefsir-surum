@@ -1,788 +1,809 @@
 {
- "version": "4.83",
- "date": "2026-11-06",
- "notes": [
-  "Yeni şerhler: Müsned (Bulûğu'l-Emânî, Ukûdü'z-Zeberced), Beyhakî (el-Cevherü'n-Nakî)",
-  "Kitap kartlarında şerh eşleşme oranı",
-  "Okuma modu: yalnız hadisin metni, her ekranda tek sütun"
- ],
- "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Kurulum.exe",
- "sha256": "a095c518fc7cd49c808d0e7e395c426f3ecd7f6e791877dd4eec493b25cb6e8d",
- "size": 36970496,
- "history": [
-  {
-   "version": "4.82",
-   "date": "2026-11-05",
-   "notes": [
-    "Hadis: metin ile senet ayrı, metin büyük ve belirgin",
-    "Hadis: sade bab başlıkları ve fihrist; kartın başında yer imi, not, kopyala, paylaş",
-    "Telefonda tek satırlık araç çubuğu"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Hadith: the text set apart from the chain, larger and clearer",
-     "Hadith: simpler chapter headings and index; bookmark, note, copy and share at the top of each card",
-     "One-row toolbar on phones"
-    ],
-    "ar": [
-     "الحديث: المتن منفصل عن السند، أكبر وأوضح",
-     "الحديث: عناوين أبواب وفهرس أبسط؛ والإشارة المرجعية والملاحظة والنسخ والمشاركة أعلى كل بطاقة",
-     "شريط أدوات بسطر واحد في الهاتف"
-    ]
-   }
-  },
-  {
-   "version": "4.81",
-   "date": "2026-11-05",
-   "notes": [
-    "Android (Google Play): güncellemeleri Play yaptığı için Güncellemeler düğmesi gizlendi"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Android (Google Play): the Updates button is hidden, as Play updates the app"
-    ],
-    "ar": [
-     "Android (Google Play): أُخفي زر التحديثات لأن Google Play يحدّث التطبيق"
-    ]
-   }
-  },
-  {
-   "version": "4.80",
-   "date": "2026-11-05",
-   "notes": [
-    "Mac: program kendi penceresinde açılır (Dock simgesi, menüler)",
-    "Mac: \"yanıt vermiyor\" uyarısı giderildi; paketler imzalı"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Mac: the program opens in its own window (Dock icon, menus)",
-     "Mac: fixed the \"not responding\" warning; packages are signed"
-    ],
-    "ar": [
-     "Mac: يفتح البرنامج في نافذته الخاصة (أيقونة في Dock وقوائم)",
-     "Mac: إصلاح تحذير «لا يستجيب»؛ والحزم موقّعة"
-    ]
-   }
-  },
-  {
-   "version": "4.79",
-   "date": "2026-11-05",
-   "notes": [
-    "Mac: \"uygulama yanıt vermiyor\" uyarısı giderildi"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Mac: fixed the \"application is not responding\" warning"
-    ],
-    "ar": [
-     "Mac: إصلاح تحذير «التطبيق لا يستجيب»"
-    ]
-   }
-  },
-  {
-   "version": "4.78",
-   "date": "2026-11-05",
-   "notes": [
-    "Âyet ile tefsir arasında sürüklenebilir bölücü; tefsiri tam ekran yapma düğmesi",
-    "Hakkında: gerçek indirme sayıları tablosu",
-    "Mac: \"hasar görmüş\" uyarısı için çözüm adımları"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Draggable divider between verse and tafsir; button to show the tafsir full screen",
-     "About: table of real download counts",
-     "Mac: steps to fix the \"is damaged\" warning"
-    ],
-    "ar": [
-     "فاصل قابل للسحب بين الآية والتفسير؛ وزر لعرض التفسير بملء الشاشة",
-     "حول: جدول بأعداد التنزيل الحقيقية",
-     "Mac: خطوات حل تحذير «التطبيق تالف»"
-    ]
-   }
-  },
-  {
-   "version": "4.77",
-   "date": "2026-11-04",
-   "notes": [
-    "Android: 16 KB bellek sayfalı cihazlara uyum (Google Play uyarısı)"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Android: compatibility with 16 KB memory page devices (Google Play warning)"
-    ],
-    "ar": [
-     "Android: التوافق مع الأجهزة ذات صفحات الذاكرة 16 KB (تنبيه Google Play)"
-    ]
-   }
-  },
-  {
-   "version": "4.76",
-   "date": "2026-11-04",
-   "notes": [
-    "Android: güvenlik açığı kapatıldı (Google Play uyarısı)"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Android: a security vulnerability was fixed (Google Play warning)"
-    ],
-    "ar": [
-     "Android: إغلاق ثغرة أمنية (تنبيه Google Play)"
-    ]
-   }
-  },
-  {
-   "version": "4.75",
-   "date": "2026-11-04",
-   "notes": [
-    "32 bit telefonlarda ve BlueStacks gibi öykünücülerde veri indirme düzeltildi"
-   ],
-   "notes_i18n": {
-    "en": [
-     "Data download fixed on 32-bit phones and emulators such as BlueStacks"
-    ],
-    "ar": [
-     "إصلاح تنزيل البيانات على هواتف 32 بت والمحاكيات مثل BlueStacks"
-    ]
-   }
-  },
-  {
-   "version": "4.74",
-   "date": "2026-11-04",
-   "notes": [
-    "İlk açılıştaki veri sayfası üç dilde; boyut doğru gösterilir",
-    "Sürüm notları arayüz dilinde",
-    "Çevrilmemiş düğmeler düzeltildi"
-   ],
-   "notes_i18n": {
-    "en": [
-     "The data page on first launch is in three languages, with the correct size",
-     "Release notes in the interface language",
-     "Untranslated buttons fixed"
-    ],
-    "ar": [
-     "صفحة البيانات عند أول تشغيل بثلاث لغات، مع الحجم الصحيح",
-     "ملاحظات الإصدار بلغة الواجهة",
-     "إصلاح أزرار لم تكن مترجمة"
-    ]
-   }
-  },
-  {
-   "version": "4.73",
-   "date": "2026-11-04",
-   "notes": [
-    "Google Play sürümü 32 bit telefonlarda ve BlueStacks gibi öykünücülerde de çalışır",
-    "Program başlatılamazsa açıklama gösterilir"
-   ]
-  },
-  {
-   "version": "4.72",
-   "date": "2026-11-03",
-   "notes": [
-    "Kaydırma çubuğu sürüklenince kök penceresinin açılması düzeltildi"
-   ]
-  },
-  {
-   "version": "4.71",
-   "date": "2026-11-03",
-   "notes": [
-    "Takip bitince okuma özeti",
-    "Takipte hatalı ezber âyetleri yarın yeniden tekrara gelir",
-    "Ezber karnesi"
-   ]
-  },
-  {
-   "version": "4.70",
-   "date": "2026-11-03",
-   "notes": [
-    "Takipte çerçeve okuyucuyla anlık ilerler"
-   ]
-  },
-  {
-   "version": "4.69",
-   "date": "2026-11-03",
-   "notes": [
-    "Ekran kartlı bilgisayarlarda takibin çalışmaması düzeltildi",
-    "Ses tanıma boş dönerse uyarı",
-    "Takipte eşleştirme iyileştirildi"
-   ]
-  },
-  {
-   "version": "4.68",
-   "date": "2026-11-03",
-   "notes": [
-    "Takipte duyulan metin gösterilir",
-    "Kısık mikrofonda takip çalışır",
-    "Takipte yanlış uyarılar azaltıldı"
-   ]
-  },
-  {
-   "version": "4.67",
-   "date": "2026-11-03",
-   "notes": [
-    "Takip atlanan kelime, cümle ve âyetleri yakalar ve uyarır",
-    "Takipte yanlış uyarılar azaltıldı"
-   ]
-  },
-  {
-   "version": "4.66",
-   "date": "2026-11-03",
-   "notes": [
-    "Takipte mikrofon ses düzeyi göstergesi ve uyarısı",
-    "Takip başı görünen ilk âyetten başlar"
-   ]
-  },
-  {
-   "version": "4.65",
-   "date": "2026-11-03",
-   "notes": [
-    "Takipte başlangıç âyeti seçilebilir (âyete dokunarak)",
-    "Sıradaki kelime ve takip edilen âyet ekranda gösterilir"
-   ]
-  },
-  {
-   "version": "4.64",
-   "date": "2026-11-03",
-   "notes": [
-    "Bilgisayarda ses paketinin indirilememesi düzeltildi",
-    "Takip için en az 2,5 GB boş bellek şartı; cihazın belleği gösterilir"
-   ]
-  },
-  {
-   "version": "4.63",
-   "date": "2026-11-02",
-   "notes": [
-    "Okuyuş takibi telefonlarda daha az bellek kullanır; bellek yetmezse uygulama kapanmaz",
-    "İndirmeden önce bellek bilgisi ve uyarısı"
-   ]
-  },
-  {
-   "version": "4.62",
-   "date": "2026-11-02",
-   "notes": [
-    "Okuyuş takibi: okurken mikrofon dinler, yanlış ya da atlanan kelimede uyarı sesi verir",
-    "Destek ol bölümü",
-    "Okuma ekranında kayma düzeltildi"
-   ]
-  },
-  {
-   "version": "4.61",
-   "date": "2026-11-02",
-   "notes": [
-    "Hadis fihristi büyütüldü",
-    "Programın genelinde küçük yazılar büyütüldü"
-   ]
-  },
-  {
-   "version": "4.60",
-   "date": "2026-11-02",
-   "notes": [
-    "Hadis bölümü tam pencere",
-    "Geniş ekranda fihrist yanda, şerh hadisin yanında",
-    "H tuşuyla tefsir ve hadis arasında gidip gelme"
-   ]
-  },
-  {
-   "version": "4.59",
-   "date": "2026-11-02",
-   "notes": [
-    "İngilizce ve Arapça arayüzde tefsir adları o dilde"
-   ]
-  },
-  {
-   "version": "4.58",
-   "date": "2026-11-01",
-   "notes": [
-    "Tablet ve yatay ekranda âyet ve tefsir yan yana",
-    "Mushaf sayfası dar pencerede taşmıyor",
-    "Üst çubuk dar pencerede sayfayı kaydırmıyor"
-   ]
-  },
-  {
-   "version": "4.57",
-   "date": "2026-11-01",
-   "notes": [
-    "İngilizce ve Arapça arayüz (Görünüm › Dil)",
-    "İngilizce meal: Saheeh International",
-    "Dualar ve Esmâ-ül Hüsnâ bölümü",
-    "Telefonda menü düğmesi",
-    "Android 16 için hazırlık"
-   ]
-  },
-  {
-   "version": "4.56",
-   "date": "2026-10-29",
-   "notes": [
-    "Ezber tekrar takvimi",
-    "Kendi okuyuşunu kaydedip kâriyle karşılaştırma",
-    "Tam ekranda kelimeye uzun basınca kök",
-    "Hadis kartı ve Bugün sayfasından paylaşma",
-    "Android ana ekran bileşeni: günün âyeti",
-    "Telefon ile bilgisayar arasında Wi-Fi eşitleme",
-    "Meallerde arama"
-   ]
-  },
-  {
-   "version": "4.55",
-   "date": "2026-10-29",
-   "notes": [
-    "Android: Paylaş tek basışta açılıyor"
-   ]
-  },
-  {
-   "version": "4.54",
-   "date": "2026-10-29",
-   "notes": [
-    "Android: âyet kartı WhatsApp'ta açılmıyordu, düzeltildi (kart Galeri'ye de kaydedilir)"
-   ]
-  },
-  {
-   "version": "4.53",
-   "date": "2026-10-29",
-   "notes": [
-    "Âyet kartı penceresi hızlı açılıyor",
-    "Telefonda paylaşma penceresinin taşması düzeltildi"
-   ]
-  },
-  {
-   "version": "4.52",
-   "date": "2026-10-28",
-   "notes": [
-    "Âyet kartında program adı yok: yalnız sûre, âyet ve meal adı",
-    "Çok âyetli kartta numara sırası düzeltildi"
-   ]
-  },
-  {
-   "version": "4.51",
-   "date": "2026-10-28",
-   "notes": [
-    "Âyet kartı paylaşma: âyet ve meali görsel olarak (kare, dikey, hikâye)",
-    "Telefonda paylaşma menüsü; bilgisayarda kaydet ve panoya kopyala"
-   ]
-  },
-  {
-   "version": "4.50",
-   "date": "2026-10-28",
-   "notes": [
-    "23 yeni kâri (toplam 29): mücevved okuyuşlar, ezber için Husarî muallim ve diğerleri",
-    "İndirme penceresinde kâriye göre boyut tahmini"
-   ]
-  },
-  {
-   "version": "4.49",
-   "date": "2026-10-28",
-   "notes": [
-    "Tam ekran okumada Dinle: metin kâriyi takip eder",
-    "Hatim: tam ekranda okudukça plan ilerler",
-    "Ezber modu: gizleme, tekrar, ezberlenen âyetler",
-    "Tilâveti internetsiz dinlemek için sûre, cüz ya da bütün Kur'an indirme",
-    "Allah lafzında şedde ve dik üstün doğru yerde"
-   ]
-  },
-  {
-   "version": "4.48",
-   "date": "2026-10-28",
-   "notes": [
-    "Kur'an'ı tam ekran okuma (üst çubuktaki kitap simgesi)",
-    "Hızı ayarlanabilen kendiliğinden kaydırma",
-    "Telefonda çubuklar gizlenir, okurken ekran kapanmaz"
-   ]
-  },
-  {
-   "version": "4.47",
-   "date": "2026-10-27",
-   "notes": [
-    "Daha küçük güncellemeler: hadis kitapları ayrı bir paket olarak bir kez iner",
-    "Râvinin bütün rivâyetleri ve içinde kelime araması",
-    "Senette yanlış râviyi bildirme düğmesi"
-   ]
-  },
-  {
-   "version": "4.46",
-   "date": "2026-10-24",
-   "notes": [
-    "Senetler ve râvi bağlantıları çok daha fazla hadiste: İmam Muhammed'in Muvatta'sı %97, Beyhakî %94, Musannef'ler %91–95",
-    "53 bin hadiste râvi adları işaretlendi, 1.763 râvi eklendi"
-   ]
-  },
-  {
-   "version": "4.45",
-   "date": "2026-10-23",
-   "notes": [
-    "Yeni meal: Ravvâd (Rowad) Tercüme Merkezi (QuranEnc, sürüm 1.0.4), dipnotlarıyla"
-   ]
-  },
-  {
-   "version": "4.44",
-   "date": "2026-10-23",
-   "notes": [
-    "Kur'an'da Türkiye mushafı hareke işaretleri: yuvarlak sükûn, alışılmış tenvîn (Görünüm'den Medine yazımı da seçilebilir)",
-    "Açılışta ara ekran kaldırıldı"
-   ]
-  },
-  {
-   "version": "4.43",
-   "date": "2026-10-23",
-   "notes": [
-    "Yeni meal: Kral Fahd Kompleksi – Ali Özek vd. (QuranEnc)",
-    "Daha hızlı açılış; tefsirlerde yalnız açık sûre yükleniyor",
-    "Android: açılış ekranı hemen görünür"
-   ]
-  },
-  {
-   "version": "4.42",
-   "date": "2026-10-19",
-   "notes": [
-    "Hadis şerhleri yeniden açılıyor (4.40'tan beri \"paket bu sürüme ait değil\" uyarısı çıkıyordu)",
-    "Android: güncellemeler program içinden indirilip kurulur"
-   ]
-  },
-  {
-   "version": "4.41",
-   "date": "2026-10-19",
-   "notes": [
-    "Android uygulaması: telefon ve tabletler için (Android 8.0 ve üstü)",
-    "Veri indirme kopan bağlantıda kaldığı yerden sürer",
-    "Dar ekranlarda üst düğme satırı düzeltildi"
-   ]
-  },
-  {
-   "version": "4.40",
-   "date": "2026-10-19",
-   "notes": [
-    "İki yeni hadis kitabı: Beyhakî'nin es-Sünenü'l-Kübrâ'sı (21.691 hadis) ve Heysemî'nin Mecmaʿu'z-Zevâid'i (18.676 hadis)",
-    "Hadisin altında matbu cilt ve sayfa"
-   ]
-  },
-  {
-   "version": "4.39",
-   "date": "2026-10-19",
-   "notes": [
-    "Metin kalite denetimi: beş hadiste kaybolmuş harfler düzeltildi",
-    "Şerhlerde muhakkik eklemeleri soluk renkte gösteriliyor"
-   ]
-  },
-  {
-   "version": "4.38",
-   "date": "2026-10-19",
-   "notes": [
-    "Mushaf: Medine mushafının 15 satırlık sayfa düzeni (matbu satır sonları, tezhipli sûre başlıkları, tecvid renkleriyle)"
-   ]
-  },
-  {
-   "version": "4.37",
-   "date": "2026-10-19",
-   "notes": [
-    "«Bugün» sayfası: günün âyeti ve hadisi, kaldığın yerler, son notlar",
-    "Klavye kısayolları (? ile liste): M Mushaf, H hadis, B Bugün, N not, D dinle…",
-    "Erişilebilirlik iyileştirmeleri"
-   ]
-  },
-  {
-   "version": "4.36",
-   "date": "2026-10-18",
-   "notes": [
-    "Hadis bölümü yeni tasarımla: geometrik desenli başlık, cilt sırtlı kitap kartları, altın rozetli hadis numaraları, çerçeveli metin sayfası, kartlı arama sonuçları"
-   ]
-  },
-  {
-   "version": "4.35",
-   "date": "2026-10-18",
-   "notes": [
-    "Yeni simge: rahle üzerinde açık mushaf, yanında altın hilal ve yıldız"
-   ]
-  },
-  {
-   "version": "4.34",
-   "date": "2026-10-18",
-   "notes": [
-    "İsimsiz kullanım sayıları: yalnız hangi bölümün kullanıldığı, ne kadar açık kalındığı, sürüm ve işletim sistemi; okunan ya da yazılan hiçbir şey gönderilmez. Görünüm ayarlarından kapatılabilir.",
-    "Kullanım şartlarının Gizlilik maddesi buna göre güncellendi"
-   ]
-  },
-  {
-   "version": "4.33",
-   "date": "2026-10-18",
-   "notes": [
-    "Mushaf, Kral Fahd Kompleksi'nin Hafs yazı tipiyle: rub' işareti (۞) artık kelimenin üstüne binmiyor; Duhân 33 ve Bakara 72 düzeltildi; «كَلَّا» Kompleksin yazdığı gibi çiziliyor",
-    "Tecvidli metinde üç yer düzeltildi: Neml 20, Yâsîn 22 ve Tûr 37",
-    "Kur'an metni, Kompleksin Hafs metniyle her âyette harf harf ve piksel piksel denetlendi"
-   ]
-  },
-  {
-   "version": "4.32",
-   "date": "2026-10-18",
-   "notes": [
-    "Telif notunda geliştiricilerin adı: © 2026 Fehim Dadük & Kerem Uzuner"
-   ]
-  },
-  {
-   "version": "4.31",
-   "date": "2026-10-18",
-   "notes": [
-    "Kullanım şartları: Hakkında sayfasında «Kullanım Şartları» bağlantısı ve telif notu"
-   ]
-  },
-  {
-   "version": "4.30",
-   "date": "2026-10-18",
-   "notes": [
-    "İki yeni sözlük: Fîrûzâbâdî'nin el-Kāmûsü'l-Muhît'i ve Zebîdî'nin Tâcü'l-Arûs'u (sözlük paketi olanlara kendiliğinden iner)",
-    "Güncellemeler ve yeni eserler yayımlandıkları anda görünüyor (beş dakikalık gecikme kalktı)",
-    "Mac ve Linux için hazırlık: program bu sistemlerde kendi penceresinde açılıyor ve verileri kendisi indiriyor"
-   ]
-  },
-  {
-   "version": "4.29",
-   "date": "2026-10-18",
-   "notes": [
-    "Yeni eserler artık program içinden kendiliğinden iniyor; ilk olarak Süfyân es-Sevrî, Nesâî ve İbn Arafe'nin tefsirleri",
-    "Notlar, vurgular, yer imleri, hadis notları ve eklenen kitaplar tek bir yedek dosyasına alınıp başka bilgisayarda geri yüklenebiliyor",
-    "Aramada «Bütün kelimeler» kipi (kelimeler aynı bölümde, herhangi bir sırada) ve «Yalnız bu sûrede» seçeneği",
-    "Elmalılı: boş kalan 495 âyetin meâli tamamlandı; Ahkâf ve Hâkka'daki âyet alıntılarına eksik üstünler kondu; tefsiri nüshada bulunmayan âyetlerde not gösteriliyor"
-   ]
-  },
-  {
-   "version": "4.28",
-   "date": "2026-10-18",
-   "notes": [
-    "Resmî iletişim adresi: tefsirhadiskutuphanesi@gmail.com — Hata Bildir ve Telif Bildir bu adrese yazar; adres Hakkında ve Telif Hakları sayfalarında da görünür",
-    "Program tek bağlantıyla kurulabiliyor: kurulum, gereken veri dosyalarını kendisi indirir"
-   ]
-  },
-  {
-   "version": "4.27",
-   "date": "2026-10-18",
-   "notes": [
-    "Telif hakkı koruması altındaki mealler de kilitlendi; listede adıyla görünür, açılmaz",
-    "Yeni meal: Elmalılı Hamdi Yazır'ın kendi meâli, ilk baskıdaki (1935–1939) orijinal hâliyle"
-   ]
-  },
-  {
-   "version": "4.26",
-   "date": "2026-10-18",
-   "notes": [
-    "Yeni Türkçe tefsir: Elmalılı Hamdi Yazır'ın Hak Dîni Kur'ân Dili'si, sadeleştirilmemiş orijinal metniyle (âyetler, meâl ve tefsir; matbu nüshanın cilt ve sayfasıyla)",
-    "Kral Fahd Kompleksi'nin Hafs yazı tipi artık programla birlikte geliyor; ayrıca yüklemeye gerek yok",
-    "Türkçe tefsirlerdeki Arapça âyet ve alıntılar sağdan sola ve Kur'an yazı tipiyle gösteriliyor"
-   ]
-  },
-  {
-   "version": "4.25",
-   "date": "2026-10-18",
-   "notes": [
-    "Telif hakkı koruması altındaki tefsirler kütüphanede kilitli olarak listelenir; açılmaz ve aramalara dahil edilmez",
-    "Kilitli bir esere tıklayınca telif açıklaması gösterilir; Telif Hakları sayfasında kapalı eserlerin listesi",
-    "Sa'dî'nin Teysîr'i ve el-Cedvel, telif süresi dolunca (1 Ocak 2027) kendiliğinden açılır"
-   ]
-  },
-  {
-   "version": "4.24",
-   "date": "2026-10-18",
-   "notes": [
-    "Tahrîc raporu: bir hadisin bütün kitaplardaki yerleri, senetleri ve hükümleri tek Word belgesinde",
-    "İki râvi arasındaki bağlantı: doğrudan rivâyet, senet yolları, ortak hoca ve talebeler",
-    "Râvi kartında karşılaştırmalı cerh-ta'dîl tablosu",
-    "Kur'an tilâveti: âyet âyet dinleme, altı kâri, tekrar ve ardışık okuma",
-    "Notlarda etiketler ve konu dosyaları (âyet, tefsir ve hadis notları bir arada)",
-    "İlk açılışta tanıtım turu; hata olursa tek tıkla bildirim"
-   ]
-  },
-  {
-   "version": "4.23",
-   "date": "2026-10-17",
-   "notes": [
-    "Mealler sadeleştirildi: Diyanet İşleri (eski meal), Diyanet Vakfı, Kral Fahd Kur'an Kompleksi baskısı ve Elmalılı Hamdi Yazır (aslı ve sadeleştirilmiş)"
-   ]
-  },
-  {
-   "version": "4.22",
-   "date": "2026-10-17",
-   "notes": [
-    "Otomatik güncelleme: yeni sürüm arka planda indirilip kısa bir geri sayımdan sonra kuruluyor (Ertele ile sonraya bırakılabilir)",
-    "Güncellemeler panelinde yalnız önceki sürüm gösteriliyor; sürüm atlama kaldırıldı"
-   ]
-  },
-  {
-   "version": "4.21",
-   "date": "2026-10-17",
-   "notes": [
-    "Güncellemenin son adımında «program açık görünüyor» hatası düzeltildi: kurulum eski programın kapanmasını bekliyor",
-    "Kurulum klasörüne yazma izni yoksa «Yönetici olarak devam et» düğmesi çıkıyor"
-   ]
-  },
-  {
-   "version": "4.20",
-   "date": "2026-10-17",
-   "notes": [
-    "Güncellemeden sonra pencerenin eski sürümün sayfasını göstermesi düzeltildi",
-    "Yeni ad ve simge artık program içinde de görünüyor"
-   ]
-  },
-  {
-   "version": "4.19",
-   "date": "2026-10-17",
-   "notes": [
-    "Programın yeni adı: Tefsir & Hadis Kütüphanesi",
-    "Yeni simge: açık kitap ve rub'ül-hizb yıldızı"
-   ]
-  },
-  {
-   "version": "4.18",
-   "date": "2026-10-17",
-   "notes": [
-    "Programın kodları korunuyor: arayüz exe'nin içinde şifreli ve küçültülmüş duruyor; program yalnız kendi penceresine cevap veriyor",
-    "Şimdi güncelle düğmesi artık çalışıyor: yeni sürümler programın içinden indirilip kuruluyor"
-   ]
-  },
-  {
-   "version": "4.17",
-   "date": "2026-10-17",
-   "notes": [
-    "Güncellemeler üst çubukta kendi düğmesinde; yeni sürüm varsa düğmede nokta çıkar",
-    "Gelişmiş güncelleme paneli: durum, son denetim, yenilikler, adım adım güncelleme, sürüm atlama ve sürüm geçmişi"
-   ]
-  },
-  {
-   "version": "4.16",
-   "date": "2026-10-17",
-   "notes": [
-    "İsnad şeceresinde dört görünüm: bu hadis, aynı kitapta aynı lafız («مثله»), aynı kitapta yakın lafız («نحوه»), bütün kitaplar (i'tibâr)",
-    "Programın içinden güncelleme"
-   ]
-  },
-  {
-   "version": "4.15",
-   "date": "2026-10-17",
-   "notes": [
-    "İsnad şeceresi yalnız açılan hadisin senedini gösteriyor",
-    "Karşılaştır'da aynı konudaki başka hadisler artık karışmıyor"
-   ]
-  },
-  {
-   "version": "4.14",
-   "date": "2026-10-17",
-   "notes": [
-    "Râvi sayfasında el-Kâşif, Tehzîbü't-Tehzîb ve Mîzânü'l-İ'tidâl maddeleri",
-    "Hadislerde köke göre arama",
-    "Kitap içi fihrist, hadis notları, görünüm ayarları, rivâyet karşılaştırma",
-    "Meşâriku'l-Envâr ve garîb kelime işaretleri",
-    "Şerhler ve sözlükler isteğe bağlı paketler"
-   ]
-  }
- ],
- "veri": {
-  "version": 3,
-  "packs": 6,
-  "files": [
-   {
-    "name": "Tefsir-Veri-1.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-1.zip",
-    "sha256": "bcb9ee84ff50c89454bd5556093691cbf928b383c0acded6a5f4662892041172",
-    "size": 13895892,
-    "kind": "veri"
-   },
-   {
-    "name": "Tefsir-Veri-2.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-2.zip",
-    "sha256": "57f973080b6eab6e387840dea1374dc3c984b8d29abef9b481430523787c1b92",
-    "size": 23780664,
-    "kind": "veri"
-   },
-   {
-    "name": "Tefsir-Veri-3.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-3.zip",
-    "sha256": "1a1ae5abb9e00cd49ffc9f7766fdf34432f213cfc1964e2a9a544aaa7fe64c12",
-    "size": 23503254,
-    "kind": "veri"
-   },
-   {
-    "name": "Tefsir-Veri-4.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-4.zip",
-    "sha256": "809d998f401f287c932fe28974a83a03c4adf83de8be07809cd05b6ba2458625",
-    "size": 30231376,
-    "kind": "veri"
-   },
-   {
-    "name": "Tefsir-Veri-5.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-5.zip",
-    "sha256": "2fa4c4201f3baf3ae5405d578d0d3dc528a83033f1c1b57d01e41991f9c61167",
-    "size": 22914532,
-    "kind": "veri"
-   },
-   {
-    "name": "Tefsir-Veri-6.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-6.zip",
-    "sha256": "ad6cd5876a6faa40882189dd9e3127eaff4325a95587f63b3769f67a0f1fa17e",
-    "size": 9302194,
-    "kind": "veri"
-   },
-   {
-    "name": "Tefsir-Paket-Hadis.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Hadis.zip",
-    "sha256": "6a19236a9091a6286b337dba17ff3172c0ab417c05c23922c5396b9599676b27",
-    "size": 71301675,
-    "kind": "hadis"
-   },
-   {
-    "name": "Tefsir-Paket-Serh.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Serh.zip",
-    "sha256": "be4a1b1dd453c922665a71cfff0197c19836f475b75d78f0ed199b32c1fb992b",
-    "size": 46122529,
-    "kind": "serh"
-   },
-   {
-    "name": "Tefsir-Paket-Lugat.zip",
-    "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Lugat.zip",
-    "sha256": "5e9ff506e00760cc9783a8f6c78d26edccb3efafe23cdb233950e9fb2547d65a",
-    "size": 27471513,
-    "kind": "lugat"
-   },
-   {
-    "name": "Tefsir-Paket-Ses.zip",
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.63/Tefsir-Paket-Ses.zip",
-    "sha256": "042d566dfc30fff25069d2313359442adfc40c888eeb72ae13c1ac8fb136f7ee",
-    "size": 123180196,
-    "kind": "ses"
-   }
-  ]
- },
- "ekler": [
-  {
-   "name": "Tefsir-Ek-klasik.zip",
-   "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-klasik.zip",
-   "sha256": "ba0f8aec06be2d74ceb94fdd032628344f89fb598c9dcb31eb5273e28db4dff0",
-   "size": 406558
-  },
-  {
-   "name": "Tefsir-Ek-sozluk.zip",
-   "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-sozluk.zip",
-   "sha256": "6de8413ccd593955cfb4c02a993bab7a114ff3929306d11f3355270a5173ecd2",
-   "size": 12122672,
-   "need": "lugat"
-  }
- ],
- "diger": {
-  "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-  "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-  "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-  "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-Android.apk"
- },
- "apk": {
-  "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-Android.apk",
-  "sha256": "f065b9ed1046e0e3b10827f438095a5cd174977ad2a9baa5f5ac02a0dfbae551",
-  "size": 10781888
- },
- "destek": "",
- "notes_i18n": {
-  "en": [
-   "New commentaries: Musnad (Bulūgh al-Amānī, ʿUqūd al-Zabarjad), al-Bayhaqī (al-Jawhar al-Naqī)",
-   "Commentary match rate on the book cards",
-   "Reading mode: the hadith text alone, one column on every screen"
+  "version": "4.84",
+  "date": "2026-11-06",
+  "notes": [
+    "İbn Battal şerhi bab bab: şerhli Buhârî hadisi 1.887 → 3.118, yanlış yerleşimler giderildi",
+    "İkmâl'de bab başlıkları doğru hadiste",
+    "Kartlardaki eşleşme oranları güncellendi"
   ],
-  "ar": [
-   "شروح جديدة: المسند (بلوغ الأماني، عقود الزبرجد)، البيهقي (الجوهر النقي)",
-   "نسبة تطابق الشروح على بطاقات الكتب",
-   "وضع القراءة: متن الحديث وحده، بعمود واحد في كل شاشة"
-  ]
- }
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Kurulum.exe",
+  "sha256": "15e9a9b472644c97d333b61094a08b8be37ed2efbdad931fc354a22d006aab6e",
+  "size": 36970496,
+  "history": [
+    {
+      "version": "4.83",
+      "date": "2026-11-06",
+      "notes": [
+        "Yeni şerhler: Müsned (Bulûğu'l-Emânî, Ukûdü'z-Zeberced), Beyhakî (el-Cevherü'n-Nakî)",
+        "Kitap kartlarında şerh eşleşme oranı",
+        "Okuma modu: yalnız hadisin metni, her ekranda tek sütun"
+      ],
+      "notes_i18n": {
+        "en": [
+          "New commentaries: Musnad (Bulūgh al-Amānī, ʿUqūd al-Zabarjad), al-Bayhaqī (al-Jawhar al-Naqī)",
+          "Commentary match rate on the book cards",
+          "Reading mode: the hadith text alone, one column on every screen"
+        ],
+        "ar": [
+          "شروح جديدة: المسند (بلوغ الأماني، عقود الزبرجد)، البيهقي (الجوهر النقي)",
+          "نسبة تطابق الشروح على بطاقات الكتب",
+          "وضع القراءة: متن الحديث وحده، بعمود واحد في كل شاشة"
+        ]
+      }
+    },
+    {
+      "version": "4.82",
+      "date": "2026-11-05",
+      "notes": [
+        "Hadis: metin ile senet ayrı, metin büyük ve belirgin",
+        "Hadis: sade bab başlıkları ve fihrist; kartın başında yer imi, not, kopyala, paylaş",
+        "Telefonda tek satırlık araç çubuğu"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Hadith: the text set apart from the chain, larger and clearer",
+          "Hadith: simpler chapter headings and index; bookmark, note, copy and share at the top of each card",
+          "One-row toolbar on phones"
+        ],
+        "ar": [
+          "الحديث: المتن منفصل عن السند، أكبر وأوضح",
+          "الحديث: عناوين أبواب وفهرس أبسط؛ والإشارة المرجعية والملاحظة والنسخ والمشاركة أعلى كل بطاقة",
+          "شريط أدوات بسطر واحد في الهاتف"
+        ]
+      }
+    },
+    {
+      "version": "4.81",
+      "date": "2026-11-05",
+      "notes": [
+        "Android (Google Play): güncellemeleri Play yaptığı için Güncellemeler düğmesi gizlendi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Android (Google Play): the Updates button is hidden, as Play updates the app"
+        ],
+        "ar": [
+          "Android (Google Play): أُخفي زر التحديثات لأن Google Play يحدّث التطبيق"
+        ]
+      }
+    },
+    {
+      "version": "4.80",
+      "date": "2026-11-05",
+      "notes": [
+        "Mac: program kendi penceresinde açılır (Dock simgesi, menüler)",
+        "Mac: \"yanıt vermiyor\" uyarısı giderildi; paketler imzalı"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Mac: the program opens in its own window (Dock icon, menus)",
+          "Mac: fixed the \"not responding\" warning; packages are signed"
+        ],
+        "ar": [
+          "Mac: يفتح البرنامج في نافذته الخاصة (أيقونة في Dock وقوائم)",
+          "Mac: إصلاح تحذير «لا يستجيب»؛ والحزم موقّعة"
+        ]
+      }
+    },
+    {
+      "version": "4.79",
+      "date": "2026-11-05",
+      "notes": [
+        "Mac: \"uygulama yanıt vermiyor\" uyarısı giderildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Mac: fixed the \"application is not responding\" warning"
+        ],
+        "ar": [
+          "Mac: إصلاح تحذير «التطبيق لا يستجيب»"
+        ]
+      }
+    },
+    {
+      "version": "4.78",
+      "date": "2026-11-05",
+      "notes": [
+        "Âyet ile tefsir arasında sürüklenebilir bölücü; tefsiri tam ekran yapma düğmesi",
+        "Hakkında: gerçek indirme sayıları tablosu",
+        "Mac: \"hasar görmüş\" uyarısı için çözüm adımları"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Draggable divider between verse and tafsir; button to show the tafsir full screen",
+          "About: table of real download counts",
+          "Mac: steps to fix the \"is damaged\" warning"
+        ],
+        "ar": [
+          "فاصل قابل للسحب بين الآية والتفسير؛ وزر لعرض التفسير بملء الشاشة",
+          "حول: جدول بأعداد التنزيل الحقيقية",
+          "Mac: خطوات حل تحذير «التطبيق تالف»"
+        ]
+      }
+    },
+    {
+      "version": "4.77",
+      "date": "2026-11-04",
+      "notes": [
+        "Android: 16 KB bellek sayfalı cihazlara uyum (Google Play uyarısı)"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Android: compatibility with 16 KB memory page devices (Google Play warning)"
+        ],
+        "ar": [
+          "Android: التوافق مع الأجهزة ذات صفحات الذاكرة 16 KB (تنبيه Google Play)"
+        ]
+      }
+    },
+    {
+      "version": "4.76",
+      "date": "2026-11-04",
+      "notes": [
+        "Android: güvenlik açığı kapatıldı (Google Play uyarısı)"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Android: a security vulnerability was fixed (Google Play warning)"
+        ],
+        "ar": [
+          "Android: إغلاق ثغرة أمنية (تنبيه Google Play)"
+        ]
+      }
+    },
+    {
+      "version": "4.75",
+      "date": "2026-11-04",
+      "notes": [
+        "32 bit telefonlarda ve BlueStacks gibi öykünücülerde veri indirme düzeltildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Data download fixed on 32-bit phones and emulators such as BlueStacks"
+        ],
+        "ar": [
+          "إصلاح تنزيل البيانات على هواتف 32 بت والمحاكيات مثل BlueStacks"
+        ]
+      }
+    },
+    {
+      "version": "4.74",
+      "date": "2026-11-04",
+      "notes": [
+        "İlk açılıştaki veri sayfası üç dilde; boyut doğru gösterilir",
+        "Sürüm notları arayüz dilinde",
+        "Çevrilmemiş düğmeler düzeltildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "The data page on first launch is in three languages, with the correct size",
+          "Release notes in the interface language",
+          "Untranslated buttons fixed"
+        ],
+        "ar": [
+          "صفحة البيانات عند أول تشغيل بثلاث لغات، مع الحجم الصحيح",
+          "ملاحظات الإصدار بلغة الواجهة",
+          "إصلاح أزرار لم تكن مترجمة"
+        ]
+      }
+    },
+    {
+      "version": "4.73",
+      "date": "2026-11-04",
+      "notes": [
+        "Google Play sürümü 32 bit telefonlarda ve BlueStacks gibi öykünücülerde de çalışır",
+        "Program başlatılamazsa açıklama gösterilir"
+      ]
+    },
+    {
+      "version": "4.72",
+      "date": "2026-11-03",
+      "notes": [
+        "Kaydırma çubuğu sürüklenince kök penceresinin açılması düzeltildi"
+      ]
+    },
+    {
+      "version": "4.71",
+      "date": "2026-11-03",
+      "notes": [
+        "Takip bitince okuma özeti",
+        "Takipte hatalı ezber âyetleri yarın yeniden tekrara gelir",
+        "Ezber karnesi"
+      ]
+    },
+    {
+      "version": "4.70",
+      "date": "2026-11-03",
+      "notes": [
+        "Takipte çerçeve okuyucuyla anlık ilerler"
+      ]
+    },
+    {
+      "version": "4.69",
+      "date": "2026-11-03",
+      "notes": [
+        "Ekran kartlı bilgisayarlarda takibin çalışmaması düzeltildi",
+        "Ses tanıma boş dönerse uyarı",
+        "Takipte eşleştirme iyileştirildi"
+      ]
+    },
+    {
+      "version": "4.68",
+      "date": "2026-11-03",
+      "notes": [
+        "Takipte duyulan metin gösterilir",
+        "Kısık mikrofonda takip çalışır",
+        "Takipte yanlış uyarılar azaltıldı"
+      ]
+    },
+    {
+      "version": "4.67",
+      "date": "2026-11-03",
+      "notes": [
+        "Takip atlanan kelime, cümle ve âyetleri yakalar ve uyarır",
+        "Takipte yanlış uyarılar azaltıldı"
+      ]
+    },
+    {
+      "version": "4.66",
+      "date": "2026-11-03",
+      "notes": [
+        "Takipte mikrofon ses düzeyi göstergesi ve uyarısı",
+        "Takip başı görünen ilk âyetten başlar"
+      ]
+    },
+    {
+      "version": "4.65",
+      "date": "2026-11-03",
+      "notes": [
+        "Takipte başlangıç âyeti seçilebilir (âyete dokunarak)",
+        "Sıradaki kelime ve takip edilen âyet ekranda gösterilir"
+      ]
+    },
+    {
+      "version": "4.64",
+      "date": "2026-11-03",
+      "notes": [
+        "Bilgisayarda ses paketinin indirilememesi düzeltildi",
+        "Takip için en az 2,5 GB boş bellek şartı; cihazın belleği gösterilir"
+      ]
+    },
+    {
+      "version": "4.63",
+      "date": "2026-11-02",
+      "notes": [
+        "Okuyuş takibi telefonlarda daha az bellek kullanır; bellek yetmezse uygulama kapanmaz",
+        "İndirmeden önce bellek bilgisi ve uyarısı"
+      ]
+    },
+    {
+      "version": "4.62",
+      "date": "2026-11-02",
+      "notes": [
+        "Okuyuş takibi: okurken mikrofon dinler, yanlış ya da atlanan kelimede uyarı sesi verir",
+        "Destek ol bölümü",
+        "Okuma ekranında kayma düzeltildi"
+      ]
+    },
+    {
+      "version": "4.61",
+      "date": "2026-11-02",
+      "notes": [
+        "Hadis fihristi büyütüldü",
+        "Programın genelinde küçük yazılar büyütüldü"
+      ]
+    },
+    {
+      "version": "4.60",
+      "date": "2026-11-02",
+      "notes": [
+        "Hadis bölümü tam pencere",
+        "Geniş ekranda fihrist yanda, şerh hadisin yanında",
+        "H tuşuyla tefsir ve hadis arasında gidip gelme"
+      ]
+    },
+    {
+      "version": "4.59",
+      "date": "2026-11-02",
+      "notes": [
+        "İngilizce ve Arapça arayüzde tefsir adları o dilde"
+      ]
+    },
+    {
+      "version": "4.58",
+      "date": "2026-11-01",
+      "notes": [
+        "Tablet ve yatay ekranda âyet ve tefsir yan yana",
+        "Mushaf sayfası dar pencerede taşmıyor",
+        "Üst çubuk dar pencerede sayfayı kaydırmıyor"
+      ]
+    },
+    {
+      "version": "4.57",
+      "date": "2026-11-01",
+      "notes": [
+        "İngilizce ve Arapça arayüz (Görünüm › Dil)",
+        "İngilizce meal: Saheeh International",
+        "Dualar ve Esmâ-ül Hüsnâ bölümü",
+        "Telefonda menü düğmesi",
+        "Android 16 için hazırlık"
+      ]
+    },
+    {
+      "version": "4.56",
+      "date": "2026-10-29",
+      "notes": [
+        "Ezber tekrar takvimi",
+        "Kendi okuyuşunu kaydedip kâriyle karşılaştırma",
+        "Tam ekranda kelimeye uzun basınca kök",
+        "Hadis kartı ve Bugün sayfasından paylaşma",
+        "Android ana ekran bileşeni: günün âyeti",
+        "Telefon ile bilgisayar arasında Wi-Fi eşitleme",
+        "Meallerde arama"
+      ]
+    },
+    {
+      "version": "4.55",
+      "date": "2026-10-29",
+      "notes": [
+        "Android: Paylaş tek basışta açılıyor"
+      ]
+    },
+    {
+      "version": "4.54",
+      "date": "2026-10-29",
+      "notes": [
+        "Android: âyet kartı WhatsApp'ta açılmıyordu, düzeltildi (kart Galeri'ye de kaydedilir)"
+      ]
+    },
+    {
+      "version": "4.53",
+      "date": "2026-10-29",
+      "notes": [
+        "Âyet kartı penceresi hızlı açılıyor",
+        "Telefonda paylaşma penceresinin taşması düzeltildi"
+      ]
+    },
+    {
+      "version": "4.52",
+      "date": "2026-10-28",
+      "notes": [
+        "Âyet kartında program adı yok: yalnız sûre, âyet ve meal adı",
+        "Çok âyetli kartta numara sırası düzeltildi"
+      ]
+    },
+    {
+      "version": "4.51",
+      "date": "2026-10-28",
+      "notes": [
+        "Âyet kartı paylaşma: âyet ve meali görsel olarak (kare, dikey, hikâye)",
+        "Telefonda paylaşma menüsü; bilgisayarda kaydet ve panoya kopyala"
+      ]
+    },
+    {
+      "version": "4.50",
+      "date": "2026-10-28",
+      "notes": [
+        "23 yeni kâri (toplam 29): mücevved okuyuşlar, ezber için Husarî muallim ve diğerleri",
+        "İndirme penceresinde kâriye göre boyut tahmini"
+      ]
+    },
+    {
+      "version": "4.49",
+      "date": "2026-10-28",
+      "notes": [
+        "Tam ekran okumada Dinle: metin kâriyi takip eder",
+        "Hatim: tam ekranda okudukça plan ilerler",
+        "Ezber modu: gizleme, tekrar, ezberlenen âyetler",
+        "Tilâveti internetsiz dinlemek için sûre, cüz ya da bütün Kur'an indirme",
+        "Allah lafzında şedde ve dik üstün doğru yerde"
+      ]
+    },
+    {
+      "version": "4.48",
+      "date": "2026-10-28",
+      "notes": [
+        "Kur'an'ı tam ekran okuma (üst çubuktaki kitap simgesi)",
+        "Hızı ayarlanabilen kendiliğinden kaydırma",
+        "Telefonda çubuklar gizlenir, okurken ekran kapanmaz"
+      ]
+    },
+    {
+      "version": "4.47",
+      "date": "2026-10-27",
+      "notes": [
+        "Daha küçük güncellemeler: hadis kitapları ayrı bir paket olarak bir kez iner",
+        "Râvinin bütün rivâyetleri ve içinde kelime araması",
+        "Senette yanlış râviyi bildirme düğmesi"
+      ]
+    },
+    {
+      "version": "4.46",
+      "date": "2026-10-24",
+      "notes": [
+        "Senetler ve râvi bağlantıları çok daha fazla hadiste: İmam Muhammed'in Muvatta'sı %97, Beyhakî %94, Musannef'ler %91–95",
+        "53 bin hadiste râvi adları işaretlendi, 1.763 râvi eklendi"
+      ]
+    },
+    {
+      "version": "4.45",
+      "date": "2026-10-23",
+      "notes": [
+        "Yeni meal: Ravvâd (Rowad) Tercüme Merkezi (QuranEnc, sürüm 1.0.4), dipnotlarıyla"
+      ]
+    },
+    {
+      "version": "4.44",
+      "date": "2026-10-23",
+      "notes": [
+        "Kur'an'da Türkiye mushafı hareke işaretleri: yuvarlak sükûn, alışılmış tenvîn (Görünüm'den Medine yazımı da seçilebilir)",
+        "Açılışta ara ekran kaldırıldı"
+      ]
+    },
+    {
+      "version": "4.43",
+      "date": "2026-10-23",
+      "notes": [
+        "Yeni meal: Kral Fahd Kompleksi – Ali Özek vd. (QuranEnc)",
+        "Daha hızlı açılış; tefsirlerde yalnız açık sûre yükleniyor",
+        "Android: açılış ekranı hemen görünür"
+      ]
+    },
+    {
+      "version": "4.42",
+      "date": "2026-10-19",
+      "notes": [
+        "Hadis şerhleri yeniden açılıyor (4.40'tan beri \"paket bu sürüme ait değil\" uyarısı çıkıyordu)",
+        "Android: güncellemeler program içinden indirilip kurulur"
+      ]
+    },
+    {
+      "version": "4.41",
+      "date": "2026-10-19",
+      "notes": [
+        "Android uygulaması: telefon ve tabletler için (Android 8.0 ve üstü)",
+        "Veri indirme kopan bağlantıda kaldığı yerden sürer",
+        "Dar ekranlarda üst düğme satırı düzeltildi"
+      ]
+    },
+    {
+      "version": "4.40",
+      "date": "2026-10-19",
+      "notes": [
+        "İki yeni hadis kitabı: Beyhakî'nin es-Sünenü'l-Kübrâ'sı (21.691 hadis) ve Heysemî'nin Mecmaʿu'z-Zevâid'i (18.676 hadis)",
+        "Hadisin altında matbu cilt ve sayfa"
+      ]
+    },
+    {
+      "version": "4.39",
+      "date": "2026-10-19",
+      "notes": [
+        "Metin kalite denetimi: beş hadiste kaybolmuş harfler düzeltildi",
+        "Şerhlerde muhakkik eklemeleri soluk renkte gösteriliyor"
+      ]
+    },
+    {
+      "version": "4.38",
+      "date": "2026-10-19",
+      "notes": [
+        "Mushaf: Medine mushafının 15 satırlık sayfa düzeni (matbu satır sonları, tezhipli sûre başlıkları, tecvid renkleriyle)"
+      ]
+    },
+    {
+      "version": "4.37",
+      "date": "2026-10-19",
+      "notes": [
+        "«Bugün» sayfası: günün âyeti ve hadisi, kaldığın yerler, son notlar",
+        "Klavye kısayolları (? ile liste): M Mushaf, H hadis, B Bugün, N not, D dinle…",
+        "Erişilebilirlik iyileştirmeleri"
+      ]
+    },
+    {
+      "version": "4.36",
+      "date": "2026-10-18",
+      "notes": [
+        "Hadis bölümü yeni tasarımla: geometrik desenli başlık, cilt sırtlı kitap kartları, altın rozetli hadis numaraları, çerçeveli metin sayfası, kartlı arama sonuçları"
+      ]
+    },
+    {
+      "version": "4.35",
+      "date": "2026-10-18",
+      "notes": [
+        "Yeni simge: rahle üzerinde açık mushaf, yanında altın hilal ve yıldız"
+      ]
+    },
+    {
+      "version": "4.34",
+      "date": "2026-10-18",
+      "notes": [
+        "İsimsiz kullanım sayıları: yalnız hangi bölümün kullanıldığı, ne kadar açık kalındığı, sürüm ve işletim sistemi; okunan ya da yazılan hiçbir şey gönderilmez. Görünüm ayarlarından kapatılabilir.",
+        "Kullanım şartlarının Gizlilik maddesi buna göre güncellendi"
+      ]
+    },
+    {
+      "version": "4.33",
+      "date": "2026-10-18",
+      "notes": [
+        "Mushaf, Kral Fahd Kompleksi'nin Hafs yazı tipiyle: rub' işareti (۞) artık kelimenin üstüne binmiyor; Duhân 33 ve Bakara 72 düzeltildi; «كَلَّا» Kompleksin yazdığı gibi çiziliyor",
+        "Tecvidli metinde üç yer düzeltildi: Neml 20, Yâsîn 22 ve Tûr 37",
+        "Kur'an metni, Kompleksin Hafs metniyle her âyette harf harf ve piksel piksel denetlendi"
+      ]
+    },
+    {
+      "version": "4.32",
+      "date": "2026-10-18",
+      "notes": [
+        "Telif notunda geliştiricilerin adı: © 2026 Fehim Dadük & Kerem Uzuner"
+      ]
+    },
+    {
+      "version": "4.31",
+      "date": "2026-10-18",
+      "notes": [
+        "Kullanım şartları: Hakkında sayfasında «Kullanım Şartları» bağlantısı ve telif notu"
+      ]
+    },
+    {
+      "version": "4.30",
+      "date": "2026-10-18",
+      "notes": [
+        "İki yeni sözlük: Fîrûzâbâdî'nin el-Kāmûsü'l-Muhît'i ve Zebîdî'nin Tâcü'l-Arûs'u (sözlük paketi olanlara kendiliğinden iner)",
+        "Güncellemeler ve yeni eserler yayımlandıkları anda görünüyor (beş dakikalık gecikme kalktı)",
+        "Mac ve Linux için hazırlık: program bu sistemlerde kendi penceresinde açılıyor ve verileri kendisi indiriyor"
+      ]
+    },
+    {
+      "version": "4.29",
+      "date": "2026-10-18",
+      "notes": [
+        "Yeni eserler artık program içinden kendiliğinden iniyor; ilk olarak Süfyân es-Sevrî, Nesâî ve İbn Arafe'nin tefsirleri",
+        "Notlar, vurgular, yer imleri, hadis notları ve eklenen kitaplar tek bir yedek dosyasına alınıp başka bilgisayarda geri yüklenebiliyor",
+        "Aramada «Bütün kelimeler» kipi (kelimeler aynı bölümde, herhangi bir sırada) ve «Yalnız bu sûrede» seçeneği",
+        "Elmalılı: boş kalan 495 âyetin meâli tamamlandı; Ahkâf ve Hâkka'daki âyet alıntılarına eksik üstünler kondu; tefsiri nüshada bulunmayan âyetlerde not gösteriliyor"
+      ]
+    },
+    {
+      "version": "4.28",
+      "date": "2026-10-18",
+      "notes": [
+        "Resmî iletişim adresi: tefsirhadiskutuphanesi@gmail.com — Hata Bildir ve Telif Bildir bu adrese yazar; adres Hakkında ve Telif Hakları sayfalarında da görünür",
+        "Program tek bağlantıyla kurulabiliyor: kurulum, gereken veri dosyalarını kendisi indirir"
+      ]
+    },
+    {
+      "version": "4.27",
+      "date": "2026-10-18",
+      "notes": [
+        "Telif hakkı koruması altındaki mealler de kilitlendi; listede adıyla görünür, açılmaz",
+        "Yeni meal: Elmalılı Hamdi Yazır'ın kendi meâli, ilk baskıdaki (1935–1939) orijinal hâliyle"
+      ]
+    },
+    {
+      "version": "4.26",
+      "date": "2026-10-18",
+      "notes": [
+        "Yeni Türkçe tefsir: Elmalılı Hamdi Yazır'ın Hak Dîni Kur'ân Dili'si, sadeleştirilmemiş orijinal metniyle (âyetler, meâl ve tefsir; matbu nüshanın cilt ve sayfasıyla)",
+        "Kral Fahd Kompleksi'nin Hafs yazı tipi artık programla birlikte geliyor; ayrıca yüklemeye gerek yok",
+        "Türkçe tefsirlerdeki Arapça âyet ve alıntılar sağdan sola ve Kur'an yazı tipiyle gösteriliyor"
+      ]
+    },
+    {
+      "version": "4.25",
+      "date": "2026-10-18",
+      "notes": [
+        "Telif hakkı koruması altındaki tefsirler kütüphanede kilitli olarak listelenir; açılmaz ve aramalara dahil edilmez",
+        "Kilitli bir esere tıklayınca telif açıklaması gösterilir; Telif Hakları sayfasında kapalı eserlerin listesi",
+        "Sa'dî'nin Teysîr'i ve el-Cedvel, telif süresi dolunca (1 Ocak 2027) kendiliğinden açılır"
+      ]
+    },
+    {
+      "version": "4.24",
+      "date": "2026-10-18",
+      "notes": [
+        "Tahrîc raporu: bir hadisin bütün kitaplardaki yerleri, senetleri ve hükümleri tek Word belgesinde",
+        "İki râvi arasındaki bağlantı: doğrudan rivâyet, senet yolları, ortak hoca ve talebeler",
+        "Râvi kartında karşılaştırmalı cerh-ta'dîl tablosu",
+        "Kur'an tilâveti: âyet âyet dinleme, altı kâri, tekrar ve ardışık okuma",
+        "Notlarda etiketler ve konu dosyaları (âyet, tefsir ve hadis notları bir arada)",
+        "İlk açılışta tanıtım turu; hata olursa tek tıkla bildirim"
+      ]
+    },
+    {
+      "version": "4.23",
+      "date": "2026-10-17",
+      "notes": [
+        "Mealler sadeleştirildi: Diyanet İşleri (eski meal), Diyanet Vakfı, Kral Fahd Kur'an Kompleksi baskısı ve Elmalılı Hamdi Yazır (aslı ve sadeleştirilmiş)"
+      ]
+    },
+    {
+      "version": "4.22",
+      "date": "2026-10-17",
+      "notes": [
+        "Otomatik güncelleme: yeni sürüm arka planda indirilip kısa bir geri sayımdan sonra kuruluyor (Ertele ile sonraya bırakılabilir)",
+        "Güncellemeler panelinde yalnız önceki sürüm gösteriliyor; sürüm atlama kaldırıldı"
+      ]
+    },
+    {
+      "version": "4.21",
+      "date": "2026-10-17",
+      "notes": [
+        "Güncellemenin son adımında «program açık görünüyor» hatası düzeltildi: kurulum eski programın kapanmasını bekliyor",
+        "Kurulum klasörüne yazma izni yoksa «Yönetici olarak devam et» düğmesi çıkıyor"
+      ]
+    },
+    {
+      "version": "4.20",
+      "date": "2026-10-17",
+      "notes": [
+        "Güncellemeden sonra pencerenin eski sürümün sayfasını göstermesi düzeltildi",
+        "Yeni ad ve simge artık program içinde de görünüyor"
+      ]
+    },
+    {
+      "version": "4.19",
+      "date": "2026-10-17",
+      "notes": [
+        "Programın yeni adı: Tefsir & Hadis Kütüphanesi",
+        "Yeni simge: açık kitap ve rub'ül-hizb yıldızı"
+      ]
+    },
+    {
+      "version": "4.18",
+      "date": "2026-10-17",
+      "notes": [
+        "Programın kodları korunuyor: arayüz exe'nin içinde şifreli ve küçültülmüş duruyor; program yalnız kendi penceresine cevap veriyor",
+        "Şimdi güncelle düğmesi artık çalışıyor: yeni sürümler programın içinden indirilip kuruluyor"
+      ]
+    },
+    {
+      "version": "4.17",
+      "date": "2026-10-17",
+      "notes": [
+        "Güncellemeler üst çubukta kendi düğmesinde; yeni sürüm varsa düğmede nokta çıkar",
+        "Gelişmiş güncelleme paneli: durum, son denetim, yenilikler, adım adım güncelleme, sürüm atlama ve sürüm geçmişi"
+      ]
+    },
+    {
+      "version": "4.16",
+      "date": "2026-10-17",
+      "notes": [
+        "İsnad şeceresinde dört görünüm: bu hadis, aynı kitapta aynı lafız («مثله»), aynı kitapta yakın lafız («نحوه»), bütün kitaplar (i'tibâr)",
+        "Programın içinden güncelleme"
+      ]
+    },
+    {
+      "version": "4.15",
+      "date": "2026-10-17",
+      "notes": [
+        "İsnad şeceresi yalnız açılan hadisin senedini gösteriyor",
+        "Karşılaştır'da aynı konudaki başka hadisler artık karışmıyor"
+      ]
+    },
+    {
+      "version": "4.14",
+      "date": "2026-10-17",
+      "notes": [
+        "Râvi sayfasında el-Kâşif, Tehzîbü't-Tehzîb ve Mîzânü'l-İ'tidâl maddeleri",
+        "Hadislerde köke göre arama",
+        "Kitap içi fihrist, hadis notları, görünüm ayarları, rivâyet karşılaştırma",
+        "Meşâriku'l-Envâr ve garîb kelime işaretleri",
+        "Şerhler ve sözlükler isteğe bağlı paketler"
+      ]
+    }
+  ],
+  "veri": {
+    "version": 3,
+    "packs": 6,
+    "files": [
+      {
+        "name": "Tefsir-Veri-1.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-1.zip",
+        "sha256": "bcb9ee84ff50c89454bd5556093691cbf928b383c0acded6a5f4662892041172",
+        "size": 13895892,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-2.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-2.zip",
+        "sha256": "57f973080b6eab6e387840dea1374dc3c984b8d29abef9b481430523787c1b92",
+        "size": 23780664,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-3.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-3.zip",
+        "sha256": "1a1ae5abb9e00cd49ffc9f7766fdf34432f213cfc1964e2a9a544aaa7fe64c12",
+        "size": 23503254,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-4.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-4.zip",
+        "sha256": "809d998f401f287c932fe28974a83a03c4adf83de8be07809cd05b6ba2458625",
+        "size": 30231376,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-5.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-5.zip",
+        "sha256": "2fa4c4201f3baf3ae5405d578d0d3dc528a83033f1c1b57d01e41991f9c61167",
+        "size": 22914532,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Veri-6.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Veri-6.zip",
+        "sha256": "ad6cd5876a6faa40882189dd9e3127eaff4325a95587f63b3769f67a0f1fa17e",
+        "size": 9302194,
+        "kind": "veri"
+      },
+      {
+        "name": "Tefsir-Paket-Hadis.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Hadis.zip",
+        "sha256": "6a19236a9091a6286b337dba17ff3172c0ab417c05c23922c5396b9599676b27",
+        "size": 71301675,
+        "kind": "hadis"
+      },
+      {
+        "name": "Tefsir-Paket-Serh.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Serh.zip",
+        "sha256": "be4a1b1dd453c922665a71cfff0197c19836f475b75d78f0ed199b32c1fb992b",
+        "size": 46122529,
+        "kind": "serh"
+      },
+      {
+        "name": "Tefsir-Paket-Lugat.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Lugat.zip",
+        "sha256": "5e9ff506e00760cc9783a8f6c78d26edccb3efafe23cdb233950e9fb2547d65a",
+        "size": 27471513,
+        "kind": "lugat"
+      },
+      {
+        "name": "Tefsir-Paket-Ses.zip",
+        "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.63/Tefsir-Paket-Ses.zip",
+        "sha256": "042d566dfc30fff25069d2313359442adfc40c888eeb72ae13c1ac8fb136f7ee",
+        "size": 123180196,
+        "kind": "ses"
+      }
+    ]
+  },
+  "ekler": [
+    {
+      "name": "Tefsir-Ek-klasik.zip",
+      "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-klasik.zip",
+      "sha256": "ba0f8aec06be2d74ceb94fdd032628344f89fb598c9dcb31eb5273e28db4dff0",
+      "size": 406558
+    },
+    {
+      "name": "Tefsir-Ek-sozluk.zip",
+      "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/ekler/Tefsir-Ek-sozluk.zip",
+      "sha256": "6de8413ccd593955cfb4c02a993bab7a114ff3929306d11f3355270a5173ecd2",
+      "size": 12122672,
+      "need": "lugat"
+    }
+  ],
+  "diger": {
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-Android.apk"
+  },
+  "apk": {
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "2a4d702fd57a574c5d59daead66dd4b24cf4bfdec7371c9e4af0e51cc08caf54",
+    "size": 10781888
+  },
+  "destek": "",
+  "notes_i18n": {
+    "en": [
+      "Ibn Baṭṭāl's commentary by chapter: Bukhārī hadiths with it 1,887 → 3,118, misplacements fixed",
+      "Chapter headings in al-Ikmāl under the right hadith",
+      "Match rates on the book cards updated"
+    ],
+    "ar": [
+      "شرح ابن بطال بابًا بابًا: أحاديث البخاري المشروحة من 1887 إلى 3118، وأُصلحت المواضع الخاطئة",
+      "تراجم الأبواب في إكمال المعلم تحت الحديث الصحيح",
+      "تحديث نسب التطابق على بطاقات الكتب"
+    ]
+  }
 }
