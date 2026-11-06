@@ -764,6 +764,13 @@
         "sha256": "042d566dfc30fff25069d2313359442adfc40c888eeb72ae13c1ac8fb136f7ee",
         "size": 123180196,
         "kind": "ses"
+      },
+      {
+        "name": "Tefsir-Paket-Fikih.zip",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Fikih.zip",
+        "sha256": "d7973673001cc77508e878f4b84731f9617cfd822dd549865159c89512caebc7",
+        "size": 2177439,
+        "kind": "fikih"
       }
     ]
   },
