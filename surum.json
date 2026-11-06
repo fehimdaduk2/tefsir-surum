@@ -1,15 +1,35 @@
 {
-  "version": "4.93",
+  "version": "4.94",
   "date": "2026-11-06",
   "notes": [
-    "Fıkıh: mezhep ıstılahları, mezhep âlimlerinin tanımlarıyla",
-    "Kitap karşılaştırma: birlikte kaydırma, ortak terimler, şerhli sütun, kayıt",
-    "Fıkıh notları: etiketler, arama ve süzgeçler, konu dosyaları, Word"
+    "Fıkıh: el-Muhtâr ve şerhi el-İhtiyâr (Hanefî)",
+    "Okuma modunda kitap karşılaştırma düzeltildi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Kurulum.exe",
-  "sha256": "4115829728fae08c1733a5a93f553d624d908d7bb4ea6b5c21693399b68651ef",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Kurulum.exe",
+  "sha256": "d6be6f41b13f1e325fcea154080cbd2caf255125e06d4370f7808227c8ea9cef",
   "size": 37086208,
   "history": [
+    {
+      "version": "4.93",
+      "date": "2026-11-06",
+      "notes": [
+        "Fıkıh: mezhep ıstılahları, mezhep âlimlerinin tanımlarıyla",
+        "Kitap karşılaştırma: birlikte kaydırma, ortak terimler, şerhli sütun, kayıt",
+        "Fıkıh notları: etiketler, arama ve süzgeçler, konu dosyaları, Word"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh: the terms of each school, as its scholars define them",
+          "Compare books: scroll together, shared terms, commentary column, saving",
+          "Fiqh notes: tags, search and filters, topic files, Word"
+        ],
+        "ar": [
+          "الفقه: مصطلحات المذاهب بتعريفات علمائها",
+          "مقارنة الكتب: تمرير معًا، المصطلحات المشتركة، عمود الشرح، الحفظ",
+          "تعليقات الفقه: الوسوم، البحث والمرشحات، ملفات الموضوعات، Word"
+        ]
+      }
+    },
     {
       "version": "4.92",
       "date": "2026-11-06",
@@ -985,27 +1005,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "970b1c8d73b2bac337bcea229db3362e651df428f5426dd3bfe9181bc94fd6ca",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "4eb583b98e0b7ddd289b8f52c912e113bfc186a7b6558614ff3863349fa7159b",
     "size": 10839232
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh: the terms of each school, as its scholars define them",
-      "Compare books: scroll together, shared terms, commentary column, saving",
-      "Fiqh notes: tags, search and filters, topic files, Word"
+      "Fiqh: al-Mukhtār and its commentary al-Ikhtiyār (Hanafī)",
+      "Compare books fixed in reading mode"
     ],
     "ar": [
-      "الفقه: مصطلحات المذاهب بتعريفات علمائها",
-      "مقارنة الكتب: تمرير معًا، المصطلحات المشتركة، عمود الشرح، الحفظ",
-      "تعليقات الفقه: الوسوم، البحث والمرشحات، ملفات الموضوعات، Word"
+      "الفقه: المختار للفتوى وشرحه الاختيار لتعليل المختار (حنفي)",
+      "إصلاح مقارنة الكتب في وضع القراءة"
     ]
   }
 }
