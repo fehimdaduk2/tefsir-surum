@@ -1,14 +1,34 @@
 {
-  "version": "4.88",
+  "version": "4.89",
   "date": "2026-11-06",
   "notes": [
-    "Fıkıh paketini güncellerken alınan hata giderildi",
-    "Fıkıh ikonu Hadis'in yanında, Kur'an'ı tam ekran oku onların yanında"
+    "Dua işaretleri boş kutu yerine yazıyla görünüyor",
+    "Fıkıhta künye ve matbu sayfa numaraları",
+    "Karşılaştırmada mezhep seçimi (2–4)",
+    "Telefonda seçim penceresi sistem menüsünün önüne geçmiyor"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Kurulum.exe",
-  "sha256": "9661854ea26c9f61dd7f01cf4bff1ee62998fe1db4c82fa974c3e06a8ca61d98",
-  "size": 36996608,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Kurulum.exe",
+  "sha256": "a59e7597a1af1dfeef127e02924982f475688b09f31726b8f139e7f53d752ebf",
+  "size": 36997632,
   "history": [
+    {
+      "version": "4.88",
+      "date": "2026-11-06",
+      "notes": [
+        "Fıkıh paketini güncellerken alınan hata giderildi",
+        "Fıkıh ikonu Hadis'in yanında, Kur'an'ı tam ekran oku onların yanında"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fixed the error when updating the fiqh pack",
+          "The Fiqh icon sits next to Hadith, with full-screen Qur'an reading beside them"
+        ],
+        "ar": [
+          "إصلاح الخطأ عند تحديث حزمة الفقه",
+          "أيقونة الفقه بجانب الحديث، وقراءة القرآن بملء الشاشة بجانبهما"
+        ]
+      }
+    },
     {
       "version": "4.87",
       "date": "2026-11-06",
@@ -873,25 +893,29 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "3eea147b744170843416bd00438363ee072acf4827a0dc477c4a5499b56c0e4f",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "29e215b7c8941e176db398edcdf76038cfedfe8a0e7c30cec937b0dbe0631708",
     "size": 10802368
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fixed the error when updating the fiqh pack",
-      "The Fiqh icon sits next to Hadith, with full-screen Qur'an reading beside them"
+      "Blessing signs shown in words instead of empty boxes",
+      "Edition details and printed page numbers in the fiqh books",
+      "Choose the schools to compare (2–4)",
+      "On phones the selection pop-up no longer hides behind the system menu"
     ],
     "ar": [
-      "إصلاح الخطأ عند تحديث حزمة الفقه",
-      "أيقونة الفقه بجانب الحديث، وقراءة القرآن بملء الشاشة بجانبهما"
+      "علامات الدعاء تظهر مكتوبة بدل المربعات الفارغة",
+      "بيانات الطبعة وأرقام الصفحات المطبوعة في كتب الفقه",
+      "اختيار المذاهب المقارَنة (٢–٤)",
+      "على الهاتف لم تعد نافذة التحديد تختفي خلف قائمة النظام"
     ]
   }
 }
