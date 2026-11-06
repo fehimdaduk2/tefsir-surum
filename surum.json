@@ -1,14 +1,33 @@
 {
-  "version": "4.94",
+  "version": "4.95",
   "date": "2026-11-06",
   "notes": [
-    "Fıkıh: el-Muhtâr ve şerhi el-İhtiyâr (Hanefî)",
-    "Okuma modunda kitap karşılaştırma düzeltildi"
+    "Fıkıh: Mâlikî ve Hanbelî metin–şerhler (Halîl–Derdîr, Zâd–Ravz)",
+    "Ahkâm tefsirleri ve Kurtubî bağlantısı, Bulûğu'l-Merâm",
+    "Usûl-i fıkıh, el-Eşbâh ve Mecelle kaideleri, matn ezberi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Kurulum.exe",
-  "sha256": "d6be6f41b13f1e325fcea154080cbd2caf255125e06d4370f7808227c8ea9cef",
-  "size": 37086208,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Kurulum.exe",
+  "sha256": "e7e0d5b00e0d2bb25dbf3020073c5c43f134e49848cfa111fc937832d6c5fce7",
+  "size": 37093888,
   "history": [
+    {
+      "version": "4.94",
+      "date": "2026-11-06",
+      "notes": [
+        "Fıkıh: el-Muhtâr ve şerhi el-İhtiyâr (Hanefî)",
+        "Okuma modunda kitap karşılaştırma düzeltildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh: al-Mukhtār and its commentary al-Ikhtiyār (Hanafī)",
+          "Compare books fixed in reading mode"
+        ],
+        "ar": [
+          "الفقه: المختار للفتوى وشرحه الاختيار لتعليل المختار (حنفي)",
+          "إصلاح مقارنة الكتب في وضع القراءة"
+        ]
+      }
+    },
     {
       "version": "4.93",
       "date": "2026-11-06",
@@ -1005,25 +1024,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.94/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "4eb583b98e0b7ddd289b8f52c912e113bfc186a7b6558614ff3863349fa7159b",
-    "size": 10839232
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "22ed8d732d1cb362566c9b4509e8156b751a758ba131c0bf9ed9144459ae14c5",
+    "size": 10851520
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh: al-Mukhtār and its commentary al-Ikhtiyār (Hanafī)",
-      "Compare books fixed in reading mode"
+      "Fiqh: Mālikī and Ḥanbalī texts with commentaries (Khalīl–Dardīr, Zād–Rawḍ)",
+      "Commentaries on the verses of law and a link to al-Qurṭubī, Bulūgh al-Marām",
+      "Legal theory, al-Ashbāh and the Mecelle's maxims, memorising the texts"
     ],
     "ar": [
-      "الفقه: المختار للفتوى وشرحه الاختيار لتعليل المختار (حنفي)",
-      "إصلاح مقارنة الكتب في وضع القراءة"
+      "الفقه: متون المالكية والحنابلة وشروحها (خليل–الدردير، الزاد–الروض)",
+      "كتب أحكام القرآن والربط بتفسير القرطبي، بلوغ المرام",
+      "أصول الفقه، الأشباه وقواعد المجلة، حفظ المتون"
     ]
   }
 }
