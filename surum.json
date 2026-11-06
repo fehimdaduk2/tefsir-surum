@@ -1,15 +1,36 @@
 {
-  "version": "4.86",
+  "version": "4.87",
   "date": "2026-11-06",
   "notes": [
-    "Hadis vurgularında renk düğmeleri yeniden renkli",
-    "Vurgular üst üste binmiyor; tıklayınca rengi değişiyor ya da kaldırılıyor",
-    "Yer imi eklerken metindeki aralıkların açılması giderildi"
+    "Yeni: dört mezhebi aynı konuda yan yana karşılaştırma",
+    "Büyük eserler: el-Hidâye, Bidâyetü'l-Müctehid, Minhâcü't-Tâlibîn, el-Kâfî",
+    "Büyük eserlerdeki hadisler kaynaklarına bağlı"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Kurulum.exe",
-  "sha256": "67f425b6a62e0c5c244d8207c5e4936009b65d5c37b04c9ddc474caa06e274a0",
-  "size": 36988416,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Kurulum.exe",
+  "sha256": "caa8c25768fc3b2aef22d83b949ff6b05e05cbeb99f1cd90934a4bf2c80f5bfe",
+  "size": 36993536,
   "history": [
+    {
+      "version": "4.86",
+      "date": "2026-11-06",
+      "notes": [
+        "Hadis vurgularında renk düğmeleri yeniden renkli",
+        "Vurgular üst üste binmiyor; tıklayınca rengi değişiyor ya da kaldırılıyor",
+        "Yer imi eklerken metindeki aralıkların açılması giderildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Colour buttons for hadith highlights show their colours again",
+          "Highlights no longer pile up; click one to recolour or remove it",
+          "Adding a bookmark no longer spreads the words of the text apart"
+        ],
+        "ar": [
+          "أزرار ألوان التظليل في الحديث تظهر بألوانها من جديد",
+          "لا تتراكب التظليلات؛ وبالنقر على تظليل يُغيَّر لونه أو يُزال",
+          "لم تعد إضافة العلامة المرجعية تباعد بين كلمات النص"
+        ]
+      }
+    },
     {
       "version": "4.85",
       "date": "2026-11-06",
@@ -832,27 +853,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "ccd6267a962f89fa848df202f56125d59de1dd7b90ebb64877749158771ad9bd",
-    "size": 10794176
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "7e07de28d308e9e8c2a1adf697d1b87cd6b5982e5cfc98a6ecef2a1995c3bd1d",
+    "size": 10802368
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Colour buttons for hadith highlights show their colours again",
-      "Highlights no longer pile up; click one to recolour or remove it",
-      "Adding a bookmark no longer spreads the words of the text apart"
+      "New: the four schools side by side on the same subject",
+      "Major works: al-Hidāya, Bidāyat al-Mujtahid, Minhāj al-Ṭālibīn, al-Kāfī",
+      "Hadiths in the major works linked to their sources"
     ],
     "ar": [
-      "أزرار ألوان التظليل في الحديث تظهر بألوانها من جديد",
-      "لا تتراكب التظليلات؛ وبالنقر على تظليل يُغيَّر لونه أو يُزال",
-      "لم تعد إضافة العلامة المرجعية تباعد بين كلمات النص"
+      "جديد: المقارنة بين المذاهب الأربعة في الموضوع نفسه جنبًا إلى جنب",
+      "المطولات: الهداية، بداية المجتهد، منهاج الطالبين، الكافي",
+      "الأحاديث في المطولات مربوطة بمصادرها"
     ]
   }
 }
