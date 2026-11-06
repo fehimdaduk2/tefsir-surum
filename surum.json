@@ -1,16 +1,40 @@
 {
-  "version": "4.91",
+  "version": "4.92",
   "date": "2026-11-06",
   "notes": [
-    "Fıkıh: hadis tahrîci (Nasbu'r-Râye, et-Telhîs) ve fıkıh terimleri sözlüğü",
-    "Mecelle, bütün fıkıh kitaplarında arama",
-    "Fıkıhta not, vurgu, yer imi ve Word/PDF dışa aktarma",
-    "Fethu'l-Kadîr ve Nihâyetü'l-Muhtâc şerhleri"
+    "Fıkıh: âyet ve hadis dizini; tefsirde ve hadiste fıkıhta geçtiği yerler",
+    "Şerh metniyle yan yana, cümle cümle bağlı",
+    "Meseleler, görünüm ayarları, arama süzgeçleri",
+    "Fethu'l-Kadîr tekmilesiyle tam"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.91/Guncelleme-Kurulum.exe",
-  "sha256": "5bef5575e3505d3b1b1198f8093aa43baab4fd58ad74d84e0b18568ef1830a54",
-  "size": 37049856,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Kurulum.exe",
+  "sha256": "7a793bc313866400bc65fe53ccb84cf0a946763784fa364da7e289c8db090d1d",
+  "size": 37073408,
   "history": [
+    {
+      "version": "4.91",
+      "date": "2026-11-06",
+      "notes": [
+        "Fıkıh: hadis tahrîci (Nasbu'r-Râye, et-Telhîs) ve fıkıh terimleri sözlüğü",
+        "Mecelle, bütün fıkıh kitaplarında arama",
+        "Fıkıhta not, vurgu, yer imi ve Word/PDF dışa aktarma",
+        "Fethu'l-Kadîr ve Nihâyetü'l-Muhtâc şerhleri"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh: hadith takhrij (Nasb al-Raya, al-Talkhis) and a dictionary of fiqh terms",
+          "The Mecelle, search across all fiqh books",
+          "Notes, highlights, bookmarks and Word/PDF export in fiqh",
+          "Fath al-Qadir and Nihayat al-Muhtaj commentaries"
+        ],
+        "ar": [
+          "الفقه: تخريج الأحاديث (نصب الراية، التلخيص الحبير) ومعجم المصطلحات الفقهية",
+          "مجلة الأحكام العدلية، والبحث في جميع كتب الفقه",
+          "التعليقات والتظليل والعلامات والتصدير إلى Word/PDF في الفقه",
+          "شرحا فتح القدير ونهاية المحتاج"
+        ]
+      }
+    },
     {
       "version": "4.90",
       "date": "2026-11-06",
@@ -938,29 +962,29 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.91/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.91/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.91/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.91/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.91/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "00795d89864192d72f929f08fc76ec58a5ead52fe7da9bbea0e6e4778e63b494",
-    "size": 10818752
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "c886624393e8150920a7f7cf5337920b98743473ac769cf5d60fc272180ed560",
+    "size": 10826944
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh: hadith takhrij (Nasb al-Raya, al-Talkhis) and a dictionary of fiqh terms",
-      "The Mecelle, search across all fiqh books",
-      "Notes, highlights, bookmarks and Word/PDF export in fiqh",
-      "Fath al-Qadir and Nihayat al-Muhtaj commentaries"
+      "Fiqh: verse and hadith index; where a verse or hadith is cited in fiqh",
+      "Commentary beside its text, linked sentence by sentence",
+      "Issues, view settings, search filters",
+      "Fath al-Qadir complete with its supplement"
     ],
     "ar": [
-      "الفقه: تخريج الأحاديث (نصب الراية، التلخيص الحبير) ومعجم المصطلحات الفقهية",
-      "مجلة الأحكام العدلية، والبحث في جميع كتب الفقه",
-      "التعليقات والتظليل والعلامات والتصدير إلى Word/PDF في الفقه",
-      "شرحا فتح القدير ونهاية المحتاج"
+      "الفقه: فهرس الآيات والأحاديث، ومواضع ورودها في كتب الفقه",
+      "الشرح بجانب المتن مربوطًا جملةً جملة",
+      "المسائل، وإعدادات العرض، ومرشحات البحث",
+      "فتح القدير كاملًا بتكملته"
     ]
   }
 }
