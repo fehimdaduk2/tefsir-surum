@@ -1,15 +1,36 @@
 {
-  "version": "4.84",
+  "version": "4.85",
   "date": "2026-11-06",
   "notes": [
-    "İbn Battal şerhi bab bab: şerhli Buhârî hadisi 1.887 → 3.118, yanlış yerleşimler giderildi",
-    "İkmâl'de bab başlıkları doğru hadiste",
-    "Kartlardaki eşleşme oranları güncellendi"
+    "Yeni Fıkıh bölümü (bilgisayar): dört mezhebin temel metinleri ve şerhleri",
+    "Metin ve şerhlerdeki hadisler kaynaklarına, âyetler Mushaf'a bağlı",
+    "Fihrist, kitapta arama ve kaldığın yer"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Kurulum.exe",
-  "sha256": "15e9a9b472644c97d333b61094a08b8be37ed2efbdad931fc354a22d006aab6e",
-  "size": 36970496,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Kurulum.exe",
+  "sha256": "c68c52569a0800f39fc0b5cba413aa16aaa9be44f688372b97445a5fd1e703c5",
+  "size": 36987904,
   "history": [
+    {
+      "version": "4.84",
+      "date": "2026-11-06",
+      "notes": [
+        "İbn Battal şerhi bab bab: şerhli Buhârî hadisi 1.887 → 3.118, yanlış yerleşimler giderildi",
+        "İkmâl'de bab başlıkları doğru hadiste",
+        "Kartlardaki eşleşme oranları güncellendi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Ibn Baṭṭāl's commentary by chapter: Bukhārī hadiths with it 1,887 → 3,118, misplacements fixed",
+          "Chapter headings in al-Ikmāl under the right hadith",
+          "Match rates on the book cards updated"
+        ],
+        "ar": [
+          "شرح ابن بطال بابًا بابًا: أحاديث البخاري المشروحة من 1887 إلى 3118، وأُصلحت المواضع الخاطئة",
+          "تراجم الأبواب في إكمال المعلم تحت الحديث الصحيح",
+          "تحديث نسب التطابق على بطاقات الكتب"
+        ]
+      }
+    },
     {
       "version": "4.83",
       "date": "2026-11-06",
@@ -790,27 +811,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.84/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "2a4d702fd57a574c5d59daead66dd4b24cf4bfdec7371c9e4af0e51cc08caf54",
-    "size": 10781888
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "2d05e1b93320961d30df471600326aa785e966931e4c1630359591fa4ee46522",
+    "size": 10794176
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Ibn Baṭṭāl's commentary by chapter: Bukhārī hadiths with it 1,887 → 3,118, misplacements fixed",
-      "Chapter headings in al-Ikmāl under the right hadith",
-      "Match rates on the book cards updated"
+      "New Fiqh section (desktop): the basic texts of the four schools and their commentaries",
+      "Hadiths in the texts and commentaries linked to their sources, verses to the Mushaf",
+      "Contents, search in the book and where you left off"
     ],
     "ar": [
-      "شرح ابن بطال بابًا بابًا: أحاديث البخاري المشروحة من 1887 إلى 3118، وأُصلحت المواضع الخاطئة",
-      "تراجم الأبواب في إكمال المعلم تحت الحديث الصحيح",
-      "تحديث نسب التطابق على بطاقات الكتب"
+      "قسم الفقه الجديد (الحاسوب): المتون الأساسية للمذاهب الأربعة وشروحها",
+      "الأحاديث في المتون والشروح مربوطة بمصادرها والآيات بالمصحف",
+      "الفهرس والبحث في الكتاب وموضع التوقف"
     ]
   }
 }
