@@ -1,16 +1,39 @@
 {
-  "version": "4.89",
+  "version": "4.90",
   "date": "2026-11-06",
   "notes": [
-    "Dua işaretleri boş kutu yerine yazıyla görünüyor",
-    "Fıkıhta künye ve matbu sayfa numaraları",
-    "Karşılaştırmada mezhep seçimi (2–4)",
-    "Telefonda seçim penceresi sistem menüsünün önüne geçmiyor"
+    "Kitap karşılaştırma: aynı mezhebin kitapları da yan yana",
+    "Tablette tefsir listesi düzgün görünüyor",
+    "Sunumda kısayol penceresi çıkışı engellemiyor"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Kurulum.exe",
-  "sha256": "a59e7597a1af1dfeef127e02924982f475688b09f31726b8f139e7f53d752ebf",
-  "size": 36997632,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.90/Guncelleme-Kurulum.exe",
+  "sha256": "0f42b0909254fbf88afa2926a940d28348895d5d42f0af4a8ed31d2bdc35e0cb",
+  "size": 36998656,
   "history": [
+    {
+      "version": "4.89",
+      "date": "2026-11-06",
+      "notes": [
+        "Dua işaretleri boş kutu yerine yazıyla görünüyor",
+        "Fıkıhta künye ve matbu sayfa numaraları",
+        "Karşılaştırmada mezhep seçimi (2–4)",
+        "Telefonda seçim penceresi sistem menüsünün önüne geçmiyor"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Blessing signs shown in words instead of empty boxes",
+          "Edition details and printed page numbers in the fiqh books",
+          "Choose the schools to compare (2–4)",
+          "On phones the selection pop-up no longer hides behind the system menu"
+        ],
+        "ar": [
+          "علامات الدعاء تظهر مكتوبة بدل المربعات الفارغة",
+          "بيانات الطبعة وأرقام الصفحات المطبوعة في كتب الفقه",
+          "اختيار المذاهب المقارَنة (٢–٤)",
+          "على الهاتف لم تعد نافذة التحديد تختفي خلف قائمة النظام"
+        ]
+      }
+    },
     {
       "version": "4.88",
       "date": "2026-11-06",
@@ -893,29 +916,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.90/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.90/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.90/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.90/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.89/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "29e215b7c8941e176db398edcdf76038cfedfe8a0e7c30cec937b0dbe0631708",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.90/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "8fb2afab7c531ded0c63ea8788bff21798f486a59ac07b80385ba430d4e5783e",
     "size": 10802368
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Blessing signs shown in words instead of empty boxes",
-      "Edition details and printed page numbers in the fiqh books",
-      "Choose the schools to compare (2–4)",
-      "On phones the selection pop-up no longer hides behind the system menu"
+      "Compare books: the books of one school side by side too",
+      "The tafsir list shows properly on tablets",
+      "In presentation mode the shortcuts no longer block closing"
     ],
     "ar": [
-      "علامات الدعاء تظهر مكتوبة بدل المربعات الفارغة",
-      "بيانات الطبعة وأرقام الصفحات المطبوعة في كتب الفقه",
-      "اختيار المذاهب المقارَنة (٢–٤)",
-      "على الهاتف لم تعد نافذة التحديد تختفي خلف قائمة النظام"
+      "مقارنة الكتب: كتب المذهب الواحد جنبًا إلى جنب أيضًا",
+      "قائمة التفاسير تظهر سليمة على الأجهزة اللوحية",
+      "في وضع العرض لم تعد نافذة الاختصارات تمنع الخروج"
     ]
   }
 }
