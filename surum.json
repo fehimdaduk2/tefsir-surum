@@ -1,16 +1,39 @@
 {
-  "version": "4.92",
+  "version": "4.93",
   "date": "2026-11-06",
   "notes": [
-    "Fıkıh: âyet ve hadis dizini; tefsirde ve hadiste fıkıhta geçtiği yerler",
-    "Şerh metniyle yan yana, cümle cümle bağlı",
-    "Meseleler, görünüm ayarları, arama süzgeçleri",
-    "Fethu'l-Kadîr tekmilesiyle tam"
+    "Fıkıh: mezhep ıstılahları, mezhep âlimlerinin tanımlarıyla",
+    "Kitap karşılaştırma: birlikte kaydırma, ortak terimler, şerhli sütun, kayıt",
+    "Fıkıh notları: etiketler, arama ve süzgeçler, konu dosyaları, Word"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Kurulum.exe",
-  "sha256": "7a793bc313866400bc65fe53ccb84cf0a946763784fa364da7e289c8db090d1d",
-  "size": 37073408,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Kurulum.exe",
+  "sha256": "4115829728fae08c1733a5a93f553d624d908d7bb4ea6b5c21693399b68651ef",
+  "size": 37086208,
   "history": [
+    {
+      "version": "4.92",
+      "date": "2026-11-06",
+      "notes": [
+        "Fıkıh: âyet ve hadis dizini; tefsirde ve hadiste fıkıhta geçtiği yerler",
+        "Şerh metniyle yan yana, cümle cümle bağlı",
+        "Meseleler, görünüm ayarları, arama süzgeçleri",
+        "Fethu'l-Kadîr tekmilesiyle tam"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh: verse and hadith index; where a verse or hadith is cited in fiqh",
+          "Commentary beside its text, linked sentence by sentence",
+          "Issues, view settings, search filters",
+          "Fath al-Qadir complete with its supplement"
+        ],
+        "ar": [
+          "الفقه: فهرس الآيات والأحاديث، ومواضع ورودها في كتب الفقه",
+          "الشرح بجانب المتن مربوطًا جملةً جملة",
+          "المسائل، وإعدادات العرض، ومرشحات البحث",
+          "فتح القدير كاملًا بتكملته"
+        ]
+      }
+    },
     {
       "version": "4.91",
       "date": "2026-11-06",
@@ -962,29 +985,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.92/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "c886624393e8150920a7f7cf5337920b98743473ac769cf5d60fc272180ed560",
-    "size": 10826944
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.93/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "970b1c8d73b2bac337bcea229db3362e651df428f5426dd3bfe9181bc94fd6ca",
+    "size": 10839232
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh: verse and hadith index; where a verse or hadith is cited in fiqh",
-      "Commentary beside its text, linked sentence by sentence",
-      "Issues, view settings, search filters",
-      "Fath al-Qadir complete with its supplement"
+      "Fiqh: the terms of each school, as its scholars define them",
+      "Compare books: scroll together, shared terms, commentary column, saving",
+      "Fiqh notes: tags, search and filters, topic files, Word"
     ],
     "ar": [
-      "الفقه: فهرس الآيات والأحاديث، ومواضع ورودها في كتب الفقه",
-      "الشرح بجانب المتن مربوطًا جملةً جملة",
-      "المسائل، وإعدادات العرض، ومرشحات البحث",
-      "فتح القدير كاملًا بتكملته"
+      "الفقه: مصطلحات المذاهب بتعريفات علمائها",
+      "مقارنة الكتب: تمرير معًا، المصطلحات المشتركة، عمود الشرح، الحفظ",
+      "تعليقات الفقه: الوسوم، البحث والمرشحات، ملفات الموضوعات، Word"
     ]
   }
 }
