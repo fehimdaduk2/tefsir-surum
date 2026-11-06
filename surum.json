@@ -1,15 +1,36 @@
 {
-  "version": "4.96",
+  "version": "4.97",
   "date": "2026-11-06",
   "notes": [
-    "Tefsirlerde daha çok hadis bağlantısı",
-    "Fıkıh vurgu penceresi tefsirde kalmıyor",
-    "İndirme sırasında pencere kapanınca çıkan hata giderildi"
+    "Tam ekran Kur'an'da harf ve hareke kaymaları düzeltildi",
+    "Kral Fahd yazı tipinde Türkiye mushafı işaretleri",
+    "Kur'an için yalnız Osmânî hatta uygun yazı tipleri"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Kurulum.exe",
-  "sha256": "b576202b2ace98ef3849f7fd2b9824499306879076efdf50098e0aab6bb79926",
-  "size": 37096448,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.97/Guncelleme-Kurulum.exe",
+  "sha256": "78dd0dea26251b3b9f1650f7c4999945434ac978d51a816cbcb146fdb483f7bf",
+  "size": 37096960,
   "history": [
+    {
+      "version": "4.96",
+      "date": "2026-11-06",
+      "notes": [
+        "Tefsirlerde daha çok hadis bağlantısı",
+        "Fıkıh vurgu penceresi tefsirde kalmıyor",
+        "İndirme sırasında pencere kapanınca çıkan hata giderildi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "More hadith links in the tafsirs",
+          "The fiqh highlight window no longer stays over the tafsir",
+          "Fixed an error when a window was closed during a download"
+        ],
+        "ar": [
+          "روابط أكثر للأحاديث في التفاسير",
+          "لم تعد نافذة التمييز في الفقه تبقى فوق التفسير",
+          "إصلاح خطأ عند إغلاق النافذة أثناء التنزيل"
+        ]
+      }
+    },
     {
       "version": "4.95",
       "date": "2026-11-06",
@@ -1045,27 +1066,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.97/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.97/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.97/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.97/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "f9c61a209081726b20f6829bbb505f544009843c31b50fe0cd5cb70481dad516",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.97/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "9cc58dc88bddca5b6c6b686101fa6864c41e32465323f0e25795cd5899cc8f42",
     "size": 10851520
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "More hadith links in the tafsirs",
-      "The fiqh highlight window no longer stays over the tafsir",
-      "Fixed an error when a window was closed during a download"
+      "Fixed broken letters and marks in the full-screen Qur'an",
+      "Turkish mushaf marks with the King Fahd font",
+      "Only fonts made for the Uthmanic script for the Qur'an"
     ],
     "ar": [
-      "روابط أكثر للأحاديث في التفاسير",
-      "لم تعد نافذة التمييز في الفقه تبقى فوق التفسير",
-      "إصلاح خطأ عند إغلاق النافذة أثناء التنزيل"
+      "إصلاح انفصال الحروف وانزياح العلامات في عرض القرآن بملء الشاشة",
+      "علامات مصحف تركيا مع خط مجمع الملك فهد",
+      "خطوط القرآن المناسبة للرسم العثماني فقط"
     ]
   }
 }
