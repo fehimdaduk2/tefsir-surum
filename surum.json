@@ -1,15 +1,36 @@
 {
-  "version": "4.82",
-  "date": "2026-11-05",
+  "version": "4.83",
+  "date": "2026-11-06",
   "notes": [
-    "Hadis: metin ile senet ayrı, metin büyük ve belirgin",
-    "Hadis: sade bab başlıkları ve fihrist; kartın başında yer imi, not, kopyala, paylaş",
-    "Telefonda tek satırlık araç çubuğu"
+    "Yeni şerhler: Müsned (Bulûğu'l-Emânî, Ukûdü'z-Zeberced), Beyhakî (el-Cevherü'n-Nakî)",
+    "Kitap kartlarında şerh eşleşme oranı",
+    "Okuma modu: yalnız hadisin metni, her ekranda tek sütun"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.82/Guncelleme-Kurulum.exe",
-  "sha256": "7e6bdcdcf3e014581353a9cd2101a1201a7b3d8929b273c57f9f40ed8128becb",
-  "size": 36968960,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Kurulum.exe",
+  "sha256": "a095c518fc7cd49c808d0e7e395c426f3ecd7f6e791877dd4eec493b25cb6e8d",
+  "size": 36970496,
   "history": [
+    {
+      "version": "4.82",
+      "date": "2026-11-05",
+      "notes": [
+        "Hadis: metin ile senet ayrı, metin büyük ve belirgin",
+        "Hadis: sade bab başlıkları ve fihrist; kartın başında yer imi, not, kopyala, paylaş",
+        "Telefonda tek satırlık araç çubuğu"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Hadith: the text set apart from the chain, larger and clearer",
+          "Hadith: simpler chapter headings and index; bookmark, note, copy and share at the top of each card",
+          "One-row toolbar on phones"
+        ],
+        "ar": [
+          "الحديث: المتن منفصل عن السند، أكبر وأوضح",
+          "الحديث: عناوين أبواب وفهرس أبسط؛ والإشارة المرجعية والملاحظة والنسخ والمشاركة أعلى كل بطاقة",
+          "شريط أدوات بسطر واحد في الهاتف"
+        ]
+      }
+    },
     {
       "version": "4.81",
       "date": "2026-11-05",
@@ -741,27 +762,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.82/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.82/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.82/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.82/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.82/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "189a5d35656637a3204af292495ed8cb58335af1a3aad91ed909fead6fa13857",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.83/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "f065b9ed1046e0e3b10827f438095a5cd174977ad2a9baa5f5ac02a0dfbae551",
     "size": 10781888
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Hadith: the text set apart from the chain, larger and clearer",
-      "Hadith: simpler chapter headings and index; bookmark, note, copy and share at the top of each card",
-      "One-row toolbar on phones"
+      "New commentaries: Musnad (Bulūgh al-Amānī, ʿUqūd al-Zabarjad), al-Bayhaqī (al-Jawhar al-Naqī)",
+      "Commentary match rate on the book cards",
+      "Reading mode: the hadith text alone, one column on every screen"
     ],
     "ar": [
-      "الحديث: المتن منفصل عن السند، أكبر وأوضح",
-      "الحديث: عناوين أبواب وفهرس أبسط؛ والإشارة المرجعية والملاحظة والنسخ والمشاركة أعلى كل بطاقة",
-      "شريط أدوات بسطر واحد في الهاتف"
+      "شروح جديدة: المسند (بلوغ الأماني، عقود الزبرجد)، البيهقي (الجوهر النقي)",
+      "نسبة تطابق الشروح على بطاقات الكتب",
+      "وضع القراءة: متن الحديث وحده، بعمود واحد في كل شاشة"
     ]
   }
 }
