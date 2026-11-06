@@ -1,15 +1,36 @@
 {
-  "version": "4.95",
+  "version": "4.96",
   "date": "2026-11-06",
   "notes": [
-    "Fıkıh: Mâlikî ve Hanbelî metin–şerhler (Halîl–Derdîr, Zâd–Ravz)",
-    "Ahkâm tefsirleri ve Kurtubî bağlantısı, Bulûğu'l-Merâm",
-    "Usûl-i fıkıh, el-Eşbâh ve Mecelle kaideleri, matn ezberi"
+    "Tefsirlerde daha çok hadis bağlantısı",
+    "Fıkıh vurgu penceresi tefsirde kalmıyor",
+    "İndirme sırasında pencere kapanınca çıkan hata giderildi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Kurulum.exe",
-  "sha256": "e7e0d5b00e0d2bb25dbf3020073c5c43f134e49848cfa111fc937832d6c5fce7",
-  "size": 37093888,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Kurulum.exe",
+  "sha256": "b576202b2ace98ef3849f7fd2b9824499306879076efdf50098e0aab6bb79926",
+  "size": 37096448,
   "history": [
+    {
+      "version": "4.95",
+      "date": "2026-11-06",
+      "notes": [
+        "Fıkıh: Mâlikî ve Hanbelî metin–şerhler (Halîl–Derdîr, Zâd–Ravz)",
+        "Ahkâm tefsirleri ve Kurtubî bağlantısı, Bulûğu'l-Merâm",
+        "Usûl-i fıkıh, el-Eşbâh ve Mecelle kaideleri, matn ezberi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh: Mālikī and Ḥanbalī texts with commentaries (Khalīl–Dardīr, Zād–Rawḍ)",
+          "Commentaries on the verses of law and a link to al-Qurṭubī, Bulūgh al-Marām",
+          "Legal theory, al-Ashbāh and the Mecelle's maxims, memorising the texts"
+        ],
+        "ar": [
+          "الفقه: متون المالكية والحنابلة وشروحها (خليل–الدردير، الزاد–الروض)",
+          "كتب أحكام القرآن والربط بتفسير القرطبي، بلوغ المرام",
+          "أصول الفقه، الأشباه وقواعد المجلة، حفظ المتون"
+        ]
+      }
+    },
     {
       "version": "4.94",
       "date": "2026-11-06",
@@ -1024,27 +1045,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.95/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "22ed8d732d1cb362566c9b4509e8156b751a758ba131c0bf9ed9144459ae14c5",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.96/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "f9c61a209081726b20f6829bbb505f544009843c31b50fe0cd5cb70481dad516",
     "size": 10851520
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh: Mālikī and Ḥanbalī texts with commentaries (Khalīl–Dardīr, Zād–Rawḍ)",
-      "Commentaries on the verses of law and a link to al-Qurṭubī, Bulūgh al-Marām",
-      "Legal theory, al-Ashbāh and the Mecelle's maxims, memorising the texts"
+      "More hadith links in the tafsirs",
+      "The fiqh highlight window no longer stays over the tafsir",
+      "Fixed an error when a window was closed during a download"
     ],
     "ar": [
-      "الفقه: متون المالكية والحنابلة وشروحها (خليل–الدردير، الزاد–الروض)",
-      "كتب أحكام القرآن والربط بتفسير القرطبي، بلوغ المرام",
-      "أصول الفقه، الأشباه وقواعد المجلة، حفظ المتون"
+      "روابط أكثر للأحاديث في التفاسير",
+      "لم تعد نافذة التمييز في الفقه تبقى فوق التفسير",
+      "إصلاح خطأ عند إغلاق النافذة أثناء التنزيل"
     ]
   }
 }
