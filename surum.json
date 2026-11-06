@@ -1,15 +1,36 @@
 {
-  "version": "4.85",
+  "version": "4.86",
   "date": "2026-11-06",
   "notes": [
-    "Yeni Fıkıh bölümü (bilgisayar): dört mezhebin temel metinleri ve şerhleri",
-    "Metin ve şerhlerdeki hadisler kaynaklarına, âyetler Mushaf'a bağlı",
-    "Fihrist, kitapta arama ve kaldığın yer"
+    "Hadis vurgularında renk düğmeleri yeniden renkli",
+    "Vurgular üst üste binmiyor; tıklayınca rengi değişiyor ya da kaldırılıyor",
+    "Yer imi eklerken metindeki aralıkların açılması giderildi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Kurulum.exe",
-  "sha256": "c68c52569a0800f39fc0b5cba413aa16aaa9be44f688372b97445a5fd1e703c5",
-  "size": 36987904,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Kurulum.exe",
+  "sha256": "67f425b6a62e0c5c244d8207c5e4936009b65d5c37b04c9ddc474caa06e274a0",
+  "size": 36988416,
   "history": [
+    {
+      "version": "4.85",
+      "date": "2026-11-06",
+      "notes": [
+        "Yeni Fıkıh bölümü (bilgisayar): dört mezhebin temel metinleri ve şerhleri",
+        "Metin ve şerhlerdeki hadisler kaynaklarına, âyetler Mushaf'a bağlı",
+        "Fihrist, kitapta arama ve kaldığın yer"
+      ],
+      "notes_i18n": {
+        "en": [
+          "New Fiqh section (desktop): the basic texts of the four schools and their commentaries",
+          "Hadiths in the texts and commentaries linked to their sources, verses to the Mushaf",
+          "Contents, search in the book and where you left off"
+        ],
+        "ar": [
+          "قسم الفقه الجديد (الحاسوب): المتون الأساسية للمذاهب الأربعة وشروحها",
+          "الأحاديث في المتون والشروح مربوطة بمصادرها والآيات بالمصحف",
+          "الفهرس والبحث في الكتاب وموضع التوقف"
+        ]
+      }
+    },
     {
       "version": "4.84",
       "date": "2026-11-06",
@@ -811,27 +832,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.85/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "2d05e1b93320961d30df471600326aa785e966931e4c1630359591fa4ee46522",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.86/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "ccd6267a962f89fa848df202f56125d59de1dd7b90ebb64877749158771ad9bd",
     "size": 10794176
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "New Fiqh section (desktop): the basic texts of the four schools and their commentaries",
-      "Hadiths in the texts and commentaries linked to their sources, verses to the Mushaf",
-      "Contents, search in the book and where you left off"
+      "Colour buttons for hadith highlights show their colours again",
+      "Highlights no longer pile up; click one to recolour or remove it",
+      "Adding a bookmark no longer spreads the words of the text apart"
     ],
     "ar": [
-      "قسم الفقه الجديد (الحاسوب): المتون الأساسية للمذاهب الأربعة وشروحها",
-      "الأحاديث في المتون والشروح مربوطة بمصادرها والآيات بالمصحف",
-      "الفهرس والبحث في الكتاب وموضع التوقف"
+      "أزرار ألوان التظليل في الحديث تظهر بألوانها من جديد",
+      "لا تتراكب التظليلات؛ وبالنقر على تظليل يُغيَّر لونه أو يُزال",
+      "لم تعد إضافة العلامة المرجعية تباعد بين كلمات النص"
     ]
   }
 }
