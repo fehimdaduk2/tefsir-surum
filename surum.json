@@ -1,15 +1,35 @@
 {
-  "version": "4.87",
+  "version": "4.88",
   "date": "2026-11-06",
   "notes": [
-    "Yeni: dört mezhebi aynı konuda yan yana karşılaştırma",
-    "Büyük eserler: el-Hidâye, Bidâyetü'l-Müctehid, Minhâcü't-Tâlibîn, el-Kâfî",
-    "Büyük eserlerdeki hadisler kaynaklarına bağlı"
+    "Fıkıh paketini güncellerken alınan hata giderildi",
+    "Fıkıh ikonu Hadis'in yanında, Kur'an'ı tam ekran oku onların yanında"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Kurulum.exe",
-  "sha256": "caa8c25768fc3b2aef22d83b949ff6b05e05cbeb99f1cd90934a4bf2c80f5bfe",
-  "size": 36993536,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Kurulum.exe",
+  "sha256": "9661854ea26c9f61dd7f01cf4bff1ee62998fe1db4c82fa974c3e06a8ca61d98",
+  "size": 36996608,
   "history": [
+    {
+      "version": "4.87",
+      "date": "2026-11-06",
+      "notes": [
+        "Yeni: dört mezhebi aynı konuda yan yana karşılaştırma",
+        "Büyük eserler: el-Hidâye, Bidâyetü'l-Müctehid, Minhâcü't-Tâlibîn, el-Kâfî",
+        "Büyük eserlerdeki hadisler kaynaklarına bağlı"
+      ],
+      "notes_i18n": {
+        "en": [
+          "New: the four schools side by side on the same subject",
+          "Major works: al-Hidāya, Bidāyat al-Mujtahid, Minhāj al-Ṭālibīn, al-Kāfī",
+          "Hadiths in the major works linked to their sources"
+        ],
+        "ar": [
+          "جديد: المقارنة بين المذاهب الأربعة في الموضوع نفسه جنبًا إلى جنب",
+          "المطولات: الهداية، بداية المجتهد، منهاج الطالبين، الكافي",
+          "الأحاديث في المطولات مربوطة بمصادرها"
+        ]
+      }
+    },
     {
       "version": "4.86",
       "date": "2026-11-06",
@@ -853,27 +873,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.87/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "7e07de28d308e9e8c2a1adf697d1b87cd6b5982e5cfc98a6ecef2a1995c3bd1d",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.88/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "3eea147b744170843416bd00438363ee072acf4827a0dc477c4a5499b56c0e4f",
     "size": 10802368
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "New: the four schools side by side on the same subject",
-      "Major works: al-Hidāya, Bidāyat al-Mujtahid, Minhāj al-Ṭālibīn, al-Kāfī",
-      "Hadiths in the major works linked to their sources"
+      "Fixed the error when updating the fiqh pack",
+      "The Fiqh icon sits next to Hadith, with full-screen Qur'an reading beside them"
     ],
     "ar": [
-      "جديد: المقارنة بين المذاهب الأربعة في الموضوع نفسه جنبًا إلى جنب",
-      "المطولات: الهداية، بداية المجتهد، منهاج الطالبين، الكافي",
-      "الأحاديث في المطولات مربوطة بمصادرها"
+      "إصلاح الخطأ عند تحديث حزمة الفقه",
+      "أيقونة الفقه بجانب الحديث، وقراءة القرآن بملء الشاشة بجانبهما"
     ]
   }
 }
