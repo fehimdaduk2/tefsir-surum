@@ -1,13 +1,28 @@
 {
-  "version": "5.04",
+  "version": "5.05",
   "date": "2026-11-07",
   "notes": [
-    "Âyetin İlgili sekmesi (tefsirlerdeki hadisler, nüzul, nesih, fıkıh), delil zinciri ve Ahkâm âyetleri haritası, Nahhâs ve İbnü'l-Cevzî'nin nâsih-mensûh kitapları, tek kutuda tefsir-hadis-fıkıh araması."
+    "Windows: bazı bilgisayarlarda Defender'ın programı yanlışlıkla virüs sanması giderildi (PowerShell ve komut satırı yerine Windows'un kendi çağrıları)."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Kurulum.exe",
-  "sha256": "264b0aa9e3da05ca68fa2ad299f61633122539a4b966f91dfc2b95c3f77c41a3",
-  "size": 38030848,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Kurulum.exe",
+  "sha256": "6289d7c0eb938b3d7525ba4f4d65a7134d0ba7a02f0017c1f25990fd6199213b",
+  "size": 38013952,
   "history": [
+    {
+      "version": "5.04",
+      "date": "2026-11-07",
+      "notes": [
+        "Âyetin İlgili sekmesi (tefsirlerdeki hadisler, nüzul, nesih, fıkıh), delil zinciri ve Ahkâm âyetleri haritası, Nahhâs ve İbnü'l-Cevzî'nin nâsih-mensûh kitapları, tek kutuda tefsir-hadis-fıkıh araması."
+      ],
+      "notes_i18n": {
+        "en": [
+          "A Related tab for every verse (hadiths in the tafsirs, occasions of revelation, abrogation, fiqh), the chain of evidence and a map of the verses of law, the abrogation books of Nahhas and Ibn al-Jawzi, one search box for tafsir, hadith and fiqh."
+        ],
+        "ar": [
+          "تبويب «ذو صلة» لكل آية (أحاديث التفاسير، أسباب النزول، النسخ، الفقه)، وسلسلة الأدلة وخريطة آيات الأحكام، وكتابا الناسخ والمنسوخ للنحاس وابن الجوزي، وبحث واحد في التفسير والحديث والفقه."
+        ]
+      }
+    },
     {
       "version": "5.03",
       "date": "2026-11-07",
@@ -1175,23 +1190,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "6f71eaeaab01b43976de24efbca7124d2ce4f00d08c2f585d7349c02534bbf02",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "0bcf21e9d70436dea42c05b541bfc9ff142881276f4aaa50dc6c8a69e3467c3e",
     "size": 11707584
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "A Related tab for every verse (hadiths in the tafsirs, occasions of revelation, abrogation, fiqh), the chain of evidence and a map of the verses of law, the abrogation books of Nahhas and Ibn al-Jawzi, one search box for tafsir, hadith and fiqh."
+      "Windows: fixed Defender wrongly flagging the program as malware on some computers (Windows' own calls instead of PowerShell and the command line)."
     ],
     "ar": [
-      "تبويب «ذو صلة» لكل آية (أحاديث التفاسير، أسباب النزول، النسخ، الفقه)، وسلسلة الأدلة وخريطة آيات الأحكام، وكتابا الناسخ والمنسوخ للنحاس وابن الجوزي، وبحث واحد في التفسير والحديث والفقه."
+      "ويندوز: إصلاح اعتبار Defender البرنامجَ خطأً برنامجًا ضارًا على بعض الحواسيب (استدعاءات ويندوز نفسها بدلًا من PowerShell وسطر الأوامر)."
     ]
   }
 }
