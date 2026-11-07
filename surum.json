@@ -1,13 +1,28 @@
 {
-  "version": "5.02",
+  "version": "5.03",
   "date": "2026-11-07",
   "notes": [
-    "Notlarım ve Google Drive eşitlemesinde düzeltmeler: yedek bildirimi görünür, «Google ile eşitle» düğmesi, sorunların sebebi açıkça yazılır."
+    "Daha sade arayüz (Yardım ve «⋯» menüleri), Notlarım'da toplanan yedek ve eşitleme kartları, telefonda Google Drive bağlantısı düzeltildi."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.02/Guncelleme-Kurulum.exe",
-  "sha256": "4e18dca0be36bf7b1f949cf070596aa8da568ecd0615cc3e950295c5bd515ab7",
-  "size": 37229568,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Kurulum.exe",
+  "sha256": "72d39a069e129108747d8c8d635fbccf4a49a2eaebdb4be781a6feda129a6807",
+  "size": 37238272,
   "history": [
+    {
+      "version": "5.02",
+      "date": "2026-11-07",
+      "notes": [
+        "Notlarım ve Google Drive eşitlemesinde düzeltmeler: yedek bildirimi görünür, «Google ile eşitle» düğmesi, sorunların sebebi açıkça yazılır."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fixes in My Notes and Google Drive sync: the backup notice shows, a «Sync with Google» button, problems are explained clearly."
+        ],
+        "ar": [
+          "إصلاحات في «ملاحظاتي» ومزامنة Google Drive: يظهر إشعار النسخ، وزر «المزامنة عبر Google»، وتُشرح أسباب المشكلات بوضوح."
+        ]
+      }
+    },
     {
       "version": "5.01",
       "date": "2026-11-07",
@@ -1145,23 +1160,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.02/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.02/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.02/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.02/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.02/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "f48d34b94ed3ed41a579016b933550ee74b593000eb2cadfcedad4e84933b838",
-    "size": 10912960
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "995a55e5d39231a114294d9a04ad2a27c511c7814539a903b4d8f373fd96f142",
+    "size": 10917056
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fixes in My Notes and Google Drive sync: the backup notice shows, a «Sync with Google» button, problems are explained clearly."
+      "A tidier interface (Help and «⋯» menus), backup and sync cards gathered in My Notes, Google Drive connection on phones fixed."
     ],
     "ar": [
-      "إصلاحات في «ملاحظاتي» ومزامنة Google Drive: يظهر إشعار النسخ، وزر «المزامنة عبر Google»، وتُشرح أسباب المشكلات بوضوح."
+      "واجهة أكثر ترتيبًا (قائمة المساعدة وقوائم «⋯»)، وبطاقات النسخ والمزامنة مجموعة في «ملاحظاتي»، وإصلاح ربط Google Drive على الهواتف."
     ]
   }
 }
