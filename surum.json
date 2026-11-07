@@ -1,13 +1,28 @@
 {
-  "version": "5.03",
+  "version": "5.04",
   "date": "2026-11-07",
   "notes": [
-    "Daha sade arayüz (Yardım ve «⋯» menüleri), Notlarım'da toplanan yedek ve eşitleme kartları, telefonda Google Drive bağlantısı düzeltildi."
+    "Âyetin İlgili sekmesi (tefsirlerdeki hadisler, nüzul, nesih, fıkıh), delil zinciri ve Ahkâm âyetleri haritası, Nahhâs ve İbnü'l-Cevzî'nin nâsih-mensûh kitapları, tek kutuda tefsir-hadis-fıkıh araması."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Kurulum.exe",
-  "sha256": "72d39a069e129108747d8c8d635fbccf4a49a2eaebdb4be781a6feda129a6807",
-  "size": 37238272,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Kurulum.exe",
+  "sha256": "264b0aa9e3da05ca68fa2ad299f61633122539a4b966f91dfc2b95c3f77c41a3",
+  "size": 38030848,
   "history": [
+    {
+      "version": "5.03",
+      "date": "2026-11-07",
+      "notes": [
+        "Daha sade arayüz (Yardım ve «⋯» menüleri), Notlarım'da toplanan yedek ve eşitleme kartları, telefonda Google Drive bağlantısı düzeltildi."
+      ],
+      "notes_i18n": {
+        "en": [
+          "A tidier interface (Help and «⋯» menus), backup and sync cards gathered in My Notes, Google Drive connection on phones fixed."
+        ],
+        "ar": [
+          "واجهة أكثر ترتيبًا (قائمة المساعدة وقوائم «⋯»)، وبطاقات النسخ والمزامنة مجموعة في «ملاحظاتي»، وإصلاح ربط Google Drive على الهواتف."
+        ]
+      }
+    },
     {
       "version": "5.02",
       "date": "2026-11-07",
@@ -1160,23 +1175,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.03/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "995a55e5d39231a114294d9a04ad2a27c511c7814539a903b4d8f373fd96f142",
-    "size": 10917056
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.04/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "6f71eaeaab01b43976de24efbca7124d2ce4f00d08c2f585d7349c02534bbf02",
+    "size": 11707584
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "A tidier interface (Help and «⋯» menus), backup and sync cards gathered in My Notes, Google Drive connection on phones fixed."
+      "A Related tab for every verse (hadiths in the tafsirs, occasions of revelation, abrogation, fiqh), the chain of evidence and a map of the verses of law, the abrogation books of Nahhas and Ibn al-Jawzi, one search box for tafsir, hadith and fiqh."
     ],
     "ar": [
-      "واجهة أكثر ترتيبًا (قائمة المساعدة وقوائم «⋯»)، وبطاقات النسخ والمزامنة مجموعة في «ملاحظاتي»، وإصلاح ربط Google Drive على الهواتف."
+      "تبويب «ذو صلة» لكل آية (أحاديث التفاسير، أسباب النزول، النسخ، الفقه)، وسلسلة الأدلة وخريطة آيات الأحكام، وكتابا الناسخ والمنسوخ للنحاس وابن الجوزي، وبحث واحد في التفسير والحديث والفقه."
     ]
   }
 }
