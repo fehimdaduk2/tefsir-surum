@@ -1,11 +1,20 @@
 {
-  "version": "4.98",
+  "version": "4.99",
   "date": "2026-11-07",
-  "notes": "Android'de ve bazı Windows bilgisayarlarda yüklenmeyen yazı tipleri düzeltildi: Kur'an'da lafzatullahtaki fazladan şedde ve bitişmeyen ىٰ giderildi.",
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.98/Guncelleme-Kurulum.exe",
-  "sha256": "e5535098c1a7b25b071aabc7650fa90890f08d4f2920651cf1c3d2f9e92508a7",
-  "size": 37133824,
+  "notes": "Diyanet hafız mushafının sayfa düzeni: sayfa başları işaretli, sayfa sayfa okuma, sayfa başı sınaması ve sayfaya göre ezber.",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Kurulum.exe",
+  "sha256": "1bed345e97e2a43a470c6fa1ced5cdcbcd25fbf7a901ff37b86c4d45163b17bd",
+  "size": 37141504,
   "history": [
+    {
+      "version": "4.98",
+      "date": "2026-11-07",
+      "notes": "Android'de ve bazı Windows bilgisayarlarda yüklenmeyen yazı tipleri düzeltildi: Kur'an'da lafzatullahtaki fazladan şedde ve bitişmeyen ىٰ giderildi.",
+      "notes_i18n": {
+        "en": "Fixed fonts not loading on Android and some Windows PCs: the extra shadda on the name of God and the unjoined ىٰ in the Qur'an are gone.",
+        "ar": "إصلاح عدم تحميل الخطوط على أندرويد وبعض أجهزة ويندوز: زالت الشدة الزائدة في لفظ الجلالة وانفصال ىٰ في المصحف."
+      }
+    },
     {
       "version": "4.97",
       "date": "2026-11-06",
@@ -1083,19 +1092,19 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.98/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.98/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.98/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.98/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.98/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "ca51a9fadb5f409aa767783155cee5f8ce650853fd328fe7bfef422432b54e36",
-    "size": 10863808
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "0fda7cc690d6deba553d813a8e5877ebbb71b002a505b670841f47c805d3bf82",
+    "size": 10872000
   },
   "destek": "",
   "notes_i18n": {
-    "en": "Fixed fonts not loading on Android and some Windows PCs: the extra shadda on the name of God and the unjoined ىٰ in the Qur'an are gone.",
-    "ar": "إصلاح عدم تحميل الخطوط على أندرويد وبعض أجهزة ويندوز: زالت الشدة الزائدة في لفظ الجلالة وانفصال ىٰ في المصحف."
+    "en": "Diyanet hafiz mushaf page layout: page starts marked, page-by-page reading, page-start quiz and memorising by the page.",
+    "ar": "ترتيب صفحات مصحف الحفاظ: تمييز بدايات الصفحات، والقراءة صفحةً صفحة، واختبار بدايات الصفحات، والحفظ بالصفحات."
   }
 }
