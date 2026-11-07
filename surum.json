@@ -1,13 +1,28 @@
 {
-  "version": "4.99",
+  "version": "5.00",
   "date": "2026-11-07",
   "notes": [
-    "Diyanet hafız mushafının sayfa düzeni: sayfa başları işaretli, sayfa sayfa okuma, sayfa başı sınaması ve sayfaya göre ezber."
+    "Notlarım yenilendi: tefsir, âyet, hadis ve fıkıh notları tek pencerede, her birinin yeri belli; süzgeçler, arama, Yerine git ve Word'e aktarma."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Kurulum.exe",
-  "sha256": "1bed345e97e2a43a470c6fa1ced5cdcbcd25fbf7a901ff37b86c4d45163b17bd",
-  "size": 37141504,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.00/Guncelleme-Kurulum.exe",
+  "sha256": "ca7260f2653e340bd45db2d0b0af792c85cc1d1e81e0cc29fa9ab6c4195da9f8",
+  "size": 37149184,
   "history": [
+    {
+      "version": "4.99",
+      "date": "2026-11-07",
+      "notes": [
+        "Diyanet hafız mushafının sayfa düzeni: sayfa başları işaretli, sayfa sayfa okuma, sayfa başı sınaması ve sayfaya göre ezber."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Diyanet hafiz mushaf page layout: page starts marked, page-by-page reading, page-start quiz and memorising by the page."
+        ],
+        "ar": [
+          "ترتيب صفحات مصحف الحفاظ: تمييز بدايات الصفحات، والقراءة صفحةً صفحة، واختبار بدايات الصفحات، والحفظ بالصفحات."
+        ]
+      }
+    },
     {
       "version": "4.98",
       "date": "2026-11-07",
@@ -1100,23 +1115,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.00/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.00/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.00/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.00/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v4.99/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "0fda7cc690d6deba553d813a8e5877ebbb71b002a505b670841f47c805d3bf82",
-    "size": 10872000
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.00/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "7c9b68df12ec9714f7e82038f073251ca1fbc4cb7da87541cf46e514ed263ed5",
+    "size": 10876096
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Diyanet hafiz mushaf page layout: page starts marked, page-by-page reading, page-start quiz and memorising by the page."
+      "My Notes renewed: tafsir, verse, hadith and fiqh notes in one window, each with its place; filters, search, go-to-place and export to Word."
     ],
     "ar": [
-      "ترتيب صفحات مصحف الحفاظ: تمييز بدايات الصفحات، والقراءة صفحةً صفحة، واختبار بدايات الصفحات، والحفظ بالصفحات."
+      "تجديد «ملاحظاتي»: ملاحظات التفسير والآيات والحديث والفقه في نافذة واحدة مع موضع كل منها؛ مرشحات وبحث وانتقال إلى الموضع وتصدير إلى Word."
     ]
   }
 }
