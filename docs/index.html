@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tefsir &amp; Hadis Kütüphanesi</title>
-<meta name="description" content="Kur'an-ı Kerîm'i 60 tefsirle, hadisleri senet, şerh ve râvi bilgileriyle okumak; dinlemek, ezberlemek ve paylaşmak için ücretsiz, internetsiz çalışan program. Windows, Mac, Linux ve Android.">
+<meta name="description" content="Kur'an-ı Kerîm'i 62 tefsirle, hadisleri senet, şerh ve râvi bilgileriyle okumak; dinlemek, ezberlemek ve paylaşmak için ücretsiz, internetsiz çalışan program. Windows, Mac, Linux ve Android.">
 <meta property="og:title" content="Tefsir & Hadis Kütüphanesi">
-<meta property="og:description" content="60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek programda. Ücretsiz, internetsiz.">
+<meta property="og:description" content="62 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek programda. Ücretsiz, internetsiz.">
 <meta property="og:image" content="img/tanitim.jpg">
 <link rel="icon" href="img/icon32.png">
 <link rel="alternate" hreflang="tr" href="https://fehimdaduk2.github.io/tefsir-surum/">
@@ -93,6 +93,16 @@ section .sub { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
 .steps { counter-reset: s; display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
 .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 16px 60px; position: relative; }
 .steps li::before { content: counter(s); position: absolute; left: 18px; top: 15px; width: 28px; height: 28px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 14px; }
+.essay { max-width: 860px; margin: 0 auto; font-size: 16.5px; line-height: 1.75; }
+.essay h3 { font-size: 20px; margin: 30px 0 8px; }
+.essay p { margin: 0 0 14px; color: var(--text); }
+.essay .ayah { font-family: "Amiri Quran", "Amiri", serif; font-size: 26px; text-align: center; margin: 18px 0 4px; color: var(--brand); }
+.essay .ayah-tr { text-align: center; color: var(--muted); margin: 0 0 20px; font-size: 15px; }
+.essay .terms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 6px 0 18px; }
+.essay .terms div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; font-size: 15px; color: var(--muted); line-height: 1.6; }
+.essay .terms b { color: var(--text); }
+.essay .terms span[lang="ar"] { font-family: "Amiri", serif; font-size: 19px; color: var(--brand); }
+@media (max-width: 700px) { .essay .terms { grid-template-columns: 1fr; } }
 .note { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: var(--muted); font-size: 15px; }
 .note b { color: var(--text); }
 footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
@@ -147,14 +157,14 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
+  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#arapca" title="Kitaplar neden Arapça?">Arapça</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>Kur'an'ı tefsirleriyle,<br>hadisi senediyle okuyun</h1>
-  <p class="lead">60 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda. Okuyun, dinleyin, ezberleyin; okurken program sizi dinlesin, atladığınız kelimeyi söylesin. Araştırın ve paylaşın. Türkçe, İngilizce ve Arapça arayüz. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
+  <p class="lead">62 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda. Okuyun, dinleyin, ezberleyin; okurken program sizi dinlesin, atladığınız kelimeyi söylesin. Araştırın ve paylaşın. Türkçe, İngilizce ve Arapça arayüz. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
     <span id="indirT">Windows için ücretsiz indir</span>
@@ -176,7 +186,7 @@ footer a { color: inherit; }
 <section id="kuran" class="band"><div class="wrap">
   <h2>Kur'an</h2>
   <p class="sub">Bir âyeti açtığınızda Arapça metni, meali ve seçtiğiniz tefsirler aynı ekranda gelir.</p>
-  <div class="feat"><div class="shot"><img src="img/ayet.webp" width="1440" height="810" loading="lazy" alt="60 tefsir, tek tıkla"></div><div><span class="kick">Tefsir</span><h3>60 tefsir, tek tıkla</h3><p class="sub" style="margin:0">Taberî'den Elmalılı'ya; rivâyet, dirâyet ve işârî tefsirler, her biri âyetin yanında.</p><ul><li><b>Sekmelerle geçiş:</b> Taberî, Kurtubî, Râzî, İbn Kesîr, Elmalılı…</li><li><b>Üç Türkçe meal:</b> Elmalılı (1935), Kral Fahd Kompleksi, Ravvâd Merkezi</li><li><b>Sunum modu:</b> cami dersi ve projeksiyon için büyük yazılı tam ekran</li><li><b>Not, vurgu, yer imi</b>; Word ve PDF olarak dışa aktarma</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="img/ayet.webp" width="1440" height="810" loading="lazy" alt="62 tefsir, tek tıkla"></div><div><span class="kick">Tefsir</span><h3>62 tefsir, tek tıkla</h3><p class="sub" style="margin:0">Taberî'den Elmalılı'ya; rivâyet, dirâyet ve işârî tefsirler, her biri âyetin yanında.</p><ul><li><b>Sekmelerle geçiş:</b> Taberî, Kurtubî, Râzî, İbn Kesîr, Elmalılı…</li><li><b>Üç Türkçe meal:</b> Elmalılı (1935), Kral Fahd Kompleksi, Ravvâd Merkezi</li><li><b>Sunum modu:</b> cami dersi ve projeksiyon için büyük yazılı tam ekran</li><li><b>Not, vurgu, yer imi</b>; Word ve PDF olarak dışa aktarma</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="img/mushaf.webp" width="1440" height="810" loading="lazy" alt="Medine mushafının sayfa düzeni"></div><div><span class="kick">Mushaf</span><h3>Diyanet hafız mushafı ve Medine mushafı</h3><p class="sub" style="margin:0">604 sayfa; Diyanet'in hafız mushafının ya da Medine mushafının sayfa düzeniyle. Medine düzeninde matbu satır sonları ve tezhipli sûre başlıkları; tecvid renkleri isteğe bağlı.</p><ul><li><b>Türkiye mushafı işaretleri:</b> yuvarlak sükûn, alışılmış tenvîn (istenirse Medine yazımı)</li><li>Amiri Quran ve Kral Fahd Kompleksi'nin <b>Hafs yazı tipi</b></li><li><b>Okuma planı ve hatim:</b> günlük hedef, seri ve ilerleme</li></ul></div></div>
 </div></section>
 
@@ -219,10 +229,17 @@ footer a { color: inherit; }
   <div class="feat rev"><div class="shot"><img src="img/ravi.webp" width="1440" height="810" loading="lazy" alt="Râvi bilgileri"></div><div><span class="kick">Râvi</span><h3>Râvi bilgileri</h3><p class="sub" style="margin:0">Hocaları, talebeleri, tabakası, vefatı ve cerh-ta'dîl sözleri; Takrîb, Tehzîb, Kâşif ve Mîzân kayıtları.</p><ul><li><b>Râvinin bütün rivâyetleri</b> ve içinde arama</li><li>Senette yanlış eşleşen râviyi tek tıkla bildirme</li></ul></div></div>
 </div></section>
 
+<section id="iliski"><div class="wrap">
+  <h2>Tefsir, hadis ve fıkıh birbirine bağlı</h2>
+  <p class="sub">Bir âyeti okurken o âyetle ilgili rivayetleri, nesih tartışmasını, fıkıh kitaplarındaki yerini ve mezheplerin görüşünü ayrı ayrı aramanız gerekmez: hepsi birbirine bağlıdır.</p>
+  <div class="feat"><div class="shot"><img src="img/iliski.webp" width="1440" height="810" loading="lazy" alt="Âyetin İlgili sekmesi"></div><div><span class="kick">İlgili</span><h3>Âyetle ilgili her şey bir sekmede</h3><p class="sub" style="margin:0">Programdaki bütün tefsirlerin o âyet altında andığı hadisler, hadis kitaplarındaki yerleriyle eşleşmiş olarak gelir; her hadisin kaç tefsirde geçtiği yazar.</p><ul><li><b>Nüzul sebebi:</b> tefsirlerin âyetin iniş sebebi olarak andığı rivayetler</li><li><b>Nâsih ve mensûh:</b> Nahhâs'ın en-Nâsih ve'l-Mensûh'u ve İbnü'l-Cevzî'nin Nevâsihu'l-Kur'ân'ı âyet âyet; âyetteki nesih iddiası ve âlimlerin görüşleri</li><li>Tefsir adına dokununca o tefsir âyette açılır; «Hadisi aç» senedi, şerhi ve râvileriyle hadisi gösterir</li><li><b>Hadisten tefsire:</b> bir hadisin penceresindeki «📖 Tefsirlerde» kutusu, hadisi anan âyetleri ve tefsirleri listeler</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/ahkam.webp" width="1440" height="810" loading="lazy" alt="Ahkâm âyetleri"></div><div><span class="kick">Delil zinciri · bilgisayarda</span><h3>Âyetten mezheplerin görüşüne</h3><p class="sub" style="margin:0">İlgili sekmesinin başındaki <b>⛓ Delil zinciri</b> yolu tek satırda özetler: âyet → tefsirlerin andığı hadisler (kaçının fıkıh kitaplarında da delil olduğu) → mezhepler → ahkâm tefsirleri.</p><ul><li><b>Mezheplerin görüşleri:</b> konuya dokununca dört mezhebin kitapları o konuda yan yana açılır</li><li><b>Ahkâm âyetleri haritası:</b> Cessâs, İbnü'l-Arabî ve Kiyâ el-Herrâsî'nin ele aldığı 757 hüküm âyeti sûre sırasıyla; nesih tartışılan âyetler işaretli</li><li><b>Terim köprüsü:</b> tefsirde bir fıkıh terimine dokunun; sözlükten fıkıh kitaplarında aramaya ve o konunun mezhep karşılaştırmasına geçin</li></ul></div></div>
+</div></section>
+
 <section id="fikih" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
   <h2>Fıkıh <span style="font-size:.55em;font-weight:600;color:var(--muted);vertical-align:middle">· bilgisayar sürümünde</span></h2>
   <p class="sub">Dört mezhebin temel metinleri, büyük şerhleri; usûl, kavâid ve ahkâm eserleri: 30 kitap, yaklaşık 7,8 milyon kelime. Windows, Mac ve Linux'ta.</p>
-  <div class="feat"><div class="shot"><img src="img/fikih.webp" width="1440" height="810" loading="lazy" alt="Dört mezhep yan yana"></div><div><span class="kick">Mezhep karşılaştırma</span><h3>Dört mezhep yan yana</h3><p class="sub" style="margin:0">Hanefî, Mâlikî, Şâfiî ve Hanbelî kitapları aynı konuda, sütun sütun; bölümler kelimelerine göre otomatik eşleşir.</p><ul><li><b>Metin ve şerh birlikte:</b> Kudûrî, Hidâye ve Fethu'l-Kadîr, el-İhtiyâr, er-Risâle, Minhâc, Umde ve diğerleri</li><li><b>Âyetten ve hadisten fıkha:</b> «⚖ Fıkıhta» ile o âyetin ve hadisin geçtiği bâblar; hadislerin tahrîci</li><li><b>Mezhep ıstılahları</b> (el-esah, zâhirü'r-rivâye, el-meşhûr…) mezhebin kendi kaynağındaki tanımıyla</li><li>Bütün kitaplarda arama, notlar ve vurgular, matn ezberi, Word'e aktarma</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="img/fikih.webp" width="1440" height="810" loading="lazy" alt="Dört mezhep yan yana"></div><div><span class="kick">Mezhep karşılaştırma</span><h3>Dört mezhep yan yana</h3><p class="sub" style="margin:0">Hanefî, Mâlikî, Şâfiî ve Hanbelî kitapları aynı konuda, sütun sütun; bölümler kelimelerine göre otomatik eşleşir.</p><ul><li><b>Metin ve şerh birlikte:</b> Kudûrî, Hidâye ve Fethu'l-Kadîr, el-İhtiyâr, er-Risâle, Minhâc, Umde ve diğerleri</li><li><b>Âyetten ve hadisten fıkha:</b> «⚖ Fıkıhta» ile o âyetin ve hadisin geçtiği bâblar; hadislerin tahrîci</li><li><b>Mezhep ıstılahları</b> (el-esah, zâhirü'r-rivâye, el-meşhûr…) mezhebin kendi kaynağındaki tanımıyla</li><li><b>Tahrîc kitapları:</b> Nasbu'r-Râye, et-Telhîsu'l-Habîr, Bulûğu'l-Merâm; <b>fıkıh terimleri sözlüğü:</b> et-Ta'rîfât, Enîsü'l-Fukahâ, el-Muğrib ve diğerleri</li><li><b>Mecelle-i Ahkâm-ı Adliyye</b> (1.851 madde, madde numarasıyla) ve el-Eşbâh ve'n-Nezâir'in kaideleriyle bağlantısı</li><li>Bütün kitaplarda arama, notlar ve vurgular, matn ezberi, Word'e aktarma</li></ul></div></div>
   <div class="note" style="max-width:860px;margin:0 auto"><h3 style="margin:0 0 8px;color:var(--text);font-size:18px">Fıkıh bölümü neden telefonda yok?</h3>
     <p style="margin:0 0 10px">Fıkıh kütüphanesini bilinçli olarak yalnız <b>Windows, Mac ve Linux</b> sürümlerine koyduk. Otuz eser, şerhleriyle birlikte yaklaşık 7,8 milyon kelime tutuyor; Fethu'l-Kadîr, Reddü'l-Muhtâr gibi büyük şerhlerin tek bir bâbı bile binlerce satırdır. Dört mezhebi yan yana açan karşılaştırma, metni şerhiyle birlikte okumak ve bütün kitaplarda aramak hem geniş bir ekran hem de bol bellek ister.</p>
     <p style="margin:0 0 10px">Bütün bunları telefona da yüklemek uygulamayı büyütür; orta ve alt seviye cihazlarda yavaşlamaya, hatta kapanmalara yol açar. Bu da uygulamayı Kur'an, meal, tefsir ve hadis için kullanan okuyucuların büyük çoğunluğunun deneyimini bozardı. Telefon uygulamasını bu yüzden hafif ve hızlı tutuyoruz.</p>
@@ -241,7 +258,7 @@ footer a { color: inherit; }
   <h2>Sözlük, arama, paylaşma</h2>
   <p class="sub">Merak ettiğiniz kelime, aradığınız ifade, sevdiklerinize göndermek istediğiniz âyet.</p>
   <div class="feat"><div class="shot"><img src="img/lugat.webp" width="1440" height="810" loading="lazy" alt="Kelimeye dokunun"></div><div><span class="kick">Sözlük</span><h3>Kelimeye dokunun</h3><p class="sub" style="margin:0">en-Nihâye, Lisânü'l-Arab, Tâcü'l-Arûs, el-Kāmûs… sekiz kadim sözlük; garîb kelimeler işaretli.</p><ul><li><b>Meşâriku'l-Envâr</b> ve <b>el-Fâik</b> ile garîbü'l-hadîs</li></ul></div></div>
-  <div class="feat rev"><div class="shot"><img src="img/arama.webp" width="1440" height="810" loading="lazy" alt="Tefsirlerde ve meallerde arama"></div><div><span class="kick">Arama</span><h3>Tefsirlerde ve meallerde arama</h3><p class="sub" style="margin:0">Arapça ya da Türkçe bir kelime, bütün tefsirlerde ve meallerde saniyeler içinde.</p><ul><li><b>Tam ifade</b> ya da bütün kelimeler; esere göre süzme</li><li>Meallerde harf farkı gözetilmez: «sabir» «sabır»ı da bulur</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/arama.webp" width="1440" height="810" loading="lazy" alt="Tek kutuda arama"></div><div><span class="kick">Arama</span><h3>Tek kutuda: tefsir, hadis, fıkıh</h3><p class="sub" style="margin:0">Arapça ya da Türkçe bir kelime; bütün tefsirlerde, meallerde, hadislerde ve fıkıh kitaplarında birden. Sonuç sayıları Tefsir · Hadis · Fıkıh sekmelerinde.</p><ul><li><b>Tam ifade</b> ya da bütün kelimeler; esere ve kitaba göre süzme</li><li>Hadis ya da fıkıh sonucuna dokununca tam o yer açılır</li><li>Meallerde harf farkı gözetilmez: «sabir» «sabır»ı da bulur</li></ul></div></div>
   <div class="feat"><div class="shot"><img src="img/kart.webp" width="720" height="720" loading="lazy" alt="Âyet ve hadis kartı"></div><div><span class="kick">Paylaş</span><h3>Âyet ve hadis kartı</h3><p class="sub" style="margin:0">Bir âyeti mealiyle, bir hadisi kitabı ve numarasıyla şık bir görsel hâline getirin.</p><ul><li><b>Kare, dikey, hikâye</b> biçimleri; dört renk</li><li>Telefonda WhatsApp ve Instagram'a; bilgisayarda kaydet ya da kopyala</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="img/bugun.webp" width="1440" height="810" loading="lazy" alt="Her gün bir âyet, bir hadis"></div><div><span class="kick">Bugün</span><h3>Her gün bir âyet, bir hadis</h3><p class="sub" style="margin:0">Program sizi günün âyeti ve hadisiyle karşılar; kaldığınız yeri ve son notlarınızı hatırlatır.</p><ul><li>Telefonun ana ekranında da günün âyeti</li></ul></div></div>
   <div class="feat"><div class="shot"><img src="img/esitle.webp" width="1440" height="810" loading="lazy" alt="Telefon ve bilgisayar birlikte"></div><div><span class="kick">Eşitleme</span><h3>Telefon, tablet ve bilgisayar birlikte</h3><p class="sub" style="margin:0">Notlar, yer imleri, vurgular, hatim ve ezber kendi Google Drive'ınız üzerinden bütün cihazlarınızda aynı kalır; istersen internetsiz, aynı Wi-Fi'de 6 haneli bir kodla.</p><ul><li>Bizim bir sunucumuza hiçbir şey gönderilmez</li><li>Günlük otomatik yedek, çöp kutusu ve tek dosyalık <b>yedek</b></li></ul></div></div>
@@ -256,9 +273,56 @@ footer a { color: inherit; }
     <figure><div class="shot"><img src="img/dil-ar.webp" width="1440" height="810" loading="lazy" alt="الواجهة العربية"></div><figcaption lang="ar" dir="rtl"><b>العربية</b> · الواجهة من اليمين إلى اليسار، مع التفاسير والشروح والمعاجم العربية</figcaption></figure>
   </div>
   <div class="grid" style="margin-top:28px">
-    <div class="card" lang="en"><h3>In English</h3><p>Read the Qur'an with 60 tafsirs, 17 hadith books with their chains and commentaries, 8 classical dictionaries and 29 reciters. Free, ad-free and offline once installed — for Windows, Mac, Linux and Android.</p></div>
-    <div class="card" lang="ar" dir="rtl"><h3>بالعربية</h3><p>اقرأ القرآن مع 60 تفسيرًا، و17 كتابًا في الحديث بأسانيدها وشروحها، و8 معاجم قديمة، و29 قارئًا. مجاني وبلا إعلانات ويعمل دون اتصال بعد التثبيت، على Windows وMac وLinux وAndroid.</p></div>
+    <div class="card" lang="en"><h3>In English</h3><p>Read the Qur'an with 62 tafsirs, 17 hadith books with their chains and commentaries, 8 classical dictionaries and 29 reciters. Free, ad-free and offline once installed — for Windows, Mac, Linux and Android.</p></div>
+    <div class="card" lang="ar" dir="rtl"><h3>بالعربية</h3><p>اقرأ القرآن مع 62 تفسيرًا، و17 كتابًا في الحديث بأسانيدها وشروحها، و8 معاجم قديمة، و29 قارئًا. مجاني وبلا إعلانات ويعمل دون اتصال بعد التثبيت، على Windows وMac وLinux وAndroid.</p></div>
     <div class="card"><h3>Dil nasıl değişir?</h3><p>Görünüm (Aa) › Dil. Telefonda üstteki <b>⋯</b> menüsünden «Görünüm ve dil». İngilizce seçilince İngilizce meal, Arapça seçilince yalnız Arapça metin açılır.</p></div>
+  </div>
+</div></section>
+
+<section id="arapca" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
+  <h2>Kitaplar neden Arapça?</h2>
+  <p class="sub">Türkiye'de, Türkler tarafından yapılmış bir program olduğu hâlde tefsirlerin, hadislerin, şerhlerin ve fıkıh kitaplarının neden Türkçe değil de asıllarıyla, Arapça olarak verildiğini merak edenler için.</p>
+  <div class="essay">
+    <p>Bu soruyu bize en çok soranlar, haklı olarak, programı kendi dillerinde kullanmak isteyen okuyucular. Programın bütün menüleri, kılavuzu, açıklamaları, meâlleri ve Elmalılı'nın tefsiri Türkçedir. Ama kütüphanenin kalbi olan kaynak eserleri bilerek ve isteyerek asıl dilleriyle koyduk. Bunun bir kolaylık ya da ihmal değil, ilmî bir tercih olduğunu birkaç başlıkta açıklamak istiyoruz.</p>
+
+    <h3>1. Kur'an Arapça indirildi; meâl onun yerini tutmaz</h3>
+    <p class="ayah" lang="ar" dir="rtl">إِنَّآ أَنزَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
+    <p class="ayah-tr">«Biz onu, anlayasınız diye Arapça bir Kur'an olarak indirdik.» (Yûsuf, 12/2)</p>
+    <p>Allah'ın kelâmı Arapçadır. Bir meâl, ne kadar özenli olursa olsun, mütercimin âyetten anladığı manalardan birini aktarır. Âyetteki bir kelimenin birden fazla manaya gelmesi, bir edatın taşıdığı incelik, cümlenin kuruluşundan doğan vurgu, çoğu zaman tek bir Türkçe cümleye sığmaz. Tefsirler zaten bu Arapça metnin şerhidir: müfessir, kelimenin lügatteki manasını, i'râbını, kıraat farkını, nüzul sebebini ve hükmünü Arapça metin üzerinden konuşur. Tefsiri tercüme ettiğinizde, üzerinde konuşulan metni de tercüme etmiş olursunuz; ortada tartışılan şeyin kendisi kalmaz.</p>
+
+    <h3>2. İslâmî ilimlerin ortak dili on dört asırdır Arapçadır</h3>
+    <p>Arapça bu ilimlerde bir milletin dili değil, ilmin dilidir; tıpkı Avrupa'da asırlarca Latincenin olduğu gibi. Programdaki eserlerin müelliflerine bakın: Taberî Taberistanlı, Buhârî Buharalı, Müslim Nişaburlu, Zemahşerî Harezmli, Fahreddîn er-Râzî Reyli, Beyzâvî Şirazlı, Mâtürîdî Semerkantlı, Nesefî Nesefli. Hiçbiri Arap değildi; hepsi eserini Arapça yazdı, çünkü her yerdeki ilim ehli o dili okuyordu.</p>
+    <p>Bizim âlimlerimiz de böyle yaptı. <b>Ebüssuûd Efendi</b> tefsiri İrşâdü'l-Akli's-Selîm'i, <b>İsmâil Hakkı Bursevî</b> Rûhu'l-Beyân'ı, <b>Molla Hüsrev</b> Dürerü'l-Hükkâm'ı, <b>Molla Fenârî</b> Fusûlü'l-Bedâyi'i, <b>Taşköprizâde</b> Miftâhu's-Saâde'yi, <b>Kâtib Çelebi</b> Keşfü'z-Zunûn'u Arapça kaleme aldı; <b>İbn Kemal</b>'in yüzlerce risalesinin çoğu da Arapçadır. Osmanlı medreselerinde ders kitapları Arapça okunur, Türkçe şerh edilirdi. İlmî mirasımızın kendisi Arapçadır; onu asıl hâliyle sunmak bu mirasa sahip çıkmaktır. Programdaki Ebüssuûd ve Rûhu'l-Beyân, kendi âlimlerimizin eserleridir.</p>
+
+    <h3>3. Istılahlar Arapça kurulmuştur; tercümede kaybolurlar</h3>
+    <p>Her ilim kendi terimleriyle konuşur. İslâmî ilimlerin terimleri Arapça kökler üzerine kurulmuş, asırlar içinde tanımlanmış, birbirinden ince farklarla ayrılmış kavramlardır. Bir tercüme bu farkları ya siler ya da yeni bir karışıklık doğurur. Birkaç örnek:</p>
+    <div class="terms">
+      <div><span lang="ar">حَدَّثَنَا / أَخْبَرَنَا / عَنْ</span><br><b>Haddesenâ, ahberenâ, an:</b> Türkçesi hep «bize anlattı» olur. Oysa hadis usûlünde râvinin hadisi hocasından nasıl aldığını gösterirler; «an» ile gelen rivâyet, tedlîs incelemesinin ta kendisidir.</div>
+      <div><span lang="ar">صَحِيح · حَسَن · مُرْسَل · مُعَلّ</span><br><b>Sahîh, hasen, mürsel, muallel:</b> «doğru, güzel, gönderilmiş, kusurlu» diye çevrilemez; her biri isnad ve metin üzerine kurulmuş bir hükümdür.</div>
+      <div><span lang="ar">فَرْض · وَاجِب · مَكْرُوه تَحْرِيمًا</span><br><b>Farz, vâcip, tahrîmen mekruh:</b> Hanefî fıkhında aralarındaki fark delilin kuvvetine dayanır; Şâfiîlere göre farz ile vâcip birdir. Tercüme bu mezhep farkını görünmez kılar.</div>
+      <div><span lang="ar">الأَصَحّ · الصَّحِيح · ظَاهِرُ الرِّوَايَة</span><br><b>el-Esah, es-sahîh, zâhirü'r-rivâye:</b> mezhep içinde bir görüşün derecesini bildirir; fetva bunlara göre verilir. Bu yüzden program bu ıstılahları mezhebin kendi kaynağındaki tanımıyla açıklar.</div>
+    </div>
+    <p>Bir araştırmacının işi tam da bu ince farklarla uğraşmaktır. Tercümede hangi terimin kullanıldığını bilmeden yapılan bir değerlendirme, mütercimin yorumuna dayanır, kaynağa değil.</p>
+
+    <h3>4. İlmî çalışmada atıf asıl metne yapılır</h3>
+    <p>Bir tez, makale, vaaz ya da fetva hazırlarken kaynak olarak eserin aslı ve matbu baskısının cilt ve sayfası gösterilir. Program bu yüzden tefsirleri, hadisleri, şerhleri ve fıkıh kitaplarını matbu neşirlerine dayanarak, cilt ve sayfa bilgisiyle verir. Bir tercümeye atıf yapmak, araya bir aracı koymak demektir; o aracının hatası ya da tercihi sizin çalışmanıza geçer. Bir hadisin hangi kitapta hangi lafızla geldiğini, bir müfessirin bir kelimeyi nasıl okuduğunu ancak aslından görebilirsiniz.</p>
+
+    <h3>5. Hacim ve telif: dürüst bir hesap</h3>
+    <p>Programdaki eserler on milyonlarca kelime tutuyor: 62 tefsir, 183 bini aşkın hadis, 17 şerh, 30 fıkıh kitabı. Bunların çok azının Türkçe tercümesi var. Var olanlar da günümüz mütercimlerinin emeğidir ve telif hakkıyla korunur; hak sahiplerinin izni olmadan programa koymamız doğru olmaz. Fethu'l-Kadîr, Umdetü'l-Kārî, Nihâyetü'l-Muhtâc gibi pek çok büyük eserin ise bildiğimiz kadarıyla tam bir Türkçesi yoktur. Klasik Arapça metinler herkesin ortak mirasıdır; onları özgürce, ücretsiz ve eksiksiz sunabiliriz. Telif izni alınan Türkçe eserler de izin geldikçe açılıyor; kütüphanede kilitli görünen eserler bunlardır.</p>
+
+    <h3>6. Arapçası zayıf olan okuyucu yalnız bırakılmaz</h3>
+    <p>Aslıyla okumak, Arapçası ileri olmayanı dışarıda bırakmak demek değildir. Program bu köprüyü kurmak için yapıldı:</p>
+    <ul style="margin:0 0 14px;padding-left:22px;color:var(--text)">
+      <li>Bütün arayüz, kılavuz ve açıklamalar Türkçe; her âyetin yanında üç Türkçe meâl ve Elmalılı'nın orijinal tefsiri.</li>
+      <li>Herhangi bir kelimeye dokunun: sekiz kadim sözlükte manası, kökü ve Kur'an'da geçtiği yerler açılır.</li>
+      <li>Fıkıh konuları ve kitâb başlıkları Türkçe adlarıyla (Tahâret, Namaz, Oruç…), mezhep ıstılahları açıklamalarıyla gelir.</li>
+      <li>Türkçe ya da Arapça bir kelimeyle bütün kitaplarda arayabilir, sonucu bağlamıyla görebilirsiniz.</li>
+      <li>Elinizdeki bir Türkçe tefsiri veya kitabı «Kitap ekle» ile programa ekleyip diğer tefsirlerle yan yana okuyabilirsiniz.</li>
+    </ul>
+    <p>Böylece Arapçayı yeni öğrenen bir öğrenci de metnin aslıyla adım adım tanışır; ileri düzeyde bir araştırmacı ise kaynağa aracısız ve hızla ulaşır.</p>
+
+    <h3>Sonuç</h3>
+    <p>Bu program, kaynağına dönmek isteyen herkes için yapıldı. Kur'an'ın dili, onu açıklayan ilimlerin dili ve kendi âlimlerimizin asırlarca yazdığı dil Arapçadır. Eserleri bu dilde, asıl hâlleriyle, cilt ve sayfasıyla sunmak hem ilmî emanete bağlılığın hem de okuyucuya duyduğumuz saygının gereğidir. Türkçeyi ise o kaynaklara ulaştıran bir köprü olarak, programın her köşesinde kullanıyoruz.</p>
   </div>
 </div></section>
 
@@ -291,8 +355,11 @@ footer a { color: inherit; }
     <div><h4>Hadis · 17 kitap</h4><p>Kütüb-i Sitte, Muvatta, Müsned, Dârimî, Müstedrek, İbn Hibbân, İbn Huzeyme, Musannefler, Beyhakî'nin es-Sünenü'l-Kübrâ'sı, Mecmaʿu'z-Zevâid</p></div>
     <div><h4>Şerhler · 17</h4><p>Fethu'l-Bârî, Umdetü'l-Kārî, İrşâdü's-Sârî, el-Minhâc, Avnü'l-Ma'bûd, Tuhfetü'l-Ahvezî…</p></div>
     <div><h4>Sözlükler · 8</h4><p>en-Nihâye, Lisânü'l-Arab, Tâcü'l-Arûs, el-Kāmûsü'l-Muhît, es-Sıhâh, Mekāyîsü'l-Luga, el-Misbâhu'l-Münîr, Meşâriku'l-Envâr</p></div>
+    <div><h4>Nâsih ve mensûh · 2</h4><p>Nahhâs, en-Nâsih ve'l-Mensûh; İbnü'l-Cevzî, Nevâsihu'l-Kur'ân (âyet âyet)</p></div>
+    <div><h4>Fıkıh · 30 kitap</h4><p>Dört mezhebin metinleri, şerhleri ve büyük eserleri; ahkâm tefsirleri, usûl, kavâid, Mecelle, tahrîc kitapları (bilgisayar sürümünde)</p></div>
     <div><h4>Tilâvet · 29 kâri</h4><p>EveryAyah kayıtları: Afâsî, Husarî (murattal, mücevved, muallim), Abdülbâsıt, Minşâvî, Sudeys, Şüreym, Şâtırî…</p></div>
   </div>
+  <div class="note" style="max-width:860px;margin:22px auto 0"><b>Kendi kitaplarınız:</b> elinizdeki bir tefsiri ya da kitabı «+ Kitap ekle» ile programa ekleyin (.docx, .txt, .htm, .epub ya da yapıştırarak). Metin âyet işaretlerine göre bölünür; eklenen kitap diğer tefsirler gibi âyetin yanında okunur, aranır ve karşılaştırılır.</div>
 </div></section>
 
 <section id="kurulum"><div class="wrap">
@@ -322,8 +389,10 @@ footer a { color: inherit; }
   <h2>Sık sorulan sorular</h2>
   <details><summary>Ücretli mi?</summary><p>Hayır. Program ve bütün kitaplar ücretsizdir; reklam yoktur.</p></details>
   <details><summary>İnternet gerekiyor mu?</summary><p>Yalnız kurulumda ve ilk açılışta veriler bir kez iner; sonra program internetsiz çalışır. Tilâvet bir âyeti ilk dinleyişte internetten alır; dilerseniz sûreyi, cüzü ya da bütün Kur'an'ı önceden indirebilirsiniz.</p></details>
-  <details><summary>Bilgilerim bir yere gönderiliyor mu?</summary><p>Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur; okuyuş takibinde mikrofonun sesi de cihazda tanınır, hiçbir yere gönderilmez. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Görünüm ayarlarından kapatılabilir. Eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.</p></details>
-  <details><summary>Telefonla bilgisayarı nasıl eşitlerim?</summary><p>İki cihaz aynı Wi-Fi'deyken Notlar › Eşitle. Telefonda «Kodu göster» deyin; bilgisayara telefonun adresini ve 6 haneli kodu girin.</p></details>
+  <details><summary>Bilgilerim bir yere gönderiliyor mu?</summary><p>Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur; okuyuş takibinde mikrofonun sesi de cihazda tanınır, hiçbir yere gönderilmez. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Görünüm ayarlarından kapatılabilir. Google Drive eşitlemesini açarsanız notlarınız yalnız kendi Drive'ınızda, programa ayrılmış gizli bir klasörde durur; bizim bir sunucumuz yoktur. İnternetsiz eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.</p></details>
+  <details><summary>Telefonla bilgisayarı nasıl eşitlerim?</summary><p>En kolayı Google Drive: her cihazda Notlarım › Yedek · eşitleme › «Google ile bağlan». Aynı hesapla bağlanan bütün cihazlar kendiliğinden eşitlenir. İnternetsiz isterseniz iki cihaz aynı Wi-Fi'deyken telefonda «Kodu göster» deyin, bilgisayara telefonun adresini ve 6 haneli kodu girin.</p></details>
+  <details><summary>Kitaplar neden Türkçe değil?</summary><p>Kur'an'ın ve İslâmî ilimlerin dili Arapçadır; ıstılahlar Arapça kurulmuştur ve ilmî atıf asıl metne yapılır. Arayüz, meâller ve Elmalılı tefsiri Türkçedir; her kelimenin manası sözlükte tek dokunuşla açılır. Ayrıntılı cevap: <a href="#arapca">Kitaplar neden Arapça?</a></p></details>
+  <details><summary>Program virüs uyarısı verirse?</summary><p>Program açık ve güvenlidir. Microsoft Defender imzasız yeni programları zaman zaman yapay zekâ tahminiyle yanlış işaretleyebiliyor; 5.05 sürümünden itibaren bu uyarıya yol açan yöntemleri kaldırdık. Uyarı görürseniz Windows Güvenliği › Virüs ve tehdit koruması › Koruma geçmişi › «Cihazda izin ver» ile devam edebilir, bize bildirebilirsiniz.</p></details>
   <details><summary>Başka dillerde kullanılabilir mi?</summary><p>Evet. Arayüz Türkçe, İngilizce ve Arapça; Görünüm › Dil'den değişir. İngilizce arayüzde Saheeh International meali gelir; Arapçada sayfa sağdan sola akar. / <span lang="en">Yes: the interface is available in Turkish, English and Arabic (Display › Language).</span></p></details>
   <details><summary>iPhone'da çalışır mı?</summary><p>Şimdilik hayır; Windows, Mac, Linux ve Android sürümleri var.</p></details>
   <details><summary>Neden bazı çağdaş tefsir ve mealler kapalı?</summary><p>Telif hakkı süren eserler hak sahiplerinden izin alınmadan konmaz; adları listede görünür, izin alındıkça açılır.</p></details>

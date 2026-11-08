@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tafsir &amp; Hadith Library</title>
-<meta name="description" content="A free program to read the Qur&#x27;an with 60 tafsirs and the hadiths with their chains, commentaries and narrators; to listen, memorize and share. Works offline. Windows, Mac, Linux and Android.">
+<meta name="description" content="A free program to read the Qur&#x27;an with 62 tafsirs and the hadiths with their chains, commentaries and narrators; to listen, memorize and share. Works offline. Windows, Mac, Linux and Android.">
 <meta property="og:title" content="Tafsir &amp; Hadith Library">
-<meta property="og:description" content="60 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in one program. Free and offline.">
+<meta property="og:description" content="62 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in one program. Free and offline.">
 <meta property="og:image" content="../img/tanitim.jpg">
 <link rel="icon" href="../img/icon32.png">
 <link rel="alternate" hreflang="tr" href="https://fehimdaduk2.github.io/tefsir-surum/">
@@ -93,6 +93,16 @@ section .sub { color: var(--muted); margin: 0 0 28px; max-width: 720px; }
 .steps { counter-reset: s; display: grid; gap: 12px; padding: 0; margin: 0; list-style: none; }
 .steps li { counter-increment: s; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px 16px 60px; position: relative; }
 .steps li::before { content: counter(s); position: absolute; left: 18px; top: 15px; width: 28px; height: 28px; border-radius: 50%; background: var(--brand); color: #fff; font-weight: 700; display: grid; place-items: center; font-size: 14px; }
+.essay { max-width: 860px; margin: 0 auto; font-size: 16.5px; line-height: 1.75; }
+.essay h3 { font-size: 20px; margin: 30px 0 8px; }
+.essay p { margin: 0 0 14px; color: var(--text); }
+.essay .ayah { font-family: "Amiri Quran", "Amiri", serif; font-size: 26px; text-align: center; margin: 18px 0 4px; color: var(--brand); }
+.essay .ayah-tr { text-align: center; color: var(--muted); margin: 0 0 20px; font-size: 15px; }
+.essay .terms { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 6px 0 18px; }
+.essay .terms div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; font-size: 15px; color: var(--muted); line-height: 1.6; }
+.essay .terms b { color: var(--text); }
+.essay .terms span[lang="ar"] { font-family: "Amiri", serif; font-size: 19px; color: var(--brand); }
+@media (max-width: 700px) { .essay .terms { grid-template-columns: 1fr; } }
 .note { background: var(--surface-2); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; color: var(--muted); font-size: 15px; }
 .note b { color: var(--text); }
 footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
@@ -147,14 +157,14 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="../img/icon256.png" alt="">Tafsir &amp; Hadith Library</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
+  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#arapca" title="Why are the books in Arabic?">Arabic</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>Read the Qur'an with its tafsirs,<br>the hadith with its chain</h1>
-  <p class="lead">60 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in a single program. Read, listen and memorize; as you recite, the program listens and tells you the word you skipped. Research and share. Interface in English, Arabic and Turkish. Free; no internet needed once installed.</p>
+  <p class="lead">62 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in a single program. Read, listen and memorize; as you recite, the program listens and tells you the word you skipped. Research and share. Interface in English, Arabic and Turkish. Free; no internet needed once installed.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
     <span id="indirT">Free download for Windows</span>
@@ -176,7 +186,7 @@ footer a { color: inherit; }
 <section id="kuran" class="band"><div class="wrap">
   <h2>Qur'an</h2>
   <p class="sub">Open a verse and its Arabic text, translation and the tafsirs you chose come up on the same screen.</p>
-  <div class="feat"><div class="shot"><img src="../img/en/ayet.webp" width="1440" height="810" loading="lazy" alt="60 tafsirs, one click away"></div><div><span class="kick">Tafsir</span><h3>60 tafsirs, one click away</h3><p class="sub" style="margin:0">From Ṭabarī to Elmalılı; tafsirs by narration, by reasoning and ishārī, each beside the verse.</p><ul><li><b>Switch with tabs:</b> Ṭabarī, Qurṭubī, Rāzī, Ibn Kathīr, Elmalılı…</li><li><b>Translations:</b> English (Saheeh International) and three Turkish: Elmalılı (1935), King Fahd Complex, Rowwad Centre</li><li><b>Presentation mode:</b> full screen in large type for mosque lessons and projectors</li><li><b>Notes, highlights, bookmarks</b>; export to Word and PDF</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="../img/en/ayet.webp" width="1440" height="810" loading="lazy" alt="62 tafsirs, one click away"></div><div><span class="kick">Tafsir</span><h3>62 tafsirs, one click away</h3><p class="sub" style="margin:0">From Ṭabarī to Elmalılı; tafsirs by narration, by reasoning and ishārī, each beside the verse.</p><ul><li><b>Switch with tabs:</b> Ṭabarī, Qurṭubī, Rāzī, Ibn Kathīr, Elmalılı…</li><li><b>Translations:</b> English (Saheeh International) and three Turkish: Elmalılı (1935), King Fahd Complex, Rowwad Centre</li><li><b>Presentation mode:</b> full screen in large type for mosque lessons and projectors</li><li><b>Notes, highlights, bookmarks</b>; export to Word and PDF</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="../img/en/mushaf.webp" width="1440" height="810" loading="lazy" alt="The page layout of the Medina mushaf"></div><div><span class="kick">Mushaf</span><h3>The Diyanet hafiz mushaf and the Medina mushaf</h3><p class="sub" style="margin:0">604 pages, in the page layout of the Diyanet hafiz mushaf or of the Medina mushaf. In the Medina layout, the printed line breaks and illuminated sura headings; tajweed colours optional.</p><ul><li><b>Turkish mushaf marks:</b> round sukun, the familiar tanwin (or the Medina spelling)</li><li>Amiri Quran and the King Fahd Complex's <b>Hafs font</b></li><li><b>Reading plan and khatm:</b> daily goal, streak and progress</li></ul></div></div>
 </div></section>
 
@@ -219,10 +229,17 @@ footer a { color: inherit; }
   <div class="feat rev"><div class="shot"><img src="../img/en/ravi.webp" width="1440" height="810" loading="lazy" alt="Narrator information"></div><div><span class="kick">Narrator</span><h3>Narrator information</h3><p class="sub" style="margin:0">Teachers, students, generation, death and the jarḥ–ta‘dīl statements; entries from the Taqrīb, Tahdhīb, Kāshif and Mīzān.</p><ul><li><b>All narrations of a narrator</b> and search within them</li><li>Report a wrongly matched narrator in a chain with one click</li></ul></div></div>
 </div></section>
 
+<section id="iliski"><div class="wrap">
+  <h2>Tafsir, hadith and fiqh, linked</h2>
+  <p class="sub">Reading a verse, you need not search separately for its reports, the discussion of its abrogation, its places in the fiqh books and the schools' views: they are all linked.</p>
+  <div class="feat"><div class="shot"><img src="../img/en/iliski.webp" width="1440" height="810" loading="lazy" alt="The verse's Related tab"></div><div><span class="kick">Related</span><h3>Everything about a verse, in one tab</h3><p class="sub" style="margin:0">The hadiths that all the tafsirs in the program quote under the verse, matched with their places in the hadith books; each shows in how many tafsirs it is quoted.</p><ul><li><b>Occasion of revelation:</b> the reports the tafsirs give as the occasion of the verse's revelation</li><li><b>Abrogating and abrogated:</b> al-Naḥḥās's al-Nāsikh wa-l-Mansūkh and Ibn al-Jawzī's Nawāsikh al-Qur'ān, verse by verse: the claim of abrogation and the scholars' views</li><li>Tap a tafsir's name to open it at the verse; «Open hadith» shows the hadith with its chain, commentary and narrators</li><li><b>From hadith to tafsir:</b> the «📖 In the tafsirs» box in a hadith's window lists the verses and tafsirs that quote it</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/ahkam.webp" width="1440" height="810" loading="lazy" alt="Verses of law"></div><div><span class="kick">Chain of evidence · on desktop</span><h3>From the verse to the schools' views</h3><p class="sub" style="margin:0">The <b>⛓ Chain of evidence</b> line at the top of the Related tab sums up the path: verse → the hadiths its tafsirs quote (and how many of them the fiqh books use) → the schools → the ahkam tafsirs.</p><ul><li><b>The schools' views:</b> tap a subject to open the four schools' books on it side by side</li><li><b>Map of the verses of law:</b> 757 verses taken up by al-Jaṣṣāṣ, Ibn al-'Arabī and Kiyā al-Harrāsī, in the order of the suras; verses with a discussion of abrogation are marked</li><li><b>Term bridge:</b> tap a fiqh term in a tafsir; from the dictionary go to a search of the fiqh books and to the comparison of the schools on that subject</li></ul></div></div>
+</div></section>
+
 <section id="fikih" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
   <h2>Fiqh <span style="font-size:.55em;font-weight:600;color:var(--muted);vertical-align:middle">· in the computer version</span></h2>
   <p class="sub">The core texts of the four schools, their great commentaries, and works of usul, qawa'id and ahkam: 30 books, about 7.8 million words. On Windows, Mac and Linux.</p>
-  <div class="feat"><div class="shot"><img src="../img/en/fikih.webp" width="1440" height="810" loading="lazy" alt="The four schools side by side"></div><div><span class="kick">Comparing the schools</span><h3>The four schools side by side</h3><p class="sub" style="margin:0">Hanafi, Maliki, Shafi'i and Hanbali books on the same topic, column by column; sections are matched by their words.</p><ul><li><b>Text and commentary together:</b> al-Quduri, al-Hidaya and Fath al-Qadir, al-Ikhtiyar, al-Risala, al-Minhaj, al-'Umda and more</li><li><b>From verse and hadith to fiqh:</b> «⚖ In fiqh» shows the chapters where a verse or hadith is cited; the hadiths' sources</li><li><b>The schools' terms</b> (al-asahh, zahir al-riwaya, al-mashhur…) defined from each school's own sources</li><li>Search in every book, notes and highlights, memorising texts, export to Word</li></ul></div></div>
+  <div class="feat"><div class="shot"><img src="../img/en/fikih.webp" width="1440" height="810" loading="lazy" alt="The four schools side by side"></div><div><span class="kick">Comparing the schools</span><h3>The four schools side by side</h3><p class="sub" style="margin:0">Hanafi, Maliki, Shafi'i and Hanbali books on the same topic, column by column; sections are matched by their words.</p><ul><li><b>Text and commentary together:</b> al-Quduri, al-Hidaya and Fath al-Qadir, al-Ikhtiyar, al-Risala, al-Minhaj, al-'Umda and more</li><li><b>From verse and hadith to fiqh:</b> «⚖ In fiqh» shows the chapters where a verse or hadith is cited; the hadiths' sources</li><li><b>The schools' terms</b> (al-asahh, zahir al-riwaya, al-mashhur…) defined from each school's own sources</li><li><b>Takhrīj books:</b> Naṣb al-Rāya, al-Talkhīṣ al-Ḥabīr, Bulūgh al-Marām; <b>dictionary of fiqh terms:</b> al-Ta'rīfāt, Anīs al-Fuqahā', al-Mughrib and others</li><li><b>The Mecelle</b> (the Ottoman civil code, 1,851 articles, by article number) linked to the maxims of al-Ashbāh wa-l-Naẓā'ir</li><li>Search in every book, notes and highlights, memorising texts, export to Word</li></ul></div></div>
   <div class="note" style="max-width:860px;margin:0 auto"><h3 style="margin:0 0 8px;color:var(--text);font-size:18px">Why is fiqh not on the phone?</h3>
     <p style="margin:0 0 10px">We placed the fiqh library in the <b>Windows, Mac and Linux</b> versions only, on purpose. Thirty works with their commentaries hold about 7.8 million words; a single chapter of a great commentary such as Fath al-Qadir or Radd al-Muhtar runs to thousands of lines. Comparing the four schools side by side, reading a text with its commentary and searching every book need a wide screen and plenty of memory.</p>
     <p style="margin:0 0 10px">Putting all of this on phones would make the app much larger and slow it down, or even make it close, on mid-range and entry-level devices — spoiling it for the great majority who use it for the Qur'an, translations, tafsir and hadith. So we keep the phone app light and fast.</p>
@@ -241,7 +258,7 @@ footer a { color: inherit; }
   <h2>Dictionary, search, sharing</h2>
   <p class="sub">The word you wonder about, the phrase you are looking for, the verse you want to send to those you love.</p>
   <div class="feat"><div class="shot"><img src="../img/en/lugat.webp" width="1440" height="810" loading="lazy" alt="Tap a word"></div><div><span class="kick">Dictionary</span><h3>Tap a word</h3><p class="sub" style="margin:0">an-Nihāya, Lisān al-‘Arab, Tāj al-‘Arūs, al-Qāmūs… eight classical dictionaries; rare words marked.</p><ul><li><b>Mashāriq al-Anwār</b> and <b>al-Fā’iq</b> for the rare words of hadith</li></ul></div></div>
-  <div class="feat rev"><div class="shot"><img src="../img/en/arama.webp" width="1440" height="810" loading="lazy" alt="Search the tafsirs and translations"></div><div><span class="kick">Search</span><h3>Search the tafsirs and translations</h3><p class="sub" style="margin:0">An Arabic, English or Turkish word, across all tafsirs and translations in seconds.</p><ul><li><b>Exact phrase</b> or all words; filter by work</li><li>Vowel marks and diacritics are ignored in the search</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/arama.webp" width="1440" height="810" loading="lazy" alt="Search the tafsirs and translations"></div><div><span class="kick">Search</span><h3>One box: tafsir, hadith, fiqh</h3><p class="sub" style="margin:0">An Arabic, English or Turkish word, across all tafsirs, translations, hadiths and fiqh books at once; the counts show on the Tafsir · Hadith · Fiqh tabs.</p><ul><li><b>Exact phrase</b> or all words; filter by work and book</li><li>Tap a hadith or fiqh result to open it right there</li><li>Vowel marks and diacritics are ignored in the search</li></ul></div></div>
   <div class="feat"><div class="shot"><img src="../img/kart.webp" width="720" height="720" loading="lazy" alt="Verse and hadith card"></div><div><span class="kick">Share</span><h3>Verse and hadith card</h3><p class="sub" style="margin:0">Turn a verse with its translation, or a hadith with its book and number, into an elegant image.</p><ul><li><b>Square, portrait, story</b> formats; four colours</li><li>On the phone to WhatsApp and Instagram; on the computer save or copy</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="../img/bugun.webp" width="1440" height="810" loading="lazy" alt="A verse and a hadith every day"></div><div><span class="kick">Today</span><h3>A verse and a hadith every day</h3><p class="sub" style="margin:0">The program greets you with the verse and hadith of the day; it reminds you where you left off and of your latest notes.</p><ul><li>The verse of the day on the phone's home screen too</li></ul></div></div>
   <div class="feat"><div class="shot"><img src="../img/esitle.webp" width="1440" height="810" loading="lazy" alt="Phone and computer together"></div><div><span class="kick">Sync</span><h3>Phone, tablet and computer together</h3><p class="sub" style="margin:0">Notes, bookmarks, highlights, khatm and memorisation stay the same on all your devices through your own Google Drive — or offline, on the same Wi-Fi, with a 6-digit code.</p><ul><li>Nothing is sent to a server of ours</li><li>Daily automatic backup, a wastebasket and a one-file <b>backup</b></li></ul></div></div>
@@ -256,9 +273,56 @@ footer a { color: inherit; }
     <figure><div class="shot"><img src="../img/dil-ar.webp" width="1440" height="810" loading="lazy" alt="الواجهة العربية"></div><figcaption lang="ar" dir="rtl"><b>العربية</b> · الواجهة من اليمين إلى اليسار، مع التفاسير والشروح والمعاجم العربية</figcaption></figure>
   </div>
   <div class="grid" style="margin-top:28px">
-    <div class="card" lang="en"><h3>In English</h3><p>Read the Qur'an with 60 tafsirs, 17 hadith books with their chains and commentaries, 8 classical dictionaries and 29 reciters. Free, ad-free and offline once installed — for Windows, Mac, Linux and Android.</p></div>
-    <div class="card" lang="ar" dir="rtl"><h3>بالعربية</h3><p>اقرأ القرآن مع 60 تفسيرًا، و17 كتابًا في الحديث بأسانيدها وشروحها، و8 معاجم قديمة، و29 قارئًا. مجاني وبلا إعلانات ويعمل دون اتصال بعد التثبيت، على Windows وMac وLinux وAndroid.</p></div>
+    <div class="card" lang="en"><h3>In English</h3><p>Read the Qur'an with 62 tafsirs, 17 hadith books with their chains and commentaries, 8 classical dictionaries and 29 reciters. Free, ad-free and offline once installed — for Windows, Mac, Linux and Android.</p></div>
+    <div class="card" lang="ar" dir="rtl"><h3>بالعربية</h3><p>اقرأ القرآن مع 62 تفسيرًا، و17 كتابًا في الحديث بأسانيدها وشروحها، و8 معاجم قديمة، و29 قارئًا. مجاني وبلا إعلانات ويعمل دون اتصال بعد التثبيت، على Windows وMac وLinux وAndroid.</p></div>
     <div class="card"><h3>How do I change the language?</h3><p>Display (Aa) › Language. On the phone, from the <b>⋯</b> menu at the top: «Display and language». Choosing English opens the English translation; choosing Arabic shows the Arabic text only.</p></div>
+  </div>
+</div></section>
+
+<section id="arapca" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
+  <h2>Why are the books in Arabic?</h2>
+  <p class="sub">The program was made in Turkey, by Turks, and its interface speaks Turkish, English and Arabic. Yet the tafsirs, hadiths, commentaries and fiqh books are given in their original Arabic. Here is why.</p>
+  <div class="essay">
+    <p>The readers who ask this most are, rightly, those who would like to use the program in their own language. Every menu, the guide, the explanations and the translations of the meanings are available in Turkish and English. But the heart of the library, the source works, is given in the language they were written in, deliberately. This is not a shortcut or an oversight; it is a scholarly choice, and we would like to explain it.</p>
+
+    <h3>1. The Qur'an was revealed in Arabic; a translation does not take its place</h3>
+    <p class="ayah" lang="ar" dir="rtl">إِنَّآ أَنزَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
+    <p class="ayah-tr">"We have sent it down as an Arabic Qur'an so that you may understand." (Yūsuf 12:2)</p>
+    <p>The word of God is Arabic. A translation, however careful, carries one of the meanings the translator found in the verse. A word with several senses, the nuance of a particle, the emphasis that comes from the order of a sentence: these rarely fit into a single sentence of another language. And the tafsirs are commentaries on that Arabic text: the exegete discusses a word's meaning in the lexicon, its grammatical analysis, its variant readings, the occasion of its revelation and the ruling it yields, all on the Arabic itself. Translate the tafsir, and you have translated away the very text it is talking about.</p>
+
+    <h3>2. For fourteen centuries Arabic has been the common language of the Islamic sciences</h3>
+    <p>In these sciences Arabic is not the language of one nation but the language of learning, much as Latin was in Europe for centuries. Look at the authors in this library: al-Ṭabarī from Ṭabaristān, al-Bukhārī from Bukhara, Muslim from Nishapur, al-Zamakhsharī from Khwarazm, Fakhr al-Dīn al-Rāzī from Rayy, al-Bayḍāwī from Shiraz, al-Māturīdī from Samarqand. None of them were Arabs; all of them wrote in Arabic, because scholars everywhere read it.</p>
+    <p>The Ottoman scholars did the same. Ebüssuûd Efendi wrote his tafsir Irshād al-'Aql al-Salīm in Arabic, İsmail Hakkı Bursevî his Rūḥ al-Bayān, Molla Hüsrev his Durar al-Ḥukkām, Molla Fenârî his Fuṣūl al-Badā'i', Taşköprizâde his Miftāḥ al-Sa'āda and Kâtib Çelebi his Kashf al-Ẓunūn. In the madrasas, the textbooks were read in Arabic and explained in Turkish. The scholarly heritage is itself Arabic; presenting it as it is, is a way of honouring it.</p>
+
+    <h3>3. The technical terms were built in Arabic and are lost in translation</h3>
+    <p>Every science speaks through its terms. The terms of the Islamic sciences rest on Arabic roots, were defined over centuries and differ from one another by fine distinctions. A translation either erases these distinctions or creates new confusion. A few examples:</p>
+    <div class="terms">
+      <div><span lang="ar">حَدَّثَنَا / أَخْبَرَنَا / عَنْ</span><br><b>Ḥaddathanā, akhbaranā, 'an:</b> all become "he told us" in translation. In hadith criticism they show how a narrator received the report from his teacher; a narration with "'an" is precisely what the study of tadlīs examines.</div>
+      <div><span lang="ar">صَحِيح · حَسَن · مُرْسَل · مُعَلّ</span><br><b>Ṣaḥīḥ, ḥasan, mursal, mu'allal:</b> not "correct, fine, sent, defective": each is a judgement built on the chain and the text.</div>
+      <div><span lang="ar">فَرْض · وَاجِب · مَكْرُوه تَحْرِيمًا</span><br><b>Farḍ, wājib, makrūh taḥrīman:</b> in Ḥanafī fiqh the difference rests on the strength of the evidence; for the Shāfi'īs farḍ and wājib are one. A translation hides this difference between the schools.</div>
+      <div><span lang="ar">الأَصَحّ · الصَّحِيح · ظَاهِرُ الرِّوَايَة</span><br><b>Al-aṣaḥḥ, al-ṣaḥīḥ, ẓāhir al-riwāya:</b> they state the rank of a view within a school, and fatwas follow them. This is why the program explains them from each school's own sources.</div>
+    </div>
+    <p>A researcher's work is precisely with these fine distinctions. An assessment made without knowing which term a translation stands for rests on the translator's interpretation, not on the source.</p>
+
+    <h3>4. Scholarship cites the original</h3>
+    <p>A thesis, an article, a lesson or a fatwa cites the original work, with the volume and page of its printed edition. This is why the program gives the tafsirs, hadiths, commentaries and fiqh books from their printed editions, with volume and page. Citing a translation puts an intermediary between you and the source; that intermediary's errors and choices pass into your work. In which book and in which wording a hadith comes, how an exegete reads a word: only the original shows it.</p>
+
+    <h3>5. Size and copyright: an honest account</h3>
+    <p>The works in the program run to tens of millions of words: 62 tafsirs, more than 183,000 hadiths, 17 commentaries, 30 fiqh books. Very few of them have translations, and those that exist are the work of living translators and protected by copyright; we cannot include them without their permission. Many great works, such as Fatḥ al-Qadīr, 'Umdat al-Qārī or Nihāyat al-Muḥtāj, have, as far as we know, no complete translation at all. The classical Arabic texts are a common heritage; we can offer them freely and in full. Translations whose rights holders give permission are opened as permission comes; those are the works shown as locked in the library.</p>
+
+    <h3>6. A reader with little Arabic is not left alone</h3>
+    <p>Reading the originals does not mean shutting out those whose Arabic is not advanced. The program was built to be that bridge:</p>
+    <ul style="margin:0 0 14px;padding-left:22px;color:var(--text)">
+      <li>The whole interface, guide and explanations in English, Turkish or Arabic; translations of the meanings beside every verse (Saheeh International in English).</li>
+      <li>Tap any word: its meaning in eight classical dictionaries, its root and its places in the Qur'an.</li>
+      <li>Fiqh subjects and chapter headings come with their names in your language; the schools' terms with their explanations.</li>
+      <li>Search all the books with an Arabic word and see each result in its context.</li>
+      <li>Add a translated tafsir or book you own with «Add a book» and read it beside the other tafsirs.</li>
+    </ul>
+    <p>A student who has just begun Arabic thus meets the original step by step; an advanced researcher reaches the source directly and quickly.</p>
+
+    <h3>In short</h3>
+    <p>This program was made for everyone who wants to return to the sources. The language of the Qur'an, the language of the sciences that explain it and the language in which scholars across the Muslim world, the Ottomans among them, wrote for centuries is Arabic. Presenting the works in that language, as they are, with volume and page, is what faithfulness to a scholarly trust and respect for the reader require. Our own languages we use everywhere else in the program, as the bridge that leads to those sources.</p>
   </div>
 </div></section>
 
@@ -291,8 +355,11 @@ footer a { color: inherit; }
     <div><h4>Hadith · 17 books</h4><p>The Six Books, Muwaṭṭa’, Musnad, Dārimī, Mustadrak, Ibn Ḥibbān, Ibn Khuzayma, the Muṣannafs, Bayhaqī's al-Sunan al-Kubrā, Majma‘ al-Zawā’id</p></div>
     <div><h4>Commentaries · 17</h4><p>Fatḥ al-Bārī, ‘Umdat al-Qārī, Irshād al-Sārī, al-Minhāj, ‘Awn al-Ma‘būd, Tuḥfat al-Aḥwadhī…</p></div>
     <div><h4>Dictionaries · 8</h4><p>an-Nihāya, Lisān al-‘Arab, Tāj al-‘Arūs, al-Qāmūs al-Muḥīṭ, al-Ṣiḥāḥ, Maqāyīs al-Lugha, al-Miṣbāḥ al-Munīr, Mashāriq al-Anwār</p></div>
+    <div><h4>Abrogation · 2</h4><p>al-Naḥḥās, al-Nāsikh wa-l-Mansūkh; Ibn al-Jawzī, Nawāsikh al-Qur'ān (verse by verse)</p></div>
+    <div><h4>Fiqh · 30 books</h4><p>The four schools' texts, commentaries and major works; ahkam tafsirs, usul, qawa'id, the Mecelle, takhrij books (desktop version)</p></div>
     <div><h4>Recitation · 29 reciters</h4><p>EveryAyah recordings: Alafasy, Ḥuṣarī (murattal, mujawwad, teaching), ‘Abd al-Bāsiṭ, Minshāwī, Sudays, Shuraym, Shāṭirī…</p></div>
   </div>
+  <div class="note" style="max-width:860px;margin:22px auto 0"><b>Your own books:</b> add a tafsir or book you own with «+ Add a book» (.docx, .txt, .htm, .epub or by pasting). The text is divided by its verse marks; the book is then read beside the verse, searched and compared like the other tafsirs.</div>
 </div></section>
 
 <section id="kurulum"><div class="wrap">
@@ -322,8 +389,10 @@ footer a { color: inherit; }
   <h2>Frequently asked questions</h2>
   <details><summary>Is it paid?</summary><p>No. The program and all the books are free; there are no ads.</p></details>
   <details><summary>Do I need the internet?</summary><p>Only at installation and first start is the data downloaded once; after that the program works offline. Recitation is fetched from the internet the first time a verse is played; you can download a surah, a juz or the whole Qur'an in advance.</p></details>
-  <details><summary>Is my information sent anywhere?</summary><p>No. Your notes, memorization and recordings stay on your device only; in the recitation follower the microphone's sound, too, is recognized on the device and sent nowhere. The program only counts, anonymously, which part is used; this can be turned off in Display. Sync, too, happens only between two devices on the same Wi-Fi network.</p></details>
-  <details><summary>How do I sync my phone and computer?</summary><p>With both devices on the same Wi-Fi: Notes › Sync. On the phone choose «Show code»; on the computer enter the phone's address and the 6-digit code.</p></details>
+  <details><summary>Is my information sent anywhere?</summary><p>No. Your notes, memorization and recordings stay on your device only; in the recitation follower the microphone's sound, too, is recognized on the device and sent nowhere. The program only counts, anonymously, which part is used; this can be turned off in Display. If you turn on Google Drive sync, your notes stay only in your own Drive, in a hidden folder set apart for the program; we have no server. Offline sync, too, happens only between two devices on the same Wi-Fi network.</p></details>
+  <details><summary>How do I sync my phone and computer?</summary><p>The easiest way is Google Drive: on each device, My Notes › Backup · sync › «Connect with Google». All devices connected with the same account sync by themselves. Offline, with both devices on the same Wi-Fi, choose «Show code» on the phone and enter the phone's address and the 6-digit code on the computer.</p></details>
+  <details><summary>Why are the books not translated?</summary><p>Arabic is the language of the Qur'an and of the Islamic sciences; their terms were built in Arabic and scholarship cites the original. The interface and the translations of the meanings are in your language, and every word's meaning is a tap away. The full answer: <a href="#arapca">Why are the books in Arabic?</a></p></details>
+  <details><summary>What if my antivirus warns about the program?</summary><p>The program is safe. Microsoft Defender sometimes flags new unsigned programs by a machine-learning guess; from version 5.05 we removed the methods that led to this warning. If you see it, you can continue through Windows Security › Virus & threat protection › Protection history › «Allow on device», and let us know.</p></details>
   <details><summary>Is it available in other languages?</summary><p>Yes. The interface is in Turkish, English and Arabic; change it in Display › Language. The English interface comes with the Saheeh International translation; in Arabic the page flows from right to left. <span lang="en"></span></p></details>
   <details><summary>Does it work on iPhone?</summary><p>Not for now; there are Windows, Mac, Linux and Android versions.</p></details>
   <details><summary>Why are some contemporary tafsirs and translations closed?</summary><p>Works still under copyright are not included without the rights holders' permission; their names appear in the list, and they are opened as permission is obtained.</p></details>
