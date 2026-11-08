@@ -1,13 +1,28 @@
 {
-  "version": "5.07",
+  "version": "5.08",
   "date": "2026-11-08",
   "notes": [
-    "Eşitleme ekranında dosya adları ve hata kodları yerine sade özet ve «Hata bildir» düğmesi; Arapça ve İngilizce arayüzde hadis kitabı adları kendi dilinde."
+    "Önemli: eşitleme artık notları toptan silemez (Drive dosyası yokken, okunamayan dosyada, toplu silmede korunur); çöp kutusunda «Eşitlemeyle silinenlerin hepsini geri al»."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Kurulum.exe",
-  "sha256": "84dd94e0093f00086ec67c02a4cda96c71408ae3dc455d26970f327d2cdc6513",
-  "size": 38021632,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Kurulum.exe",
+  "sha256": "8cf4927b85eec19b44649e84a0f6e3a774270e19e9aa40164eff672e1c917089",
+  "size": 38023680,
   "history": [
+    {
+      "version": "5.07",
+      "date": "2026-11-08",
+      "notes": [
+        "Eşitleme ekranında dosya adları ve hata kodları yerine sade özet ve «Hata bildir» düğmesi; Arapça ve İngilizce arayüzde hadis kitabı adları kendi dilinde."
+      ],
+      "notes_i18n": {
+        "en": [
+          "The sync screen shows a plain summary instead of file names and error codes, with a «Report the error» button; hadith book names in English and Arabic in those interfaces."
+        ],
+        "ar": [
+          "تعرض شاشة المزامنة ملخصًا بسيطًا بدل أسماء الملفات ورموز الأخطاء، مع زر «أبلغ عن الخطأ»؛ وأسماء كتب الحديث بالعربية والإنجليزية في هاتين الواجهتين."
+        ]
+      }
+    },
     {
       "version": "5.06",
       "date": "2026-11-08",
@@ -1220,23 +1235,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "181c37ce9f8112ab5f61bbcb3617a08134da368e593beb77b4c3fd4f84ce0b5d",
-    "size": 11711680
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "bf7d5e30c0867b4d18d2440ee35a5b495fa5b4ed3971d648a8bb807614b44d76",
+    "size": 11707584
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "The sync screen shows a plain summary instead of file names and error codes, with a «Report the error» button; hadith book names in English and Arabic in those interfaces."
+      "Important: sync can no longer delete notes wholesale (protected when the Drive file is missing, a file cannot be read, or a sync would remove most records); «Restore all removed by sync» in the wastebasket."
     ],
     "ar": [
-      "تعرض شاشة المزامنة ملخصًا بسيطًا بدل أسماء الملفات ورموز الأخطاء، مع زر «أبلغ عن الخطأ»؛ وأسماء كتب الحديث بالعربية والإنجليزية في هاتين الواجهتين."
+      "مهم: لم تعد المزامنة قادرة على حذف الملاحظات جملةً (حماية عند غياب ملف Drive أو تعذر قراءة الملف أو الحذف الجماعي)؛ وزر «استعد كل ما حذفته المزامنة» في سلة المهملات."
     ]
   }
 }
