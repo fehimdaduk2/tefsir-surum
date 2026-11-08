@@ -1,13 +1,28 @@
 {
-  "version": "5.05",
-  "date": "2026-11-07",
+  "version": "5.06",
+  "date": "2026-11-08",
   "notes": [
-    "Windows: bazı bilgisayarlarda Defender'ın programı yanlışlıkla virüs sanması giderildi (PowerShell ve komut satırı yerine Windows'un kendi çağrıları)."
+    "Fıkıh paketi eskiyse Fıkıh bölümünde güncelleme düğmesi çıkar (mezhep ıstılahları, dizin ve diğer yeni bölümler gelir)."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Kurulum.exe",
-  "sha256": "6289d7c0eb938b3d7525ba4f4d65a7134d0ba7a02f0017c1f25990fd6199213b",
-  "size": 38013952,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Kurulum.exe",
+  "sha256": "5c425d7dfb6943354949d61ba294af6b5aba06e907f2da3f348402e2c9e7f01f",
+  "size": 38018048,
   "history": [
+    {
+      "version": "5.05",
+      "date": "2026-11-07",
+      "notes": [
+        "Windows: bazı bilgisayarlarda Defender'ın programı yanlışlıkla virüs sanması giderildi (PowerShell ve komut satırı yerine Windows'un kendi çağrıları)."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Windows: fixed Defender wrongly flagging the program as malware on some computers (Windows' own calls instead of PowerShell and the command line)."
+        ],
+        "ar": [
+          "ويندوز: إصلاح اعتبار Defender البرنامجَ خطأً برنامجًا ضارًا على بعض الحواسيب (استدعاءات ويندوز نفسها بدلًا من PowerShell وسطر الأوامر)."
+        ]
+      }
+    },
     {
       "version": "5.04",
       "date": "2026-11-07",
@@ -1190,23 +1205,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.05/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "0bcf21e9d70436dea42c05b541bfc9ff142881276f4aaa50dc6c8a69e3467c3e",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "57db8fba5d59a4f9b2c2ffbd2dc1cd65fab8520d243f0c978b6d8bd1f38ef008",
     "size": 11707584
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Windows: fixed Defender wrongly flagging the program as malware on some computers (Windows' own calls instead of PowerShell and the command line)."
+      "When the fiqh pack is outdated, the Fiqh section offers its update (bringing the schools' terms, the index and the other new sections)."
     ],
     "ar": [
-      "ويندوز: إصلاح اعتبار Defender البرنامجَ خطأً برنامجًا ضارًا على بعض الحواسيب (استدعاءات ويندوز نفسها بدلًا من PowerShell وسطر الأوامر)."
+      "إذا كانت حزمة الفقه قديمة يظهر في قسم الفقه زر لتحديثها (فتأتي مصطلحات المذاهب والفهرس والأقسام الجديدة الأخرى)."
     ]
   }
 }
