@@ -1,13 +1,28 @@
 {
-  "version": "5.06",
+  "version": "5.07",
   "date": "2026-11-08",
   "notes": [
-    "Fıkıh paketi eskiyse Fıkıh bölümünde güncelleme düğmesi çıkar (mezhep ıstılahları, dizin ve diğer yeni bölümler gelir)."
+    "Eşitleme ekranında dosya adları ve hata kodları yerine sade özet ve «Hata bildir» düğmesi; Arapça ve İngilizce arayüzde hadis kitabı adları kendi dilinde."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Kurulum.exe",
-  "sha256": "5c425d7dfb6943354949d61ba294af6b5aba06e907f2da3f348402e2c9e7f01f",
-  "size": 38018048,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Kurulum.exe",
+  "sha256": "84dd94e0093f00086ec67c02a4cda96c71408ae3dc455d26970f327d2cdc6513",
+  "size": 38021632,
   "history": [
+    {
+      "version": "5.06",
+      "date": "2026-11-08",
+      "notes": [
+        "Fıkıh paketi eskiyse Fıkıh bölümünde güncelleme düğmesi çıkar (mezhep ıstılahları, dizin ve diğer yeni bölümler gelir)."
+      ],
+      "notes_i18n": {
+        "en": [
+          "When the fiqh pack is outdated, the Fiqh section offers its update (bringing the schools' terms, the index and the other new sections)."
+        ],
+        "ar": [
+          "إذا كانت حزمة الفقه قديمة يظهر في قسم الفقه زر لتحديثها (فتأتي مصطلحات المذاهب والفهرس والأقسام الجديدة الأخرى)."
+        ]
+      }
+    },
     {
       "version": "5.05",
       "date": "2026-11-07",
@@ -1205,23 +1220,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.06/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "57db8fba5d59a4f9b2c2ffbd2dc1cd65fab8520d243f0c978b6d8bd1f38ef008",
-    "size": 11707584
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.07/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "181c37ce9f8112ab5f61bbcb3617a08134da368e593beb77b4c3fd4f84ce0b5d",
+    "size": 11711680
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "When the fiqh pack is outdated, the Fiqh section offers its update (bringing the schools' terms, the index and the other new sections)."
+      "The sync screen shows a plain summary instead of file names and error codes, with a «Report the error» button; hadith book names in English and Arabic in those interfaces."
     ],
     "ar": [
-      "إذا كانت حزمة الفقه قديمة يظهر في قسم الفقه زر لتحديثها (فتأتي مصطلحات المذاهب والفهرس والأقسام الجديدة الأخرى)."
+      "تعرض شاشة المزامنة ملخصًا بسيطًا بدل أسماء الملفات ورموز الأخطاء، مع زر «أبلغ عن الخطأ»؛ وأسماء كتب الحديث بالعربية والإنجليزية في هاتين الواجهتين."
     ]
   }
 }
