@@ -1,13 +1,28 @@
 {
-  "version": "5.08",
-  "date": "2026-11-08",
+  "version": "5.09",
+  "date": "2026-11-09",
   "notes": [
-    "Önemli: eşitleme artık notları toptan silemez (Drive dosyası yokken, okunamayan dosyada, toplu silmede korunur); çöp kutusunda «Eşitlemeyle silinenlerin hepsini geri al»."
+    "Görünüm penceresi sadeleşti: hadis bağlantıları hep açık; isimsiz kullanım sayımları ayarı kaldırıldı."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Kurulum.exe",
-  "sha256": "8cf4927b85eec19b44649e84a0f6e3a774270e19e9aa40164eff672e1c917089",
-  "size": 38023680,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Kurulum.exe",
+  "sha256": "d8cfdb94e4710cd6149172c831a2afdddde72dfc2b910f25ce6402c928354c6c",
+  "size": 38023168,
   "history": [
+    {
+      "version": "5.08",
+      "date": "2026-11-08",
+      "notes": [
+        "Önemli: eşitleme artık notları toptan silemez (Drive dosyası yokken, okunamayan dosyada, toplu silmede korunur); çöp kutusunda «Eşitlemeyle silinenlerin hepsini geri al»."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Important: sync can no longer delete notes wholesale (protected when the Drive file is missing, a file cannot be read, or a sync would remove most records); «Restore all removed by sync» in the wastebasket."
+        ],
+        "ar": [
+          "مهم: لم تعد المزامنة قادرة على حذف الملاحظات جملةً (حماية عند غياب ملف Drive أو تعذر قراءة الملف أو الحذف الجماعي)؛ وزر «استعد كل ما حذفته المزامنة» في سلة المهملات."
+        ]
+      }
+    },
     {
       "version": "5.07",
       "date": "2026-11-08",
@@ -1235,23 +1250,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.08/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "bf7d5e30c0867b4d18d2440ee35a5b495fa5b4ed3971d648a8bb807614b44d76",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "c0114a99506d9e3647119342b4755fc30e50a9ff7381bffab46736eb0a4e6f50",
     "size": 11707584
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Important: sync can no longer delete notes wholesale (protected when the Drive file is missing, a file cannot be read, or a sync would remove most records); «Restore all removed by sync» in the wastebasket."
+      "A simpler Display window: hadith links always on; the anonymous usage counts setting removed."
     ],
     "ar": [
-      "مهم: لم تعد المزامنة قادرة على حذف الملاحظات جملةً (حماية عند غياب ملف Drive أو تعذر قراءة الملف أو الحذف الجماعي)؛ وزر «استعد كل ما حذفته المزامنة» في سلة المهملات."
+      "نافذة العرض أبسط: روابط الحديث مفعّلة دائمًا، وأُزيل إعداد الإحصاءات المجهولة."
     ]
   }
 }
