@@ -1,5 +1,5 @@
 {
- "tarih": "2026-11-08",
+ "tarih": "2026-11-09",
  "indirme": {
   "windows": 48,
   "mac": 21,
@@ -7,9 +7,9 @@
   "android": 39
  },
  "guncelleme": {
-  "windows": 24,
+  "windows": 28,
   "mac": 5,
   "linux": 1,
-  "android": 4
+  "android": 5
  }
 }
