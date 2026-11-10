@@ -1,13 +1,28 @@
 {
-  "version": "5.09",
-  "date": "2026-11-09",
+  "version": "5.10",
+  "date": "2026-11-10",
   "notes": [
-    "Görünüm penceresi sadeleşti: hadis bağlantıları hep açık; isimsiz kullanım sayımları ayarı kaldırıldı."
+    "Program doğrudan ana ekranla açılır (karşılama penceresi kaldırıldı); güncelleme kendiliğinden kurulmaz, kısa bir kartla bildirilir."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Kurulum.exe",
-  "sha256": "d8cfdb94e4710cd6149172c831a2afdddde72dfc2b910f25ce6402c928354c6c",
-  "size": 38023168,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Kurulum.exe",
+  "sha256": "f39aa5463b0a196ecdbf2e554311a158b686989a5bf90ebf066c794f5d0001f1",
+  "size": 38021120,
   "history": [
+    {
+      "version": "5.09",
+      "date": "2026-11-09",
+      "notes": [
+        "Görünüm penceresi sadeleşti: hadis bağlantıları hep açık; isimsiz kullanım sayımları ayarı kaldırıldı."
+      ],
+      "notes_i18n": {
+        "en": [
+          "A simpler Display window: hadith links always on; the anonymous usage counts setting removed."
+        ],
+        "ar": [
+          "نافذة العرض أبسط: روابط الحديث مفعّلة دائمًا، وأُزيل إعداد الإحصاءات المجهولة."
+        ]
+      }
+    },
     {
       "version": "5.08",
       "date": "2026-11-08",
@@ -1250,23 +1265,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.09/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "c0114a99506d9e3647119342b4755fc30e50a9ff7381bffab46736eb0a4e6f50",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "1bded9ef17af06a04472c61b70b38045475a3bc0f4c69393325e2409ab5032d3",
     "size": 11707584
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "A simpler Display window: hadith links always on; the anonymous usage counts setting removed."
+      "The program opens straight to the main screen (the welcome window is gone); updates are no longer installed by themselves, a short notice tells of a new version."
     ],
     "ar": [
-      "نافذة العرض أبسط: روابط الحديث مفعّلة دائمًا، وأُزيل إعداد الإحصاءات المجهولة."
+      "يُفتح البرنامج مباشرة على الشاشة الرئيسية (أُزيلت نافذة الترحيب)؛ ولا يُثبَّت التحديث تلقائيًا، بل يُعلَم به في بطاقة قصيرة."
     ]
   }
 }
