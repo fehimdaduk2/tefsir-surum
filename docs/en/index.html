@@ -151,7 +151,7 @@ footer a { color: inherit; }
 .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
 .faq summary { cursor: pointer; font-weight: 600; }
 .faq details p { color: var(--muted); margin: 10px 0 2px; }
-#arapca { scroll-margin-top: 80px; }
+#arapca, #fikih-telefon { scroll-margin-top: 80px; }
 .faq details .essay { margin-top: 14px; max-width: none; }
 .faq details .essay p { color: var(--text); margin: 0 0 14px; }
 .faq details .essay p.ayah-tr { color: var(--muted); }
@@ -251,10 +251,7 @@ footer a { color: inherit; }
   <h2>Fiqh <span style="font-size:.55em;font-weight:600;color:var(--muted);vertical-align:middle">· in the computer version</span></h2>
   <p class="sub">The core texts of the four schools, their great commentaries, and works of usul, qawa'id and ahkam: 30 books, about 7.8 million words. On Windows, Mac and Linux.</p>
   <div class="feat"><div class="shot"><img src="../img/en/fikih.webp" width="1440" height="810" loading="lazy" alt="The four schools side by side"></div><div><span class="kick">Comparing the schools</span><h3>The four schools side by side</h3><p class="sub" style="margin:0">Hanafi, Maliki, Shafi'i and Hanbali books on the same topic, column by column; sections are matched by their words.</p><ul><li><b>Text and commentary together:</b> al-Quduri, al-Hidaya and Fath al-Qadir, al-Ikhtiyar, al-Risala, al-Minhaj, al-'Umda and more</li><li><b>From verse and hadith to fiqh:</b> «⚖ In fiqh» shows the chapters where a verse or hadith is cited; the hadiths' sources</li><li><b>The schools' terms</b> (al-asahh, zahir al-riwaya, al-mashhur…) defined from each school's own sources</li><li><b>Takhrīj books:</b> Naṣb al-Rāya, al-Talkhīṣ al-Ḥabīr, Bulūgh al-Marām; <b>dictionary of fiqh terms:</b> al-Ta'rīfāt, Anīs al-Fuqahā', al-Mughrib and others</li><li><b>The Mecelle</b> (the Ottoman civil code, 1,851 articles, by article number) linked to the maxims of al-Ashbāh wa-l-Naẓā'ir</li><li>Search in every book, notes and highlights, memorising texts, export to Word</li></ul></div></div>
-  <div class="note" style="max-width:860px;margin:0 auto"><h3 style="margin:0 0 8px;color:var(--text);font-size:18px">Why is fiqh not on the phone?</h3>
-    <p style="margin:0 0 10px">We placed the fiqh library in the <b>Windows, Mac and Linux</b> versions only, on purpose. Thirty works with their commentaries hold about 7.8 million words; a single chapter of a great commentary such as Fath al-Qadir or Radd al-Muhtar runs to thousands of lines. Comparing the four schools side by side, reading a text with its commentary and searching every book need a wide screen and plenty of memory.</p>
-    <p style="margin:0 0 10px">Putting all of this on phones would make the app much larger and slow it down, or even make it close, on mid-range and entry-level devices — spoiling it for the great majority who use it for the Qur'an, translations, tafsir and hadith. So we keep the phone app light and fast.</p>
-    <p style="margin:0">Working on fiqh texts is specialist work anyway: comparative reading, setting a text against its commentary, taking notes and citing sources are done at a computer. Anyone who wants the fiqh section can install the program free on a <b>Windows, Mac or Linux computer</b> or a <b>Windows tablet</b> — see <a href="#kurulum">Download</a> below.</p></div>
+  <p class="ctx" style="max-width:860px;margin:0 auto;color:var(--muted)">Why is fiqh not on the phone? <a href="#fikih-telefon">The answer is in the FAQ</a>.</p>
 </div></section>
 
 <section id="notlar" class="band"><div class="wrap">
@@ -391,6 +388,7 @@ footer a { color: inherit; }
     <p>This program was made for everyone who wants to return to the sources. The language of the Qur'an, the language of the sciences that explain it and the language in which scholars across the Muslim world, the Ottomans among them, wrote for centuries is Arabic. Presenting the works in that language, as they are, with volume and page, is what faithfulness to a scholarly trust and respect for the reader require. Our own languages we use everywhere else in the program, as the bridge that leads to those sources.</p>
   
   </details>
+  <details id="fikih-telefon"><summary>Why is fiqh not on the phone?</summary><p>We placed the fiqh library in the <b>Windows, Mac and Linux</b> versions only, on purpose. Thirty works with their commentaries hold about 7.8 million words; a single chapter of a great commentary such as Fath al-Qadir or Nihayat al-Muhtaj runs to thousands of lines. Comparing the four schools side by side, reading a text with its commentary and searching every book need a wide screen and plenty of memory.</p><p>Putting all of this on phones would make the app much larger and slow it down, or even make it close, on mid-range and entry-level devices — spoiling it for the great majority who use it for the Qur'an, translations, tafsir and hadith. So we keep the phone app light and fast.</p><p>Working on fiqh texts is specialist work anyway: comparative reading, setting a text against its commentary, taking notes and citing sources are done at a computer. Anyone who wants the fiqh section can install the program free on a <b>Windows, Mac or Linux computer</b> or a <b>Windows tablet</b> — see <a href="#kurulum">Download</a> below.</p></details>
   <details><summary>What if my antivirus warns about the program?</summary><p>The program is safe. Microsoft Defender sometimes flags new unsigned programs by a machine-learning guess; from version 5.05 we removed the methods that led to this warning. If you see it, you can continue through Windows Security › Virus & threat protection › Protection history › «Allow on device», and let us know.</p></details>
   <details><summary>Is it available in other languages?</summary><p>Yes. The interface is in Turkish, English and Arabic; change it in Display › Language. The English interface comes with the Saheeh International translation; in Arabic the page flows from right to left. <span lang="en"></span></p></details>
   <details><summary>Does it work on iPhone?</summary><p>Not for now; there are Windows, Mac, Linux and Android versions.</p></details>
@@ -447,6 +445,6 @@ fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.jso
   })
   .catch(() => {});
 </script>
-<script id="arapcaAc">(function(){function ac(){if(location.hash==="#arapca"){var d=document.getElementById("arapca");if(d){d.open=true;d.scrollIntoView();}}}addEventListener("hashchange",ac);ac();})();</script>
+<script id="arapcaAc">(function(){function ac(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}addEventListener("hashchange",ac);ac();})();</script>
 </body>
 </html>
