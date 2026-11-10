@@ -1,13 +1,28 @@
 {
-  "version": "5.11",
+  "version": "5.12",
   "date": "2026-11-10",
   "notes": [
-    "Program sadeleşti: Dualar ve Esmâ-ül Hüsnâ bölümü kaldırıldı."
+    "Not sayısı rozeti küçüldü ve büyük sayılarda genişler (1.000); Görünüm ve Güncellemeler pencereleri sadeleşti."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Kurulum.exe",
-  "sha256": "ed0613d3b859e55fa110a7df4b5ea93bd15780f93b0349fe67eea0a5c3d0890c",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Kurulum.exe",
+  "sha256": "f05fced27af771aefd347f017368dd54f9e5a02d1ba77b1bd3efa63d3efc7ba0",
   "size": 38018560,
   "history": [
+    {
+      "version": "5.11",
+      "date": "2026-11-10",
+      "notes": [
+        "Program sadeleşti: Dualar ve Esmâ-ül Hüsnâ bölümü kaldırıldı."
+      ],
+      "notes_i18n": {
+        "en": [
+          "A simpler program: the Prayers and Beautiful Names section was removed."
+        ],
+        "ar": [
+          "برنامج أبسط: أُزيل قسم الأدعية والأسماء الحسنى."
+        ]
+      }
+    },
     {
       "version": "5.10",
       "date": "2026-11-10",
@@ -1280,23 +1295,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "2289379c19e27fb1017bb6e1907a1b0b619eb6928a0ceb698ade5772d945f83e",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "efab3003f3e36ab5901f0b3f5be98555def453cf2b534e8ba48a0970fd900781",
     "size": 11703488
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "A simpler program: the Prayers and Beautiful Names section was removed."
+      "The notes count badge is smaller and widens for large numbers (1,000); the Display and Updates windows are simpler."
     ],
     "ar": [
-      "برنامج أبسط: أُزيل قسم الأدعية والأسماء الحسنى."
+      "شارة عدد الملاحظات أصغر وتتسع للأعداد الكبيرة (1.000)؛ ونافذتا العرض والتحديثات أبسط."
     ]
   }
 }
