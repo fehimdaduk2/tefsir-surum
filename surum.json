@@ -1,13 +1,28 @@
 {
-  "version": "5.10",
+  "version": "5.11",
   "date": "2026-11-10",
   "notes": [
-    "Program doğrudan ana ekranla açılır (karşılama penceresi kaldırıldı); güncelleme kendiliğinden kurulmaz, kısa bir kartla bildirilir."
+    "Program sadeleşti: Dualar ve Esmâ-ül Hüsnâ bölümü kaldırıldı."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Kurulum.exe",
-  "sha256": "f39aa5463b0a196ecdbf2e554311a158b686989a5bf90ebf066c794f5d0001f1",
-  "size": 38021120,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Kurulum.exe",
+  "sha256": "ed0613d3b859e55fa110a7df4b5ea93bd15780f93b0349fe67eea0a5c3d0890c",
+  "size": 38018560,
   "history": [
+    {
+      "version": "5.10",
+      "date": "2026-11-10",
+      "notes": [
+        "Program doğrudan ana ekranla açılır (karşılama penceresi kaldırıldı); güncelleme kendiliğinden kurulmaz, kısa bir kartla bildirilir."
+      ],
+      "notes_i18n": {
+        "en": [
+          "The program opens straight to the main screen (the welcome window is gone); updates are no longer installed by themselves, a short notice tells of a new version."
+        ],
+        "ar": [
+          "يُفتح البرنامج مباشرة على الشاشة الرئيسية (أُزيلت نافذة الترحيب)؛ ولا يُثبَّت التحديث تلقائيًا، بل يُعلَم به في بطاقة قصيرة."
+        ]
+      }
+    },
     {
       "version": "5.09",
       "date": "2026-11-09",
@@ -1265,23 +1280,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.10/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "1bded9ef17af06a04472c61b70b38045475a3bc0f4c69393325e2409ab5032d3",
-    "size": 11707584
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.11/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "2289379c19e27fb1017bb6e1907a1b0b619eb6928a0ceb698ade5772d945f83e",
+    "size": 11703488
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "The program opens straight to the main screen (the welcome window is gone); updates are no longer installed by themselves, a short notice tells of a new version."
+      "A simpler program: the Prayers and Beautiful Names section was removed."
     ],
     "ar": [
-      "يُفتح البرنامج مباشرة على الشاشة الرئيسية (أُزيلت نافذة الترحيب)؛ ولا يُثبَّت التحديث تلقائيًا، بل يُعلَم به في بطاقة قصيرة."
+      "برنامج أبسط: أُزيل قسم الأدعية والأسماء الحسنى."
     ]
   }
 }
