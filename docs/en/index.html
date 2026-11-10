@@ -151,6 +151,10 @@ footer a { color: inherit; }
 .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
 .faq summary { cursor: pointer; font-weight: 600; }
 .faq details p { color: var(--muted); margin: 10px 0 2px; }
+#arapca { scroll-margin-top: 80px; }
+.faq details .essay { margin-top: 14px; max-width: none; }
+.faq details .essay p { color: var(--text); margin: 0 0 14px; }
+.faq details .essay p.ayah-tr { color: var(--muted); }
 .band { background: var(--surface-2); border-block: 1px solid var(--line); }
 @media (max-width: 860px) {
   .feat, .feat.rev { grid-template-columns: 1fr; gap: 18px; }
@@ -164,7 +168,7 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="../img/icon256.png" alt="">Tafsir &amp; Hadith Library</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#arapca" title="Why are the books in Arabic?">Arabic</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
+  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
 </div></header>
 
 <main>
@@ -285,53 +289,6 @@ footer a { color: inherit; }
   </div>
 </div></section>
 
-<section id="arapca" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
-  <h2>Why are the books in Arabic?</h2>
-  <p class="sub">The program was made in Turkey, by Turks, and its interface speaks Turkish, English and Arabic. Yet the tafsirs, hadiths, commentaries and fiqh books are given in their original Arabic. Here is why.</p>
-  <div class="essay">
-    <p>The readers who ask this most are, rightly, those who would like to use the program in their own language. Every menu, the guide, the explanations and the translations of the meanings are available in Turkish and English. But the heart of the library, the source works, is given in the language they were written in, deliberately. This is not a shortcut or an oversight; it is a scholarly choice, and we would like to explain it.</p>
-
-    <h3>1. The Qur'an was revealed in Arabic; a translation does not take its place</h3>
-    <p class="ayah" lang="ar" dir="rtl">إِنَّآ أَنزَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
-    <p class="ayah-tr">"We have sent it down as an Arabic Qur'an so that you may understand." (Yūsuf 12:2)</p>
-    <p>The word of God is Arabic. A translation, however careful, carries one of the meanings the translator found in the verse. A word with several senses, the nuance of a particle, the emphasis that comes from the order of a sentence: these rarely fit into a single sentence of another language. And the tafsirs are commentaries on that Arabic text: the exegete discusses a word's meaning in the lexicon, its grammatical analysis, its variant readings, the occasion of its revelation and the ruling it yields, all on the Arabic itself. Translate the tafsir, and you have translated away the very text it is talking about.</p>
-
-    <h3>2. For fourteen centuries Arabic has been the common language of the Islamic sciences</h3>
-    <p>In these sciences Arabic is not the language of one nation but the language of learning, much as Latin was in Europe for centuries. Look at the authors in this library: al-Ṭabarī from Ṭabaristān, al-Bukhārī from Bukhara, Muslim from Nishapur, al-Zamakhsharī from Khwarazm, Fakhr al-Dīn al-Rāzī from Rayy, al-Bayḍāwī from Shiraz, al-Māturīdī from Samarqand. None of them were Arabs; all of them wrote in Arabic, because scholars everywhere read it.</p>
-    <p>The Ottoman scholars did the same. Ebüssuûd Efendi wrote his tafsir Irshād al-'Aql al-Salīm in Arabic, İsmail Hakkı Bursevî his Rūḥ al-Bayān, Molla Hüsrev his Durar al-Ḥukkām, Molla Fenârî his Fuṣūl al-Badā'i', Taşköprizâde his Miftāḥ al-Sa'āda and Kâtib Çelebi his Kashf al-Ẓunūn. In the madrasas, the textbooks were read in Arabic and explained in Turkish. The scholarly heritage is itself Arabic; presenting it as it is, is a way of honouring it.</p>
-
-    <h3>3. The technical terms were built in Arabic and are lost in translation</h3>
-    <p>Every science speaks through its terms. The terms of the Islamic sciences rest on Arabic roots, were defined over centuries and differ from one another by fine distinctions. A translation either erases these distinctions or creates new confusion. A few examples:</p>
-    <div class="terms">
-      <div><span lang="ar">حَدَّثَنَا / أَخْبَرَنَا / عَنْ</span><br><b>Ḥaddathanā, akhbaranā, 'an:</b> all become "he told us" in translation. In hadith criticism they show how a narrator received the report from his teacher; a narration with "'an" is precisely what the study of tadlīs examines.</div>
-      <div><span lang="ar">صَحِيح · حَسَن · مُرْسَل · مُعَلّ</span><br><b>Ṣaḥīḥ, ḥasan, mursal, mu'allal:</b> not "correct, fine, sent, defective": each is a judgement built on the chain and the text.</div>
-      <div><span lang="ar">فَرْض · وَاجِب · مَكْرُوه تَحْرِيمًا</span><br><b>Farḍ, wājib, makrūh taḥrīman:</b> in Ḥanafī fiqh the difference rests on the strength of the evidence; for the Shāfi'īs farḍ and wājib are one. A translation hides this difference between the schools.</div>
-      <div><span lang="ar">الأَصَحّ · الصَّحِيح · ظَاهِرُ الرِّوَايَة</span><br><b>Al-aṣaḥḥ, al-ṣaḥīḥ, ẓāhir al-riwāya:</b> they state the rank of a view within a school, and fatwas follow them. This is why the program explains them from each school's own sources.</div>
-    </div>
-    <p>A researcher's work is precisely with these fine distinctions. An assessment made without knowing which term a translation stands for rests on the translator's interpretation, not on the source.</p>
-
-    <h3>4. Scholarship cites the original</h3>
-    <p>A thesis, an article, a lesson or a fatwa cites the original work, with the volume and page of its printed edition. This is why the program gives the tafsirs, hadiths, commentaries and fiqh books from their printed editions, with volume and page. Citing a translation puts an intermediary between you and the source; that intermediary's errors and choices pass into your work. In which book and in which wording a hadith comes, how an exegete reads a word: only the original shows it.</p>
-
-    <h3>5. Size and copyright: an honest account</h3>
-    <p>The works in the program run to tens of millions of words: 62 tafsirs, more than 183,000 hadiths, 17 commentaries, 30 fiqh books. Very few of them have translations, and those that exist are the work of living translators and protected by copyright; we cannot include them without their permission. Many great works, such as Fatḥ al-Qadīr, 'Umdat al-Qārī or Nihāyat al-Muḥtāj, have, as far as we know, no complete translation at all. The classical Arabic texts are a common heritage; we can offer them freely and in full. Translations whose rights holders give permission are opened as permission comes; those are the works shown as locked in the library.</p>
-
-    <h3>6. A reader with little Arabic is not left alone</h3>
-    <p>Reading the originals does not mean shutting out those whose Arabic is not advanced. The program was built to be that bridge:</p>
-    <ul style="margin:0 0 14px;padding-left:22px;color:var(--text)">
-      <li>The whole interface, guide and explanations in English, Turkish or Arabic; translations of the meanings beside every verse (Saheeh International in English).</li>
-      <li>Tap any word: its meaning in eight classical dictionaries, its root and its places in the Qur'an.</li>
-      <li>Fiqh subjects and chapter headings come with their names in your language; the schools' terms with their explanations.</li>
-      <li>Search all the books with an Arabic word and see each result in its context.</li>
-      <li>Add a translated tafsir or book you own with «Add a book» and read it beside the other tafsirs.</li>
-    </ul>
-    <p>A student who has just begun Arabic thus meets the original step by step; an advanced researcher reaches the source directly and quickly.</p>
-
-    <h3>In short</h3>
-    <p>This program was made for everyone who wants to return to the sources. The language of the Qur'an, the language of the sciences that explain it and the language in which scholars across the Muslim world, the Ottomans among them, wrote for centuries is Arabic. Presenting the works in that language, as they are, with volume and page, is what faithfulness to a scholarly trust and respect for the reader require. Our own languages we use everywhere else in the program, as the bridge that leads to those sources.</p>
-  </div>
-</div></section>
-
 <section id="telefon" class="band"><div class="wrap">
   <h2>On every device</h2>
   <p class="sub">Windows, Mac, Linux and Android. The phone app is the same program as on the computer; all books and features are on the phone too, except the <a href="#fikih">fiqh</a> section, which is for the computer version.</p>
@@ -390,7 +347,50 @@ footer a { color: inherit; }
   <details><summary>Do I need the internet?</summary><p>Only at installation and first start is the data downloaded once; after that the program works offline. Recitation is fetched from the internet the first time a verse is played; you can download a surah, a juz or the whole Qur'an in advance.</p></details>
   <details><summary>Is my information sent anywhere?</summary><p>No. Your notes, memorization and recordings stay on your device only; in the recitation follower the microphone's sound, too, is recognized on the device and sent nowhere. The program only counts, anonymously, which part is used. If you turn on Google Drive sync, your notes stay only in your own Drive, in a hidden folder set apart for the program; we have no server. Offline sync, too, happens only between two devices on the same Wi-Fi network.</p></details>
   <details><summary>How do I sync my phone and computer?</summary><p>The easiest way is Google Drive: on each device, My Notes › Backup · sync › «Connect with Google». All devices connected with the same account sync by themselves. Offline, with both devices on the same Wi-Fi, choose «Show code» on the phone and enter the phone's address and the 6-digit code on the computer.</p></details>
-  <details><summary>Why are the books not translated?</summary><p>Arabic is the language of the Qur'an and of the Islamic sciences; their terms were built in Arabic and scholarship cites the original. The interface and the translations of the meanings are in your language, and every word's meaning is a tap away. The full answer: <a href="#arapca">Why are the books in Arabic?</a></p></details>
+  <details id="arapca"><summary>Why are the books not translated?</summary><p>The program was made in Turkey, by Turks, and its interface speaks Turkish, English and Arabic. Yet the tafsirs, hadiths, commentaries and fiqh books are given in their original Arabic. Here is why.</p>
+    <div class="essay">
+    <p>The readers who ask this most are, rightly, those who would like to use the program in their own language. Every menu, the guide, the explanations and the translations of the meanings are available in Turkish and English. But the heart of the library, the source works, is given in the language they were written in, deliberately. This is not a shortcut or an oversight; it is a scholarly choice, and we would like to explain it.</p>
+
+    <h3>1. The Qur'an was revealed in Arabic; a translation does not take its place</h3>
+    <p class="ayah" lang="ar" dir="rtl">إِنَّآ أَنزَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
+    <p class="ayah-tr">"We have sent it down as an Arabic Qur'an so that you may understand." (Yūsuf 12:2)</p>
+    <p>The word of God is Arabic. A translation, however careful, carries one of the meanings the translator found in the verse. A word with several senses, the nuance of a particle, the emphasis that comes from the order of a sentence: these rarely fit into a single sentence of another language. And the tafsirs are commentaries on that Arabic text: the exegete discusses a word's meaning in the lexicon, its grammatical analysis, its variant readings, the occasion of its revelation and the ruling it yields, all on the Arabic itself. Translate the tafsir, and you have translated away the very text it is talking about.</p>
+
+    <h3>2. For fourteen centuries Arabic has been the common language of the Islamic sciences</h3>
+    <p>In these sciences Arabic is not the language of one nation but the language of learning, much as Latin was in Europe for centuries. Look at the authors in this library: al-Ṭabarī from Ṭabaristān, al-Bukhārī from Bukhara, Muslim from Nishapur, al-Zamakhsharī from Khwarazm, Fakhr al-Dīn al-Rāzī from Rayy, al-Bayḍāwī from Shiraz, al-Māturīdī from Samarqand. None of them were Arabs; all of them wrote in Arabic, because scholars everywhere read it.</p>
+    <p>The Ottoman scholars did the same. Ebüssuûd Efendi wrote his tafsir Irshād al-'Aql al-Salīm in Arabic, İsmail Hakkı Bursevî his Rūḥ al-Bayān, Molla Hüsrev his Durar al-Ḥukkām, Molla Fenârî his Fuṣūl al-Badā'i', Taşköprizâde his Miftāḥ al-Sa'āda and Kâtib Çelebi his Kashf al-Ẓunūn. In the madrasas, the textbooks were read in Arabic and explained in Turkish. The scholarly heritage is itself Arabic; presenting it as it is, is a way of honouring it.</p>
+
+    <h3>3. The technical terms were built in Arabic and are lost in translation</h3>
+    <p>Every science speaks through its terms. The terms of the Islamic sciences rest on Arabic roots, were defined over centuries and differ from one another by fine distinctions. A translation either erases these distinctions or creates new confusion. A few examples:</p>
+    <div class="terms">
+      <div><span lang="ar">حَدَّثَنَا / أَخْبَرَنَا / عَنْ</span><br><b>Ḥaddathanā, akhbaranā, 'an:</b> all become "he told us" in translation. In hadith criticism they show how a narrator received the report from his teacher; a narration with "'an" is precisely what the study of tadlīs examines.</div>
+      <div><span lang="ar">صَحِيح · حَسَن · مُرْسَل · مُعَلّ</span><br><b>Ṣaḥīḥ, ḥasan, mursal, mu'allal:</b> not "correct, fine, sent, defective": each is a judgement built on the chain and the text.</div>
+      <div><span lang="ar">فَرْض · وَاجِب · مَكْرُوه تَحْرِيمًا</span><br><b>Farḍ, wājib, makrūh taḥrīman:</b> in Ḥanafī fiqh the difference rests on the strength of the evidence; for the Shāfi'īs farḍ and wājib are one. A translation hides this difference between the schools.</div>
+      <div><span lang="ar">الأَصَحّ · الصَّحِيح · ظَاهِرُ الرِّوَايَة</span><br><b>Al-aṣaḥḥ, al-ṣaḥīḥ, ẓāhir al-riwāya:</b> they state the rank of a view within a school, and fatwas follow them. This is why the program explains them from each school's own sources.</div>
+    </div>
+    <p>A researcher's work is precisely with these fine distinctions. An assessment made without knowing which term a translation stands for rests on the translator's interpretation, not on the source.</p>
+
+    <h3>4. Scholarship cites the original</h3>
+    <p>A thesis, an article, a lesson or a fatwa cites the original work, with the volume and page of its printed edition. This is why the program gives the tafsirs, hadiths, commentaries and fiqh books from their printed editions, with volume and page. Citing a translation puts an intermediary between you and the source; that intermediary's errors and choices pass into your work. In which book and in which wording a hadith comes, how an exegete reads a word: only the original shows it.</p>
+
+    <h3>5. Size and copyright: an honest account</h3>
+    <p>The works in the program run to tens of millions of words: 62 tafsirs, more than 183,000 hadiths, 17 commentaries, 30 fiqh books. Very few of them have translations, and those that exist are the work of living translators and protected by copyright; we cannot include them without their permission. Many great works, such as Fatḥ al-Qadīr, 'Umdat al-Qārī or Nihāyat al-Muḥtāj, have, as far as we know, no complete translation at all. The classical Arabic texts are a common heritage; we can offer them freely and in full. Translations whose rights holders give permission are opened as permission comes; those are the works shown as locked in the library.</p>
+
+    <h3>6. A reader with little Arabic is not left alone</h3>
+    <p>Reading the originals does not mean shutting out those whose Arabic is not advanced. The program was built to be that bridge:</p>
+    <ul style="margin:0 0 14px;padding-left:22px;color:var(--text)">
+      <li>The whole interface, guide and explanations in English, Turkish or Arabic; translations of the meanings beside every verse (Saheeh International in English).</li>
+      <li>Tap any word: its meaning in eight classical dictionaries, its root and its places in the Qur'an.</li>
+      <li>Fiqh subjects and chapter headings come with their names in your language; the schools' terms with their explanations.</li>
+      <li>Search all the books with an Arabic word and see each result in its context.</li>
+      <li>Add a translated tafsir or book you own with «Add a book» and read it beside the other tafsirs.</li>
+    </ul>
+    <p>A student who has just begun Arabic thus meets the original step by step; an advanced researcher reaches the source directly and quickly.</p>
+
+    <h3>In short</h3>
+    <p>This program was made for everyone who wants to return to the sources. The language of the Qur'an, the language of the sciences that explain it and the language in which scholars across the Muslim world, the Ottomans among them, wrote for centuries is Arabic. Presenting the works in that language, as they are, with volume and page, is what faithfulness to a scholarly trust and respect for the reader require. Our own languages we use everywhere else in the program, as the bridge that leads to those sources.</p>
+  
+  </details>
   <details><summary>What if my antivirus warns about the program?</summary><p>The program is safe. Microsoft Defender sometimes flags new unsigned programs by a machine-learning guess; from version 5.05 we removed the methods that led to this warning. If you see it, you can continue through Windows Security › Virus & threat protection › Protection history › «Allow on device», and let us know.</p></details>
   <details><summary>Is it available in other languages?</summary><p>Yes. The interface is in Turkish, English and Arabic; change it in Display › Language. The English interface comes with the Saheeh International translation; in Arabic the page flows from right to left. <span lang="en"></span></p></details>
   <details><summary>Does it work on iPhone?</summary><p>Not for now; there are Windows, Mac, Linux and Android versions.</p></details>
@@ -447,5 +447,6 @@ fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.jso
   })
   .catch(() => {});
 </script>
+<script id="arapcaAc">(function(){function ac(){if(location.hash==="#arapca"){var d=document.getElementById("arapca");if(d){d.open=true;d.scrollIntoView();}}}addEventListener("hashchange",ac);ac();})();</script>
 </body>
 </html>

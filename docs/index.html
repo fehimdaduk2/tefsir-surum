@@ -151,6 +151,10 @@ footer a { color: inherit; }
 .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
 .faq summary { cursor: pointer; font-weight: 600; }
 .faq details p { color: var(--muted); margin: 10px 0 2px; }
+#arapca { scroll-margin-top: 80px; }
+.faq details .essay { margin-top: 14px; max-width: none; }
+.faq details .essay p { color: var(--text); margin: 0 0 14px; }
+.faq details .essay p.ayah-tr { color: var(--muted); }
 .band { background: var(--surface-2); border-block: 1px solid var(--line); }
 @media (max-width: 860px) {
   .feat, .feat.rev { grid-template-columns: 1fr; gap: 18px; }
@@ -164,7 +168,7 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#arapca" title="Kitaplar neden Arapça?">Arapça</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
+  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
 </div></header>
 
 <main>
@@ -285,53 +289,6 @@ footer a { color: inherit; }
   </div>
 </div></section>
 
-<section id="arapca" style="background:var(--surface-2);border-block:1px solid var(--line)"><div class="wrap">
-  <h2>Kitaplar neden Arapça?</h2>
-  <p class="sub">Türkiye'de, Türkler tarafından yapılmış bir program olduğu hâlde tefsirlerin, hadislerin, şerhlerin ve fıkıh kitaplarının neden Türkçe değil de asıllarıyla, Arapça olarak verildiğini merak edenler için.</p>
-  <div class="essay">
-    <p>Bu soruyu bize en çok soranlar, haklı olarak, programı kendi dillerinde kullanmak isteyen okuyucular. Programın bütün menüleri, kılavuzu, açıklamaları, meâlleri ve Elmalılı'nın tefsiri Türkçedir. Ama kütüphanenin kalbi olan kaynak eserleri bilerek ve isteyerek asıl dilleriyle koyduk. Bunun bir kolaylık ya da ihmal değil, ilmî bir tercih olduğunu birkaç başlıkta açıklamak istiyoruz.</p>
-
-    <h3>1. Kur'an Arapça indirildi; meâl onun yerini tutmaz</h3>
-    <p class="ayah" lang="ar" dir="rtl">إِنَّآ أَنزَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
-    <p class="ayah-tr">«Biz onu, anlayasınız diye Arapça bir Kur'an olarak indirdik.» (Yûsuf, 12/2)</p>
-    <p>Allah'ın kelâmı Arapçadır. Bir meâl, ne kadar özenli olursa olsun, mütercimin âyetten anladığı manalardan birini aktarır. Âyetteki bir kelimenin birden fazla manaya gelmesi, bir edatın taşıdığı incelik, cümlenin kuruluşundan doğan vurgu, çoğu zaman tek bir Türkçe cümleye sığmaz. Tefsirler zaten bu Arapça metnin şerhidir: müfessir, kelimenin lügatteki manasını, i'râbını, kıraat farkını, nüzul sebebini ve hükmünü Arapça metin üzerinden konuşur. Tefsiri tercüme ettiğinizde, üzerinde konuşulan metni de tercüme etmiş olursunuz; ortada tartışılan şeyin kendisi kalmaz.</p>
-
-    <h3>2. İslâmî ilimlerin ortak dili on dört asırdır Arapçadır</h3>
-    <p>Arapça bu ilimlerde bir milletin dili değil, ilmin dilidir; tıpkı Avrupa'da asırlarca Latincenin olduğu gibi. Programdaki eserlerin müelliflerine bakın: Taberî Taberistanlı, Buhârî Buharalı, Müslim Nişaburlu, Zemahşerî Harezmli, Fahreddîn er-Râzî Reyli, Beyzâvî Şirazlı, Mâtürîdî Semerkantlı, Nesefî Nesefli. Hiçbiri Arap değildi; hepsi eserini Arapça yazdı, çünkü her yerdeki ilim ehli o dili okuyordu.</p>
-    <p>Bizim âlimlerimiz de böyle yaptı. <b>Ebüssuûd Efendi</b> tefsiri İrşâdü'l-Akli's-Selîm'i, <b>İsmâil Hakkı Bursevî</b> Rûhu'l-Beyân'ı, <b>Molla Hüsrev</b> Dürerü'l-Hükkâm'ı, <b>Molla Fenârî</b> Fusûlü'l-Bedâyi'i, <b>Taşköprizâde</b> Miftâhu's-Saâde'yi, <b>Kâtib Çelebi</b> Keşfü'z-Zunûn'u Arapça kaleme aldı; <b>İbn Kemal</b>'in yüzlerce risalesinin çoğu da Arapçadır. Osmanlı medreselerinde ders kitapları Arapça okunur, Türkçe şerh edilirdi. İlmî mirasımızın kendisi Arapçadır; onu asıl hâliyle sunmak bu mirasa sahip çıkmaktır. Programdaki Ebüssuûd ve Rûhu'l-Beyân, kendi âlimlerimizin eserleridir.</p>
-
-    <h3>3. Istılahlar Arapça kurulmuştur; tercümede kaybolurlar</h3>
-    <p>Her ilim kendi terimleriyle konuşur. İslâmî ilimlerin terimleri Arapça kökler üzerine kurulmuş, asırlar içinde tanımlanmış, birbirinden ince farklarla ayrılmış kavramlardır. Bir tercüme bu farkları ya siler ya da yeni bir karışıklık doğurur. Birkaç örnek:</p>
-    <div class="terms">
-      <div><span lang="ar">حَدَّثَنَا / أَخْبَرَنَا / عَنْ</span><br><b>Haddesenâ, ahberenâ, an:</b> Türkçesi hep «bize anlattı» olur. Oysa hadis usûlünde râvinin hadisi hocasından nasıl aldığını gösterirler; «an» ile gelen rivâyet, tedlîs incelemesinin ta kendisidir.</div>
-      <div><span lang="ar">صَحِيح · حَسَن · مُرْسَل · مُعَلّ</span><br><b>Sahîh, hasen, mürsel, muallel:</b> «doğru, güzel, gönderilmiş, kusurlu» diye çevrilemez; her biri isnad ve metin üzerine kurulmuş bir hükümdür.</div>
-      <div><span lang="ar">فَرْض · وَاجِب · مَكْرُوه تَحْرِيمًا</span><br><b>Farz, vâcip, tahrîmen mekruh:</b> Hanefî fıkhında aralarındaki fark delilin kuvvetine dayanır; Şâfiîlere göre farz ile vâcip birdir. Tercüme bu mezhep farkını görünmez kılar.</div>
-      <div><span lang="ar">الأَصَحّ · الصَّحِيح · ظَاهِرُ الرِّوَايَة</span><br><b>el-Esah, es-sahîh, zâhirü'r-rivâye:</b> mezhep içinde bir görüşün derecesini bildirir; fetva bunlara göre verilir. Bu yüzden program bu ıstılahları mezhebin kendi kaynağındaki tanımıyla açıklar.</div>
-    </div>
-    <p>Bir araştırmacının işi tam da bu ince farklarla uğraşmaktır. Tercümede hangi terimin kullanıldığını bilmeden yapılan bir değerlendirme, mütercimin yorumuna dayanır, kaynağa değil.</p>
-
-    <h3>4. İlmî çalışmada atıf asıl metne yapılır</h3>
-    <p>Bir tez, makale, vaaz ya da fetva hazırlarken kaynak olarak eserin aslı ve matbu baskısının cilt ve sayfası gösterilir. Program bu yüzden tefsirleri, hadisleri, şerhleri ve fıkıh kitaplarını matbu neşirlerine dayanarak, cilt ve sayfa bilgisiyle verir. Bir tercümeye atıf yapmak, araya bir aracı koymak demektir; o aracının hatası ya da tercihi sizin çalışmanıza geçer. Bir hadisin hangi kitapta hangi lafızla geldiğini, bir müfessirin bir kelimeyi nasıl okuduğunu ancak aslından görebilirsiniz.</p>
-
-    <h3>5. Hacim ve telif: dürüst bir hesap</h3>
-    <p>Programdaki eserler on milyonlarca kelime tutuyor: 62 tefsir, 183 bini aşkın hadis, 17 şerh, 30 fıkıh kitabı. Bunların çok azının Türkçe tercümesi var. Var olanlar da günümüz mütercimlerinin emeğidir ve telif hakkıyla korunur; hak sahiplerinin izni olmadan programa koymamız doğru olmaz. Fethu'l-Kadîr, Umdetü'l-Kārî, Nihâyetü'l-Muhtâc gibi pek çok büyük eserin ise bildiğimiz kadarıyla tam bir Türkçesi yoktur. Klasik Arapça metinler herkesin ortak mirasıdır; onları özgürce, ücretsiz ve eksiksiz sunabiliriz. Telif izni alınan Türkçe eserler de izin geldikçe açılıyor; kütüphanede kilitli görünen eserler bunlardır.</p>
-
-    <h3>6. Arapçası zayıf olan okuyucu yalnız bırakılmaz</h3>
-    <p>Aslıyla okumak, Arapçası ileri olmayanı dışarıda bırakmak demek değildir. Program bu köprüyü kurmak için yapıldı:</p>
-    <ul style="margin:0 0 14px;padding-left:22px;color:var(--text)">
-      <li>Bütün arayüz, kılavuz ve açıklamalar Türkçe; her âyetin yanında üç Türkçe meâl ve Elmalılı'nın orijinal tefsiri.</li>
-      <li>Herhangi bir kelimeye dokunun: sekiz kadim sözlükte manası, kökü ve Kur'an'da geçtiği yerler açılır.</li>
-      <li>Fıkıh konuları ve kitâb başlıkları Türkçe adlarıyla (Tahâret, Namaz, Oruç…), mezhep ıstılahları açıklamalarıyla gelir.</li>
-      <li>Türkçe ya da Arapça bir kelimeyle bütün kitaplarda arayabilir, sonucu bağlamıyla görebilirsiniz.</li>
-      <li>Elinizdeki bir Türkçe tefsiri veya kitabı «Kitap ekle» ile programa ekleyip diğer tefsirlerle yan yana okuyabilirsiniz.</li>
-    </ul>
-    <p>Böylece Arapçayı yeni öğrenen bir öğrenci de metnin aslıyla adım adım tanışır; ileri düzeyde bir araştırmacı ise kaynağa aracısız ve hızla ulaşır.</p>
-
-    <h3>Sonuç</h3>
-    <p>Bu program, kaynağına dönmek isteyen herkes için yapıldı. Kur'an'ın dili, onu açıklayan ilimlerin dili ve kendi âlimlerimizin asırlarca yazdığı dil Arapçadır. Eserleri bu dilde, asıl hâlleriyle, cilt ve sayfasıyla sunmak hem ilmî emanete bağlılığın hem de okuyucuya duyduğumuz saygının gereğidir. Türkçeyi ise o kaynaklara ulaştıran bir köprü olarak, programın her köşesinde kullanıyoruz.</p>
-  </div>
-</div></section>
-
 <section id="telefon" class="band"><div class="wrap">
   <h2>Her cihazda</h2>
   <p class="sub">Windows, Mac, Linux ve Android. Telefon uygulaması bilgisayardaki programın aynısıdır; bütün kitaplar ve özellikler telefonda da var; yalnız <a href="#fikih">Fıkıh</a> bölümü bilgisayar sürümüne özeldir.</p>
@@ -390,7 +347,50 @@ footer a { color: inherit; }
   <details><summary>İnternet gerekiyor mu?</summary><p>Yalnız kurulumda ve ilk açılışta veriler bir kez iner; sonra program internetsiz çalışır. Tilâvet bir âyeti ilk dinleyişte internetten alır; dilerseniz sûreyi, cüzü ya da bütün Kur'an'ı önceden indirebilirsiniz.</p></details>
   <details><summary>Bilgilerim bir yere gönderiliyor mu?</summary><p>Hayır. Notlarınız, ezberleriniz ve ses kayıtlarınız yalnız cihazınızda durur; okuyuş takibinde mikrofonun sesi de cihazda tanınır, hiçbir yere gönderilmez. Program yalnız hangi bölümün kullanıldığını isimsiz olarak sayar; Google Drive eşitlemesini açarsanız notlarınız yalnız kendi Drive'ınızda, programa ayrılmış gizli bir klasörde durur; bizim bir sunucumuz yoktur. İnternetsiz eşitleme de yalnız aynı Wi-Fi ağındaki iki cihaz arasında olur.</p></details>
   <details><summary>Telefonla bilgisayarı nasıl eşitlerim?</summary><p>En kolayı Google Drive: her cihazda Notlarım › Yedek · eşitleme › «Google ile bağlan». Aynı hesapla bağlanan bütün cihazlar kendiliğinden eşitlenir. İnternetsiz isterseniz iki cihaz aynı Wi-Fi'deyken telefonda «Kodu göster» deyin, bilgisayara telefonun adresini ve 6 haneli kodu girin.</p></details>
-  <details><summary>Kitaplar neden Türkçe değil?</summary><p>Kur'an'ın ve İslâmî ilimlerin dili Arapçadır; ıstılahlar Arapça kurulmuştur ve ilmî atıf asıl metne yapılır. Arayüz, meâller ve Elmalılı tefsiri Türkçedir; her kelimenin manası sözlükte tek dokunuşla açılır. Ayrıntılı cevap: <a href="#arapca">Kitaplar neden Arapça?</a></p></details>
+  <details id="arapca"><summary>Kitaplar neden Türkçe değil?</summary><p>Türkiye'de, Türkler tarafından yapılmış bir program olduğu hâlde tefsirlerin, hadislerin, şerhlerin ve fıkıh kitaplarının neden Türkçe değil de asıllarıyla, Arapça olarak verildiğini merak edenler için.</p>
+    <div class="essay">
+    <p>Bu soruyu bize en çok soranlar, haklı olarak, programı kendi dillerinde kullanmak isteyen okuyucular. Programın bütün menüleri, kılavuzu, açıklamaları, meâlleri ve Elmalılı'nın tefsiri Türkçedir. Ama kütüphanenin kalbi olan kaynak eserleri bilerek ve isteyerek asıl dilleriyle koyduk. Bunun bir kolaylık ya da ihmal değil, ilmî bir tercih olduğunu birkaç başlıkta açıklamak istiyoruz.</p>
+
+    <h3>1. Kur'an Arapça indirildi; meâl onun yerini tutmaz</h3>
+    <p class="ayah" lang="ar" dir="rtl">إِنَّآ أَنزَلْنَٰهُ قُرْءَٰنًا عَرَبِيًّا لَّعَلَّكُمْ تَعْقِلُونَ</p>
+    <p class="ayah-tr">«Biz onu, anlayasınız diye Arapça bir Kur'an olarak indirdik.» (Yûsuf, 12/2)</p>
+    <p>Allah'ın kelâmı Arapçadır. Bir meâl, ne kadar özenli olursa olsun, mütercimin âyetten anladığı manalardan birini aktarır. Âyetteki bir kelimenin birden fazla manaya gelmesi, bir edatın taşıdığı incelik, cümlenin kuruluşundan doğan vurgu, çoğu zaman tek bir Türkçe cümleye sığmaz. Tefsirler zaten bu Arapça metnin şerhidir: müfessir, kelimenin lügatteki manasını, i'râbını, kıraat farkını, nüzul sebebini ve hükmünü Arapça metin üzerinden konuşur. Tefsiri tercüme ettiğinizde, üzerinde konuşulan metni de tercüme etmiş olursunuz; ortada tartışılan şeyin kendisi kalmaz.</p>
+
+    <h3>2. İslâmî ilimlerin ortak dili on dört asırdır Arapçadır</h3>
+    <p>Arapça bu ilimlerde bir milletin dili değil, ilmin dilidir; tıpkı Avrupa'da asırlarca Latincenin olduğu gibi. Programdaki eserlerin müelliflerine bakın: Taberî Taberistanlı, Buhârî Buharalı, Müslim Nişaburlu, Zemahşerî Harezmli, Fahreddîn er-Râzî Reyli, Beyzâvî Şirazlı, Mâtürîdî Semerkantlı, Nesefî Nesefli. Hiçbiri Arap değildi; hepsi eserini Arapça yazdı, çünkü her yerdeki ilim ehli o dili okuyordu.</p>
+    <p>Bizim âlimlerimiz de böyle yaptı. <b>Ebüssuûd Efendi</b> tefsiri İrşâdü'l-Akli's-Selîm'i, <b>İsmâil Hakkı Bursevî</b> Rûhu'l-Beyân'ı, <b>Molla Hüsrev</b> Dürerü'l-Hükkâm'ı, <b>Molla Fenârî</b> Fusûlü'l-Bedâyi'i, <b>Taşköprizâde</b> Miftâhu's-Saâde'yi, <b>Kâtib Çelebi</b> Keşfü'z-Zunûn'u Arapça kaleme aldı; <b>İbn Kemal</b>'in yüzlerce risalesinin çoğu da Arapçadır. Osmanlı medreselerinde ders kitapları Arapça okunur, Türkçe şerh edilirdi. İlmî mirasımızın kendisi Arapçadır; onu asıl hâliyle sunmak bu mirasa sahip çıkmaktır. Programdaki Ebüssuûd ve Rûhu'l-Beyân, kendi âlimlerimizin eserleridir.</p>
+
+    <h3>3. Istılahlar Arapça kurulmuştur; tercümede kaybolurlar</h3>
+    <p>Her ilim kendi terimleriyle konuşur. İslâmî ilimlerin terimleri Arapça kökler üzerine kurulmuş, asırlar içinde tanımlanmış, birbirinden ince farklarla ayrılmış kavramlardır. Bir tercüme bu farkları ya siler ya da yeni bir karışıklık doğurur. Birkaç örnek:</p>
+    <div class="terms">
+      <div><span lang="ar">حَدَّثَنَا / أَخْبَرَنَا / عَنْ</span><br><b>Haddesenâ, ahberenâ, an:</b> Türkçesi hep «bize anlattı» olur. Oysa hadis usûlünde râvinin hadisi hocasından nasıl aldığını gösterirler; «an» ile gelen rivâyet, tedlîs incelemesinin ta kendisidir.</div>
+      <div><span lang="ar">صَحِيح · حَسَن · مُرْسَل · مُعَلّ</span><br><b>Sahîh, hasen, mürsel, muallel:</b> «doğru, güzel, gönderilmiş, kusurlu» diye çevrilemez; her biri isnad ve metin üzerine kurulmuş bir hükümdür.</div>
+      <div><span lang="ar">فَرْض · وَاجِب · مَكْرُوه تَحْرِيمًا</span><br><b>Farz, vâcip, tahrîmen mekruh:</b> Hanefî fıkhında aralarındaki fark delilin kuvvetine dayanır; Şâfiîlere göre farz ile vâcip birdir. Tercüme bu mezhep farkını görünmez kılar.</div>
+      <div><span lang="ar">الأَصَحّ · الصَّحِيح · ظَاهِرُ الرِّوَايَة</span><br><b>el-Esah, es-sahîh, zâhirü'r-rivâye:</b> mezhep içinde bir görüşün derecesini bildirir; fetva bunlara göre verilir. Bu yüzden program bu ıstılahları mezhebin kendi kaynağındaki tanımıyla açıklar.</div>
+    </div>
+    <p>Bir araştırmacının işi tam da bu ince farklarla uğraşmaktır. Tercümede hangi terimin kullanıldığını bilmeden yapılan bir değerlendirme, mütercimin yorumuna dayanır, kaynağa değil.</p>
+
+    <h3>4. İlmî çalışmada atıf asıl metne yapılır</h3>
+    <p>Bir tez, makale, vaaz ya da fetva hazırlarken kaynak olarak eserin aslı ve matbu baskısının cilt ve sayfası gösterilir. Program bu yüzden tefsirleri, hadisleri, şerhleri ve fıkıh kitaplarını matbu neşirlerine dayanarak, cilt ve sayfa bilgisiyle verir. Bir tercümeye atıf yapmak, araya bir aracı koymak demektir; o aracının hatası ya da tercihi sizin çalışmanıza geçer. Bir hadisin hangi kitapta hangi lafızla geldiğini, bir müfessirin bir kelimeyi nasıl okuduğunu ancak aslından görebilirsiniz.</p>
+
+    <h3>5. Hacim ve telif: dürüst bir hesap</h3>
+    <p>Programdaki eserler on milyonlarca kelime tutuyor: 62 tefsir, 183 bini aşkın hadis, 17 şerh, 30 fıkıh kitabı. Bunların çok azının Türkçe tercümesi var. Var olanlar da günümüz mütercimlerinin emeğidir ve telif hakkıyla korunur; hak sahiplerinin izni olmadan programa koymamız doğru olmaz. Fethu'l-Kadîr, Umdetü'l-Kārî, Nihâyetü'l-Muhtâc gibi pek çok büyük eserin ise bildiğimiz kadarıyla tam bir Türkçesi yoktur. Klasik Arapça metinler herkesin ortak mirasıdır; onları özgürce, ücretsiz ve eksiksiz sunabiliriz. Telif izni alınan Türkçe eserler de izin geldikçe açılıyor; kütüphanede kilitli görünen eserler bunlardır.</p>
+
+    <h3>6. Arapçası zayıf olan okuyucu yalnız bırakılmaz</h3>
+    <p>Aslıyla okumak, Arapçası ileri olmayanı dışarıda bırakmak demek değildir. Program bu köprüyü kurmak için yapıldı:</p>
+    <ul style="margin:0 0 14px;padding-left:22px;color:var(--text)">
+      <li>Bütün arayüz, kılavuz ve açıklamalar Türkçe; her âyetin yanında üç Türkçe meâl ve Elmalılı'nın orijinal tefsiri.</li>
+      <li>Herhangi bir kelimeye dokunun: sekiz kadim sözlükte manası, kökü ve Kur'an'da geçtiği yerler açılır.</li>
+      <li>Fıkıh konuları ve kitâb başlıkları Türkçe adlarıyla (Tahâret, Namaz, Oruç…), mezhep ıstılahları açıklamalarıyla gelir.</li>
+      <li>Türkçe ya da Arapça bir kelimeyle bütün kitaplarda arayabilir, sonucu bağlamıyla görebilirsiniz.</li>
+      <li>Elinizdeki bir Türkçe tefsiri veya kitabı «Kitap ekle» ile programa ekleyip diğer tefsirlerle yan yana okuyabilirsiniz.</li>
+    </ul>
+    <p>Böylece Arapçayı yeni öğrenen bir öğrenci de metnin aslıyla adım adım tanışır; ileri düzeyde bir araştırmacı ise kaynağa aracısız ve hızla ulaşır.</p>
+
+    <h3>Sonuç</h3>
+    <p>Bu program, kaynağına dönmek isteyen herkes için yapıldı. Kur'an'ın dili, onu açıklayan ilimlerin dili ve kendi âlimlerimizin asırlarca yazdığı dil Arapçadır. Eserleri bu dilde, asıl hâlleriyle, cilt ve sayfasıyla sunmak hem ilmî emanete bağlılığın hem de okuyucuya duyduğumuz saygının gereğidir. Türkçeyi ise o kaynaklara ulaştıran bir köprü olarak, programın her köşesinde kullanıyoruz.</p>
+  
+  </details>
   <details><summary>Program virüs uyarısı verirse?</summary><p>Program açık ve güvenlidir. Microsoft Defender imzasız yeni programları zaman zaman yapay zekâ tahminiyle yanlış işaretleyebiliyor; 5.05 sürümünden itibaren bu uyarıya yol açan yöntemleri kaldırdık. Uyarı görürseniz Windows Güvenliği › Virüs ve tehdit koruması › Koruma geçmişi › «Cihazda izin ver» ile devam edebilir, bize bildirebilirsiniz.</p></details>
   <details><summary>Başka dillerde kullanılabilir mi?</summary><p>Evet. Arayüz Türkçe, İngilizce ve Arapça; Görünüm › Dil'den değişir. İngilizce arayüzde Saheeh International meali gelir; Arapçada sayfa sağdan sola akar. / <span lang="en">Yes: the interface is available in Turkish, English and Arabic (Display › Language).</span></p></details>
   <details><summary>iPhone'da çalışır mı?</summary><p>Şimdilik hayır; Windows, Mac, Linux ve Android sürümleri var.</p></details>
@@ -447,5 +447,6 @@ fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.jso
   })
   .catch(() => {});
 </script>
+<script id="arapcaAc">(function(){function ac(){if(location.hash==="#arapca"){var d=document.getElementById("arapca");if(d){d.open=true;d.scrollIntoView();}}}addEventListener("hashchange",ac);ac();})();</script>
 </body>
 </html>
