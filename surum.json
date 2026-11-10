@@ -1,13 +1,28 @@
 {
-  "version": "5.13",
+  "version": "5.14",
   "date": "2026-11-10",
   "notes": [
-    "Silme soruları ekranın ortasında, programın kendi penceresinde; Yedek ve eşitleme bölümü sadeleşti."
+    "Yeni sürüm bildirimi 6 saniye sonra kendiliğinden kaybolur."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Kurulum.exe",
-  "sha256": "d774322496852dd7c8ad7ac9b2d5982f62f2ac9fcc6fc8a4a1a118548d3ffdfb",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Kurulum.exe",
+  "sha256": "8dcda59de35fc980ad12e79324a471f52ea1dfa6c9c000d1d617313f73d7de38",
   "size": 38019072,
   "history": [
+    {
+      "version": "5.13",
+      "date": "2026-11-10",
+      "notes": [
+        "Silme soruları ekranın ortasında, programın kendi penceresinde; Yedek ve eşitleme bölümü sadeleşti."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Delete questions now appear in the middle of the screen, in the program's own window; the Backup and sync section is simpler."
+        ],
+        "ar": [
+          "أسئلة الحذف تظهر الآن في وسط الشاشة في نافذة البرنامج نفسه؛ وقسم النسخ والمزامنة أبسط."
+        ]
+      }
+    },
     {
       "version": "5.12",
       "date": "2026-11-10",
@@ -1310,23 +1325,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "96367887a81a4edfa330e93cc193f30af72728269b6a77db5a815cacb174b420",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "31b45c5a11976b95a050c0b728db338bda08ee9a5c9e2ccc35a17f9874eebe37",
     "size": 11703488
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Delete questions now appear in the middle of the screen, in the program's own window; the Backup and sync section is simpler."
+      "The new version notice now disappears by itself after 6 seconds."
     ],
     "ar": [
-      "أسئلة الحذف تظهر الآن في وسط الشاشة في نافذة البرنامج نفسه؛ وقسم النسخ والمزامنة أبسط."
+      "إشعار الإصدار الجديد يختفي الآن تلقائيًا بعد 6 ثوانٍ."
     ]
   }
 }
