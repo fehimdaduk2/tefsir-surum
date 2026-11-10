@@ -1,13 +1,28 @@
 {
-  "version": "5.12",
+  "version": "5.13",
   "date": "2026-11-10",
   "notes": [
-    "Not sayısı rozeti küçüldü ve büyük sayılarda genişler (1.000); Görünüm ve Güncellemeler pencereleri sadeleşti."
+    "Silme soruları ekranın ortasında, programın kendi penceresinde; Yedek ve eşitleme bölümü sadeleşti."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Kurulum.exe",
-  "sha256": "f05fced27af771aefd347f017368dd54f9e5a02d1ba77b1bd3efa63d3efc7ba0",
-  "size": 38018560,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Kurulum.exe",
+  "sha256": "d774322496852dd7c8ad7ac9b2d5982f62f2ac9fcc6fc8a4a1a118548d3ffdfb",
+  "size": 38019072,
   "history": [
+    {
+      "version": "5.12",
+      "date": "2026-11-10",
+      "notes": [
+        "Not sayısı rozeti küçüldü ve büyük sayılarda genişler (1.000); Görünüm ve Güncellemeler pencereleri sadeleşti."
+      ],
+      "notes_i18n": {
+        "en": [
+          "The notes count badge is smaller and widens for large numbers (1,000); the Display and Updates windows are simpler."
+        ],
+        "ar": [
+          "شارة عدد الملاحظات أصغر وتتسع للأعداد الكبيرة (1.000)؛ ونافذتا العرض والتحديثات أبسط."
+        ]
+      }
+    },
     {
       "version": "5.11",
       "date": "2026-11-10",
@@ -1295,23 +1310,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.12/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "efab3003f3e36ab5901f0b3f5be98555def453cf2b534e8ba48a0970fd900781",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.13/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "96367887a81a4edfa330e93cc193f30af72728269b6a77db5a815cacb174b420",
     "size": 11703488
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "The notes count badge is smaller and widens for large numbers (1,000); the Display and Updates windows are simpler."
+      "Delete questions now appear in the middle of the screen, in the program's own window; the Backup and sync section is simpler."
     ],
     "ar": [
-      "شارة عدد الملاحظات أصغر وتتسع للأعداد الكبيرة (1.000)؛ ونافذتا العرض والتحديثات أبسط."
+      "أسئلة الحذف تظهر الآن في وسط الشاشة في نافذة البرنامج نفسه؛ وقسم النسخ والمزامنة أبسط."
     ]
   }
 }
