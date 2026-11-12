@@ -1,13 +1,28 @@
 {
-  "version": "5.14",
-  "date": "2026-11-10",
+  "version": "5.15",
+  "date": "2026-11-12",
   "notes": [
-    "Yeni sürüm bildirimi 6 saniye sonra kendiliğinden kaybolur."
+    "Küçük iyileştirmeler."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Kurulum.exe",
-  "sha256": "8dcda59de35fc980ad12e79324a471f52ea1dfa6c9c000d1d617313f73d7de38",
-  "size": 38019072,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Kurulum.exe",
+  "sha256": "7e5ba444048244d6dd045a95bf2a69b4963080c536969a8d21ba19691c82c912",
+  "size": 38036480,
   "history": [
+    {
+      "version": "5.14",
+      "date": "2026-11-10",
+      "notes": [
+        "Yeni sürüm bildirimi 6 saniye sonra kendiliğinden kaybolur."
+      ],
+      "notes_i18n": {
+        "en": [
+          "The new version notice now disappears by itself after 6 seconds."
+        ],
+        "ar": [
+          "إشعار الإصدار الجديد يختفي الآن تلقائيًا بعد 6 ثوانٍ."
+        ]
+      }
+    },
     {
       "version": "5.13",
       "date": "2026-11-10",
@@ -1325,23 +1340,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.14/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "31b45c5a11976b95a050c0b728db338bda08ee9a5c9e2ccc35a17f9874eebe37",
-    "size": 11703488
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "294c1f10f73e8bd6cf11a1c4a19faaa492149856399d0c79926285b61e9ebb45",
+    "size": 11723968
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "The new version notice now disappears by itself after 6 seconds."
+      "Small improvements."
     ],
     "ar": [
-      "إشعار الإصدار الجديد يختفي الآن تلقائيًا بعد 6 ثوانٍ."
+      "تحسينات صغيرة."
     ]
   }
 }
