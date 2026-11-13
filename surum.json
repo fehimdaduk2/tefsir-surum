@@ -1,14 +1,31 @@
 {
-  "version": "5.17",
+  "version": "5.18",
   "date": "2026-11-13",
   "notes": [
-    "Râvi adları büyük ölçüde tamamlandı (Mecmaʿu'z-Zevâid, Musannefler, tahvîlli senetler); râvi havuzu 37.534.",
-    "Şerhlerde aramadaki hata giderildi."
+    "Yaklaşık 31 bin râvi adı daha tıklanabilir; bazı yanlış eşleşmeler düzeltildi."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Kurulum.exe",
-  "sha256": "99642fe9f8ef81e64a194469a268f93281bd20d248d0df793451d497e421bbd0",
-  "size": 37916160,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Kurulum.exe",
+  "sha256": "f77b3d21bed412a455ed5f847945d0bc088ee576c552d34c77062c21ec2ed088",
+  "size": 37917184,
   "history": [
+    {
+      "version": "5.17",
+      "date": "2026-11-13",
+      "notes": [
+        "Râvi adları büyük ölçüde tamamlandı (Mecmaʿu'z-Zevâid, Musannefler, tahvîlli senetler); râvi havuzu 37.534.",
+        "Şerhlerde aramadaki hata giderildi."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Narrator names largely completed (Majmaʿ al-Zawaʾid, the Musannafs, chains with tahwil); the narrator pool is now 37,534.",
+          "An error in searching the commentaries is fixed."
+        ],
+        "ar": [
+          "استُكملت أسماء الرواة إلى حد كبير (مجمع الزوائد والمصنفات والأسانيد المحوَّلة)؛ وبلغ عدد الرواة 37٬534.",
+          "أُصلح خطأ في البحث في الشروح."
+        ]
+      }
+    },
     {
       "version": "5.16",
       "date": "2026-11-13",
@@ -1324,8 +1341,8 @@
       {
         "name": "Tefsir-Paket-Hadis.zip",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Hadis.zip",
-        "sha256": "a7d356abd816f8194d9d14ed0922fabe372cadae403a63dd3c3acc0458b745e0",
-        "size": 72944698,
+        "sha256": "500b77093833c648c855902ad96ef8af0b98016b63a3785b3c50e0af5f68c214",
+        "size": 73001134,
         "kind": "hadis"
       },
       {
@@ -1374,25 +1391,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "5fbf45140c001713d5fb0391f75ad47dc4f1454c43ebc7c27f4edb41d449d459",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "30326bcc55857da7bf0be9c4087f4c581bca38bd4452a6d472427853556caa85",
     "size": 11596992
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Narrator names largely completed (Majmaʿ al-Zawaʾid, the Musannafs, chains with tahwil); the narrator pool is now 37,534.",
-      "An error in searching the commentaries is fixed."
+      "About 31 thousand more narrator names are clickable; some wrong matches are fixed."
     ],
     "ar": [
-      "استُكملت أسماء الرواة إلى حد كبير (مجمع الزوائد والمصنفات والأسانيد المحوَّلة)؛ وبلغ عدد الرواة 37٬534.",
-      "أُصلح خطأ في البحث في الشروح."
+      "أصبح نحو 31 ألف اسم راوٍ آخر قابلًا للنقر؛ وأُصلحت بعض المطابقات الخاطئة."
     ]
   }
 }
