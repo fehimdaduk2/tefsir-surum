@@ -1,14 +1,32 @@
 {
-  "version": "5.16",
+  "version": "5.17",
   "date": "2026-11-13",
   "notes": [
-    "Hadis aramada tam eşleşme yoksa en yakın hadisler gelir; salavat kalıpları aramayı bozmaz.",
-    "Hadis Kütüphanesi başlığında râvi sayısı."
+    "Râvi adları büyük ölçüde tamamlandı (Mecmaʿu'z-Zevâid, Musannefler, tahvîlli senetler); râvi havuzu 37.534.",
+    "Şerhlerde aramadaki hata giderildi."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Kurulum.exe",
-  "sha256": "61a4d1d912f982c2cf5bac1082efa2b57a4afecb0abf994b61671c1faae0ab77",
-  "size": 38046720,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Kurulum.exe",
+  "sha256": "99642fe9f8ef81e64a194469a268f93281bd20d248d0df793451d497e421bbd0",
+  "size": 37916160,
   "history": [
+    {
+      "version": "5.16",
+      "date": "2026-11-13",
+      "notes": [
+        "Hadis aramada tam eşleşme yoksa en yakın hadisler gelir; salavat kalıpları aramayı bozmaz.",
+        "Hadis Kütüphanesi başlığında râvi sayısı."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Hadith search shows the closest hadiths when no exact match exists; formulas of blessing no longer spoil a search.",
+          "The number of narrators in the Hadith Library header."
+        ],
+        "ar": [
+          "يعرض البحث في الحديث أقرب الأحاديث إذا لم يوجد تطابق تام؛ ولم تعد صيغ الصلاة والترضي تفسد البحث.",
+          "عدد الرواة في رأس مكتبة الحديث."
+        ]
+      }
+    },
     {
       "version": "5.15",
       "date": "2026-11-12",
@@ -1306,8 +1324,8 @@
       {
         "name": "Tefsir-Paket-Hadis.zip",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Hadis.zip",
-        "sha256": "6a19236a9091a6286b337dba17ff3172c0ab417c05c23922c5396b9599676b27",
-        "size": 71301675,
+        "sha256": "a7d356abd816f8194d9d14ed0922fabe372cadae403a63dd3c3acc0458b745e0",
+        "size": 72944698,
         "kind": "hadis"
       },
       {
@@ -1356,25 +1374,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "3fcfb2fff78268804bb97b96fdea7cb7d846f7645b4f6fd01f9ffcb014886e92",
-    "size": 11723968
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.17/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "5fbf45140c001713d5fb0391f75ad47dc4f1454c43ebc7c27f4edb41d449d459",
+    "size": 11596992
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Hadith search shows the closest hadiths when no exact match exists; formulas of blessing no longer spoil a search.",
-      "The number of narrators in the Hadith Library header."
+      "Narrator names largely completed (Majmaʿ al-Zawaʾid, the Musannafs, chains with tahwil); the narrator pool is now 37,534.",
+      "An error in searching the commentaries is fixed."
     ],
     "ar": [
-      "يعرض البحث في الحديث أقرب الأحاديث إذا لم يوجد تطابق تام؛ ولم تعد صيغ الصلاة والترضي تفسد البحث.",
-      "عدد الرواة في رأس مكتبة الحديث."
+      "استُكملت أسماء الرواة إلى حد كبير (مجمع الزوائد والمصنفات والأسانيد المحوَّلة)؛ وبلغ عدد الرواة 37٬534.",
+      "أُصلح خطأ في البحث في الشروح."
     ]
   }
 }
