@@ -1,13 +1,29 @@
 {
-  "version": "5.15",
-  "date": "2026-11-12",
+  "version": "5.16",
+  "date": "2026-11-13",
   "notes": [
-    "Küçük iyileştirmeler."
+    "Hadis aramada tam eşleşme yoksa en yakın hadisler gelir; salavat kalıpları aramayı bozmaz.",
+    "Hadis Kütüphanesi başlığında râvi sayısı."
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Kurulum.exe",
-  "sha256": "7e5ba444048244d6dd045a95bf2a69b4963080c536969a8d21ba19691c82c912",
-  "size": 38036480,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Kurulum.exe",
+  "sha256": "61a4d1d912f982c2cf5bac1082efa2b57a4afecb0abf994b61671c1faae0ab77",
+  "size": 38046720,
   "history": [
+    {
+      "version": "5.15",
+      "date": "2026-11-12",
+      "notes": [
+        "Küçük iyileştirmeler."
+      ],
+      "notes_i18n": {
+        "en": [
+          "Small improvements."
+        ],
+        "ar": [
+          "تحسينات صغيرة."
+        ]
+      }
+    },
     {
       "version": "5.14",
       "date": "2026-11-10",
@@ -1340,23 +1356,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.15/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "294c1f10f73e8bd6cf11a1c4a19faaa492149856399d0c79926285b61e9ebb45",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.16/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "3fcfb2fff78268804bb97b96fdea7cb7d846f7645b4f6fd01f9ffcb014886e92",
     "size": 11723968
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Small improvements."
+      "Hadith search shows the closest hadiths when no exact match exists; formulas of blessing no longer spoil a search.",
+      "The number of narrators in the Hadith Library header."
     ],
     "ar": [
-      "تحسينات صغيرة."
+      "يعرض البحث في الحديث أقرب الأحاديث إذا لم يوجد تطابق تام؛ ولم تعد صيغ الصلاة والترضي تفسد البحث.",
+      "عدد الرواة في رأس مكتبة الحديث."
     ]
   }
 }
