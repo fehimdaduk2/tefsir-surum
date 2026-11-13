@@ -2,7 +2,7 @@
   "version": "5.18",
   "date": "2026-11-13",
   "notes": [
-    "Yaklaşık 31 bin râvi adı daha tıklanabilir; bazı yanlış eşleşmeler düzeltildi."
+    "Hadis bölümü güncellemesi"
   ],
   "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.18/Guncelleme-Kurulum.exe",
   "sha256": "f77b3d21bed412a455ed5f847945d0bc088ee576c552d34c77062c21ec2ed088",
@@ -1404,10 +1404,10 @@
   "destek": "",
   "notes_i18n": {
     "en": [
-      "About 31 thousand more narrator names are clickable; some wrong matches are fixed."
+      "Hadith section update"
     ],
     "ar": [
-      "أصبح نحو 31 ألف اسم راوٍ آخر قابلًا للنقر؛ وأُصلحت بعض المطابقات الخاطئة."
+      "تحديث قسم الحديث"
     ]
   }
 }
