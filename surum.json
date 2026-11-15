@@ -1,13 +1,28 @@
 {
-  "version": "5.22",
-  "date": "2026-11-14",
+  "version": "5.23",
+  "date": "2026-11-15",
   "notes": [
-    "Hadis bölümü güncellemesi"
+    "Kurulum ve kaldırma güncellemesi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.22/Guncelleme-Kurulum.exe",
-  "sha256": "fb01bb582a3c922a51615e36a9ff74b7a6f8375b0b3643b95b6167098b681ca1",
-  "size": 40386560,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.23/Guncelleme-Kurulum.exe",
+  "sha256": "007c4f2e34e0058f193e555f77713e37d7f539062d8d33adbe2d9fd409239800",
+  "size": 40403456,
   "history": [
+    {
+      "version": "5.22",
+      "date": "2026-11-14",
+      "notes": [
+        "Hadis bölümü güncellemesi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Hadith section update"
+        ],
+        "ar": [
+          "تحديث قسم الحديث"
+        ]
+      }
+    },
     {
       "version": "5.21",
       "date": "2026-11-14",
@@ -1451,23 +1466,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.22/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.22/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.22/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.22/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.23/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.23/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.23/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.23/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.22/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "540d70c8e0e39034cce1ee3f66b2d34fe007244d696c001a7617e08f3453299a",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.23/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "2ddbeb7d1a5d8ab13240ed095a0af825e1e01bbe8faf3f2db886df925d832e7f",
     "size": 14054592
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Hadith section update"
+      "Installer and uninstaller update"
     ],
     "ar": [
-      "تحديث قسم الحديث"
+      "تحديث التثبيت وإلغاء التثبيت"
     ]
   }
 }
