@@ -1,14 +1,31 @@
 {
-  "version": "5.28",
+  "version": "5.29",
   "date": "2026-11-16",
   "notes": [
-    "Biyografi kitaplığı güncellemesi",
-    "Hata düzeltmesi"
+    "Biyografi kitaplığı güncellemesi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.28/Guncelleme-Kurulum.exe",
-  "sha256": "0c99f071f3cc9c41fb5837c640c90420bcf19a53dc9ba98956463ad6042ebbcd",
-  "size": 40471040,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.29/Guncelleme-Kurulum.exe",
+  "sha256": "de7e4b7b4d5e3fb03c1d7e80221b114a3c32437729352f3fc1cda24a43f0fcba",
+  "size": 40472576,
   "history": [
+    {
+      "version": "5.28",
+      "date": "2026-11-16",
+      "notes": [
+        "Biyografi kitaplığı güncellemesi",
+        "Hata düzeltmesi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Biography library update",
+          "Bug fix"
+        ],
+        "ar": [
+          "تحديث مكتبة التراجم",
+          "إصلاح خلل"
+        ]
+      }
+    },
     {
       "version": "5.27",
       "date": "2026-11-16",
@@ -1528,8 +1545,8 @@
         "name": "Tefsir-Paket-Biyografi.zip",
         "kind": "biyografi",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Biyografi.zip",
-        "sha256": "cdefa92b487cfe836f4ac4026e483834fbae59525cc03dd8a2d1d8472df0afa5",
-        "size": 28755188
+        "sha256": "613becfb25ad2ff1ce125b5cbc666e2068d14f9e0e04a9b0554cd96fe36c55f7",
+        "size": 28750624
       }
     ]
   },
@@ -1549,25 +1566,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.28/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.28/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.28/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.28/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.29/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.29/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.29/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.29/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.28/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "b69a536f0aabe4ffba84115afdd3236ba6484f770f7c230ccb7c12dcedc37f46",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.29/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "ffa841cd3d4aefa6b9bca24e50bc058c511baa68bd9c6f52304345155c462b44",
     "size": 14095552
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Biography library update",
-      "Bug fix"
+      "Biography library update"
     ],
     "ar": [
-      "تحديث مكتبة التراجم",
-      "إصلاح خلل"
+      "تحديث مكتبة التراجم"
     ]
   }
 }
