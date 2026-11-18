@@ -1,14 +1,33 @@
 {
-  "version": "5.38",
+  "version": "5.39",
   "date": "2026-11-18",
   "notes": [
-    "Sahâbe, tâbiîn ve etbâu't-tâbiîn kaynakları",
-    "Biyografi düzeltmeleri"
+    "Biyografi kitaplığı düzeltmeleri",
+    "Eser listeleri",
+    "Türkçe ad yazımı"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Kurulum.exe",
-  "sha256": "9fed9e50834dff2e0a14fd54f3899fb017e89f452a4b63ab7cb1ae03d1da9b34",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.39/Guncelleme-Kurulum.exe",
+  "sha256": "f0635d734957c9b8e14955cbd8c19070004aac263c15124812a54a4a551a361d",
   "size": 40482304,
   "history": [
+    {
+      "version": "5.38",
+      "date": "2026-11-18",
+      "notes": [
+        "Sahâbe, tâbiîn ve etbâu't-tâbiîn kaynakları",
+        "Biyografi düzeltmeleri"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Companions, Followers and their Successors sources",
+          "Biography fixes"
+        ],
+        "ar": [
+          "مصادر الصحابة والتابعين وأتباعهم",
+          "تصحيحات في التراجم"
+        ]
+      }
+    },
     {
       "version": "5.37",
       "date": "2026-11-18",
@@ -1693,8 +1712,8 @@
         "name": "Tefsir-Paket-Biyografi.zip",
         "kind": "biyografi",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Biyografi.zip",
-        "sha256": "4624af348ec9d808753ea79c5e73ab3e291640d20b6b50b5e046f1ca9662f33a",
-        "size": 37431834
+        "sha256": "ac1f2199f571d8bef8a98f67676f4029920e7d3bf9030ed68c1fae183d041fd8",
+        "size": 37272080
       }
     ]
   },
@@ -1714,25 +1733,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.39/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.39/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.39/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.39/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "b77fb4761d5c57c3bcd73f8b5ac84b16e90842830c43bfa05a7724bd20c3889c",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.39/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "c1bf0109e9e82cf9b84e8d687de6b27797e4258dc44745bdc3851d545c94ea91",
     "size": 14103744
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Companions, Followers and their Successors sources",
-      "Biography fixes"
+      "Biography library fixes",
+      "Lists of works",
+      "Turkish name spelling"
     ],
     "ar": [
-      "مصادر الصحابة والتابعين وأتباعهم",
-      "تصحيحات في التراجم"
+      "تصحيحات مكتبة التراجم",
+      "قوائم المصنفات",
+      "كتابة الأسماء بالتركية"
     ]
   }
 }
