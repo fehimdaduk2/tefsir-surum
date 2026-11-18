@@ -1,13 +1,29 @@
 {
-  "version": "5.37",
+  "version": "5.38",
   "date": "2026-11-18",
   "notes": [
-    "Biyografi yüzyıl grafiği"
+    "Sahâbe, tâbiîn ve etbâu't-tâbiîn kaynakları",
+    "Biyografi düzeltmeleri"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.37/Guncelleme-Kurulum.exe",
-  "sha256": "15eceaf67e0399cd658d7680cbd9fdaf038822ba80d86db00dd8fb34fa481964",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Kurulum.exe",
+  "sha256": "9fed9e50834dff2e0a14fd54f3899fb017e89f452a4b63ab7cb1ae03d1da9b34",
   "size": 40482304,
   "history": [
+    {
+      "version": "5.37",
+      "date": "2026-11-18",
+      "notes": [
+        "Biyografi yüzyıl grafiği"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Biography century chart"
+        ],
+        "ar": [
+          "مخطط القرون في التراجم"
+        ]
+      }
+    },
     {
       "version": "5.36",
       "date": "2026-11-18",
@@ -1677,8 +1693,8 @@
         "name": "Tefsir-Paket-Biyografi.zip",
         "kind": "biyografi",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Biyografi.zip",
-        "sha256": "2576984933c694f850f3e2be1318f7397e292d33e442d703940fc2442d5d0303",
-        "size": 29629950
+        "sha256": "4624af348ec9d808753ea79c5e73ab3e291640d20b6b50b5e046f1ca9662f33a",
+        "size": 37431834
       }
     ]
   },
@@ -1698,23 +1714,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.37/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.37/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.37/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.37/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.37/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "500bb42b794513dd80c26dd44d6f213396c567a3bb4c1877ac93534ef35714ff",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.38/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "b77fb4761d5c57c3bcd73f8b5ac84b16e90842830c43bfa05a7724bd20c3889c",
     "size": 14103744
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Biography century chart"
+      "Companions, Followers and their Successors sources",
+      "Biography fixes"
     ],
     "ar": [
-      "مخطط القرون في التراجم"
+      "مصادر الصحابة والتابعين وأتباعهم",
+      "تصحيحات في التراجم"
     ]
   }
 }
