@@ -1,14 +1,33 @@
 {
-  "version": "5.35",
+  "version": "5.36",
   "date": "2026-11-18",
   "notes": [
-    "Fıkıh bölümü tasarımı",
-    "Hadis bölümü güncellemesi"
+    "Fıkıh metin düzeni ve Ahkâm âyetleri tasarımı",
+    "Biyografi kitaplığı güncellemesi",
+    "Eser adlarında dile göre transkripsiyon"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.35/Guncelleme-Kurulum.exe",
-  "sha256": "e943ba3b6387a3d57dc2985f729f7de8435a3128896eeb7594786a66a317e943",
-  "size": 40478720,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.36/Guncelleme-Kurulum.exe",
+  "sha256": "f1b5274e58b346edec6dd87f897b47d5e6707f41a8e96ccffda407ef27677cad",
+  "size": 40481792,
   "history": [
+    {
+      "version": "5.35",
+      "date": "2026-11-18",
+      "notes": [
+        "Fıkıh bölümü tasarımı",
+        "Hadis bölümü güncellemesi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh section design",
+          "Hadith section update"
+        ],
+        "ar": [
+          "تصميم قسم الفقه",
+          "تحديث قسم الحديث"
+        ]
+      }
+    },
     {
       "version": "5.34",
       "date": "2026-11-16",
@@ -1639,8 +1658,8 @@
         "name": "Tefsir-Paket-Biyografi.zip",
         "kind": "biyografi",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Biyografi.zip",
-        "sha256": "fbce0024b07f03c42d5a953d989a58275bc91a33985bd6f41c7da0180dd961de",
-        "size": 30333444
+        "sha256": "27e2f7789b42d7bdf62f7051b7c1446fb4b9f824f6bf667162a534dc54bbf81f",
+        "size": 29635886
       }
     ]
   },
@@ -1660,25 +1679,27 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.35/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.35/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.35/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.35/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.36/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.36/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.36/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.36/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.35/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "ea5c0d93ec433c8aa27b0fd8535aee4f65b9072d15d1610b4cd570cb7ef4fa4f",
-    "size": 14099648
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.36/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "5b2966831ad9c98cfb2ea51f603500db0eeebcd219f41fab2a7871382d84fc0c",
+    "size": 14103744
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh section design",
-      "Hadith section update"
+      "Fiqh text layout and Ahkam verses design",
+      "Biography library update",
+      "Work titles transliterated per language"
     ],
     "ar": [
-      "تصميم قسم الفقه",
-      "تحديث قسم الحديث"
+      "تنسيق نصوص الفقه وتصميم آيات الأحكام",
+      "تحديث مكتبة التراجم",
+      "كتابة أسماء المصنفات بحسب اللغة"
     ]
   }
 }
