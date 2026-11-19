@@ -61,7 +61,7 @@ nav a { white-space: nowrap; }
 :root[data-theme="dark"] .cta, .cta { color: #fff; }
 .cta svg { width: 20px; height: 20px; }
 .meta { margin-top: 12px; color: var(--muted); font-size: 14px; }
-.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 40px auto 0; max-width: 960px; }
+.stats { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin: 40px auto 0; max-width: 1120px; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 8px; }
 .stat b { display: block; font-size: 28px; color: var(--brand-2); line-height: 1.1; }
 .stat span { font-size: 13px; color: var(--muted); }
@@ -118,13 +118,13 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: 
 @media (max-width: 860px) {
   .grid { grid-template-columns: 1fr 1fr; }
   .lib { columns: 2; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stats { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 600px) {
   nav { display: none; }
   .grid, .pair { grid-template-columns: 1fr; }
   .lib { columns: 1; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(2, 1fr); } .stats .stat:last-child:nth-child(odd) { grid-column: span 2; }
   .hero { padding-top: 40px; }
 }
 ol.terms { padding-left: 1.3em; line-height: 1.6; }
@@ -168,14 +168,14 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#biyografi">Biyografi</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
+  <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#biyografi">Biyografi</a><a href="#siyer">Siyer</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>Kur'an'ı tefsirleriyle,<br>hadisi senediyle okuyun</h1>
-  <p class="lead">62 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda; bilgisayar sürümünde ayrıca 30 fıkıh kitabı ve 70 bine yakın âlimin biyografisi. Okuyun, dinleyin, ezberleyin; okurken program sizi dinlesin, atladığınız kelimeyi söylesin. Araştırın ve paylaşın. Türkçe, İngilizce ve Arapça arayüz. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
+  <p class="lead">62 tefsir, 17 hadis kitabı, 17 şerh, 8 kadim sözlük ve 29 kâri tek bir programda; bilgisayar sürümünde ayrıca 30 fıkıh kitabı ve 70 bine yakın âlimin biyografisi; bilgisayarda ve telefonda, haritalarıyla siyer. Okuyun, dinleyin, ezberleyin; okurken program sizi dinlesin, atladığınız kelimeyi söylesin. Araştırın ve paylaşın. Türkçe, İngilizce ve Arapça arayüz. Ücretsiz; kurulduktan sonra internet gerektirmez.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
     <span id="indirT">Windows için ücretsiz indir</span>
@@ -189,6 +189,7 @@ footer a { color: inherit; }
     <div class="stat"><b>8</b><span>kadim sözlük</span></div>
     <div class="stat"><b>29</b><span>kâri</span></div>
     <div class="stat"><b>70 bin</b><span>âlim biyografisi</span></div>
+    <div class="stat"><b>186</b><span>siyer olayı</span></div>
   </div>
   <div class="shot vid" style="margin-top:40px" id="video"><video controls preload="none" playsinline poster="img/tanitim.jpg" width="1920" height="1080"><source src="tanitim.mp4" type="video/mp4">Tarayıcınız videoyu oynatamıyor; <a href="tanitim.mp4">videoyu indirin</a>.</video></div>
   <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">Tanıtım videosu (3 dk) · Seslendirme: Microsoft Türkçe sinir ağı sesi · Tilâvet: Mahmûd Halîl el-Husarî (EveryAyah)</p>
@@ -260,6 +261,12 @@ footer a { color: inherit; }
   <div class="feat"><div class="shot"><img src="img/biyografi.webp" width="1440" height="810" loading="lazy" alt="Biyografi kitaplığı"></div><div><span class="kick">Âlimler</span><h3>Sahâbeden günümüze</h3><p class="sub" style="margin:0">İlim dalına, mezhebe, kelâm ekolüne, yüzyıla ve kaynağa göre süzün; ad, şöhret ya da künyeyle arayın.</p><ul><li><b>Sahâbe, tâbiîn, etbâu't-tâbiîn:</b> 9.500'ü aşkın sahâbî, 7.700'ü aşkın tâbiî ve tebeu't-tâbiîn; el-İsâbe, Üsdü'l-ğābe, el-İstîâb, İbn Sa'd'ın et-Tabakāt'ı ve İbn Hibbân'ın es-Sikāt'ına göre</li><li><b>12 ilim dalı:</b> tefsir, hadis, fıkıh, kıraat, kelâm, akaid, tasavvuf, Arap dili, edebiyat, tarih, felsefe, tıp ve fen</li><li><b>Yüzyıl grafiği:</b> Milâdî 7. yüzyıldan bugüne; bir yüzyıla dokununca o yüzyılın âlimleri listelenir</li><li><b>Hocalar ve talebeler:</b> klasik kaynaklardan ve programdaki hadis senetlerinden</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="img/biyografi-kisi.webp" width="1440" height="810" loading="lazy" alt="Âlimin sayfası"></div><div><span class="kick">Âlimin sayfası</span><h3>Künyesi, kaynakları, eserleri</h3><p class="sub" style="margin:0">Doğum ve vefat (hicrî ve milâdî), mezhebi, ilim dalları ve hayatını özetleyen bir künye; Türkçe, İngilizce ve Arapça.</p><ul><li><b>Klasik kaynaklarda:</b> Siyeru a'lâmi'n-nübelâ, Tezkiretü'l-huffâz, Vefeyâtü'l-a'yân, tabakât kitapları…; maddeye dokununca Arapça aslı açılır</li><li><b>Eserleri</b> seçtiğiniz dilin yazımıyla (Türkçede akademik transkripsiyonla); programdaki tefsirine ya da fıkıh kitabına doğrudan geçiş</li><li><b>Râvi sayfası:</b> hadis râvisiyse programdaki rivayetleri ve senetlerdeki yeri</li><li><b>TDV İslâm Ansiklopedisi</b> maddesine bağlantı; sahâbe isimleri (r.a.) ile</li></ul></div></div>
   <p class="ctx" style="max-width:860px;margin:0 auto;color:var(--muted)">Biyografi kitaplığı neden telefonda yok? <a href="#fikih-telefon">Cevabı Sık sorulan sorularda</a>.</p>
+</div></section>
+<section id="siyer"><div class="wrap">
+  <h2>Siyer</h2>
+  <p class="sub">Câhiliye'den Hz. Hüseyin'in (r.a.) şehâdetine kadar 186 olay, kronolojik sırayla. Her olayın yeri haritada, varsa yerin fotoğrafı; 12 klasik siyer ve tarih kitabındaki anlatımları Arapça aslıyla, cilt ve sayfasıyla.</p>
+  <div class="feat"><div class="shot"><img src="img/siyer-olay.webp" width="1440" height="810" loading="lazy" alt="Siyer: Uhud gazvesi"></div><div><span class="kick">Olaylar ve yerler</span><h3>Her olay haritasıyla</h3><p class="sub" style="margin:0">Hicret yolu, gazveler ve seferler, fetihler; yollar, savaş yerleri ve konaklar haritada işaretli.</p><ul><li><b>10 dönem:</b> Câhiliye, doğumdan nübüvvete, Mekke ve Medine dönemleri, dört halîfenin hilâfetleri, Hz. Hasan'ın (r.a.) sulhu ve Hz. Hüseyin'in (r.a.) şehâdeti</li><li><b>Kabartmalı haritalar:</b> Arabistan, Hicaz, Şam, Irak, Mekke ve Medine; yer adları seçtiğiniz dilde</li><li><b>Yerlerin fotoğrafları:</b> serbest lisanslı, çekenin adıyla; insan tasviri yok</li><li><b>Telefonda da:</b> Siyer, bilgisayarda ve telefonda aynıdır</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="img/siyer-metin.webp" width="1440" height="810" loading="lazy" alt="Siyer: klasik kaynaklardaki anlatımlar"></div><div><span class="kick">Klasik kaynaklar</span><h3>Anlatımlar Arapça aslıyla</h3><p class="sub" style="margin:0">İbn Hişâm, Vâkıdî, Halîfe b. Hayyât, Taberî, Belâzürî, İbnü'l-Esîr, İbn Kesîr, Zehebî, Beyhakî, İbnü'l-Arabî…</p><ul><li><b>Yan yana:</b> bir olayın birkaç kaynaktaki anlatımı birlikte; <b>Atıf</b> düğmesi eser, cilt ve sayfayı kopyalar</li><li><b>Bağlantılar:</b> olayla ilgili âyetler, hadis kitaplarında arama ve anlatımlarda adı geçen sahâbîlerin biyografileri</li><li><b>Ehl-i sünnet çizgisi:</b> fitne döneminde sahâbenin adaleti esas alınır, aralarında geçenler hakkında dil tutulur; zayıf râvilerden gelen rivayetler kapalı ve işaretli</li></ul></div></div>
 </div></section>
 <section id="notlar" class="band"><div class="wrap">
   <h2>Notlarınız tek yerde, güvende</h2>

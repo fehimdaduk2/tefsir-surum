@@ -61,7 +61,7 @@ nav a { white-space: nowrap; }
 :root[data-theme="dark"] .cta, .cta { color: #fff; }
 .cta svg { width: 20px; height: 20px; }
 .meta { margin-top: 12px; color: var(--muted); font-size: 14px; }
-.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 40px auto 0; max-width: 960px; }
+.stats { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin: 40px auto 0; max-width: 1120px; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 8px; }
 .stat b { display: block; font-size: 28px; color: var(--brand-2); line-height: 1.1; }
 .stat span { font-size: 13px; color: var(--muted); }
@@ -118,13 +118,13 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: 
 @media (max-width: 860px) {
   .grid { grid-template-columns: 1fr 1fr; }
   .lib { columns: 2; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stats { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 600px) {
   nav { display: none; }
   .grid, .pair { grid-template-columns: 1fr; }
   .lib { columns: 1; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(2, 1fr); } .stats .stat:last-child:nth-child(odd) { grid-column: span 2; }
   .hero { padding-top: 40px; }
 }
 ol.terms { padding-left: 1.3em; line-height: 1.6; }
@@ -168,14 +168,14 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="../img/icon256.png" alt="">مكتبة التفسير والحديث</a>
-  <nav><a href="#video">الفيديو</a><a href="#kuran">القرآن</a><a href="#ezber">الحفظ</a><a href="#takip">المتابعة</a><a href="#hadis">الحديث</a><a href="#fikih">الفقه</a><a href="#biyografi">التراجم</a><a href="#notlar">الملاحظات</a><a href="#diller">اللغات</a><a href="#telefon">الأجهزة</a><a href="#kutuphane">المكتبة</a><a href="#kurulum">التنزيل</a><a href="#sss">الأسئلة</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="../en/" hreflang="en">EN</a><a href="./" lang="ar" aria-current="page">عربي</a></span>
+  <nav><a href="#video">الفيديو</a><a href="#kuran">القرآن</a><a href="#ezber">الحفظ</a><a href="#takip">المتابعة</a><a href="#hadis">الحديث</a><a href="#fikih">الفقه</a><a href="#biyografi">التراجم</a><a href="#siyer">السيرة</a><a href="#notlar">الملاحظات</a><a href="#diller">اللغات</a><a href="#telefon">الأجهزة</a><a href="#kutuphane">المكتبة</a><a href="#kurulum">التنزيل</a><a href="#sss">الأسئلة</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="../en/" hreflang="en">EN</a><a href="./" lang="ar" aria-current="page">عربي</a></span>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>اقرأ القرآن بتفاسيره،<br>والحديث بإسناده</h1>
-  <p class="lead">62 تفسيرًا و17 كتابًا في الحديث و17 شرحًا و8 معاجم قديمة و29 قارئًا في برنامج واحد؛ وفي نسخة الحاسوب أيضًا 30 كتابًا في الفقه وتراجم نحو 70 ألف عالم. اقرأ واستمع واحفظ؛ وحين تتلو يستمع إليك البرنامج وينبّهك إلى الكلمة التي تركتها. ابحث وشارك. الواجهة بالعربية والإنجليزية والتركية. مجاني، ولا يحتاج إلى الإنترنت بعد التثبيت.</p>
+  <p class="lead">62 تفسيرًا و17 كتابًا في الحديث و17 شرحًا و8 معاجم قديمة و29 قارئًا في برنامج واحد؛ وفي نسخة الحاسوب أيضًا 30 كتابًا في الفقه وتراجم نحو 70 ألف عالم؛ وعلى الحاسوب والهاتف السيرة بخرائطها. اقرأ واستمع واحفظ؛ وحين تتلو يستمع إليك البرنامج وينبّهك إلى الكلمة التي تركتها. ابحث وشارك. الواجهة بالعربية والإنجليزية والتركية. مجاني، ولا يحتاج إلى الإنترنت بعد التثبيت.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
     <span id="indirT">تنزيل مجاني لـ Windows</span>
@@ -189,6 +189,7 @@ footer a { color: inherit; }
     <div class="stat"><b>8</b><span>معاجم قديمة</span></div>
     <div class="stat"><b>29</b><span>قارئًا</span></div>
     <div class="stat"><b>70 ألف</b><span>ترجمة عالم</span></div>
+    <div class="stat"><b>186</b><span>حدثًا من السيرة</span></div>
   </div>
   <div class="shot vid" style="margin-top:40px" id="video"><video controls preload="none" playsinline poster="../img/tanitim.jpg" width="1920" height="1080"><source src="../tanitim.mp4" type="video/mp4">لا يستطيع متصفحك تشغيل الفيديو؛ <a href="../tanitim.mp4">نزِّل الفيديو</a>.</video></div>
   <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">فيديو تعريفي (3 دقائق، بالتركية) · التلاوة: محمود خليل الحصري (EveryAyah)</p>
@@ -260,6 +261,12 @@ footer a { color: inherit; }
   <div class="feat"><div class="shot"><img src="../img/ar/biyografi.webp" width="1440" height="810" loading="lazy" alt="مكتبة التراجم"></div><div><span class="kick">العلماء</span><h3>من الصحابة إلى يومنا</h3><p class="sub" style="margin:0">صفِّ بحسب العلم والمذهب والمدرسة الكلامية والقرن والمصدر؛ وابحث بالاسم أو الشهرة أو الكنية.</p><ul><li><b>الصحابة والتابعون وأتباعهم:</b> أكثر من 9500 صحابي، وأكثر من 7700 تابعي ومثلهم من أتباع التابعين؛ بحسب الإصابة وأسد الغابة والاستيعاب وطبقات ابن سعد وثقات ابن حبان</li><li><b>12 علمًا:</b> التفسير، الحديث، الفقه، القراءات، علم الكلام، العقيدة، التصوف، اللغة العربية، الأدب، التاريخ، الفلسفة، الطب والعلوم</li><li><b>مخطط القرون:</b> من القرن السابع الميلادي إلى يومنا؛ انقر على قرن لتظهر قائمة علمائه</li><li><b>الشيوخ والتلاميذ:</b> من المصادر القديمة ومن أسانيد كتب الحديث في البرنامج</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="../img/ar/biyografi-kisi.webp" width="1440" height="810" loading="lazy" alt="صفحة العالم"></div><div><span class="kick">صفحة العالم</span><h3>ترجمته ومصادره ومصنفاته</h3><p class="sub" style="margin:0">المولد والوفاة (بالهجري والميلادي)، والمذهب، والعلوم، وخلاصة لسيرته؛ بالعربية والتركية والإنجليزية.</p><ul><li><b>في المصادر القديمة:</b> سير أعلام النبلاء، تذكرة الحفاظ، وفيات الأعيان، كتب الطبقات…؛ انقر على الترجمة ليظهر نصها العربي</li><li><b>مصنفاته</b> بأسمائها العربية، والانتقال مباشرة إلى تفسيره أو كتابه الفقهي في البرنامج</li><li><b>صفحة الراوي:</b> إن كان راويًا للحديث فمروياته في البرنامج وموضعه في الأسانيد</li><li>رابط إلى مادته في <b>موسوعة الديانة التركية</b>؛ ويُذكر الصحابة مع الترضّي</li></ul></div></div>
   <p class="ctx" style="max-width:860px;margin:0 auto;color:var(--muted)">لماذا لا توجد التراجم في الهاتف؟ <a href="#fikih-telefon">الجواب في الأسئلة الشائعة</a>.</p>
+</div></section>
+<section id="siyer"><div class="wrap">
+  <h2>السيرة</h2>
+  <p class="sub">186 حدثًا من الجاهلية إلى استشهاد الحسين رضي الله عنه، مرتبةً زمنيًا. موضع كل حدث على الخريطة مع صورة المكان إن وُجدت، ورواياته في 12 كتابًا قديمًا من كتب السيرة والتاريخ بنصها العربي مع الجزء والصفحة.</p>
+  <div class="feat"><div class="shot"><img src="../img/ar/siyer-olay.webp" width="1440" height="810" loading="lazy" alt="السيرة: غزوة أحد"></div><div><span class="kick">الأحداث والأماكن</span><h3>كل حدث على خريطته</h3><p class="sub" style="margin:0">طريق الهجرة، والغزوات والسرايا، والفتوح؛ والطرق ومواضع الوقائع والمنازل معلَّمة على الخريطة.</p><ul><li><b>10 حقب:</b> الجاهلية، ومن المولد إلى البعثة، والعهدان المكي والمدني، وخلافة الخلفاء الأربعة، وصلح الحسن واستشهاد الحسين رضي الله عنهما</li><li><b>خرائط تضاريسية:</b> جزيرة العرب، والحجاز، والشام، والعراق، ومكة، والمدينة؛ وأسماء الأماكن بلغتك</li><li><b>صور الأماكن:</b> ذات ترخيص حر مع اسم المصوّر؛ ولا تصوير للأشخاص</li><li><b>في الهاتف أيضًا:</b> السيرة واحدة على الحاسوب والهاتف</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/ar/siyer-metin.webp" width="1440" height="810" loading="lazy" alt="السيرة: الروايات في المصادر القديمة"></div><div><span class="kick">المصادر القديمة</span><h3>الروايات بنصها العربي</h3><p class="sub" style="margin:0">ابن هشام، الواقدي، خليفة بن خياط، الطبري، البلاذري، ابن الأثير، ابن كثير، الذهبي، البيهقي، ابن العربي…</p><ul><li><b>جنبًا إلى جنب:</b> روايات الحدث في عدة مصادر معًا؛ وزر <b>توثيق</b> ينسخ الكتاب والجزء والصفحة</li><li><b>روابط:</b> الآيات المتعلقة بالحدث، والبحث في كتب الحديث، وتراجم الصحابة المذكورين في الروايات</li><li><b>منهج أهل السنة:</b> في الفتنة تُعتمد عدالة الصحابة ويُمسَك عمّا شجر بينهم؛ وروايات الضعفاء مطويّة ومُعلَّمة</li></ul></div></div>
 </div></section>
 <section id="notlar" class="band"><div class="wrap">
   <h2>ملاحظاتك في مكان واحد وفي أمان</h2>

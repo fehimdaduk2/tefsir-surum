@@ -61,7 +61,7 @@ nav a { white-space: nowrap; }
 :root[data-theme="dark"] .cta, .cta { color: #fff; }
 .cta svg { width: 20px; height: 20px; }
 .meta { margin-top: 12px; color: var(--muted); font-size: 14px; }
-.stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin: 40px auto 0; max-width: 960px; }
+.stats { display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin: 40px auto 0; max-width: 1120px; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 8px; }
 .stat b { display: block; font-size: 28px; color: var(--brand-2); line-height: 1.1; }
 .stat span { font-size: 13px; color: var(--muted); }
@@ -118,13 +118,13 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: 
 @media (max-width: 860px) {
   .grid { grid-template-columns: 1fr 1fr; }
   .lib { columns: 2; }
-  .stats { grid-template-columns: repeat(3, 1fr); }
+  .stats { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 600px) {
   nav { display: none; }
   .grid, .pair { grid-template-columns: 1fr; }
   .lib { columns: 1; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stats { grid-template-columns: repeat(2, 1fr); } .stats .stat:last-child:nth-child(odd) { grid-column: span 2; }
   .hero { padding-top: 40px; }
 }
 ol.terms { padding-left: 1.3em; line-height: 1.6; }
@@ -168,14 +168,14 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <a class="brand" href="#"><img src="../img/icon256.png" alt="">Tafsir &amp; Hadith Library</a>
-  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#biyografi">Biographies</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
+  <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#biyografi">Biographies</a><a href="#siyer">Sīra</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span>
 </div></header>
 
 <main>
 <div class="hero"><div class="wrap">
   <p class="ayah">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ</p>
   <h1>Read the Qur'an with its tafsirs,<br>the hadith with its chain</h1>
-  <p class="lead">62 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in a single program; on the computer, also 30 fiqh books and the biographies of nearly 70,000 scholars. Read, listen and memorize; as you recite, the program listens and tells you the word you skipped. Research and share. Interface in English, Arabic and Turkish. Free; no internet needed once installed.</p>
+  <p class="lead">62 tafsirs, 17 hadith books, 17 commentaries, 8 classical dictionaries and 29 reciters in a single program; on the computer, also 30 fiqh books and the biographies of nearly 70,000 scholars; on the computer and the phone, the Sīra with its maps. Read, listen and memorize; as you recite, the program listens and tells you the word you skipped. Research and share. Interface in English, Arabic and Turkish. Free; no internet needed once installed.</p>
   <a class="cta" id="indir" href="https://github.com/fehimdaduk2/tefsir-surum/releases/latest/download/Kurulum.exe">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
     <span id="indirT">Free download for Windows</span>
@@ -189,6 +189,7 @@ footer a { color: inherit; }
     <div class="stat"><b>8</b><span>classical dictionaries</span></div>
     <div class="stat"><b>29</b><span>reciters</span></div>
     <div class="stat"><b>70,000</b><span>scholar biographies</span></div>
+    <div class="stat"><b>186</b><span>Sīra events</span></div>
   </div>
   <div class="shot vid" style="margin-top:40px" id="video"><video controls preload="none" playsinline poster="../img/tanitim.jpg" width="1920" height="1080"><source src="../tanitim.mp4" type="video/mp4">Your browser cannot play the video; <a href="../tanitim.mp4">download the video</a>.</video></div>
   <p style="margin:10px 0 0;font-size:13px;color:var(--muted)">Introduction video (3 min, narrated in Turkish) · Recitation: Maḥmūd Khalīl al-Ḥuṣarī (EveryAyah)</p>
@@ -260,6 +261,12 @@ footer a { color: inherit; }
   <div class="feat"><div class="shot"><img src="../img/en/biyografi.webp" width="1440" height="810" loading="lazy" alt="The biography library"></div><div><span class="kick">Scholars</span><h3>From the Companions to our day</h3><p class="sub" style="margin:0">Filter by field, school of law, school of kalam, century and source; search by name, by the name a scholar is known by or by kunya.</p><ul><li><b>Companions, Followers and their Successors:</b> over 9,500 Companions, over 7,700 Followers and as many Successors; after al-Iṣāba, Usd al-ghāba, al-Istīʿāb, Ibn Saʿd's al-Ṭabaqāt and Ibn Ḥibbān's al-Thiqāt</li><li><b>12 fields:</b> tafsir, hadith, fiqh, Qur'anic readings, kalam, creed, Sufism, Arabic language, literature, history, philosophy, medicine and the sciences</li><li><b>Century chart:</b> from the 7th century CE to ours; tap a century to list its scholars</li><li><b>Teachers and students:</b> from the classical sources and from the chains of the program's hadith books</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="../img/en/biyografi-kisi.webp" width="1440" height="810" loading="lazy" alt="A scholar's page"></div><div><span class="kick">A scholar's page</span><h3>Particulars, sources, works</h3><p class="sub" style="margin:0">Birth and death (hijri and common era), school of law, fields and a summary of the life; in English, Turkish and Arabic.</p><ul><li><b>In the classical sources:</b> Siyar aʿlām al-nubalāʾ, Tadhkirat al-ḥuffāẓ, Wafayāt al-aʿyān, the ṭabaqāt books…; tap an entry to open the Arabic original</li><li><b>Works</b> in the spelling of the language you choose; straight to the scholar's tafsir or fiqh book in the program</li><li><b>Narrator page:</b> for a hadith narrator, his narrations in the program and his place in the chains</li><li>Link to the <b>TDV İslâm Ansiklopedisi</b> article</li></ul></div></div>
   <p class="ctx" style="max-width:860px;margin:0 auto;color:var(--muted)">Why are the biographies not on the phone? <a href="#fikih-telefon">The answer is in the FAQ</a>.</p>
+</div></section>
+<section id="siyer"><div class="wrap">
+  <h2>Sīra</h2>
+  <p class="sub">186 events from the Jāhiliyya to the martyrdom of al-Ḥusayn (may Allah be pleased with him), in chronological order. Each event's place on the map, with a photograph of the place where one exists; its accounts in 12 classical works of sīra and history in the Arabic original, with volume and page.</p>
+  <div class="feat"><div class="shot"><img src="../img/en/siyer-olay.webp" width="1440" height="810" loading="lazy" alt="Sīra: the Battle of Uhud"></div><div><span class="kick">Events and places</span><h3>Every event on its map</h3><p class="sub" style="margin:0">The road of the Hijra, the campaigns and expeditions, the conquests; routes, battlefields and halts marked on the map.</p><ul><li><b>10 periods:</b> the Jāhiliyya, from the birth to the prophethood, the Meccan and Medinan periods, the caliphates of the four caliphs, the peace of al-Ḥasan and the martyrdom of al-Ḥusayn (may Allah be pleased with them)</li><li><b>Shaded relief maps:</b> Arabia, the Hijaz, Syria, Iraq, Mecca and Medina; place names in your language</li><li><b>Photographs of the places:</b> freely licensed, with the photographer's name; no depictions of people</li><li><b>On the phone too:</b> the Sīra is the same on the computer and the phone</li></ul></div></div>
+  <div class="feat rev"><div class="shot"><img src="../img/en/siyer-metin.webp" width="1440" height="810" loading="lazy" alt="Sīra: the accounts in the classical sources"></div><div><span class="kick">Classical sources</span><h3>The accounts in the Arabic original</h3><p class="sub" style="margin:0">Ibn Hishām, al-Wāqidī, Khalīfa ibn Khayyāṭ, al-Ṭabarī, al-Balādhurī, Ibn al-Athīr, Ibn Kathīr, al-Dhahabī, al-Bayhaqī, Ibn al-ʿArabī…</p><ul><li><b>Side by side:</b> an event's accounts in several sources together; the <b>Cite</b> button copies the work, volume and page</li><li><b>Links:</b> the verses about the event, a search in the hadith books and the biographies of the Companions named in the accounts</li><li><b>The way of Ahl al-Sunna:</b> in the fitna the uprightness of the Companions is held to and one holds one's tongue about what passed between them; reports from weak narrators are folded and marked</li></ul></div></div>
 </div></section>
 <section id="notlar" class="band"><div class="wrap">
   <h2>Your notes in one place, kept safe</h2>
