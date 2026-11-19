@@ -1,13 +1,29 @@
 {
-  "version": "5.40",
-  "date": "2026-11-18",
+  "version": "5.41",
+  "date": "2026-11-19",
   "notes": [
-    "Sahâbe etiketleri"
+    "Siyer bölümü",
+    "Yedekleme metinlerinin çevirisi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.40/Guncelleme-Kurulum.exe",
-  "sha256": "c8112abb850b0cd6ea0656724f09d2138428e0de8d7048ce54fbd2e689496978",
-  "size": 40482304,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.41/Guncelleme-Kurulum.exe",
+  "sha256": "38c8288ecd8a2ba8b7b7385c78d086227dccd7ee522c83240d259378f082d15f",
+  "size": 40506880,
   "history": [
+    {
+      "version": "5.40",
+      "date": "2026-11-18",
+      "notes": [
+        "Sahâbe etiketleri"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Companion labels"
+        ],
+        "ar": [
+          "وسوم الصحابة"
+        ]
+      }
+    },
     {
       "version": "5.39",
       "date": "2026-11-18",
@@ -1733,6 +1749,13 @@
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Biyografi.zip",
         "sha256": "a38cdd742ecdcb31dbfad15a79dca381aa5b032ff5852bc4cb5a5e8874cd2b7d",
         "size": 37270796
+      },
+      {
+        "name": "Tefsir-Paket-Siyer.zip",
+        "kind": "siyer",
+        "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Siyer.zip",
+        "sha256": "25e85d9e05bbdff40d90d7b9b26a9381a359292e9f6022bdb13f22ed49f8202e",
+        "size": 12671269
       }
     ]
   },
@@ -1752,23 +1775,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.40/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.40/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.40/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.40/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.41/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.41/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.41/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.41/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.40/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "51e7ffff2e6f27e272c39ca9d7cb6a8870ac95a03799c8bcec386d0339b30fee",
-    "size": 14103744
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.41/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "71506901f171e5c9857ae8a57dd76eed5e97540d87a1afb46a580217a7d99512",
+    "size": 14120128
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Companion labels"
+      "Sīra section",
+      "Backup texts translated"
     ],
     "ar": [
-      "وسوم الصحابة"
+      "قسم السيرة",
+      "ترجمة نصوص النسخ الاحتياطي"
     ]
   }
 }
