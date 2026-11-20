@@ -1,0 +1,22 @@
+# İndirme sayıları → yönetim paneli: her saat sürümlerin indirilme sayılarını sayar ve GitHub'ın imzalı kimlik
+# belgesiyle (OIDC) projenin sayacına gönderir; sayılar depoya ya da herkese açık bir dosyaya yazılmaz.
+name: Sayım
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/sayim.yml", "araclar/sayim.py"]
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  sayim:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Say ve gönder
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 araclar/sayim.py
