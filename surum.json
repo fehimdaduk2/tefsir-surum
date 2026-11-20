@@ -1,15 +1,35 @@
 {
-  "version": "5.42",
+  "version": "5.43",
   "date": "2026-11-20",
   "notes": [
-    "Siyer: kaldığı yerden devam",
-    "Siyer notları ve yer imleri",
-    "Biyografi dar pencerede"
+    "Siyer haritasında Mekke ve Medine'ye mesafe",
+    "Menü düzenlemesi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.42/Guncelleme-Kurulum.exe",
-  "sha256": "0fba91d09d87e2323993c49555ad38a827e4bc40ee53d083572c76a4fafc9fe5",
-  "size": 40511488,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Kurulum.exe",
+  "sha256": "94a7a2a7b7e861f0bb4bccfa79551bc90c0efcf51591130440ad3ba8862ae16e",
+  "size": 40512000,
   "history": [
+    {
+      "version": "5.42",
+      "date": "2026-11-20",
+      "notes": [
+        "Siyer: kaldığı yerden devam",
+        "Siyer notları ve yer imleri",
+        "Biyografi dar pencerede"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Sīra: resume where you left off",
+          "Sīra notes and bookmarks",
+          "Biographies in narrow windows"
+        ],
+        "ar": [
+          "السيرة: المتابعة من حيث توقفت",
+          "تعليقات السيرة وعلاماتها",
+          "التراجم في النوافذ الضيقة"
+        ]
+      }
+    },
     {
       "version": "5.41",
       "date": "2026-11-19",
@@ -1794,27 +1814,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.42/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.42/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.42/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.42/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.42/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "3a0da6a929f88d0908965ff62dad47cc5f6ef02414bd8af600a78849a66b06a1",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "fc043545e98829bbdeb13255c12c689fa495cdcb8b370c8faf8622983a848fa3",
     "size": 14124224
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Sīra: resume where you left off",
-      "Sīra notes and bookmarks",
-      "Biographies in narrow windows"
+      "Distances to Mecca and Medina on the Sīra maps",
+      "Menu tidied"
     ],
     "ar": [
-      "السيرة: المتابعة من حيث توقفت",
-      "تعليقات السيرة وعلاماتها",
-      "التراجم في النوافذ الضيقة"
+      "المسافة إلى مكة والمدينة على خرائط السيرة",
+      "ترتيب القائمة"
     ]
   }
 }
