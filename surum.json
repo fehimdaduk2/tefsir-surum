@@ -1,13 +1,29 @@
 {
-  "version": "5.44",
+  "version": "5.45",
   "date": "2026-11-20",
   "notes": [
-    "Sahâbe adlarının Türkçesi"
+    "İsimsiz kullanım sayıları",
+    "Hakkında düzenlemesi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Kurulum.exe",
-  "sha256": "7b591b66b820dfcec3fc8ae80397c2ac11e9f51948d25f3ec64cc5652a1862c1",
-  "size": 40512000,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.45/Guncelleme-Kurulum.exe",
+  "sha256": "ed799f259763f120e8092f34e7612684edb89b4bc52093590523a6d6d106b20e",
+  "size": 40513024,
   "history": [
+    {
+      "version": "5.44",
+      "date": "2026-11-20",
+      "notes": [
+        "Sahâbe adlarının Türkçesi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Turkish names of the Companions"
+        ],
+        "ar": [
+          "أسماء الصحابة بالتركية"
+        ]
+      }
+    },
     {
       "version": "5.43",
       "date": "2026-11-20",
@@ -1831,23 +1847,25 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.45/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.45/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.45/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.45/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "d8d1fdc84a80bdac800d6a74b1e7cef1d61f47ccc1d729c3ce53156aeee2cc40",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.45/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "23249af60d1a5f77ae63d9c0a02fef482795eb639bc76e9d253e91bce5267363",
     "size": 14124224
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Turkish names of the Companions"
+      "Anonymous usage counts",
+      "About window tidied"
     ],
     "ar": [
-      "أسماء الصحابة بالتركية"
+      "إحصاءات استخدام مجهولة",
+      "ترتيب نافذة «حول»"
     ]
   }
 }
