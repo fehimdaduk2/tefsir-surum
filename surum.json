@@ -1,14 +1,31 @@
 {
-  "version": "5.43",
+  "version": "5.44",
   "date": "2026-11-20",
   "notes": [
-    "Siyer haritasında Mekke ve Medine'ye mesafe",
-    "Menü düzenlemesi"
+    "Sahâbe adlarının Türkçesi"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Kurulum.exe",
-  "sha256": "94a7a2a7b7e861f0bb4bccfa79551bc90c0efcf51591130440ad3ba8862ae16e",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Kurulum.exe",
+  "sha256": "7b591b66b820dfcec3fc8ae80397c2ac11e9f51948d25f3ec64cc5652a1862c1",
   "size": 40512000,
   "history": [
+    {
+      "version": "5.43",
+      "date": "2026-11-20",
+      "notes": [
+        "Siyer haritasında Mekke ve Medine'ye mesafe",
+        "Menü düzenlemesi"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Distances to Mecca and Medina on the Sīra maps",
+          "Menu tidied"
+        ],
+        "ar": [
+          "المسافة إلى مكة والمدينة على خرائط السيرة",
+          "ترتيب القائمة"
+        ]
+      }
+    },
     {
       "version": "5.42",
       "date": "2026-11-20",
@@ -1786,15 +1803,15 @@
         "name": "Tefsir-Paket-Biyografi.zip",
         "kind": "biyografi",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Biyografi.zip",
-        "sha256": "a38cdd742ecdcb31dbfad15a79dca381aa5b032ff5852bc4cb5a5e8874cd2b7d",
-        "size": 37270796
+        "sha256": "f4b1903186ae11c706a289d838e11e607e7386516bf1fed0c0427738cfd2c30c",
+        "size": 37327860
       },
       {
         "name": "Tefsir-Paket-Siyer.zip",
         "kind": "siyer",
         "url": "https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/veri/Tefsir-Paket-Siyer.zip",
-        "sha256": "25e85d9e05bbdff40d90d7b9b26a9381a359292e9f6022bdb13f22ed49f8202e",
-        "size": 12671269
+        "sha256": "e4e8c954f737d0905b700aa1a2f5d1e9d0396337fda78fe6969315e864060309",
+        "size": 12672473
       }
     ]
   },
@@ -1814,25 +1831,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.43/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "fc043545e98829bbdeb13255c12c689fa495cdcb8b370c8faf8622983a848fa3",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.44/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "d8d1fdc84a80bdac800d6a74b1e7cef1d61f47ccc1d729c3ce53156aeee2cc40",
     "size": 14124224
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Distances to Mecca and Medina on the Sīra maps",
-      "Menu tidied"
+      "Turkish names of the Companions"
     ],
     "ar": [
-      "المسافة إلى مكة والمدينة على خرائط السيرة",
-      "ترتيب القائمة"
+      "أسماء الصحابة بالتركية"
     ]
   }
 }
