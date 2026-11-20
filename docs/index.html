@@ -164,6 +164,12 @@ footer a { color: inherit; }
 @media (max-width: 600px) { .phones { grid-template-columns: repeat(2, 1fr); } }
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="975be105-d1e2-4cb4-9ba5-085a0252ed89"></script>
+<script>/* kullanım sayacı: sayfa, süre ve indirme düğmesi; kimlik ve çerez yok (gizlilik.html) */(()=>{const U='https://tefsir-sayac.tefsirkutuphanesi.workers.dev/c';let r='';try{r=sessionStorage.getItem('tsr')||''}catch(e){}if(!/^[a-z0-9]{16}$/.test(r)){r=Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>'abcdefghijklmnopqrstuvwxyz0123456789'[b%36]).join('');try{sessionStorage.setItem('tsr',r)}catch(e){}}
+const pg=(location.pathname.replace(/^\/tefsir-surum/,'').replace(/index\.html$/,'')||'/').toLowerCase().replace(/[^a-z0-9_\-\/.]/g,'').slice(0,40),w=innerWidth<600?'s':innerWidth<1024?'m':innerWidth<1600?'l':'xl',ua=navigator.userAgent;
+const o=/Android/.test(ua)?'android':/iPhone|iPad/.test(ua)?'ios':/Windows/.test(ua)?'windows':/Mac OS/.test(ua)?'darwin':/Linux/.test(ua)?'linux':'';let f='';try{const h=document.referrer?new URL(document.referrer).hostname:'';if(h&&h!==location.hostname)f=h.toLowerCase().replace(/[^a-z0-9.\-]/g,'').slice(0,60)}catch(e){}
+const send=(e,b)=>{const d=JSON.stringify({k:'w',r,s:pg,e:e||'',l:(document.documentElement.lang||'').slice(0,12),o,v:'',w,f:e?'':f});if(b&&navigator.sendBeacon)navigator.sendBeacon(U,new Blob([d],{type:'text/plain'}));else fetch(U,{method:'POST',body:d,keepalive:true,headers:{'Content-Type':'text/plain'}}).catch(()=>{})};
+send('');let n=0;setInterval(()=>{if(document.visibilityState==='visible'&&n<120){n++;send('acik')}},30000);
+document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.closest('a[href]');if(!a)return;const h=a.href,k=/Kurulum\.exe/.test(h)?'windows':/macOS-arm64/.test(h)?'mac-arm':/macOS-amd64/.test(h)?'mac-intel':/Linux/.test(h)?'linux':/play\.google/.test(h)?'play':/\.apk/i.test(h)?'apk':'';if(k)send('indir:'+k,true)},true)})();</script>
 </head>
 <body>
 <header class="top"><div class="wrap">

@@ -34,12 +34,18 @@ th { font-weight: 600; }
 footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
 @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border-top: 0; } tr { border-top: 1px solid var(--line); margin-bottom: 8px; } td:first-child { font-weight: 600; } }
 </style>
+<script>/* kullanım sayacı: sayfa, süre ve indirme düğmesi; kimlik ve çerez yok (gizlilik.html) */(()=>{const U='https://tefsir-sayac.tefsirkutuphanesi.workers.dev/c';let r='';try{r=sessionStorage.getItem('tsr')||''}catch(e){}if(!/^[a-z0-9]{16}$/.test(r)){r=Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>'abcdefghijklmnopqrstuvwxyz0123456789'[b%36]).join('');try{sessionStorage.setItem('tsr',r)}catch(e){}}
+const pg=(location.pathname.replace(/^\/tefsir-surum/,'').replace(/index\.html$/,'')||'/').toLowerCase().replace(/[^a-z0-9_\-\/.]/g,'').slice(0,40),w=innerWidth<600?'s':innerWidth<1024?'m':innerWidth<1600?'l':'xl',ua=navigator.userAgent;
+const o=/Android/.test(ua)?'android':/iPhone|iPad/.test(ua)?'ios':/Windows/.test(ua)?'windows':/Mac OS/.test(ua)?'darwin':/Linux/.test(ua)?'linux':'';let f='';try{const h=document.referrer?new URL(document.referrer).hostname:'';if(h&&h!==location.hostname)f=h.toLowerCase().replace(/[^a-z0-9.\-]/g,'').slice(0,60)}catch(e){}
+const send=(e,b)=>{const d=JSON.stringify({k:'w',r,s:pg,e:e||'',l:(document.documentElement.lang||'').slice(0,12),o,v:'',w,f:e?'':f});if(b&&navigator.sendBeacon)navigator.sendBeacon(U,new Blob([d],{type:'text/plain'}));else fetch(U,{method:'POST',body:d,keepalive:true,headers:{'Content-Type':'text/plain'}}).catch(()=>{})};
+send('');let n=0;setInterval(()=>{if(document.visibilityState==='visible'&&n<120){n++;send('acik')}},30000);
+document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.closest('a[href]');if(!a)return;const h=a.href,k=/Kurulum\.exe/.test(h)?'windows':/macOS-arm64/.test(h)?'mac-arm':/macOS-amd64/.test(h)?'mac-intel':/Linux/.test(h)?'linux':/play\.google/.test(h)?'play':/\.apk/i.test(h)?'apk':'';if(k)send('indir:'+k,true)},true)})();</script>
 </head>
 <body>
 <header><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><a href="./">← Tafsir &amp; Hadith Library</a><span class="langsw"><a href="../gizlilik.html" hreflang="tr">TR</a><a href="gizlilik.html" aria-current="page">EN</a><a href="../ar/gizlilik.html" lang="ar">عربي</a></span></div></header>
 <main class="wrap">
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: 19 November 2026 · This text applies to the Windows, Mac, Linux and Android (including Google Play) versions and to this website.</p>
+<p class="muted">Effective date: 20 November 2026 · This text applies to the Windows, Mac, Linux and Android (including Google Play) versions and to this website.</p>
 
 <div class="box">
 <b>In short:</b> The Tafsir &amp; Hadith Library asks for no account; it does not collect your name, e-mail, contacts, location or device identifier. Your notes, highlights, memorization records and recordings stay on your device only. Apart from <b>anonymous</b> counts showing which parts of the program are used and for how long, nothing is sent.
@@ -51,7 +57,7 @@ footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40
 <h2>2. Information not collected</h2>
 <ul>
 <li>Name, e-mail, phone number or any account information (the app has no accounts).</li>
-<li>The texts you read, search or write; your notes, tags, highlights, bookmarks, memorization and khatm plans.</li>
+<li>The texts you read, search or write; your notes, tags, highlights, bookmarks, memorization and khatm plans (only how many there are is counted, never their content: section 3).</li>
 <li>Location (GPS), contacts, photos, calendar, SMS or call information.</li>
 <li>An advertising ID or any persistent identifier of the device. The app has no ads.</li>
 </ul>
@@ -65,9 +71,10 @@ footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40
 <tr><td>How long the program stays open (a “still open” count every few minutes while it is in front)</td><td>To see the average time of use</td></tr>
 <tr><td>Program version, operating system, interface language, screen size</td><td>To know which versions and devices to prioritize</td></tr>
 <tr><td>Country (roughly derived from the connection address; the address itself is not stored)</td><td>To see in which countries the program is used</td></tr>
+<tr><td>When a note, bookmark or highlight is added or deleted, only “one added/deleted” and its section (Verse, Tafsir, Hadith, Fiqh, Sīra); never what you wrote</td><td>To see how much the note features are used</td></tr>
 </tbody>
 </table>
-<p>These counts are sent over an encrypted connection (HTTPS) to the privacy-first, cookie-free <b>Umami</b> service (cloud.umami.is). Umami does not store IP addresses; the records cannot be linked to a person or device. A temporary key that links one session together is kept in memory only and erased when the program closes. This information is not sold, not used for advertising and not shared with anyone.</p>
+<p>These counts are sent over an encrypted connection (HTTPS) to the privacy-first, cookie-free <b>Umami</b> service (cloud.umami.is) and to the project's own counter running on Cloudflare (tefsir-sayac.tefsirkutuphanesi.workers.dev). The counter does not store IP addresses either; each start of the program carries a random mark kept in memory only, which is not saved and does not identify anyone. The website counts visits the same way, without cookies (the page opened, time on the page, clicks on the download buttons). Only the developers see the counts. Umami does not store IP addresses; the records cannot be linked to a person or device. A temporary key that links one session together is kept in memory only and erased when the program closes. This information is not sold, not used for advertising and not shared with anyone.</p>
 <p>These counts contain no personal data and cannot be linked to anyone; they are used to see which parts of the program are useful and to improve it.</p>
 
 <h2>4. When the app connects to the internet</h2>

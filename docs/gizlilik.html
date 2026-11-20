@@ -34,12 +34,18 @@ th { font-weight: 600; }
 footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40px; color: var(--muted); font-size: 14px; }
 @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border-top: 0; } tr { border-top: 1px solid var(--line); margin-bottom: 8px; } td:first-child { font-weight: 600; } }
 </style>
+<script>/* kullanım sayacı: sayfa, süre ve indirme düğmesi; kimlik ve çerez yok (gizlilik.html) */(()=>{const U='https://tefsir-sayac.tefsirkutuphanesi.workers.dev/c';let r='';try{r=sessionStorage.getItem('tsr')||''}catch(e){}if(!/^[a-z0-9]{16}$/.test(r)){r=Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>'abcdefghijklmnopqrstuvwxyz0123456789'[b%36]).join('');try{sessionStorage.setItem('tsr',r)}catch(e){}}
+const pg=(location.pathname.replace(/^\/tefsir-surum/,'').replace(/index\.html$/,'')||'/').toLowerCase().replace(/[^a-z0-9_\-\/.]/g,'').slice(0,40),w=innerWidth<600?'s':innerWidth<1024?'m':innerWidth<1600?'l':'xl',ua=navigator.userAgent;
+const o=/Android/.test(ua)?'android':/iPhone|iPad/.test(ua)?'ios':/Windows/.test(ua)?'windows':/Mac OS/.test(ua)?'darwin':/Linux/.test(ua)?'linux':'';let f='';try{const h=document.referrer?new URL(document.referrer).hostname:'';if(h&&h!==location.hostname)f=h.toLowerCase().replace(/[^a-z0-9.\-]/g,'').slice(0,60)}catch(e){}
+const send=(e,b)=>{const d=JSON.stringify({k:'w',r,s:pg,e:e||'',l:(document.documentElement.lang||'').slice(0,12),o,v:'',w,f:e?'':f});if(b&&navigator.sendBeacon)navigator.sendBeacon(U,new Blob([d],{type:'text/plain'}));else fetch(U,{method:'POST',body:d,keepalive:true,headers:{'Content-Type':'text/plain'}}).catch(()=>{})};
+send('');let n=0;setInterval(()=>{if(document.visibilityState==='visible'&&n<120){n++;send('acik')}},30000);
+document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.closest('a[href]');if(!a)return;const h=a.href,k=/Kurulum\.exe/.test(h)?'windows':/macOS-arm64/.test(h)?'mac-arm':/macOS-amd64/.test(h)?'mac-intel':/Linux/.test(h)?'linux':/play\.google/.test(h)?'play':/\.apk/i.test(h)?'apk':'';if(k)send('indir:'+k,true)},true)})();</script>
 </head>
 <body>
 <header><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><a href="./">← Tefsir &amp; Hadis Kütüphanesi</a><span class="langsw"><a href="gizlilik.html" aria-current="page">TR</a><a href="en/gizlilik.html">EN</a><a href="ar/gizlilik.html" lang="ar">عربي</a></span></div></header>
 <main class="wrap">
 <h1>Gizlilik Politikası</h1>
-<p class="muted">Yürürlük tarihi: 19 Kasım 2026 · Bu metin Windows, Mac, Linux ve Android (Google Play dahil) sürümleri ile bu site için geçerlidir.</p>
+<p class="muted">Yürürlük tarihi: 20 Kasım 2026 · Bu metin Windows, Mac, Linux ve Android (Google Play dahil) sürümleri ile bu site için geçerlidir.</p>
 
 <div class="box">
 <b>Kısaca:</b> Tefsir &amp; Hadis Kütüphanesi hesap istemez; adını, e-postanı, rehberini, konumunu ya da cihaz kimliğini toplamaz. Notların, vurguların, ezber kayıtların ve ses kayıtların senin cihazında durur; istersen <b>kendi Google Drive'ında</b> eşitlenir (bizim bir sunucumuza hiç gitmez). Programın hangi bölümlerinin ne kadar kullanıldığını gösteren <b>isimsiz</b> sayımlar dışında hiçbir bilgi gönderilmez.
@@ -51,7 +57,7 @@ footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40
 <h2>2. Toplanmayan bilgiler</h2>
 <ul>
 <li>Ad, e-posta, telefon numarası ya da herhangi bir hesap bilgisi (uygulamada hesap yoktur; isteğe bağlı Google Drive eşitlemesi için aşağıdaki 6. bölüme bak).</li>
-<li>Okuduğun, aradığın ya da yazdığın metinler; notların, etiketlerin, vurguların, yer imlerin, ezber ve hatim planların.</li>
+<li>Okuduğun, aradığın ya da yazdığın metinler; notların, etiketlerin, vurguların, yer imlerin, ezber ve hatim planların (bunların yalnız sayısı sayılır, içeriği asla: 3. bölüm).</li>
 <li>Konum (GPS), rehber, fotoğraflar, takvim, SMS ya da çağrı bilgileri.</li>
 <li>Reklam kimliği ya da cihazı tanımlayan kalıcı bir kimlik. Uygulamada reklam yoktur.</li>
 </ul>
@@ -65,9 +71,10 @@ footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 24px 0 40
 <tr><td>Programın açık kaldığı süre (ön plandayken birkaç dakikada bir “hâlâ açık” sayımı)</td><td>Ortalama kullanım süresini görmek</td></tr>
 <tr><td>Program sürümü, işletim sistemi, arayüz dili, ekran boyutu</td><td>Hangi sürüm ve cihazlara öncelik verileceğini bilmek</td></tr>
 <tr><td>Ülke (bağlantı adresinden kaba olarak çıkarılır; adresin kendisi saklanmaz)</td><td>Programın hangi ülkelerde kullanıldığını görmek</td></tr>
+<tr><td>Not, yer imi ya da vurgu eklendiğinde veya silindiğinde yalnız “bir tane eklendi/silindi” bilgisi ve bölümü (Âyet, Tefsir, Hadis, Fıkıh, Siyer); yazdığın şey asla</td><td>Not özelliklerinin ne kadar kullanıldığını görmek</td></tr>
 </tbody>
 </table>
-<p>Bu sayımlar gizliliği önceleyen, çerez kullanmayan <b>Umami</b> (cloud.umami.is) hizmetine şifreli bağlantıyla (HTTPS) gönderilir. Umami IP adresini saklamaz; kayıtlar bir kişiye ya da cihaza bağlanamaz. Bir oturumu birbirine bağlayan geçici anahtar yalnız bellekte tutulur ve program kapanınca silinir. Bu bilgiler satılmaz, reklam için kullanılmaz, kimseyle paylaşılmaz.</p>
+<p>Bu sayımlar gizliliği önceleyen, çerez kullanmayan <b>Umami</b> (cloud.umami.is) hizmetine ve projenin Cloudflare üzerinde çalışan kendi sayacına (tefsir-sayac.tefsirkutuphanesi.workers.dev) şifreli bağlantıyla (HTTPS) gönderilir. Sayaç da IP adresini saklamaz; programın her açılışı yalnız bellekte tutulan rastgele bir işaret taşır, bu işaret saklanmaz ve bir kişiyi tanıtmaz. Tanıtım sayfası da ziyaretleri aynı şekilde, çerez kullanmadan sayar (açılan sayfa, sayfada geçen süre, indirme düğmelerine tıklama). Sayımları yalnız geliştiriciler görür. Umami IP adresini saklamaz; kayıtlar bir kişiye ya da cihaza bağlanamaz. Bir oturumu birbirine bağlayan geçici anahtar yalnız bellekte tutulur ve program kapanınca silinir. Bu bilgiler satılmaz, reklam için kullanılmaz, kimseyle paylaşılmaz.</p>
 <p>Bu sayımlar kişisel veri içermez ve kimseyle eşleştirilemez; programın hangi bölümlerinin işe yaradığını görüp geliştirmek için kullanılır.</p>
 
 <h2>4. Uygulamanın internete bağlandığı durumlar</h2>
