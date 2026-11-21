@@ -1,16 +1,39 @@
 {
-  "version": "5.49",
+  "version": "5.50",
   "date": "2026-11-21",
   "notes": [
-    "Siyer: adım adım haritalar",
-    "Siyer: yerler, listeler ve okuma planı",
-    "Siyer: tarih ihtilafları ve Word'e aktarma",
+    "Siyer: zaman çizelgesi ve Hz. Peygamber'in (s.a.v.) yaşı",
+    "Siyer: yeni fotoğraflar ve açıklamaları",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Kurulum.exe",
-  "sha256": "5a0c19ff750498384a5533b41c7e9954927427d5fef96ad45fbe91176648037d",
-  "size": 40540672,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Kurulum.exe",
+  "sha256": "2531e916b1cdedac3ffc6dca0482c62ca2614675a2e096d1338f5988a3f120cf",
+  "size": 41561088,
   "history": [
+    {
+      "version": "5.49",
+      "date": "2026-11-21",
+      "notes": [
+        "Siyer: adım adım haritalar",
+        "Siyer: yerler, listeler ve okuma planı",
+        "Siyer: tarih ihtilafları ve Word'e aktarma",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Sīra: maps step by step",
+          "Sīra: places, lists and a reading plan",
+          "Sīra: disputed dates and export to Word",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "السيرة: خرائط خطوة خطوة",
+          "السيرة: الأماكن والقوائم وخطة القراءة",
+          "السيرة: الاختلاف في التواريخ والتصدير إلى وورد",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.48",
       "date": "2026-11-21",
@@ -1924,28 +1947,26 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "a891dc5aacca9fe77f035c38d5d71d54ea5a64f8a7dc9732ac550cc9d86f72ea",
-    "size": 14156992
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "c0f4d8b1bca2880fb44944fb7649375dd12f8c5952c6860022fabac402ac93de",
+    "size": 15176896
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Sīra: maps step by step",
-      "Sīra: places, lists and a reading plan",
-      "Sīra: disputed dates and export to Word",
+      "Sīra: a timeline and the Prophet's ﷺ age",
+      "Sīra: new photographs, with what they show",
       "Fixes and improvements"
     ],
     "ar": [
-      "السيرة: خرائط خطوة خطوة",
-      "السيرة: الأماكن والقوائم وخطة القراءة",
-      "السيرة: الاختلاف في التواريخ والتصدير إلى وورد",
+      "السيرة: خط زمني وعمر النبي ﷺ",
+      "السيرة: صور جديدة مع بيان ما فيها",
       "إصلاحات وتحسينات"
     ]
   }
