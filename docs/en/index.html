@@ -202,11 +202,11 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 </head>
 <body>
 <header class="top"><div class="wrap row1">
-  <a class="brand" href="#"><img src="../img/icon256.png" alt="">Tafsir &amp; Hadith Library</a><span class="grow"></span><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span><button class="bagis-btn" id="bagisBtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.6h2c.7-1.5 2.2-2.6 4.3-2.6 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg><span>Donate</span></button>
+  <a class="brand" href="#"><img src="../img/icon256.png" alt="">Tafsir &amp; Hadith Library</a><span class="grow"></span><span class="langsw"><a href="../" hreflang="tr">TR</a><a href="./" aria-current="page">EN</a><a href="../ar/" lang="ar" hreflang="ar">عربي</a></span><button class="bagis-btn" id="bagisBtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.6h2c.7-1.5 2.2-2.6 4.3-2.6 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg><span>Support</span></button>
 </div><div class="wrap row2">
   <nav><a href="#video">Video</a><a href="#kuran">Qur'an</a><a href="#ezber">Memorize</a><a href="#takip">Follow</a><a href="#hadis">Hadith</a><a href="#fikih">Fiqh</a><a href="#biyografi">Biographies</a><a href="#siyer">Sīra</a><a href="#notlar">Notes</a><a href="#diller">Languages</a><a href="#telefon">Devices</a><a href="#kutuphane">Library</a><a href="#kurulum">Download</a><a href="#sss">FAQ</a></nav>
 </div></header>
-<dialog class="bagis" id="bagisDlg" aria-labelledby="bagisT"><div class="bg-head"><h2 id="bagisT">Donate</h2><button class="bg-x" type="button" aria-label="Close" title="Close">✕</button></div><div class="bg-body" id="bagisBody"></div></dialog>
+<dialog class="bagis" id="bagisDlg" aria-labelledby="bagisT"><div class="bg-head"><h2 id="bagisT">Support the project</h2><button class="bg-x" type="button" aria-label="Close" title="Close">✕</button></div><div class="bg-body" id="bagisBody"></div></dialog>
 
 <main>
 <div class="hero"><div class="wrap">
@@ -486,9 +486,9 @@ fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.jso
   .catch(() => {});
 </script>
 <script id="arapcaAc">(function(){function ac(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}addEventListener("hashchange",ac);ac();})();</script>
-<script id="bagisJs">/* Bağış: the accounts set in the project's admin panel (tefsir-sayac › /bagis), in this page's language */
+<script id="bagisJs">/* Destek Ol: the accounts set in the project's admin panel (tefsir-sayac › /bagis), in this page's language */
 (() => {
-  const L = {"btn": "Donate", "intro": "Tafsir & Hadith Library is free and will stay free: no ads, no account, no paid features. If you would like to contribute to its development, the preparation of new books and costs such as servers, you can voluntarily support it through the accounts below. Nothing is given in return; no feature of the program depends on it.", "empty": "Donation account details will be published here very soon.", "sahip": "Account holder", "banka": "Bank", "hesapNo": "Account no", "not_": "Reference", "copy": "Copy", "copied": "Copied ✓", "load": "Loading…", "err": "The details could not be loaded right now; please try again shortly.", "links": "Other ways", "other": "Recommending the program, reporting errors and praying for it are also a great support."}, LG = "en", URL_ = "https://tefsir-sayac.tefsirkutuphanesi.workers.dev/bagis";
+  const L = {"btn": "Support", "intro": "Tafsir & Hadith Library is free and will stay free: no ads, no account, no paid features. If you would like to contribute to its development, the preparation of new books and costs such as servers, you can voluntarily support it through the accounts below. Nothing is given in return; no feature of the program depends on it.", "empty": "Support account details will be published here very soon.", "sahip": "Account holder", "banka": "Bank", "hesapNo": "Account no", "not_": "Reference", "copy": "Copy", "copied": "Copied ✓", "load": "Loading…", "err": "The details could not be loaded right now; please try again shortly.", "links": "Other ways", "other": "Recommending the program, reporting errors and praying for it are also a great support."}, LG = "en", URL_ = "https://tefsir-sayac.tefsirkutuphanesi.workers.dev/bagis";
   const btn = document.getElementById("bagisBtn"), dlg = document.getElementById("bagisDlg"), body = document.getElementById("bagisBody");
   const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const pick = o => (o && (o[LG] || o.tr)) || "";

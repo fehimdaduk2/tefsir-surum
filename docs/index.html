@@ -202,11 +202,11 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 </head>
 <body>
 <header class="top"><div class="wrap row1">
-  <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a><span class="grow"></span><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span><button class="bagis-btn" id="bagisBtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.6h2c.7-1.5 2.2-2.6 4.3-2.6 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg><span>Bağış Yap</span></button>
+  <a class="brand" href="#"><img src="img/icon256.png" alt="">Tefsir &amp; Hadis Kütüphanesi</a><span class="grow"></span><span class="langsw"><a href="./" aria-current="page">TR</a><a href="en/">EN</a><a href="ar/" lang="ar">عربي</a></span><button class="bagis-btn" id="bagisBtn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.6h2c.7-1.5 2.2-2.6 4.3-2.6 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z"/></svg><span>Destek Ol</span></button>
 </div><div class="wrap row2">
   <nav><a href="#video">Video</a><a href="#kuran">Kur'an</a><a href="#ezber">Ezber</a><a href="#takip">Takip</a><a href="#hadis">Hadis</a><a href="#fikih">Fıkıh</a><a href="#biyografi">Biyografi</a><a href="#siyer">Siyer</a><a href="#notlar">Notlar</a><a href="#diller">Diller</a><a href="#telefon">Cihazlar</a><a href="#kutuphane">Kütüphane</a><a href="#kurulum">İndir</a><a href="#sss">SSS</a></nav>
 </div></header>
-<dialog class="bagis" id="bagisDlg" aria-labelledby="bagisT"><div class="bg-head"><h2 id="bagisT">Bağış</h2><button class="bg-x" type="button" aria-label="Kapat" title="Kapat">✕</button></div><div class="bg-body" id="bagisBody"></div></dialog>
+<dialog class="bagis" id="bagisDlg" aria-labelledby="bagisT"><div class="bg-head"><h2 id="bagisT">Destek Ol</h2><button class="bg-x" type="button" aria-label="Kapat" title="Kapat">✕</button></div><div class="bg-body" id="bagisBody"></div></dialog>
 
 <main>
 <div class="hero"><div class="wrap">
@@ -486,9 +486,9 @@ fetch("https://raw.githubusercontent.com/fehimdaduk2/tefsir-surum/main/surum.jso
   .catch(() => {});
 </script>
 <script id="arapcaAc">(function(){function ac(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}addEventListener("hashchange",ac);ac();})();</script>
-<script id="bagisJs">/* Bağış: the accounts set in the project's admin panel (tefsir-sayac › /bagis), in this page's language */
+<script id="bagisJs">/* Destek Ol: the accounts set in the project's admin panel (tefsir-sayac › /bagis), in this page's language */
 (() => {
-  const L = {"btn": "Bağış Yap", "intro": "Tefsir & Hadis Kütüphanesi ücretsizdir ve öyle kalacak: reklam yok, hesap yok, ücretli özellik yok. Programın geliştirilmesine, yeni kitapların hazırlanmasına ve sunucu gibi giderlere katkıda bulunmak isterseniz aşağıdaki hesaplardan gönüllü olarak destek olabilirsiniz. Karşılığında bir şey verilmez; programın hiçbir özelliği buna bağlı değildir.", "empty": "Bağış hesap bilgileri çok yakında burada yayımlanacak.", "sahip": "Hesap sahibi", "banka": "Banka", "hesapNo": "Hesap no", "not_": "Açıklama", "copy": "Kopyala", "copied": "Kopyalandı ✓", "load": "Yükleniyor…", "err": "Bilgiler şu an alınamadı; biraz sonra yeniden deneyin.", "links": "Diğer yollar", "other": "Programı tavsiye etmek, hataları bildirmek ve dua etmek de büyük bir destektir."}, LG = "tr", URL_ = "https://tefsir-sayac.tefsirkutuphanesi.workers.dev/bagis";
+  const L = {"btn": "Destek Ol", "intro": "Tefsir & Hadis Kütüphanesi ücretsizdir ve öyle kalacak: reklam yok, hesap yok, ücretli özellik yok. Programın geliştirilmesine, yeni kitapların hazırlanmasına ve sunucu gibi giderlere katkıda bulunmak isterseniz aşağıdaki hesaplardan gönüllü olarak destek olabilirsiniz. Karşılığında bir şey verilmez; programın hiçbir özelliği buna bağlı değildir.", "empty": "Destek hesap bilgileri çok yakında burada yayımlanacak.", "sahip": "Hesap sahibi", "banka": "Banka", "hesapNo": "Hesap no", "not_": "Açıklama", "copy": "Kopyala", "copied": "Kopyalandı ✓", "load": "Yükleniyor…", "err": "Bilgiler şu an alınamadı; biraz sonra yeniden deneyin.", "links": "Diğer yollar", "other": "Programı tavsiye etmek, hataları bildirmek ve dua etmek de büyük bir destektir."}, LG = "tr", URL_ = "https://tefsir-sayac.tefsirkutuphanesi.workers.dev/bagis";
   const btn = document.getElementById("bagisBtn"), dlg = document.getElementById("bagisDlg"), body = document.getElementById("bagisBody");
   const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const pick = o => (o && (o[LG] || o.tr)) || "";
