@@ -80,6 +80,41 @@ def appstore():
     return out
 
 
+# ---- the stores' reviews: the stars, title, text, language, country and version; never the reviewer's name ----
+def reviews():
+    out = []
+    kid, iss, p8 = (os.environ.get(k, "").strip() for k in ("APPLE_API_KEY_ID", "APPLE_API_ISSUER_ID", "APPLE_API_KEY_P8"))
+    if kid and iss and p8:
+        try:
+            req = urllib.request.Request("https://api.appstoreconnect.apple.com/v1/apps/%s/customerReviews?sort=-createdDate&limit=100" % APP_ID,
+                                         headers={"Authorization": "Bearer " + apple_jwt(kid, iss, p8)})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                for x in json.load(r).get("data", []):
+                    a = x.get("attributes", {})
+                    ts = int(datetime.datetime.fromisoformat(a["createdDate"].replace("Z", "+00:00")).timestamp())
+                    out.append({"id": "app:" + x["id"], "ts": ts, "puan": a.get("rating"), "baslik": a.get("title") or "", "metin": a.get("body") or "", "ulke": (a.get("territory") or "")[:3]})
+        except Exception as e:
+            print("App Store yorumları alınamadı:", e)
+    raw = os.environ.get("GOOGLE_PLAY_ANAHTAR", "").strip()
+    if raw:
+        try:
+            tok = google_token(json.loads(raw), ["https://www.googleapis.com/auth/androidpublisher"])
+            req = urllib.request.Request("https://androidpublisher.googleapis.com/androidpublisher/v3/applications/%s/reviews?maxResults=100" % PKG, headers={"Authorization": "Bearer " + tok})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                for x in json.load(r).get("reviews", []):
+                    c = next((k["userComment"] for k in x.get("comments", []) if "userComment" in k), None)
+                    if not c: continue
+                    out.append({"id": "play:" + x["reviewId"], "ts": int(c.get("lastModified", {}).get("seconds", 0)), "puan": c.get("starRating"), "metin": (c.get("text") or "").strip(),
+                                "dil": (c.get("reviewerLanguage") or "")[:12], "surum": c.get("appVersionName") or ""})
+        except urllib.error.HTTPError as e:
+            try: why = json.loads(e.read().decode()).get("error", {}).get("message", "")
+            except Exception: why = ""
+            print("Google Play yorumları alınamadı: HTTP %d: %s" % (e.code, why[:300]))
+        except Exception as e:
+            print("Google Play yorumları alınamadı:", e)
+    return [x for x in out if x["ts"] > 1.5e9]
+
+
 # ---- Google Play: the statistics Play Console writes every day as CSV files (UTF-16) into its Cloud Storage bucket,
 # read with a service account invited to Play Console (read-only: bulk reports, app quality). The secrets:
 # GOOGLE_PLAY_ANAHTAR (the service account's JSON key) and GOOGLE_PLAY_KOVA (gs://pubsite_prod_rev_…); without them, skipped.
@@ -210,9 +245,16 @@ def main():
         gp = play()
     except Exception as e:
         print("Google Play atlandı:", e); gp = None
-    payload = {"github": data, "appstore": app, "play": gp} if (app or gp) else data
+    try:
+        yor = reviews()
+    except Exception as e:
+        print("Yorumlar atlandı:", e); yor = []
+    print("Mağaza yorumu:", len(yor))
     if gp: print("Google Play:", len(gp["gun"]), "gün,", len(gp["ulke"]), "ülke satırı,", len(gp["vital"]), "vitals günü")
-    if gp and not (gp["gun"] or gp["ulke"] or gp["vital"]): payload = {"github": data, "appstore": app} if app else data
+    if gp and not (gp["gun"] or gp["ulke"] or gp["vital"]): gp = None
+    payload = {"github": data, "appstore": app}
+    if gp: payload["play"] = gp
+    if yor: payload["yorum"] = yor
     # GitHub's signed identity token for this job
     t = get(os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"] + "&audience=tefsir-sayac", os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"])["value"]
     req = urllib.request.Request(SAYAC, data=json.dumps(payload).encode(), method="POST",
