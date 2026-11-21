@@ -1,15 +1,36 @@
 {
-  "version": "5.50",
+  "version": "5.51",
   "date": "2026-11-21",
   "notes": [
-    "Siyer: zaman çizelgesi ve Hz. Peygamber'in (s.a.v.) yaşı",
-    "Siyer: yeni fotoğraflar ve açıklamaları",
+    "Görüş bildir: önerinizi ve hata bildirimlerinizi doğrudan geliştiricilere gönderin",
+    "Duyurular ve güncelleme uyarıları",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Kurulum.exe",
-  "sha256": "2531e916b1cdedac3ffc6dca0482c62ca2614675a2e096d1338f5988a3f120cf",
-  "size": 41561088,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.51/Guncelleme-Kurulum.exe",
+  "sha256": "0731f45ad068e3887060b4740f26a4ea8fa5a93fb22ee1938f94fb5f2b34b70c",
+  "size": 41572352,
   "history": [
+    {
+      "version": "5.50",
+      "date": "2026-11-21",
+      "notes": [
+        "Siyer: zaman çizelgesi ve Hz. Peygamber'in (s.a.v.) yaşı",
+        "Siyer: yeni fotoğraflar ve açıklamaları",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Sīra: a timeline and the Prophet's ﷺ age",
+          "Sīra: new photographs, with what they show",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "السيرة: خط زمني وعمر النبي ﷺ",
+          "السيرة: صور جديدة مع بيان ما فيها",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.49",
       "date": "2026-11-21",
@@ -1947,26 +1968,26 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.51/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.51/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.51/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.51/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.50/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "c0f4d8b1bca2880fb44944fb7649375dd12f8c5952c6860022fabac402ac93de",
-    "size": 15176896
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.51/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "2946917e10936496a9f9eade3c74c8b7f5d2e45cd6c4021f4bb464340c44a7fc",
+    "size": 15180992
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Sīra: a timeline and the Prophet's ﷺ age",
-      "Sīra: new photographs, with what they show",
+      "Send feedback: suggestions and error reports straight to the developers",
+      "Announcements and update notices",
       "Fixes and improvements"
     ],
     "ar": [
-      "السيرة: خط زمني وعمر النبي ﷺ",
-      "السيرة: صور جديدة مع بيان ما فيها",
+      "أرسل ملاحظاتك: اقتراحاتك وبلاغات الأخطاء مباشرةً إلى المطوّرين",
+      "الإعلانات وتنبيهات التحديث",
       "إصلاحات وتحسينات"
     ]
   }
