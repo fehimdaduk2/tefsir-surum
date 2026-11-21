@@ -108,7 +108,9 @@ def gcs_csv(tok, bucket, name):
             raw = r.read()
     except urllib.error.HTTPError as e:
         if e.code == 404: return []
-        raise
+        try: why = json.loads(e.read().decode()).get("error", {}).get("message", "")
+        except Exception: why = ""
+        raise RuntimeError("%s okunamadı (%d): %s" % (name.split("/")[-1], e.code, why[:300]))
     for enc in ("utf-16", "utf-8-sig"):
         try:
             text = raw.decode(enc); break
