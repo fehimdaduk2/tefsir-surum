@@ -133,6 +133,14 @@ def play():
     tok = google_token(key, ["https://www.googleapis.com/auth/devstorage.read_only", "https://www.googleapis.com/auth/playdeveloperreporting"])
     today = datetime.date.today(); months = [today.strftime("%Y%m"), (today.replace(day=1) - datetime.timedelta(days=1)).strftime("%Y%m")]
     days, ulke = {}, {}
+    try:
+        reports(tok, bucket, months, days, ulke)
+    except Exception as e:     # the reports may be refused while the vitals are allowed (two different permissions)
+        print("Google Play raporları alınamadı:", e)
+    return finish(tok, today, days, ulke)
+
+
+def reports(tok, bucket, months, days, ulke):
     for m in months:
         for r in gcs_csv(tok, bucket, "stats/installs/installs_%s_%s_overview.csv" % (PKG, m)):
             d = r.get("Date"); 
@@ -147,6 +155,10 @@ def play():
             d, cc = r.get("Date"), (r.get("Country") or "").upper()
             if d and len(cc) == 2:
                 ulke[(d, cc)] = {"gun": d, "cc": cc, "yukle": int(num(r.get("Daily User Installs"))), "aktif": int(num(r.get("Active Device Installs")))}
+
+
+
+def finish(tok, today, days, ulke):
     out = {"gun": [dict(gun=d, **v) for d, v in sorted(days.items())][-62:], "ulke": sorted(ulke.values(), key=lambda x: x["gun"])[-1500:], "vital": []}
     # Android vitals (the Play Developer Reporting API): the crash and ANR rates of the last weeks, where Google has enough users for them
     try:
@@ -196,6 +208,7 @@ def main():
         print("Google Play atlandı:", e); gp = None
     payload = {"github": data, "appstore": app, "play": gp} if (app or gp) else data
     if gp: print("Google Play:", len(gp["gun"]), "gün,", len(gp["ulke"]), "ülke satırı,", len(gp["vital"]), "vitals günü")
+    if gp and not (gp["gun"] or gp["ulke"] or gp["vital"]): payload = {"github": data, "appstore": app} if app else data
     # GitHub's signed identity token for this job
     t = get(os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"] + "&audience=tefsir-sayac", os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"])["value"]
     req = urllib.request.Request(SAYAC, data=json.dumps(payload).encode(), method="POST",
