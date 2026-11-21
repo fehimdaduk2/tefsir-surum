@@ -23,4 +23,6 @@ jobs:
           APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
           APPLE_API_KEY_P8: ${{ secrets.APPLE_API_KEY_P8 }}
           APPLE_VENDOR_NUMBER: ${{ secrets.APPLE_VENDOR_NUMBER }}
+          GOOGLE_PLAY_ANAHTAR: ${{ secrets.GOOGLE_PLAY_ANAHTAR }}
+          GOOGLE_PLAY_KOVA: ${{ secrets.GOOGLE_PLAY_KOVA }}
         run: python3 araclar/sayim.py
