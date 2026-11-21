@@ -19,4 +19,8 @@ jobs:
       - name: Say ve gönder
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          APPLE_API_KEY_ID: ${{ secrets.APPLE_API_KEY_ID }}
+          APPLE_API_ISSUER_ID: ${{ secrets.APPLE_API_ISSUER_ID }}
+          APPLE_API_KEY_P8: ${{ secrets.APPLE_API_KEY_P8 }}
+          APPLE_VENDOR_NUMBER: ${{ secrets.APPLE_VENDOR_NUMBER }}
         run: python3 araclar/sayim.py
