@@ -45,10 +45,10 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 <header><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><a href="./">← Tefsir &amp; Hadis Kütüphanesi</a><span class="langsw"><a href="gizlilik.html" aria-current="page">TR</a><a href="en/gizlilik.html">EN</a><a href="ar/gizlilik.html" lang="ar">عربي</a></span></div></header>
 <main class="wrap">
 <h1>Gizlilik Politikası</h1>
-<p class="muted">Yürürlük tarihi: 20 Kasım 2026 · Bu metin Windows, Mac, Linux ve Android (Google Play dahil) sürümleri ile bu site için geçerlidir.</p>
+<p class="muted">Yürürlük tarihi: 21 Kasım 2026 · Bu metin Windows, Mac, Linux, Android (Google Play dahil) ve iOS/iPadOS (App Store) sürümleri ile bu site için geçerlidir.</p>
 
 <div class="box">
-<b>Kısaca:</b> Tefsir &amp; Hadis Kütüphanesi hesap istemez; adını, e-postanı, rehberini, konumunu ya da cihaz kimliğini toplamaz. Notların, vurguların, ezber kayıtların ve ses kayıtların senin cihazında durur; istersen <b>kendi Google Drive'ında</b> eşitlenir (bizim bir sunucumuza hiç gitmez). Programın hangi bölümlerinin ne kadar kullanıldığını gösteren <b>isimsiz</b> sayımlar dışında hiçbir bilgi gönderilmez.
+<b>Kısaca:</b> Tefsir &amp; Hadis Kütüphanesi hesap istemez; adını, e-postanı, rehberini, konumunu ya da cihazın donanım kimliğini toplamaz. Notların, vurguların, ezber kayıtların ve ses kayıtların senin cihazında durur; istersen <b>kendi Google Drive'ında</b> eşitlenir (bizim bir sunucumuza hiç gitmez). Programın hangi bölümlerinin ne kadar kullanıldığını ve kaç ayrı cihazda kullanıldığını gösteren <b>isimsiz</b> sayımlar dışında hiçbir bilgi gönderilmez; bu sayımlar Ayarlar'dan kapatılabilir.
 </div>
 
 <h2>1. Kim sorumlu?</h2>
@@ -59,7 +59,7 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 <li>Ad, e-posta, telefon numarası ya da herhangi bir hesap bilgisi (uygulamada hesap yoktur; isteğe bağlı Google Drive eşitlemesi için aşağıdaki 6. bölüme bak).</li>
 <li>Okuduğun, aradığın ya da yazdığın metinler; notların, etiketlerin, vurguların, yer imlerin, ezber ve hatim planların (bunların yalnız sayısı sayılır, içeriği asla: 3. bölüm).</li>
 <li>Konum (GPS), rehber, fotoğraflar, takvim, SMS ya da çağrı bilgileri.</li>
-<li>Reklam kimliği ya da cihazı tanımlayan kalıcı bir kimlik. Uygulamada reklam yoktur.</li>
+<li>Reklam kimliği ya da cihazdan alınan bir kimlik (seri numarası, donanım kimliği, telefon numarası gibi). Uygulamada reklam yoktur.</li>
 </ul>
 
 <h2>3. İsimsiz kullanım istatistikleri</h2>
@@ -71,11 +71,12 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 <tr><td>Programın açık kaldığı süre (ön plandayken birkaç dakikada bir “hâlâ açık” sayımı)</td><td>Ortalama kullanım süresini görmek</td></tr>
 <tr><td>Program sürümü, işletim sistemi, arayüz dili, ekran boyutu</td><td>Hangi sürüm ve cihazlara öncelik verileceğini bilmek</td></tr>
 <tr><td>Ülke (bağlantı adresinden kaba olarak çıkarılır; adresin kendisi saklanmaz)</td><td>Programın hangi ülkelerde kullanıldığını görmek</td></tr>
+<tr><td>Anonim cihaz numarası (program sürüm 5.48'den itibaren): program ilk kez sayım gönderirken rastgele üretir; senden, cihazından ya da sisteminden hiçbir bilgi taşımaz. Yalnız projenin kendi sayacına gider ve sayaç onu değil, gizli bir anahtarla alınmış, geri çevrilemeyen bir özetini saklar.</td><td>Programı kaç ayrı cihazın kullandığını ve kaçının yeni kurulum olduğunu görmek</td></tr>
 <tr><td>Not, yer imi ya da vurgu eklendiğinde veya silindiğinde yalnız “bir tane eklendi/silindi” bilgisi ve bölümü (Âyet, Tefsir, Hadis, Fıkıh, Siyer); yazdığın şey asla</td><td>Not özelliklerinin ne kadar kullanıldığını görmek</td></tr>
 </tbody>
 </table>
-<p>Bu sayımlar gizliliği önceleyen, çerez kullanmayan <b>Umami</b> (cloud.umami.is) hizmetine ve projenin Cloudflare üzerinde çalışan kendi sayacına (tefsir-sayac.tefsirkutuphanesi.workers.dev) şifreli bağlantıyla (HTTPS) gönderilir. Sayaç da IP adresini saklamaz; programın her açılışı yalnız bellekte tutulan rastgele bir işaret taşır, bu işaret saklanmaz ve bir kişiyi tanıtmaz. Tanıtım sayfası da ziyaretleri aynı şekilde, çerez kullanmadan sayar (açılan sayfa, sayfada geçen süre, indirme düğmelerine tıklama). Sayımları yalnız geliştiriciler görür. Umami IP adresini saklamaz; kayıtlar bir kişiye ya da cihaza bağlanamaz. Bir oturumu birbirine bağlayan geçici anahtar yalnız bellekte tutulur ve program kapanınca silinir. Bu bilgiler satılmaz, reklam için kullanılmaz, kimseyle paylaşılmaz.</p>
-<p>Bu sayımlar kişisel veri içermez ve kimseyle eşleştirilemez; programın hangi bölümlerinin işe yaradığını görüp geliştirmek için kullanılır.</p>
+<p>Bu sayımlar gizliliği önceleyen, çerez kullanmayan <b>Umami</b> (cloud.umami.is) hizmetine ve projenin Cloudflare üzerinde çalışan kendi sayacına (tefsir-sayac.tefsirkutuphanesi.workers.dev) şifreli bağlantıyla (HTTPS) gönderilir. Sayaç da IP adresini saklamaz; programın her açılışı yalnız bellekte tutulan rastgele bir işaret taşır. Anonim cihaz numarası programın bu cihazdaki yerel ayar klasöründe durur (eşitlenen notlarının yanında değil); silinirse program yenisini üretir. Bu numara adınla, e-postanla ya da cihazının kendi kimliğiyle eşleştirilemez. Tanıtım sayfası da ziyaretleri aynı şekilde, çerez kullanmadan sayar (açılan sayfa, sayfada geçen süre, indirme düğmelerine tıklama). Sayımları yalnız geliştiriciler görür. Umami IP adresini saklamaz ve ona cihaz numarası gönderilmez; oradaki kayıtlar bir kişiye ya da cihaza bağlanamaz. Bir oturumu birbirine bağlayan geçici anahtar yalnız bellekte tutulur ve program kapanınca silinir. Bu bilgiler satılmaz, reklam için kullanılmaz, kimseyle paylaşılmaz.</p>
+<p>Bu sayımlar kişisel veri içermez ve kimseyle eşleştirilemez; programın hangi bölümlerinin işe yaradığını görüp geliştirmek için kullanılır. <b>Sayımları istemezsen</b> Ayarlar'daki kullanım istatistiği seçeneğini kapat: kapalıyken program hiçbir sayım göndermez ve cihaz numarası üretmez.</p>
 
 <h2>4. Uygulamanın internete bağlandığı durumlar</h2>
 <p>Program internetsiz çalışır. Yalnız şu durumlarda bağlantı kurar ve bu bağlantılarda senin hakkında bilgi göndermez:</p>

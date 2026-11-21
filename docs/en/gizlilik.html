@@ -45,10 +45,10 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 <header><div class="wrap" style="display:flex;justify-content:space-between;align-items:center;gap:12px"><a href="./">← Tafsir &amp; Hadith Library</a><span class="langsw"><a href="../gizlilik.html" hreflang="tr">TR</a><a href="gizlilik.html" aria-current="page">EN</a><a href="../ar/gizlilik.html" lang="ar">عربي</a></span></div></header>
 <main class="wrap">
 <h1>Privacy Policy</h1>
-<p class="muted">Effective date: 20 November 2026 · This text applies to the Windows, Mac, Linux and Android (including Google Play) versions and to this website.</p>
+<p class="muted">Effective date: 21 November 2026 · This text applies to the Windows, Mac, Linux, Android (including Google Play) and iOS/iPadOS (App Store) versions and to this website.</p>
 
 <div class="box">
-<b>In short:</b> The Tafsir &amp; Hadith Library asks for no account; it does not collect your name, e-mail, contacts, location or device identifier. Your notes, highlights, memorization records and recordings stay on your device only. Apart from <b>anonymous</b> counts showing which parts of the program are used and for how long, nothing is sent.
+<b>In short:</b> The Tafsir &amp; Hadith Library asks for no account; it does not collect your name, e-mail, contacts, location or the device's hardware identifier. Your notes, highlights, memorization records and recordings stay on your device only. Apart from <b>anonymous</b> counts showing which parts of the program are used, for how long and on how many separate devices, nothing is sent; these counts can be turned off in Settings.
 </div>
 
 <h2>1. Who is responsible?</h2>
@@ -59,7 +59,7 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 <li>Name, e-mail, phone number or any account information (the app has no accounts).</li>
 <li>The texts you read, search or write; your notes, tags, highlights, bookmarks, memorization and khatm plans (only how many there are is counted, never their content: section 3).</li>
 <li>Location (GPS), contacts, photos, calendar, SMS or call information.</li>
-<li>An advertising ID or any persistent identifier of the device. The app has no ads.</li>
+<li>An advertising ID or any identifier taken from the device (such as its serial number, hardware ID or phone number). The app has no ads.</li>
 </ul>
 
 <h2>3. Anonymous usage statistics</h2>
@@ -71,11 +71,12 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
 <tr><td>How long the program stays open (a “still open” count every few minutes while it is in front)</td><td>To see the average time of use</td></tr>
 <tr><td>Program version, operating system, interface language, screen size</td><td>To know which versions and devices to prioritize</td></tr>
 <tr><td>Country (roughly derived from the connection address; the address itself is not stored)</td><td>To see in which countries the program is used</td></tr>
+<tr><td>An anonymous device number (from program version 5.48): drawn at random by the program the first time it sends a count; it carries nothing about you, your device or your system. It goes only to the project's own counter, which stores not the number itself but a one-way digest of it, taken with a secret key, that cannot be turned back.</td><td>To see how many separate devices use the program and how many are new installations</td></tr>
 <tr><td>When a note, bookmark or highlight is added or deleted, only “one added/deleted” and its section (Verse, Tafsir, Hadith, Fiqh, Sīra); never what you wrote</td><td>To see how much the note features are used</td></tr>
 </tbody>
 </table>
-<p>These counts are sent over an encrypted connection (HTTPS) to the privacy-first, cookie-free <b>Umami</b> service (cloud.umami.is) and to the project's own counter running on Cloudflare (tefsir-sayac.tefsirkutuphanesi.workers.dev). The counter does not store IP addresses either; each start of the program carries a random mark kept in memory only, which is not saved and does not identify anyone. The website counts visits the same way, without cookies (the page opened, time on the page, clicks on the download buttons). Only the developers see the counts. Umami does not store IP addresses; the records cannot be linked to a person or device. A temporary key that links one session together is kept in memory only and erased when the program closes. This information is not sold, not used for advertising and not shared with anyone.</p>
-<p>These counts contain no personal data and cannot be linked to anyone; they are used to see which parts of the program are useful and to improve it.</p>
+<p>These counts are sent over an encrypted connection (HTTPS) to the privacy-first, cookie-free <b>Umami</b> service (cloud.umami.is) and to the project's own counter running on Cloudflare (tefsir-sayac.tefsirkutuphanesi.workers.dev). The counter does not store IP addresses either; each start of the program carries a random mark kept in memory only. The anonymous device number is kept in the program's local settings folder on that device (not with your synced notes); if it is deleted, the program draws a new one. It cannot be matched with your name, your e-mail or your device's own identifiers. The website counts visits the same way, without cookies (the page opened, time on the page, clicks on the download buttons). Only the developers see the counts. Umami does not store IP addresses and is not sent the device number; its records cannot be linked to a person or device. A temporary key that links one session together is kept in memory only and erased when the program closes. This information is not sold, not used for advertising and not shared with anyone.</p>
+<p>These counts contain no personal data and cannot be linked to anyone; they are used to see which parts of the program are useful and to improve it. <b>If you do not want them</b>, turn off the usage statistics option in Settings: while it is off the program sends no counts and makes no device number.</p>
 
 <h2>4. When the app connects to the internet</h2>
 <p>The program works offline. It connects only in these cases, and sends nothing about you in them:</p>
