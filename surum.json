@@ -1,16 +1,40 @@
 {
-  "version": "5.48",
+  "version": "5.49",
   "date": "2026-11-21",
   "notes": [
-    "Not pencereleri metni kapatmıyor",
-    "Kullanım istatistiği ayarı",
-    "Dil ayarı düzeltmesi",
+    "Siyer: adım adım haritalar",
+    "Siyer: yerler, listeler ve okuma planı",
+    "Siyer: tarih ihtilafları ve Word'e aktarma",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.48/Guncelleme-Kurulum.exe",
-  "sha256": "3883a8eaca1131772e0fa07247a169c8ea450bfade4272288efa4a987daca3f0",
-  "size": 40515584,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Kurulum.exe",
+  "sha256": "5a0c19ff750498384a5533b41c7e9954927427d5fef96ad45fbe91176648037d",
+  "size": 40540672,
   "history": [
+    {
+      "version": "5.48",
+      "date": "2026-11-21",
+      "notes": [
+        "Not pencereleri metni kapatmıyor",
+        "Kullanım istatistiği ayarı",
+        "Dil ayarı düzeltmesi",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Note windows no longer cover the text",
+          "Usage statistics setting",
+          "Language setting fix",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "نوافذ التعليقات لا تغطي النص",
+          "إعداد إحصاءات الاستخدام",
+          "إصلاح إعداد اللغة",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.47",
       "date": "2026-11-21",
@@ -1900,28 +1924,28 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.48/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.48/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.48/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.48/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.48/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "efde21d7463f3341ab23e541c7a05ab28ca72d8af5f938e9d80b26b8088a97de",
-    "size": 14128320
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.49/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "a891dc5aacca9fe77f035c38d5d71d54ea5a64f8a7dc9732ac550cc9d86f72ea",
+    "size": 14156992
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Note windows no longer cover the text",
-      "Usage statistics setting",
-      "Language setting fix",
+      "Sīra: maps step by step",
+      "Sīra: places, lists and a reading plan",
+      "Sīra: disputed dates and export to Word",
       "Fixes and improvements"
     ],
     "ar": [
-      "نوافذ التعليقات لا تغطي النص",
-      "إعداد إحصاءات الاستخدام",
-      "إصلاح إعداد اللغة",
+      "السيرة: خرائط خطوة خطوة",
+      "السيرة: الأماكن والقوائم وخطة القراءة",
+      "السيرة: الاختلاف في التواريخ والتصدير إلى وورد",
       "إصلاحات وتحسينات"
     ]
   }
