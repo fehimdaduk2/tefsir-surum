@@ -1,0 +1,21 @@
+# Apple anahtarlarının sınanması (bir kerelik): App Store Connect API'ye bağlanıp uygulama listesini okur.
+name: Apple sınama
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/apple-sina.yml", "araclar/apple_sina.py"]
+permissions:
+  contents: read
+jobs:
+  sina:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q cryptography
+      - name: Bağlan
+        env:
+          KID: ${{ secrets.APPLE_API_KEY_ID }}
+          ISS: ${{ secrets.APPLE_API_ISSUER_ID }}
+          P8: ${{ secrets.APPLE_API_KEY_P8 }}
+          TEAM: ${{ secrets.APPLE_TEAM_ID }}
+        run: python3 araclar/apple_sina.py
