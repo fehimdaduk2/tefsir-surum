@@ -1,14 +1,31 @@
 {
-  "version": "5.46",
-  "date": "2026-11-20",
+  "version": "5.47",
+  "date": "2026-11-21",
   "notes": [
-    "Üst çubukta simge adları",
-    "Ayarlar"
+    "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.46/Guncelleme-Kurulum.exe",
-  "sha256": "8270b8c52a5717c17773de390b94f20464da023a40d9a9546400363d6b4f7f20",
-  "size": 40514048,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.47/Guncelleme-Kurulum.exe",
+  "sha256": "0f0b3a02585f93142244c0b76b065821707fffdea8a13add7412b97674fea639",
+  "size": 40516608,
   "history": [
+    {
+      "version": "5.46",
+      "date": "2026-11-20",
+      "notes": [
+        "Üst çubukta simge adları",
+        "Ayarlar"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Button names in the top bar",
+          "Settings"
+        ],
+        "ar": [
+          "أسماء الأزرار في الشريط العلوي",
+          "الإعدادات"
+        ]
+      }
+    },
     {
       "version": "5.45",
       "date": "2026-11-20",
@@ -1865,25 +1882,23 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.46/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.46/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.46/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.46/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.47/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.47/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.47/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.47/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.46/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "d1853ab0eae2a8dc50f00e411cce55f58ab33846071d8369c468c85c02a81849",
-    "size": 14128320
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.47/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "3a829a36dc620a8edb8b8136ebcc07f693df1302891e5394abdffd6a1d2fc1e1",
+    "size": 14124224
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Button names in the top bar",
-      "Settings"
+      "Fixes and improvements"
     ],
     "ar": [
-      "أسماء الأزرار في الشريط العلوي",
-      "الإعدادات"
+      "إصلاحات وتحسينات"
     ]
   }
 }
