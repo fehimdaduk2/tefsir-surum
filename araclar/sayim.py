@@ -176,6 +176,10 @@ def finish(tok, today, days, ulke):
                         v = mv.get("decimalValue", {}).get("value")
                         if v is not None: vit.setdefault(d, {})[mv["metric"]] = float(v)
         out["vital"] = [{"gun": d, "cokme": v.get("crashRate"), "pcokme": v.get("userPerceivedCrashRate"), "anr": v.get("anrRate"), "panr": v.get("userPerceivedAnrRate"), "kisi": int(v.get("distinctUsers") or 0)} for d, v in sorted(vit.items())]
+    except urllib.error.HTTPError as e:
+        try: why = json.loads(e.read().decode()).get("error", {}).get("message", "")
+        except Exception: why = ""
+        print("Android vitals alınamadı: HTTP %d: %s" % (e.code, why[:400]))
     except Exception as e:
         print("Android vitals alınamadı:", e)
     return out
