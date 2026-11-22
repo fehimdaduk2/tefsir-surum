@@ -1,14 +1,34 @@
 {
-  "version": "5.53",
+  "version": "5.54",
   "date": "2026-11-22",
   "notes": [
-    "Telefon: üst çubuk düzeni",
+    "Fıkıh: 17 yeni eser (el-Muğnî, el-Mecmû', Bedâiu's-Sanâi', Reddü'l-Muhtâr ve diğerleri)",
+    "Fıkıh telefonda da",
+    "Mezhep tablosu, miras hesaplayıcı, Türkçe konular ve arama",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.53/Guncelleme-Kurulum.exe",
-  "sha256": "029cdbecd7ada39ba4c14c471905c98b584cd178fd6415d3643dcac1058c1e5c",
-  "size": 41572864,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Kurulum.exe",
+  "sha256": "081fe3f564ee6b6ff5dce63aac1acf0ae1c2edea7225af2e93a816401d0e5a19",
+  "size": 41594880,
   "history": [
+    {
+      "version": "5.53",
+      "date": "2026-11-22",
+      "notes": [
+        "Telefon: üst çubuk düzeni",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Phone: top bar layout",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "الهاتف: ترتيب الشريط العلوي",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.52",
       "date": "2026-11-22",
@@ -2006,24 +2026,28 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.53/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.53/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.53/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.53/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.53/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "f37fe08a0e89f987c73ae1403e94fda66d7f4f3fe3765dbb34032d25d295cd50",
-    "size": 15180992
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "1697992705281a5d599fd3131c1e1a861e1745fecb42f072fcb1c2ef7eb12fb4",
+    "size": 15217856
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Phone: top bar layout",
+      "Fiqh: 17 new works (al-Mughni, al-Majmu', Bada'i' al-Sana'i', Radd al-Muhtar and more)",
+      "Fiqh on the phone too",
+      "Table of the schools, inheritance calculator, topics and search in Turkish",
       "Fixes and improvements"
     ],
     "ar": [
-      "الهاتف: ترتيب الشريط العلوي",
+      "الفقه: 17 كتابًا جديدًا (المغني، والمجموع، وبدائع الصنائع، ورد المحتار وغيرها)",
+      "الفقه في الهاتف أيضًا",
+      "جدول المذاهب، وحاسبة المواريث، والموضوعات والبحث بالتركية",
       "إصلاحات وتحسينات"
     ]
   }
