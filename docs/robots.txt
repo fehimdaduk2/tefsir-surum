@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fehimdaduk2.github.io/tefsir-surum/sitemap.xml
