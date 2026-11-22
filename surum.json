@@ -1,16 +1,38 @@
 {
-  "version": "5.54",
+  "version": "5.55",
   "date": "2026-11-22",
   "notes": [
-    "Fıkıh: 17 yeni eser (el-Muğnî, el-Mecmû', Bedâiu's-Sanâi', Reddü'l-Muhtâr ve diğerleri)",
-    "Fıkıh telefonda da",
-    "Mezhep tablosu, miras hesaplayıcı, Türkçe konular ve arama",
+    "Miras hesaplayıcı ve mezhep tablosu: yeni tasarım",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Kurulum.exe",
-  "sha256": "081fe3f564ee6b6ff5dce63aac1acf0ae1c2edea7225af2e93a816401d0e5a19",
-  "size": 41594880,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Kurulum.exe",
+  "sha256": "98b634bfe61cf0cddc9303ab55f2c62f2d3320436fdf88da577db7307c638be0",
+  "size": 41598976,
   "history": [
+    {
+      "version": "5.54",
+      "date": "2026-11-22",
+      "notes": [
+        "Fıkıh: 17 yeni eser (el-Muğnî, el-Mecmû', Bedâiu's-Sanâi', Reddü'l-Muhtâr ve diğerleri)",
+        "Fıkıh telefonda da",
+        "Mezhep tablosu, miras hesaplayıcı, Türkçe konular ve arama",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Fiqh: 17 new works (al-Mughni, al-Majmu', Bada'i' al-Sana'i', Radd al-Muhtar and more)",
+          "Fiqh on the phone too",
+          "Table of the schools, inheritance calculator, topics and search in Turkish",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "الفقه: 17 كتابًا جديدًا (المغني، والمجموع، وبدائع الصنائع، ورد المحتار وغيرها)",
+          "الفقه في الهاتف أيضًا",
+          "جدول المذاهب، وحاسبة المواريث، والموضوعات والبحث بالتركية",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.53",
       "date": "2026-11-22",
@@ -2026,28 +2048,24 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.54/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "1697992705281a5d599fd3131c1e1a861e1745fecb42f072fcb1c2ef7eb12fb4",
-    "size": 15217856
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "edda91c93cc04fe91ecad7dd34d7c4e95929cb001459e38746b72b6ae979eb30",
+    "size": 15221952
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Fiqh: 17 new works (al-Mughni, al-Majmu', Bada'i' al-Sana'i', Radd al-Muhtar and more)",
-      "Fiqh on the phone too",
-      "Table of the schools, inheritance calculator, topics and search in Turkish",
+      "Inheritance calculator and table of the schools: new design",
       "Fixes and improvements"
     ],
     "ar": [
-      "الفقه: 17 كتابًا جديدًا (المغني، والمجموع، وبدائع الصنائع، ورد المحتار وغيرها)",
-      "الفقه في الهاتف أيضًا",
-      "جدول المذاهب، وحاسبة المواريث، والموضوعات والبحث بالتركية",
+      "حاسبة المواريث وجدول المذاهب: تصميم جديد",
       "إصلاحات وتحسينات"
     ]
   }
