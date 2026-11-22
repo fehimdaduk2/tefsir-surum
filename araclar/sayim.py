@@ -172,6 +172,16 @@ def play():
         reports(tok, bucket, months, days, ulke)
     except Exception as e:     # the reports may be refused while the vitals are allowed (two different permissions)
         print("Google Play raporları alınamadı:", e)
+        # which: no leave at all on the bucket, or only this month's file not written yet (Storage answers 403 for a missing file too)
+        try:
+            u = "https://storage.googleapis.com/storage/v1/b/%s/o?maxResults=20&fields=items(name)" % bucket
+            with urllib.request.urlopen(urllib.request.Request(u, headers={"Authorization": "Bearer " + tok}), timeout=30) as r:
+                names = [x["name"] for x in json.load(r).get("items", [])]
+            print("Kova listelenebiliyor;", len(names), "dosya:", ", ".join(n.split("/")[-1] for n in names[:8]) or "(boş)")
+        except urllib.error.HTTPError as e2:
+            try: why = json.loads(e2.read().decode()).get("error", {}).get("message", "")
+            except Exception: why = ""
+            print("Kova listelenemedi: HTTP %d: %s" % (e2.code, why[:300]))
     return finish(tok, today, days, ulke)
 
 
