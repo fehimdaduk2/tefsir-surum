@@ -1,14 +1,32 @@
 {
-  "version": "5.55",
+  "version": "5.56",
   "date": "2026-11-22",
   "notes": [
-    "Miras hesaplayıcı ve mezhep tablosu: yeni tasarım",
+    "Telefonda menü düzeltmesi",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Kurulum.exe",
-  "sha256": "98b634bfe61cf0cddc9303ab55f2c62f2d3320436fdf88da577db7307c638be0",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.56/Guncelleme-Kurulum.exe",
+  "sha256": "da0bddcc2ca28332a86369fa5a51789f94f21acd9912213190103f4e81eced8b",
   "size": 41598976,
   "history": [
+    {
+      "version": "5.55",
+      "date": "2026-11-22",
+      "notes": [
+        "Miras hesaplayıcı ve mezhep tablosu: yeni tasarım",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Inheritance calculator and table of the schools: new design",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "حاسبة المواريث وجدول المذاهب: تصميم جديد",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.54",
       "date": "2026-11-22",
@@ -2048,24 +2066,24 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.56/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.56/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.56/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.56/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.55/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "edda91c93cc04fe91ecad7dd34d7c4e95929cb001459e38746b72b6ae979eb30",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.56/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "0980017c79821fe2f8148a9054d8a0591d85a8c79a2a3abf428963f78bad4cff",
     "size": 15221952
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Inheritance calculator and table of the schools: new design",
+      "Phone menu fix",
       "Fixes and improvements"
     ],
     "ar": [
-      "حاسبة المواريث وجدول المذاهب: تصميم جديد",
+      "إصلاح القائمة على الهاتف",
       "إصلاحات وتحسينات"
     ]
   }
