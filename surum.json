@@ -1,16 +1,38 @@
 {
-  "version": "5.58",
+  "version": "5.59",
   "date": "2026-11-23",
   "notes": [
-    "Yeni ilk açılış ve kurulum ekranları",
-    "Microsoft Store desteği",
-    "Çeviri düzeltmeleri",
+    "Yeni paket indirme sayfaları",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.58/Guncelleme-Kurulum.exe",
-  "sha256": "3f8ae858223d9df51efea9e176533ac58a468b0647f563f4ab6679ae39bf20bb",
-  "size": 41644032,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.59/Guncelleme-Kurulum.exe",
+  "sha256": "1987aef58ddb9a6ba8735df202b1c7affd2b9e133e96f7340a1c977c7f6e733b",
+  "size": 41648128,
   "history": [
+    {
+      "version": "5.58",
+      "date": "2026-11-23",
+      "notes": [
+        "Yeni ilk açılış ve kurulum ekranları",
+        "Microsoft Store desteği",
+        "Çeviri düzeltmeleri",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "New welcome and installer screens",
+          "Microsoft Store support",
+          "Translation fixes",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "شاشات ترحيب وتثبيت جديدة",
+          "دعم Microsoft Store",
+          "إصلاحات في الترجمة",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.57",
       "date": "2026-11-23",
@@ -2104,28 +2126,24 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.58/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.58/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.58/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.58/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.59/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.59/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.59/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.59/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.58/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "1bac3cf013f9b809e7fdea78e42e8497ecf7fdf89925cb1c59c0e3c0530ee5d5",
-    "size": 15234240
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.59/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "8928e301db63bb89d8288aac9ef3693762de152c40c021064381c6f2c13dc1fb",
+    "size": 15238336
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "New welcome and installer screens",
-      "Microsoft Store support",
-      "Translation fixes",
+      "New pack download pages",
       "Fixes and improvements"
     ],
     "ar": [
-      "شاشات ترحيب وتثبيت جديدة",
-      "دعم Microsoft Store",
-      "إصلاحات في الترجمة",
+      "صفحات جديدة لتنزيل الحزم",
       "إصلاحات وتحسينات"
     ]
   }
