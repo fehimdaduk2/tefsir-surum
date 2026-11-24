@@ -3,7 +3,7 @@
 yazılmaz: GitHub'ın bu iş için imzaladığı kısa ömürlü kimlik belgesiyle (OIDC) projenin sayacına gönderilir; sayaç
 belgeyi GitHub'ın anahtarlarıyla doğrular (yalnız bu depo, main dalı). Yöntem: güncelleme dosyaları (Guncelleme-*)
 ayrı sayılır; tarayıcıların ve denetleyicilerin her dosyadan indirmesi, her sürümün en az indirilen dosyası kadar düşülür."""
-import base64, datetime, gzip, json, os, subprocess, tempfile, time, urllib.error, urllib.parse, urllib.request
+import sys, base64, datetime, gzip, json, os, subprocess, tempfile, time, urllib.error, urllib.parse, urllib.request
 
 API = "https://api.github.com/repos/fehimdaduk2/tefsir-surum/releases?per_page=100&page=%d"
 SAYAC = "https://tefsir-sayac.tefsirkutuphanesi.workers.dev/indirme"
@@ -230,6 +230,50 @@ def finish(tok, today, days, ulke):
     return out
 
 
+def msstore():
+    """Microsoft Store: Partner Center's analytics (araclar/msstore.py): daily acquisitions (by country), failure hits,
+    the day's ratings, and the reviews (no names). None while the keys are not set or the analytics is not open yet."""
+    if not os.environ.get("MSSTORE_SECRET"):
+        return None, []
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import msstore as M
+    try:
+        tok = M.token()
+        end = datetime.date.today(); start = end - datetime.timedelta(days=90)
+        q = "applicationId=%s&startDate=%s&endDate=%s" % (M.APP, start, end)
+        def get(path, extra=""):
+            r = M.call(tok, "GET", "/analytics/%s?%s%s" % (path, q, extra), ok404=True)
+            return (r or {}).get("Value", [])
+        gun, ulke = {}, {}
+        for r in get("appacquisitions", "&aggregationLevel=day&groupby=date,market&top=10000"):
+            d = (r.get("date") or "")[:10]; cc = (r.get("market") or "").upper(); n = int(r.get("acquisitionQuantity") or 0)
+            if not d: continue
+            gun.setdefault(d, {})["edinme"] = gun.get(d, {}).get("edinme", 0) + n
+            if len(cc) == 2: ulke[(d, cc)] = ulke.get((d, cc), 0) + n
+        for r in get("failurehits", "&aggregationLevel=day&top=10000"):
+            d = (r.get("date") or "")[:10]
+            if d: gun.setdefault(d, {})["hata"] = gun.get(d, {}).get("hata", 0) + int(r.get("eventCount") or 0)
+        for r in get("ratings", "&aggregationLevel=day&top=10000"):
+            d = (r.get("date") or "")[:10]
+            st = [int(r.get(k) or 0) for k in ("oneStar", "twoStars", "threeStars", "fourStars", "fiveStars")]
+            n = sum(st)
+            if d and n:
+                g = gun.setdefault(d, {}); pn = g.get("puann", 0); pp = g.get("puan", 0)
+                g["puan"] = round((pp * pn + sum((i + 1) * c for i, c in enumerate(st))) / (pn + n), 2); g["puann"] = pn + n
+        yor = []
+        for r in get("reviews", "&top=500"):
+            rid = str(r.get("reviewId") or r.get("id") or "")
+            if not rid: continue
+            try: ts = int(datetime.datetime.fromisoformat((r.get("date") or "")[:19]).replace(tzinfo=datetime.timezone.utc).timestamp())
+            except ValueError: continue
+            yor.append({"id": "ms:" + rid[:100], "ts": ts, "puan": int(r["rating"]) if r.get("rating") else None, "baslik": r.get("reviewTitle") or "",
+                        "metin": r.get("reviewText") or "", "dil": "", "ulke": (r.get("market") or "")[:2].upper(), "surum": (r.get("packageVersion") or "")[:20]})
+        out = {"gun": [dict(gun=d, **v) for d, v in sorted(gun.items())], "ulke": [{"gun": d, "cc": cc, "edinme": n} for (d, cc), n in sorted(ulke.items())]}
+        return (out if out["gun"] or out["ulke"] else None), yor
+    except SystemExit as e:     # msstore.py stops with a message (the analytics not open yet, a key gone): the rest goes on
+        print("Microsoft Store:", e); return None, []
+
+
 def main():
     rels, page = [], 1
     while True:
@@ -259,11 +303,18 @@ def main():
         yor = reviews()
     except Exception as e:
         print("Yorumlar atlandı:", e); yor = []
+    try:
+        ms, msy = msstore()
+    except Exception as e:
+        print("Microsoft Store atlandı:", e); ms, msy = None, []
+    yor = yor + msy
+    if ms: print("Microsoft Store:", len(ms["gun"]), "gün,", len(ms["ulke"]), "ülke satırı,", len(msy), "yorum")
     print("Mağaza yorumu:", len(yor))
     if gp: print("Google Play:", len(gp["gun"]), "gün,", len(gp["ulke"]), "ülke satırı,", len(gp["vital"]), "vitals günü")
     if gp and not (gp["gun"] or gp["ulke"] or gp["vital"]): gp = None
     payload = {"github": data, "appstore": app}
     if gp: payload["play"] = gp
+    if ms: payload["msstore"] = ms
     if yor: payload["yorum"] = yor
     # GitHub's signed identity token for this job
     t = get(os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"] + "&audience=tefsir-sayac", os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"])["value"]

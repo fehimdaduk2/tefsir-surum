@@ -25,4 +25,7 @@ jobs:
           APPLE_VENDOR_NUMBER: ${{ secrets.APPLE_VENDOR_NUMBER }}
           GOOGLE_PLAY_ANAHTAR: ${{ secrets.GOOGLE_PLAY_ANAHTAR }}
           GOOGLE_PLAY_KOVA: ${{ secrets.GOOGLE_PLAY_KOVA }}
+          MSSTORE_TENANT: ${{ secrets.MSSTORE_TENANT }}
+          MSSTORE_CLIENT: ${{ secrets.MSSTORE_CLIENT }}
+          MSSTORE_SECRET: ${{ secrets.MSSTORE_SECRET }}
         run: python3 araclar/sayim.py
