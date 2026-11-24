@@ -187,7 +187,9 @@ def play():
 
 def reports(tok, bucket, months, days, ulke):
     for m in months:
-        for r in gcs_csv(tok, bucket, "stats/installs/installs_%s_%s_overview.csv" % (PKG, m)):
+        rows = gcs_csv(tok, bucket, "stats/installs/installs_%s_%s_overview.csv" % (PKG, m))
+        if rows: print("Play sütunları (%s):" % m, ", ".join(rows[0].keys())); print("Play son satır:", json.dumps(rows[-1], ensure_ascii=False)[:600])
+        for r in rows:
             d = r.get("Date"); 
             if not d: continue
             days.setdefault(d, {}).update({"yukle": int(num(r.get("Daily User Installs"))), "kaldir": int(num(r.get("Daily User Uninstalls"))),
