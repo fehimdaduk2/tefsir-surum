@@ -200,6 +200,13 @@ def reports(tok, bucket, months, days, ulke):
             ac = gcs_csv(tok, bucket, "acquisition/retained_installers/retained_installers_%s_%s_overview.csv" % (PKG, m))
         except RuntimeError as e:
             print("Edinme raporu:", e); ac = []
+        if not ac and m == months[0]:
+            try:
+                u = "https://storage.googleapis.com/storage/v1/b/%s/o?prefix=acquisition/&maxResults=50&fields=items(name)" % bucket
+                with urllib.request.urlopen(urllib.request.Request(u, headers={"Authorization": "Bearer " + tok}), timeout=30) as rr:
+                    print("Edinme dosyaları:", ", ".join(x["name"].split("/")[-1] for x in json.load(rr).get("items", [])) or "(yok)")
+            except Exception as e:
+                print("Edinme dosyaları listelenemedi:", e)
         if ac: print("Edinme sütunları (%s):" % m, ", ".join(ac[0].keys())); print("Edinme son satır:", json.dumps(ac[-1], ensure_ascii=False)[:500])
         for r in ac:
             d = r.get("Date")
