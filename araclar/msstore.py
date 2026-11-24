@@ -53,8 +53,11 @@ def dene():
         s = call(tok, "GET", "/applications/%s/submissions/%s/status" % (APP, p["id"]))
         print("  durumu:", s.get("status"))
     end = dt.date.today(); start = end - dt.timedelta(days=30)
-    r = call(tok, "GET", "/analytics/appacquisitions?applicationId=%s&startDate=%s&endDate=%s&aggregationLevel=day" % (APP, start, end), ok404=True)
-    print("istatistik arayüzü:", "açık" if r is not None else "veri yok", "· satır:", len((r or {}).get("Value", [])))
+    try:
+        r = call(tok, "GET", "/analytics/appacquisitions?applicationId=%s&startDate=%s&endDate=%s&aggregationLevel=day" % (APP, start, end), ok404=True)
+        print("istatistik arayüzü:", "açık" if r is not None else "veri yok", "· satır:", len((r or {}).get("Value", [])))
+    except SystemExit as e:   # the submission side works without it
+        print("istatistik arayüzü: olmadı:", e)
 
 
 def gonder(msix, notes_path):
@@ -115,9 +118,28 @@ def istatistik(out):
     print("edinme satırı:", len(res["edinme"]), "· puan:", len(res["puan"]), "· yorum:", len(res["yorum"]), "· hata:", len(res["hata"]))
 
 
+def taslak_sil():
+    """a draft left by a failed try (status PendingCommit / CommitFailed) is removed; one in certification is left alone"""
+    tok = token()
+    a = call(tok, "GET", "/applications/%s" % APP)
+    p = a.get("pendingApplicationSubmission")
+    if not p:
+        print("bekleyen gönderim yok"); return
+    st = call(tok, "GET", "/applications/%s/submissions/%s/status" % (APP, p["id"])).get("status")
+    if st in ("PendingCommit", "CommitFailed"):
+        call(tok, "DELETE", "/applications/%s/submissions/%s" % (APP, p["id"])); print("taslak silindi:", p["id"], st)
+    else:
+        print("bekleyen gönderim taslak değil, dokunulmadı:", p["id"], st)
+    pub = a.get("lastPublishedApplicationSubmission") or {}
+    if pub.get("id"):
+        sub = call(tok, "GET", "/applications/%s/submissions/%s" % (APP, pub["id"]))
+        print("yayındaki paketler:", ", ".join(x.get("fileName", "") + " " + str(x.get("version", "")) for x in sub.get("applicationPackages", [])))
+
+
 if __name__ == "__main__":
     c = sys.argv[1] if len(sys.argv) > 1 else "dene"
     if c == "dene": dene()
     elif c == "gonder": gonder(sys.argv[2], sys.argv[3])
     elif c == "istatistik": istatistik(sys.argv[2])
+    elif c == "taslak_sil": taslak_sil()
     else: sys.exit(__doc__)
