@@ -1,0 +1,24 @@
+# Microsoft Store arayüzü (araclar/msstore.py): «dene» bağlantıyı gösterir, «istatistik» son 30 günü okur
+name: Microsoft Store arayüzü
+on:
+  workflow_dispatch:
+    inputs:
+      islem:
+        description: "İşlem"
+        type: choice
+        options: [dene, istatistik]
+        default: dene
+permissions:
+  contents: read
+jobs:
+  store:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Store
+        env:
+          MSSTORE_TENANT: ${{ secrets.MSSTORE_TENANT }}
+          MSSTORE_CLIENT: ${{ secrets.MSSTORE_CLIENT }}
+          MSSTORE_SECRET: ${{ secrets.MSSTORE_SECRET }}
+        run: |
+          if [ "${{ inputs.islem }}" = istatistik ]; then python3 araclar/msstore.py istatistik ms.json; else python3 araclar/msstore.py dene; fi
