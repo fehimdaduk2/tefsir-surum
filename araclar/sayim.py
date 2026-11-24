@@ -195,6 +195,15 @@ def reports(tok, bucket, months, days, ulke):
             days.setdefault(d, {}).update({"yukle": int(num(r.get("Daily User Installs"))), "kaldir": int(num(r.get("Daily User Uninstalls"))),
                 "cyukle": int(num(r.get("Daily Device Installs"))), "ckaldir": int(num(r.get("Daily Device Uninstalls"))),
                 "toplam": int(num(r.get("Total User Installs"))), "aktif": int(num(r.get("Active Device Installs")))})
+        # the store listing: visitors and acquisitions (what Play Console shows as «Cihaz edinme»)
+        try:
+            ac = gcs_csv(tok, bucket, "acquisition/retained_installers/retained_installers_%s_%s_overview.csv" % (PKG, m))
+        except RuntimeError as e:
+            print("Edinme raporu:", e); ac = []
+        if ac: print("Edinme sütunları (%s):" % m, ", ".join(ac[0].keys())); print("Edinme son satır:", json.dumps(ac[-1], ensure_ascii=False)[:500])
+        for r in ac:
+            d = r.get("Date")
+            if d: days.setdefault(d, {}).update({"ziyaret": int(num(r.get("Store Listing Visitors"))), "edinme": int(num(r.get("Store Listing Acquisitions")))})
         for r in gcs_csv(tok, bucket, "stats/ratings/ratings_%s_%s_overview.csv" % (PKG, m)):
             d = r.get("Date")
             if d: days.setdefault(d, {}).update({"puan": round(num(r.get("Daily Average Rating")), 2), "puant": round(num(r.get("Total Average Rating")), 2)})
