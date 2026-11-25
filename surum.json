@@ -1,15 +1,35 @@
 {
-  "version": "5.60",
+  "version": "5.61",
   "date": "2026-11-25",
   "notes": [
-    "Tam ekran okumada sûre listesi",
-    "Telif bildirimi formu",
+    "Sûre listesi düğmesi düzeltmesi",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.60/Guncelleme-Kurulum.exe",
-  "sha256": "59b81dcf44aa842cbaf5096b697281d6eb2a0c126bf1164084bdf4ddc9b1e8c6",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.61/Guncelleme-Kurulum.exe",
+  "sha256": "2a365fa62d1c18dc1aad0312655e52d4d3616093a570dcc334f51089aad942d7",
   "size": 41656320,
   "history": [
+    {
+      "version": "5.60",
+      "date": "2026-11-25",
+      "notes": [
+        "Tam ekran okumada sûre listesi",
+        "Telif bildirimi formu",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Surah list in full-screen reading",
+          "Copyright notice form",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "قائمة السور في القراءة بملء الشاشة",
+          "نموذج إشعار حقوق النشر",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.59",
       "date": "2026-11-23",
@@ -2145,26 +2165,24 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.60/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.60/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.60/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.60/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.61/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.61/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.61/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.61/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.60/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "30904ba54843dffa6dc1ba6b50a9f93b4e02c399388848a113186e175da23b4e",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.61/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "06a7160c7de8956df39224f403336aa452ab9108a403764b7628edc3cf25812d",
     "size": 15246528
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Surah list in full-screen reading",
-      "Copyright notice form",
+      "Surah list button fix",
       "Fixes and improvements"
     ],
     "ar": [
-      "قائمة السور في القراءة بملء الشاشة",
-      "نموذج إشعار حقوق النشر",
+      "إصلاح زر قائمة السور",
       "إصلاحات وتحسينات"
     ]
   }
