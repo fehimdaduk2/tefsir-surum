@@ -1,14 +1,32 @@
 {
-  "version": "5.64",
+  "version": "5.65",
   "date": "2026-11-26",
   "notes": [
-    "Daha kolay ayırt edilen tecvid renkleri",
+    "Güvenlik iyileştirmeleri",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Kurulum.exe",
-  "sha256": "209bbf10fe343dce81ccbf17bee45d39205b6bc56330df4af6028d6cc48195a7",
-  "size": 41668608,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Kurulum.exe",
+  "sha256": "a35a93ff956d84154e1756701b4da901f1c1b4c65f960c468cda4affcd8e55d2",
+  "size": 41667584,
   "history": [
+    {
+      "version": "5.64",
+      "date": "2026-11-26",
+      "notes": [
+        "Daha kolay ayırt edilen tecvid renkleri",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Tajweed colours that are easier to tell apart",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "ألوان تجويد أسهل في التمييز",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.63",
       "date": "2026-11-26",
@@ -2222,24 +2240,24 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "b8aaedbdd4c51bd5830567f27ea4a8b6212486c79099a34afe5579cd8f89f011",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "2c8aa909cf9cd56bec9169775eda3e4de6dfdc9f9c349f2faea94bf0038b5e52",
     "size": 15250624
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Tajweed colours that are easier to tell apart",
+      "Security improvements",
       "Fixes and improvements"
     ],
     "ar": [
-      "ألوان تجويد أسهل في التمييز",
+      "تحسينات أمنية",
       "إصلاحات وتحسينات"
     ]
   }
