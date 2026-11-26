@@ -1,14 +1,32 @@
 {
-  "version": "5.63",
+  "version": "5.64",
   "date": "2026-11-26",
   "notes": [
-    "Kelimenin Türkçe anlamı",
+    "Daha kolay ayırt edilen tecvid renkleri",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.63/Guncelleme-Kurulum.exe",
-  "sha256": "bc4a626c8672ebc551af117eaf572707c64cb548e17e486e2edde13713ad728d",
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Kurulum.exe",
+  "sha256": "209bbf10fe343dce81ccbf17bee45d39205b6bc56330df4af6028d6cc48195a7",
   "size": 41668608,
   "history": [
+    {
+      "version": "5.63",
+      "date": "2026-11-26",
+      "notes": [
+        "Kelimenin Türkçe anlamı",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Word meanings",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "معاني الكلمات",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.62",
       "date": "2026-11-26",
@@ -2204,24 +2222,24 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.63/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.63/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.63/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.63/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.63/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "b647645c4ca383e5ea6fa5a1c3e5d9483abb01e0979a67d9807e65cca9ed5716",
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.64/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "b8aaedbdd4c51bd5830567f27ea4a8b6212486c79099a34afe5579cd8f89f011",
     "size": 15250624
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Word meanings",
+      "Tajweed colours that are easier to tell apart",
       "Fixes and improvements"
     ],
     "ar": [
-      "معاني الكلمات",
+      "ألوان تجويد أسهل في التمييز",
       "إصلاحات وتحسينات"
     ]
   }
