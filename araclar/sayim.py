@@ -70,7 +70,11 @@ def appstore():
         except urllib.error.HTTPError as e:
             if e.code == 404:          # no report for that day (yet, or nothing sold)
                 continue
-            print("App Store raporu alınamadı:", d, e.code); continue
+            try:   # Apple's reason (numbers taken out: the log of this public repository is open to all)
+                er = (json.loads(e.read().decode(errors="replace")).get("errors") or [{}])[0]
+                why = "".join(ch if not ch.isdigit() else "#" for ch in "%s: %s" % (er.get("code", ""), er.get("detail", "")))[:300]
+            except Exception: why = ""
+            print("App Store raporu alınamadı:", d, e.code, why); continue
         head = rows[0].split("\t"); ix = {h: n for n, h in enumerate(head)}
         n = 0
         for line in rows[1:]:
