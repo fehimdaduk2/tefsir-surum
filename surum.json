@@ -1,14 +1,33 @@
 {
-  "version": "5.65",
-  "date": "2026-11-26",
+  "version": "5.66",
+  "date": "2026-11-27",
   "notes": [
-    "Güvenlik iyileştirmeleri",
+    "Hakkında: tanıtım sayfası ve paylaşım bağlantısı",
+    "Kılavuzda namaz vakitleri (Ctrl+N)",
     "Düzeltmeler ve iyileştirmeler"
   ],
-  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Kurulum.exe",
-  "sha256": "a35a93ff956d84154e1756701b4da901f1c1b4c65f960c468cda4affcd8e55d2",
-  "size": 41667584,
+  "kurulum": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.66/Guncelleme-Kurulum.exe",
+  "sha256": "22bffe01f8b012e099da16a1bad5be3497068a3f7f8c0d4bbe4849fbc00dcd73",
+  "size": 41671168,
   "history": [
+    {
+      "version": "5.65",
+      "date": "2026-11-26",
+      "notes": [
+        "Güvenlik iyileştirmeleri",
+        "Düzeltmeler ve iyileştirmeler"
+      ],
+      "notes_i18n": {
+        "en": [
+          "Security improvements",
+          "Fixes and improvements"
+        ],
+        "ar": [
+          "تحسينات أمنية",
+          "إصلاحات وتحسينات"
+        ]
+      }
+    },
     {
       "version": "5.64",
       "date": "2026-11-26",
@@ -2240,24 +2259,26 @@
     }
   ],
   "diger": {
-    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
-    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
-    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
-    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-Android.apk"
+    "darwin-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.66/Guncelleme-Tefsir-Hadis-macOS-arm64.zip",
+    "darwin-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.66/Guncelleme-Tefsir-Hadis-macOS-amd64.zip",
+    "linux-amd64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.66/Guncelleme-Tefsir-Hadis-Linux-amd64.tar.gz",
+    "android-arm64": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.66/Guncelleme-Tefsir-Hadis-Android.apk"
   },
   "apk": {
-    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.65/Guncelleme-Tefsir-Hadis-Android.apk",
-    "sha256": "2c8aa909cf9cd56bec9169775eda3e4de6dfdc9f9c349f2faea94bf0038b5e52",
-    "size": 15250624
+    "url": "https://github.com/fehimdaduk2/tefsir-surum/releases/download/v5.66/Guncelleme-Tefsir-Hadis-Android.apk",
+    "sha256": "afc68512b6e90ebaef78bdca1570accdc72e8a002857a45774b98ef45aa86cd4",
+    "size": 15254720
   },
   "destek": "",
   "notes_i18n": {
     "en": [
-      "Security improvements",
+      "About: website and share link",
+      "Prayer times (Ctrl+N) in the guide",
       "Fixes and improvements"
     ],
     "ar": [
-      "تحسينات أمنية",
+      "حول: موقع البرنامج ورابط المشاركة",
+      "مواقيت الصلاة (Ctrl+N) في الدليل",
       "إصلاحات وتحسينات"
     ]
   }
