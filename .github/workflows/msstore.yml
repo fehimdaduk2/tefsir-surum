@@ -1,0 +1,88 @@
+# Microsoft Store paketi: «msstore» dalındaki hazır klasörden (Tefsir.exe, AppxManifest.xml, Assets) resources.pri ve
+# .msix yapılır; paket Partner Center'a yüklenmek üzere işin çıktısı (artifact) olarak kalır. Paketi Store imzalar.
+name: Microsoft Store paketi
+on:
+  push:
+    branches: [msstore]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  paket:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: MSIX
+        shell: pwsh
+        run: |
+          $kit = Get-ChildItem "${env:ProgramFiles(x86)}\Windows Kits\10\bin" -Directory | Where-Object { $_.Name -match '^10\.' } | Sort-Object Name -Descending | Select-Object -First 1
+          $bin = Join-Path $kit.FullName "x64"; Write-Host "SDK: $bin"
+          $v = (Get-Content ayar.json | ConvertFrom-Json).surum
+          Push-Location paket
+          & "$bin\makepri.exe" createconfig /cf ..\priconfig.xml /dq tr-TR_en-US_ar /pv 10.0.0 /o
+          & "$bin\makepri.exe" new /pr . /cf ..\priconfig.xml /of resources.pri /o
+          if ($LASTEXITCODE -ne 0) { throw "makepri" }
+          Pop-Location
+          & "$bin\makeappx.exe" pack /d paket /p "Tefsir-Hadis-$v.msix" /o
+          if ($LASTEXITCODE -ne 0) { throw "makeappx" }
+          Get-Item "Tefsir-Hadis-$v.msix" | Format-List Name, Length
+          # a check of the package as the Store will read it: the manifest and the files in place
+          & "$bin\makeappx.exe" unpack /p "Tefsir-Hadis-$v.msix" /d acik /o | Out-Null
+          if (-not (Test-Path acik\Tefsir.exe) -or -not (Test-Path acik\resources.pri)) { throw "paket eksik" }
+          Write-Host "MSIX HAZIR $v"
+      # a trial on this machine: signed with a passing certificate of the same publisher, installed, started; the
+      # packaged program must know it is in the Store package (its first page offers to fetch the data, no updater)
+      - name: Deneme kurulumu
+        shell: pwsh
+        run: |
+          $kit = Get-ChildItem "${env:ProgramFiles(x86)}\Windows Kits\10\bin" -Directory | Where-Object { $_.Name -match '^10\.' } | Sort-Object Name -Descending | Select-Object -First 1
+          $bin = Join-Path $kit.FullName "x64"; $v = (Get-Content ayar.json | ConvertFrom-Json).surum
+          Copy-Item "Tefsir-Hadis-$v.msix" deneme.msix
+          $c = New-SelfSignedCertificate -Type Custom -Subject "CN=64E9301E-0F39-4415-A63F-FED5E8B95E3E" -KeyUsage DigitalSignature -FriendlyName "deneme" -CertStoreLocation "Cert:\CurrentUser\My" -TextExtension @("2.5.29.37={text}1.3.6.1.5.5.7.3.3", "2.5.29.19={text}")
+          $pw = ConvertTo-SecureString -String "deneme" -Force -AsPlainText
+          Export-PfxCertificate -Cert $c -FilePath deneme.pfx -Password $pw | Out-Null
+          Export-Certificate -Cert $c -FilePath deneme.cer | Out-Null
+          Import-Certificate -FilePath deneme.cer -CertStoreLocation Cert:\LocalMachine\TrustedPeople | Out-Null
+          & "$bin\signtool.exe" sign /fd SHA256 /f deneme.pfx /p deneme deneme.msix
+          if ($LASTEXITCODE -ne 0) { throw "signtool" }
+          Add-AppxPackage -Path deneme.msix
+          $pkg = Get-AppxPackage -Name "FehimDadkKeremUzuner.TefsirHadisKtphanesi"; Write-Host "KURULDU $($pkg.PackageFullName)"
+          Start-Process "shell:AppsFolder\$($pkg.PackageFamilyName)!Tefsir"
+          $port = $null
+          for ($i = 0; $i -lt 40 -and -not $port; $i++) { Start-Sleep 1
+            $p = Get-Process Tefsir -ErrorAction SilentlyContinue | Select-Object -First 1
+            if ($p) { $port = (Get-NetTCPConnection -State Listen -OwningProcess $p.Id -ErrorAction SilentlyContinue | Where-Object LocalAddress -eq "127.0.0.1" | Select-Object -First 1).LocalPort } }
+          if (-not $port) { throw "program açılmadı" }
+          Write-Host "PORT $port"
+          # the server answers only its own window (a key in a cookie): a request from here must be turned away
+          try { Invoke-WebRequest "http://127.0.0.1:$port/" -UseBasicParsing | Out-Null; throw "pencere korumasız" } catch { if ($_.Exception.Response.StatusCode.value__ -ne 403) { throw } }
+          # in the package the data packs go to the user's folder (redirected by Windows into the package's own place)
+          Start-Sleep 8
+          $veri = Get-ChildItem "$env:LOCALAPPDATA\Packages\$($pkg.PackageFamilyName)" -Recurse -Directory -Filter veri -ErrorAction SilentlyContinue | Where-Object { $_.Parent.Name -eq "CamiutTefasir" } | Select-Object -First 1
+          if (-not $veri) { $veri = Get-Item "$env:LOCALAPPDATA\CamiutTefasir\veri" -ErrorAction SilentlyContinue }
+          if (-not $veri) { throw "Store kipi tanınmadı: veri klasörü yok" }
+          Write-Host "VERI $($veri.FullName)"
+          Add-Type -AssemblyName System.Windows.Forms, System.Drawing
+          $b = [System.Windows.Forms.Screen]::PrimaryScreen.Bounds; $bmp = New-Object System.Drawing.Bitmap $b.Width, $b.Height
+          [System.Drawing.Graphics]::FromImage($bmp).CopyFromScreen($b.Location, [System.Drawing.Point]::Empty, $b.Size); $bmp.Save("$PWD\deneme-ekran.png")
+          Write-Host "DENEME TAMAM"
+      # to the Store: when this build carries the release notes (hazirla.sh <sürüm> <notlar.json>), the package goes to
+      # Partner Center as a new submission and is sent for certification
+      - name: Store'a gönder
+        if: ${{ hashFiles('notlar.json') != '' }}
+        shell: pwsh
+        env:
+          MSSTORE_TENANT: ${{ secrets.MSSTORE_TENANT }}
+          MSSTORE_CLIENT: ${{ secrets.MSSTORE_CLIENT }}
+          MSSTORE_SECRET: ${{ secrets.MSSTORE_SECRET }}
+        run: |
+          $v = (Get-Content ayar.json | ConvertFrom-Json).surum
+          python api.py gonder "Tefsir-Hadis-$v.msix" notlar.json
+          if ($LASTEXITCODE -ne 0) { throw "Store gönderimi olmadı" }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Tefsir-Hadis-MicrosoftStore
+          path: |
+            Tefsir-Hadis-*.msix
+            deneme-ekran.png
+          retention-days: 90

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Microsoft Store paketi (MSIX): Tefsir.exe tam güvenli masaüstü uygulaması olarak; kimlik Partner Center'daki
+     «Product identity» sayfasından. SURUM, hazirla.sh'ta sürümle (X.Y.Z.0) değiştirilir. -->
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+         xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+         xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+         IgnorableNamespaces="uap rescap">
+  <Identity Name="FehimDadkKeremUzuner.TefsirHadisKtphanesi" Publisher="CN=64E9301E-0F39-4415-A63F-FED5E8B95E3E"
+            Version="5.68.0.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>Tefsir &amp; Hadis Kütüphanesi</DisplayName>
+    <PublisherDisplayName>Fehim Dadük &amp; Kerem Uzuner</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.26100.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="tr-TR" />
+    <Resource Language="en-US" />
+    <Resource Language="ar" />
+  </Resources>
+  <Applications>
+    <Application Id="Tefsir" Executable="Tefsir.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements DisplayName="Tefsir &amp; Hadis Kütüphanesi"
+                          Description="Kur'an, tefsir, hadis, fıkıh ve siyer kütüphanesi"
+                          BackgroundColor="transparent"
+                          Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="Tefsir &amp; Hadis" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <rescap:Capability Name="runFullTrust" />
+    <DeviceCapability Name="microphone" />
+  </Capabilities>
+</Package>
