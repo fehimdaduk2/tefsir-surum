@@ -248,7 +248,7 @@ def msstore():
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import msstore as M
     try:
-        tok = M.token()
+        tok = M.token(stat=True)
         end = datetime.date.today(); start = end - datetime.timedelta(days=90)
         q = "applicationId=%s&startDate=%s&endDate=%s" % (M.APP, start, end)
         def get(path, extra=""):

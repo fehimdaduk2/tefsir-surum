@@ -13,8 +13,12 @@ APP = "9PKNVQC8GR2L"
 API = "https://manage.devcenter.microsoft.com/v1.0/my"
 
 
-def token():
+def token(stat=False):
+    """stat: the analytics, with the «tefsir-istatistik» app (role Manager: MSSTORE_STAT_CLIENT / MSSTORE_STAT_SECRET)
+    when it is set; otherwise, and for submissions, «tefsir-yayin»"""
     t, c, s = (os.environ.get(k, "") for k in ("MSSTORE_TENANT", "MSSTORE_CLIENT", "MSSTORE_SECRET"))
+    if stat and os.environ.get("MSSTORE_STAT_CLIENT") and os.environ.get("MSSTORE_STAT_SECRET"):
+        c, s = os.environ["MSSTORE_STAT_CLIENT"], os.environ["MSSTORE_STAT_SECRET"]
     if not (t and c and s):
         sys.exit("MSSTORE_TENANT / MSSTORE_CLIENT / MSSTORE_SECRET eksik (tefsir-surum › Settings › Secrets › Actions)")
     data = urllib.parse.urlencode({"grant_type": "client_credentials", "client_id": c, "client_secret": s,
@@ -54,6 +58,7 @@ def dene():
         print("  durumu:", s.get("status"))
     end = dt.date.today(); start = end - dt.timedelta(days=30)
     try:
+        if os.environ.get("MSSTORE_STAT_CLIENT"): tok = token(stat=True); print("istatistik için: tefsir-istatistik")
         r = call(tok, "GET", "/analytics/appacquisitions?applicationId=%s&startDate=%s&endDate=%s&aggregationLevel=day" % (APP, start, end), ok404=True)
         print("istatistik arayüzü:", "açık" if r is not None else "veri yok", "· satır:", len((r or {}).get("Value", [])))
     except SystemExit as e:   # the submission side works without it
@@ -107,7 +112,7 @@ def gonder(msix, notes_path):
 
 
 def istatistik(out):
-    tok = token()
+    tok = token(stat=True)
     end = dt.date.today(); start = end - dt.timedelta(days=30)
     q = "applicationId=%s&startDate=%s&endDate=%s" % (APP, start, end)
     def get(path):

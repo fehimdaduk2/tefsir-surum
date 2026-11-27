@@ -20,5 +20,7 @@ jobs:
           MSSTORE_TENANT: ${{ secrets.MSSTORE_TENANT }}
           MSSTORE_CLIENT: ${{ secrets.MSSTORE_CLIENT }}
           MSSTORE_SECRET: ${{ secrets.MSSTORE_SECRET }}
+          MSSTORE_STAT_CLIENT: ${{ secrets.MSSTORE_STAT_CLIENT }}
+          MSSTORE_STAT_SECRET: ${{ secrets.MSSTORE_STAT_SECRET }}
         run: |
           case "${{ inputs.islem }}" in istatistik) python3 araclar/msstore.py istatistik ms.json ;; taslak_sil) python3 araclar/msstore.py taslak_sil ;; *) python3 araclar/msstore.py dene ;; esac
