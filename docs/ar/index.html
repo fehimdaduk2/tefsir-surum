@@ -192,6 +192,7 @@ dialog.bagis::backdrop { background: rgba(10, 20, 18, .55); backdrop-filter: blu
 .bg-links a { padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line); text-decoration: none; font-weight: 600; }
 .bg-foot { margin: 14px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 520px) { .bg-row { flex-wrap: wrap; } .bg-row > span:first-child { width: 100%; } .bagis-btn { padding: 7px 12px; font-size: 13.5px; gap: 5px; margin-inline-start: 6px; } }
+kbd{display:inline-block;font:600 .82em/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;padding:0 .45em;border:1px solid var(--line,#d9d4c7);border-bottom-width:2px;border-radius:6px;background:var(--surface);color:inherit;white-space:nowrap}
 </style>
 <script>/* kullanım sayacı: sayfa, süre ve indirme düğmesi; kimlik ve çerez yok (gizlilik.html) */(()=>{const U='https://tefsir-sayac.tefsirkutuphanesi.workers.dev/c';let r='';try{r=sessionStorage.getItem('tsr')||''}catch(e){}if(!/^[a-z0-9]{16}$/.test(r)){r=Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>'abcdefghijklmnopqrstuvwxyz0123456789'[b%36]).join('');try{sessionStorage.setItem('tsr',r)}catch(e){}}
 const pg=(location.pathname.replace(/^\/tefsir-surum/,'').replace(/index\.html$/,'')||'/').toLowerCase().replace(/[^a-z0-9_\-\/.]/g,'').slice(0,40),w=innerWidth<600?'s':innerWidth<1024?'m':innerWidth<1600?'l':'xl',ua=navigator.userAgent;
@@ -319,6 +320,12 @@ document.addEventListener('click',ev=>{const a=ev.target.closest&&ev.target.clos
   <div class="feat rev"><div class="shot"><img src="../img/ar/arama.webp" width="1440" height="810" loading="lazy" alt="البحث في التفاسير والترجمات"></div><div><span class="kick">البحث</span><h3>مربع واحد: التفسير والحديث والفقه</h3><p class="sub" style="margin:0">كلمة عربية أو إنجليزية أو تركية، في كل التفاسير والترجمات والأحاديث وكتب الفقه معًا؛ وتظهر الأعداد على تبويبات التفسير · الحديث · الفقه.</p><ul><li><b>العبارة بعينها</b> أو كل الكلمات؛ مع التصفية بحسب الكتاب</li><li>المس نتيجة في الحديث أو الفقه لتُفتح في موضعها</li><li>لا يُعتد بالتشكيل والعلامات في البحث</li></ul></div></div>
   <div class="feat"><div class="shot"><img src="../img/kart.webp" width="720" height="720" loading="lazy" alt="بطاقة الآية والحديث"></div><div><span class="kick">المشاركة</span><h3>بطاقة الآية والحديث</h3><p class="sub" style="margin:0">حوِّل آية مع ترجمتها، أو حديثًا مع كتابه ورقمه، إلى صورة أنيقة.</p><ul><li><b>مربع، عمودي، قصة</b> أشكال؛ وأربعة ألوان</li><li>في الهاتف إلى واتساب وإنستغرام؛ وفي الحاسوب حفظ أو نسخ</li></ul></div></div>
   <div class="feat rev"><div class="shot"><img src="../img/ar/esitle.webp" width="1440" height="810" loading="lazy" alt="الهاتف والحاسوب معًا"></div><div><span class="kick">المزامنة</span><h3>الهاتف واللوحي والحاسوب معًا</h3><p class="sub" style="margin:0">تبقى الملاحظات والعلامات والتظليلات والختمة والحفظ واحدة على أجهزتك كلها عبر Google Drive الخاص بك.</p><ul><li>لا يُرسل شيء إلى خادم لنا</li><li>نسخ احتياطي يومي تلقائي وسلة محذوفات و<b>نسخة</b> في ملف واحد</li></ul></div></div>
+</div></section>
+
+<section id="namaz"><div class="wrap">
+  <h2>لا تفُتك الصلاة <span style="font-size:.55em;font-weight:600;color:var(--muted);vertical-align:middle">· Ctrl+N على الحاسوب</span></h2>
+  <p class="sub">حين تستغرقك القراءة والدرس لا يفوتك الوقت: بضغطة واحدة تراه أيًّا كانت الشاشة التي أنت فيها.</p>
+  <div class="feat"><div class="shot"><img src="../img/ar/namaz.webp" width="1440" height="810" loading="lazy" alt="نافذة مواقيت الصلاة"></div><div><span class="kick">مواقيت الصلاة</span><h3>ضغطة للمواقيت ونظرة للوقت المتبقي</h3><p class="sub" style="margin:0"><kbd>Ctrl</kbd> + <kbd>N</kbd> (وعلى ماك <kbd>⌘</kbd> + <kbd>N</kbd>) يفتح نافذة مواقيت الصلاة، والمفاتيح نفسها تغلقها. يُعدّ الوقت المتبقي للصلاة القادمة ثانيةً بثانية، وفي رمضان يُظهر المتبقي للإفطار والسحور.</p><ul><li>طرق حساب متعددة؛ مدن من تركيا والعالم منها مكة والمدينة والقدس</li><li>أوقات الكراهة والضحى ومنتصف الليل والسحر؛ والعصر الثاني عند الحنفية</li><li>تقويم <b>30 يومًا</b> واتجاه <b>القبلة</b></li><li>يُحسب دون إنترنت، ولا يُرسل موقعك إلى أي مكان</li></ul></div></div>
 </div></section>
 
 <section id="diller" class="band"><div class="wrap">
