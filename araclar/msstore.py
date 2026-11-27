@@ -37,14 +37,21 @@ def call(tok, method, path, body=None, ok404=False):
     url = path if path.startswith("http") else API + path
     req = urllib.request.Request(url, method=method, data=None if body is None else json.dumps(body).encode(),
                                  headers={"Authorization": "Bearer " + tok, "Content-Type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=120) as r:
-            t = r.read(); return json.loads(t) if t else {}
-    except urllib.error.HTTPError as e:
-        if ok404 and e.code == 404:
-            return None
-        b = e.read().decode(errors="replace")
-        sys.exit("Store: %s %s → %d %s" % (method, url.replace(API, ""), e.code, b[:600]))
+    for tries in range(6):
+        try:
+            with urllib.request.urlopen(req, timeout=120) as r:
+                t = r.read(); return json.loads(t) if t else {}
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and tries < 5:   # the Store's own limit: wait as long as it says, then ask again
+                try: w = int(e.headers.get("Retry-After") or 0)
+                except ValueError: w = 0
+                time.sleep(max(w, 3 * (tries + 1))); continue
+            err = e; break
+    e = err
+    if ok404 and e.code == 404:
+        return None
+    b = e.read().decode(errors="replace")
+    sys.exit("Store: %s %s → %d %s" % (method, url.replace(API, ""), e.code, b[:600]))
 
 
 def dene():

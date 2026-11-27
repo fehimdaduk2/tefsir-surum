@@ -255,8 +255,12 @@ def msstore():
         tok = M.token(stat=True)
         end = datetime.date.today(); start = end - datetime.timedelta(days=90)
         q = "applicationId=%s&startDate=%s&endDate=%s" % (M.APP, start, end)
-        def get(path, extra=""):
-            r = M.call(tok, "GET", "/analytics/%s?%s%s" % (path, q, extra), ok404=True)
+        def get(path, extra=""):   # one part failing (a limit, a report not open) leaves the others
+            time.sleep(2)
+            try:
+                r = M.call(tok, "GET", "/analytics/%s?%s%s" % (path, q, extra), ok404=True)
+            except SystemExit as e:
+                print("Microsoft Store (%s):" % path, str(e)[:200]); return []
             return (r or {}).get("Value", [])
         gun, ulke = {}, {}
         for r in get("appacquisitions", "&aggregationLevel=day&groupby=date,market&top=10000"):
