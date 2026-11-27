@@ -55,6 +55,7 @@ def apple_jwt(kid, iss, p8):
 
 def appstore():
     kid, iss, p8, vendor = (os.environ.get(k, "").strip() for k in ("APPLE_API_KEY_ID", "APPLE_API_ISSUER_ID", "APPLE_API_KEY_P8", "APPLE_VENDOR_NUMBER"))
+    vendor = "".join(ch for ch in vendor if ch.isdigit())   # «Vendor # 9…» pasted whole works too
     if not (kid and iss and p8 and vendor):
         return []
     tok, out = apple_jwt(kid, iss, p8), []
